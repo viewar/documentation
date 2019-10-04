@@ -21,8 +21,8 @@ const users = [
 ];
 
 const siteConfig = {
-  title: 'ViewAr Documentation', // Title for your website.
-  tagline: 'SDK and API',
+  title: 'Documentation', // Title for your website.
+  tagline: 'of ViewAR\'s SDK and API',
   url: 'https://your-docusaurus-test-site.com', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -48,14 +48,14 @@ const siteConfig = {
   users,
 
   /* path to images for header/footer */
-  headerIcon: 'img/favicon.ico',
-  footerIcon: 'img/favicon.ico',
+  headerIcon: 'img/viewar_logo.svg',
+  footerIcon: '',
   favicon: 'img/favicon.ico',
 
   /* Colors for website */
   colors: {
-    primaryColor: '#6e9789',
-    secondaryColor: '#4d695f',
+    primaryColor: '#a41f1f', // ViewAr - red
+    secondaryColor: '#282f39', // ViewAr - headerbg
   },
 
   /* Custom fonts for website */

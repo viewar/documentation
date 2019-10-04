@@ -1,16 +1,75 @@
-/* your custom css */
+/** *********************
+**      FONTS         **
+**  *********************/
+@import url('https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900');
+/* TODO:  https://docusaurus.io/docs/en/site-config#fonts-object */
 
-@media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
+/** *********************
+**      BASE         **
+**  *********************/
+
+body {
+    font-family: 'Catamaran', sans-serif;
+
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Catamaran', sans-serif;
+    color: #666;
+    background-color: white;
+    font-weight: 200;
 }
 
-@media only screen and (min-width: 1024px) {
+/** *********************
+**      HEADER         **
+**  *********************/
+
+/**
+header/nav colors:
+    original header: #282f39
+
+    inactive:   #363f4d
+    active:     #3d4857
+
+*/
+
+.fixedHeaderContainer {
+    background-color: #282f39;
 }
 
-@media only screen and (max-width: 1023px) {
+.navigationSlider .slidingNav ul {
+    background: #282f39;
 }
 
-@media only screen and (min-width: 1400px) {
+/* inactive links */
+.navigationSlider .slidingNav ul li a {
+    background-color: #282f39;
 }
 
-@media only screen and (min-width: 1500px) {
+/* active links */
+.navigationSlider .slidingNav ul li > a:focus, .navigationSlider .slidingNav ul li > a:hover, .navigationSlider .slidingNav ul li.siteNavItemActive > a, .navigationSlider .slidingNav ul li.siteNavGroupActive > a {
+    background-color: #363f4d;
+}
+
+/** *********************
+**      FOOTER          *
+**  *********************/
+
+.nav-footer {
+    background-color: #282f39;
+    color: #b9b9b9;
+}
+
+.nav-footer .sitemap h5 {
+    color: #b9b9b9;
+
+    font-size: 1.5em;
+    margin: 0 0 5px 0;
+    font-weight: 200;
+    line-height: 1em;
+}
+
+.footer_item a, .footer_item_big a {
+    color: #fff;
 }
