@@ -14,11 +14,11 @@ const Container = CompLibrary.Container;
 const GridBlock = CompLibrary.GridBlock;
 
 function Help(props) {
-  const {config: siteConfig, language = ''} = props;
-  const {baseUrl, docsUrl} = siteConfig;
+  const { config: siteConfig, language = '' } = props;
+  const { baseUrl, docsUrl } = siteConfig;
   const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
   const langPart = `${language ? `${language}/` : ''}`;
-  const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`;
+  const docUrl = (doc) => `${baseUrl}${docsPart}${langPart}${doc}`;
 
   const supportLinks = [
     {
@@ -29,11 +29,11 @@ function Help(props) {
     },
     {
       content: 'Ask questions about the documentation and project',
-      title: 'Join the community',
+      title:   'Join the community',
     },
     {
-      content: "Find out what's new with this project",
-      title: 'Stay up to date',
+      content: 'Find out what\'s new with this project',
+      title:   'Stay up to date',
     },
   ];
 
