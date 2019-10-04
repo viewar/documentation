@@ -12,10 +12,11 @@ ViewAR Apps consist of:
 * **UI layer**
 * **ViewAR API** (JavaScript-based, used for communication between the two upper)
 
-Also, the ViewAR System provides a backend with a **3D CMS** and **Developer Portal** for managing applications and content.
+The ViewAR System also provides a backend with a **3D CMS** and **Developer Portal** for managing applications and content.
 
 #### ViewAR Core
-ViewAR Core is C++ based, lightweight and highly performant. It runs on iOS, Android, web browsers and HMD (like HoloLens) allowing for multi-platform solutions.
+ViewAR Core is **C++ based, lightweight and highly performant.**  
+It runs on iOS, Android, web browsers and HMD (like HoloLens) allowing for multi-platform solutions.
 
 It is mainly responsible for:
 * **rendering** - advanced shading technologies integration, custom shaders, PBR materials.
@@ -24,7 +25,8 @@ It is mainly responsible for:
 * **user input handling** - 3D scene interaction (e.g. touches, swipes).
 
 #### UI layer
-The C++ core is overlapped with an HTML layer containing the UI for an application with a transparent background. UI elements and logic are created with HTML, CSS and JavaScript. Using state-of-the-art frameworks like React, Angular or Vue.js will let you create application UI as efficient and quick as with no other system.
+The C++ core is overlapped with an HTML layer containing the UI for an application with a transparent background. UI elements and logic are created with HTML, CSS and JavaScript.  
+Using state-of-the-art frameworks like React, Angular or Vue.js will let you create application UI as efficient and quick as with no other system.
 
 #### ViewAR API
 ViewAR API is an object-oriented JavaScript-based API, offering an interface for the communication between the UI and the core. It can be used to get access to the features offered by the ViewAR Core:
