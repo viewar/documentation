@@ -14,7 +14,7 @@ const MarkdownBlock = CompLibrary.MarkdownBlock; /* Used to read markdown */
 const Container = CompLibrary.Container;
 const GridBlock = CompLibrary.GridBlock;
 
-class HomeSplash extends React.Component {
+class HomeSplash extends React.PureComponent {
   render() {
     const {siteConfig, language = ''} = this.props;
     const {baseUrl, docsUrl} = siteConfig;
@@ -75,7 +75,7 @@ class HomeSplash extends React.Component {
   }
 }
 
-class Index extends React.Component {
+class Index extends React.PureComponent {
   render() {
     const {config: siteConfig, language = ''} = this.props;
     const {baseUrl} = siteConfig;

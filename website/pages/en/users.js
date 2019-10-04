@@ -12,7 +12,7 @@ const CompLibrary = require('../../core/CompLibrary.js');
 
 const Container = CompLibrary.Container;
 
-class Users extends React.Component {
+class Users extends React.PureComponent {
   render() {
     const {config: siteConfig} = this.props;
     if ((siteConfig.users || []).length === 0) {

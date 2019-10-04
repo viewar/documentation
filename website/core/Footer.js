@@ -7,7 +7,7 @@
 
 const React = require('react');
 
-class Footer extends React.Component {
+class Footer extends React.PureComponent {
   docUrl(doc, language) {
     const baseUrl = this.props.config.baseUrl;
     const docsUrl = this.props.config.docsUrl;
