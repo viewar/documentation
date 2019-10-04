@@ -1,4 +1,20 @@
 {
   "root": true,
-  "extends": "viewar/env/react"
+  "extends": "viewar/env/react",
+  "rules": {
+    //*********************
+    //* docusaurus tweaks *
+    //*********************
+    // uses .js files for their react components
+    "react/jsx-filename-extension": 0,
+    "react/prop-types": [
+      "error",
+      {
+        // ignore props injected by the docusaurus environment
+        "ignore": ["siteConfig", "config", "language"]
+      }
+    ],
+    // no proper resolvers setup
+    "node/no-missing-require": 0
+  }
 }
