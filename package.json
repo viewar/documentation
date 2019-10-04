@@ -1,0 +1,24 @@
+{
+  "name": "viewar-documentation",
+  "version": "1.0.0",
+  "description": "Documentation of ViewAR's SDK and API",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viewar/viewar-documentation.git"
+  },
+  "author": "ViewAr <office@viewar.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/viewar/viewar-documentation/issues"
+  },
+  "homepage": "https://github.com/viewar/viewar-documentation#readme"
+}
