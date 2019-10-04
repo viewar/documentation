@@ -1,0 +1,25 @@
+{
+  "docs": {
+    "ViewAR": [
+      "introduction",
+      "sdk/stack",
+      "sdk/faq"
+    ],
+    "SDK": [
+      "sdk",
+      "sdk/introduction",
+      "sdk/testsubsub/introduction2",
+      "sdk/getting-started/stack"
+    ],
+    "API": [
+      "doc-markdown",
+      "api-pages",
+      "site-config",
+      "test/feature"
+    ],
+    "Features": [
+      "test/feature1",
+      "test/feature2"
+    ]
+  }
+}
