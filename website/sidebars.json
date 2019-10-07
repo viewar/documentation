@@ -1,46 +1,6 @@
 {
   "docs": {
     "ViewAR": ["introduction", "stack", "creating_apps", "app_builder", "faq"],
-    "Tutorials": [
-      "tutorials/overview",
-      "tutorials/arvatar/arvatar",
-      {
-        "type": "subcategory",
-        "label": "Wallart",
-        "ids": [
-          "tutorials/wallart/about",
-          "tutorials/wallart/app_builder",
-          "tutorials/wallart/cli"
-        ]
-      },
-      {
-        "type": "subcategory",
-        "label": "Guidebot",
-        "ids": [
-          "tutorials/guidebot/about",
-          "tutorials/guidebot/app_builder",
-          "tutorials/guidebot/cli"
-        ]
-      },
-      {
-        "type": "subcategory",
-        "label": "Helpar",
-        "ids": [
-          "tutorials/helpar/about",
-          "tutorials/helpar/app_builder",
-          "tutorials/helpar/cli"
-        ]
-      },
-      {
-        "type": "subcategory",
-        "label": "Furniture Live",
-        "ids": [
-          "tutorials/furniture_live/about",
-          "tutorials/furniture_live/app_builder",
-          "tutorials/furniture_live/cli"
-        ]
-      }
-    ],
     "SDK": [
       "sdk",
       {
@@ -79,6 +39,46 @@
           "sdk/quickstart/touches",
           "sdk/quickstart/cameras",
           "sdk/quickstart/freeze_frames"
+        ]
+      }
+    ],
+    "Tutorials": [
+      "tutorials/overview",
+      "tutorials/arvatar/arvatar",
+      {
+        "type": "subcategory",
+        "label": "Wallart",
+        "ids": [
+          "tutorials/wallart/about",
+          "tutorials/wallart/app_builder",
+          "tutorials/wallart/cli"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Guidebot",
+        "ids": [
+          "tutorials/guidebot/about",
+          "tutorials/guidebot/app_builder",
+          "tutorials/guidebot/cli"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Helpar",
+        "ids": [
+          "tutorials/helpar/about",
+          "tutorials/helpar/app_builder",
+          "tutorials/helpar/cli"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Furniture Live",
+        "ids": [
+          "tutorials/furniture_live/about",
+          "tutorials/furniture_live/app_builder",
+          "tutorials/furniture_live/cli"
         ]
       }
     ],
