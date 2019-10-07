@@ -17,7 +17,7 @@ Below, you will find detailed description of JavaScript commands for the topics 
 - [Cameras](sdk/sdk--api-quickstart/sdk--api-quickstart--cameras.md)
 - [Touches](sdk/sdk--api-quickstart/sdk--api-quickstart--touches.md)
 
-#### Read next
+### Read next
 
-- [ViewAR API References](http://test2.3.viewar.com/docs/index.html) - Complete list of the ViewAR API References
-- [ViewAR JavaScript API Playground](https://webversion.viewar.com/com.viewar.sandbox/100/) - ViewAR API interactive tutorial
+- [ViewAR API References](http://test2.3.viewar.com/docs/index.html)
+- [ViewAR JavaScript API Playground](https://webversion.viewar.com/com.viewar.sandbox/100/)
