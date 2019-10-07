@@ -36,9 +36,16 @@ header/nav colors:
 
 .fixedHeaderContainer {
   background-color: #282f39;
+  padding: 12px 0;
+}
+.fixedHeaderContainer header img {
+  height: 80%;
+}
+.fixedHeaderContainer header .headerTitleWithLogo {
+  padding-top: 14px;
 }
 
-.navigationSlider .slidingNav ul {
+.fixedHeaderContainer header .headerTitleWithLogo .navigationSlider .slidingNav ul {
   background: #282f39;
 }
 
@@ -46,7 +53,6 @@ header/nav colors:
 .navigationSlider .slidingNav ul li a {
   background-color: #282f39;
 }
-
 /* active links */
 .navigationSlider .slidingNav ul li > a:focus,
 .navigationSlider .slidingNav ul li > a:hover,
