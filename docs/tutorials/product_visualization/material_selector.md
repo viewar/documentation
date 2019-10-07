@@ -256,6 +256,4 @@ function App(props) {
 }
 ```
 
-![](https://user-images.githubusercontent.com/223045/49593073-07125f80-f973-11e8-8cd4-8fcef051feb7.gif)
-
-[< Previous Step](/tutorials/react/create-a-material-selector.md) ｜ [Next Step >](/tutorials/react/add-intro-view.md)
+![](/img/material_selector.gif)
