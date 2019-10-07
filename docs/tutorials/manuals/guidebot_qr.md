@@ -9,30 +9,30 @@ Following this tutorial you'll learn how to use a GuideBOT indoor navigation app
 
 ##### Device requirements
 
-- An iOS, ARKit compatible device - more about compatibility in our [Documentation](https://viewar.gitbooks.io/sdk-documentation/hardware.html#supported-hardware).
+- An iOS, ARKit compatible device - see: [supported hardware](/docs/sdk/advanced_guides/hardware).
 - Up-to-date version of the ViewAR SDK App (available from the App Store (iOS)).<br>You can use our sample demo App ID: **guidebot.qr.demo**, version: **100**.
 - A printed copy of a set of our [demo QR codes](http://www.viewar.com/wp-content/uploads/2018/12/GuideBOT-QRcodes-1.pdf)
 
 ##### What you'll do
 
 - Place the QR codes in the area you want to navigate around.
-- Define POIs \(Points Of Interest\) through the GuideBOT App
-- Define Paths \(for the users to follow\) through the GuideBOT App
+- Define POIs (Points Of Interest) through the GuideBOT App
+- Define Paths (for the users to follow) through the GuideBOT App
 
 #### Let's get started!
 
 ##### Place the QR code set in the area you want to navigate around.
 
-- For the sake of the demo, we’ll use a set of test QR codes \(link above\). Print them in an A4 format and make sure that the dimensions of the **QR codes **themselves are 18 x 18 cm. It is important to ensure the proper scaling.
+- For the sake of the demo, we’ll use a set of test QR codes (link above). Print them in an A4 format and make sure that the dimensions of the **QR codes **themselves are 18 x 18 cm. It is important to ensure the proper scaling.
 
-![](/assets/QR-code-small.png)
+![](/img/QR-code-small.png)
 
-- Find appropriate places for your QR codes. The general rule is that the closer they are, the higher the tracking precision will be. At the current state of technology, the ARKit \(the tracking system you are using\) has an average horizontal drift of 1 m per 20 m. It means that for every 20 meter you walk away from the last point of calibration \(QR code\), the possible horizontal drift would be 1 m. Depending on the functionality of your app, a certain difference is tolerable. It may be controlled with the maximum distance between QR codes. We suggest placing them with a maximum distance of 20 m to 50 m.
+- Find appropriate places for your QR codes. The general rule is that the closer they are, the higher the tracking precision will be. At the current state of technology, the ARKit (the tracking system you are using) has an average horizontal drift of 1 m per 20 m. It means that for every 20 meter you walk away from the last point of calibration (QR code), the possible horizontal drift would be 1 m. Depending on the functionality of your app, a certain difference is tolerable. It may be controlled with the maximum distance between QR codes. We suggest placing them with a maximum distance of 20 m to 50 m.
 
 - Place them in easy to find locations, so that the users would not have to go out of their way to read them. Best places are paths intersections, so users can film multiple codes for re-calibration when walking.
 
-  - Print the sample QR code set \(link above\) in A4 format.
-  - Place the first QR code \(described as NO.1\) on the floor in the area to be navigated around. It will mark the centre of your digital map.
+  - Print the sample QR code set (link above) in A4 format.
+  - Place the first QR code (described as NO.1) on the floor in the area to be navigated around. It will mark the centre of your digital map.
   - There is no need to use all of the provided codes but you are free to use all of them.
 
 ##### Create a new map / record location
@@ -42,14 +42,14 @@ Following this tutorial you'll learn how to use a GuideBOT indoor navigation app
 - Open the application, click on the padlock icon and type in your [Developer Portal](https://developer.viewar.com) credentials.
 - Click on _New map_. Give it an easily recognisable name and save.
 
-![](/assets/GuideBOT - Tutorial - 1.jpg)
+![](/img/GuideBOT - Tutorial - 1.jpg)
 
 ##### Configure tracking
 
 - You'll now be asked to configure the tracking.
 - First, **ARKit** needs to be initialised. Do it by moving your device slowly in a sideways manner (move a step left and right, don't just turn!). As soon as the calibration graphic disappears, you'll know that the ARKit tracking has been configured - the ground has been detected and the relative coordinates system has been created.
 
-![](/assets/GuideBOT - Tutorial - 2 - QR.jpg)
+![](/img/GuideBOT - Tutorial - 2 - QR.jpg)
 
 - Now, scan the first **QR code**. Wait for the blue circle to appear. If you have placed more QR codes.
 
@@ -59,9 +59,9 @@ Following this tutorial you'll learn how to use a GuideBOT indoor navigation app
 
 - Aim with the ring and tap the **Create Waypoints** button to place a waypoint. Do this multiple times to create the points of a path. Every next point will be connected to the previous one. You can also tap a way point to select it and to start placing waypoints from there.
 
-![](/assets/GuideBOT - Tutorial - 3.jpg)
+![](/img/GuideBOT - Tutorial - 3.jpg)
 
-##### Define **POIs** \(Points Of Interest\)
+##### Define **POIs** (Points Of Interest)
 
 A **Point Of Interest** marks a location you want to navigate your users to.
 It may be for example an object at an exhibition, a conference room or a hotel reception.
@@ -71,7 +71,7 @@ It may be for example an object at an exhibition, a conference room or a hotel r
 - Enter a title for the POI. This name will be used for recognition (when you ask the GuideBOT a question).
 - Save it and continue with setting up your path or the next POI.
 
-![](/assets/GuideBOT - Tutorial - 4.jpg)
+![](/img/GuideBOT - Tutorial - 4.jpg)
 
 - When you're done with setting up all data, save the map.
 

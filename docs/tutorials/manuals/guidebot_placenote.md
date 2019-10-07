@@ -9,15 +9,15 @@ Following this tutorial you'll learn how to use a GuideBOT indoor navigation app
 
 ##### Device requirements
 
-- An iOS, ARKit compatible device - more about compatibility in our [Documentation](https://viewar.gitbooks.io/sdk-documentation/hardware.html#supported-hardware).
-- Up-to-date version of the ViewAR SDK App (available from the App Store (iOS)).
-  <br>You can use our sample demo App ID: **guidebot.placenote.demo**, version: **100**.
+- An iOS, ARKit compatible device - see: [supported hardware](/docs/sdk/advanced_guides/hardware).
+- Up-to-date version of the ViewAR SDK App (available from the App Store (iOS)).  
+  You can use our sample demo App ID: **guidebot.placenote.demo**, version: **100**.
 
 ##### What you'll do
 
 - Configure the Placenote tracking.
-- Define POIs \(Points Of Interest\) through the GuideBOT App.
-- Define Paths \(for the users to follow\) through the GuideBOT App.
+- Define POIs (Points Of Interest) through the GuideBOT App.
+- Define Paths (for the users to follow) through the GuideBOT App.
 
 #### Let's get started!
 
@@ -36,7 +36,7 @@ More information about [Placenote](https://placenote.com/).
 - Open the application, click on the padlock icon and type in your [Developer Portal](https://developer.viewar.com) credentials.
 - Click on _New map_. Give it an easily recognisable name and save.
 
-![](/assets/GuideBOT - Tutorial - 1.jpg)
+![](/img/GuideBOT - Tutorial - 1.jpg)
 
 ##### Configure tracking
 
@@ -44,18 +44,18 @@ More information about [Placenote](https://placenote.com/).
 
 - First, **ARKit** needs to be initialised. Do it by moving your device slowly in a sideways manner. As soon as the calibration graphic disappears, you'll know that the ARKit tracking has been configured - the ground has been detected and the relative coordinates system has been created.
 
-- Now it's the time to train the **Placenote** tracking.
-  <br>Placenote uses the environment as a one big 3D marker. It needs to detect feature points to hold on to. Feature points are created at points of high contrast, corners of sharp edges etc. For example - when filming a door, the line defining its edge will not be used, in contrary to the key hole or corners. A messy work desk will work good.
-  <br>In order to create a high-quality map for a user, record a feature-rich environment close to the point where the map is meant to be initialised most often. Walk a couple of steps around each object, filming it slowly and from different viewing angles (move your device up an down, still aiming at the centre of the filmed model).
-  <br>Be aware that the tracking will struggle and may fail if the environment changes a lot.
-  <br>You should also try to avoid filming a learned area twice since tracking drift might have added up, learning the same area again. This will result in jumps in the tracking.
+- Now it's the time to train the **Placenote** tracking.  
+  Placenote uses the environment as a one big 3D marker. It needs to detect feature points to hold on to. Feature points are created at points of high contrast, corners of sharp edges etc. For example - when filming a door, the line defining its edge will not be used, in contrary to the key hole or corners. A messy work desk will work good.  
+  In order to create a high-quality map for a user, record a feature-rich environment close to the point where the map is meant to be initialised most often. Walk a couple of steps around each object, filming it slowly and from different viewing angles (move your device up an down, still aiming at the centre of the filmed model).  
+  Be aware that the tracking will struggle and may fail if the environment changes a lot.  
+  You should also try to avoid filming a learned area twice since tracking drift might have added up, learning the same area again. This will result in jumps in the tracking.
 
-![](/assets/Wikitude-Instant-Tracking-Scene-Mapping.png)
+![](/img/Wikitude-Instant-Tracking-Scene-Mapping.png)
 <br>_Picture credits: Wikitude_
 
 <br>Don't worry, you don't have to blind-guess whether the feature points are getting defined properly! The app gives you feedback marking every created point with a red cube.
 
-![](/assets/GuideBOT - Tutorial - 2 - Placenote.jpg)
+![](/img/GuideBOT - Tutorial - 2 - Placenote.jpg)
 
 <br><br>When you're ready, move on to defining **paths** for the users to follow.
 
@@ -65,11 +65,11 @@ More information about [Placenote](https://placenote.com/).
 
 - Aim with the ring and tap the **Create Waypoints** button to place a waypoint. Do this multiple times to create the points of a path. Every next point will be connected to the previous one. You can also tap a way point to select it and to start placing waypoints from there.
 
-![](/assets/GuideBOT - Tutorial - 3.jpg)
+![](/img/GuideBOT - Tutorial - 3.jpg)
 
 - **TIP:** As you keep moving through the scene, the Placenote tracking is constantly learning the environment. To improve its performance, help it learn most efficiently: from time to time (every couple of meters) repeat the environment recording procedure described above (in the **Configure Tracking** point).
 
-##### Define **POIs** \(Points Of Interest\)
+##### Define **POIs** (Points Of Interest)
 
 A **Point Of Interest** marks a location you want to navigate your users to.
 It may be for example an object at an exhibition, a conference room or a hotel reception.
@@ -79,7 +79,7 @@ It may be for example an object at an exhibition, a conference room or a hotel r
 - Enter a title for the POI. This name will be used for recognition (when you ask the GuideBOT a question).
 - Save it and continue with setting up your path or the next POI.
 
-![](/assets/GuideBOT - Tutorial - 4.jpg)
+![](/img/GuideBOT - Tutorial - 4.jpg)
 
 - When you're done with setting up all data, save the map.
 
