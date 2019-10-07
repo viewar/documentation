@@ -3,17 +3,17 @@ id: app_builder
 title: App Builder
 ---
 
-#####Create your own GuideBOT app using the ViewAR App Builder
+##### Create your own GuideBOT app using the ViewAR App Builder
 
 The ViewAR™ AppBuilder is the easiest way to build your augmented reality apps. It allows developers to build augmented reality and virtual reality apps based on HTML templates. It is a modular structure, utilising our almost 10-years-long development experience and lessons learned from over 50 projects. Ready-to-use templates allow for the user focus to be shifted to styling and content. The System is suitable for professional programmers as well as for beginners.
 
-More information: https://www.viewar.com/app-builder/
+[More information](https://www.viewar.com/app-builder/)
 
-####Prerequisites
+#### Prerequisites
 
 ##### Device requirements
 
-- An iOS, ARKit compatible device - more about compatibility in our [Documentation](https://viewar.gitbooks.io/sdk-documentation/hardware.html#supported-hardware).
+- An iOS, ARKit compatible device - more about compatibility in our [Documentation](/docs/sdk/hardware#supported-hardware).
 - Up-to-date version of the ViewAR SDK App (available from the App Store (iOS)).
 - **For the QR version:** a printed copy of a set of our [demo QR codes](http://www.viewar.com/wp-content/uploads/2018/12/GuideBOT-QRcodes-1.pdf)
 
@@ -24,7 +24,7 @@ More information: https://www.viewar.com/app-builder/
 
 #### Create an account
 
-Create a free user account on the ViewAR Developer portal: https://developer.viewar.com.
+Create a free user account on the [ViewAR Developer portal](https://developer.viewar.com).
 
 #### Choose a template
 

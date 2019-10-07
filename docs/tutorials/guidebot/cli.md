@@ -3,7 +3,7 @@ id: cli
 title: CLI
 ---
 
-#####Create your own GuideBOT app using the ViewAR CLI
+##### Create your own GuideBOT app using the ViewAR CLI
 
 #### Prerequisites
 
@@ -14,14 +14,15 @@ In an IDE of your choice (for example WebStorm) navigate to a suitable directory
 
 Furthermore, make sure that you have a ViewAR account. It'll provide you storage for your 3D models and an overview of the apps created. Register at: https://developer.viewar.com/
 
-####Prerequisites
-#####Device requirements
+#### Prerequisites
 
-- An iOS, ARKit compatible device - more about compatibility in our [Documentation](https://viewar.gitbooks.io/sdk-documentation/hardware.html#supported-hardware).
+##### Device requirements
+
+- An iOS, ARKit compatible device - more about compatibility in our [Documentation](/docs/sdk/hardware#supported-hardware).
 - Up-to-date version of the ViewAR SDK App (available from the App Store (iOS)).
 - **For the QR version:** a printed copy of a set of our [demo QR codes](http://www.viewar.com/wp-content/uploads/2018/12/GuideBOT-QRcodes-1.pdf)
 
-#####Skillset
+##### Skillset
 
 - **Required skills:** HTML, CSS, JavaScript
 - **Helpful skills:** Advance 3D editing, UV layouts creation, texturing, basic 3D skills

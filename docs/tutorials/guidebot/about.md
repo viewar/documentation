@@ -8,8 +8,8 @@ title: About
 Learn how to create a GuideBOT indoor navigation application.
 Two tracking versions available: using QR codes or the Placenote tracking.
 
-More about the [GuideBOT Template](https://www.viewar.com/template/guidebot/)
-Learn to setup GuideBOT Template with the [App Builder](tutorials/tutorials--guidebot/tutorials--guidebot--app-builder.md) or [CLI](tutorials/tutorials--guidebot/tutorials--guidebot--cli.md).
+- More about the [GuideBOT Template](https://www.viewar.com/template/guidebot/)
+- Learn to setup GuideBOT Template with the [App Builder](./app_builder) or [CLI](./cli).
 
 #### INTRODUCTION
 
@@ -17,7 +17,7 @@ Learn to setup GuideBOT Template with the [App Builder](tutorials/tutorials--gui
 
 We’ll get started just in a minute, but first - a word of introduction to make you aware of what you will be doing.
 
-The goal of the great majority of AR applications is overlaying virtual information on the physical world. Whether it is a streamed image from the device’s camera or a semi-translucent screen of Microsoft HoloLens, the general concept stays the same. In order to inform the device about the desired location of projected information, a tracking system is used \(see a [table](https://viewar.gitbooks.io/sdk-documentation/basic-concepts.html) with the Tracking Systems Summary\).
+The goal of the great majority of AR applications is overlaying virtual information on the physical world. Whether it is a streamed image from the device’s camera or a semi-translucent screen of Microsoft HoloLens, the general concept stays the same. In order to inform the device about the desired location of projected information, a tracking system is used (see a [table](/docs/sdk/basic-concepts) with the Tracking Systems Summary).
 
 As for indoor navigation applications, an additional challenge is posed by the fact that the area of service is relatively large, at the same time keeping the precision high. While for outdoor navigations apps, like Google Maps, correctness provided by GPS suffices, it is not the case here.
 
@@ -31,8 +31,8 @@ However, the application is able to use different tracking approaches, depending
 
 **Visual Recognition**
 The app learns how an environment looks, creates a pointcloud and re-localizes based on this. This only works in smaller areas (200 square meters) and the environment should not change.
-Not really applicable for exhibitions but we could recognize and augment a booth using this approach.
-_GuideBOT - How it works:_ https://youtu.be/huHFRSPN5es
+Not really applicable for exhibitions but we could recognize and augment a booth using this approach:  
+**[GuideBOT - How it works](https://youtu.be/huHFRSPN5es)**
 
 **Markers/QR Codes**
 Placing markers and saving a location of that marker lets the app know where the user is. We tend to use QR codes since the QR code is then already used for app downloads. Users can walk for a distance of 30 meters after filming a QR Code with a drift of 0,5-1,0 meter. This approach is simple, does not require installations and will work stable.
@@ -48,5 +48,6 @@ Using directional beacons, we can get the user’s position with an accuracy of 
 
 This technology may be easily adapted to serve multiple purposes with indoor navigation, building maintenance, and construction site management being just a beginning.
 
-####Pricing
+#### Pricing
+
 Pricing available on request: <sdk@viewar.com>
