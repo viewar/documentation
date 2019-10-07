@@ -43,9 +43,11 @@
     ],
     "SDK": [
       "sdk",
-      "sdk/introduction",
-      "sdk/testsubsub/introduction2",
-      "sdk/getting-started/stack"
+      {
+        "type": "subcategory",
+        "label": "Quickstart",
+        "ids": ["sdk/quickstart/overview"]
+      }
     ]
   }
 }

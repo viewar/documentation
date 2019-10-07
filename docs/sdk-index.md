@@ -3,21 +3,50 @@ id: sdk
 title: SDK Introduction
 ---
 
-At ViewAR, we believe that Augmented Reality is a tool of the future. Currently, it is only available to a group of specialists. It is our mission to let web developers create applications by focusing on UI and content.
+The ViewAR™ Augmented Reality SDK allows you to build platform-independent AR and VR apps using advanced tracking systems purely with Web Development skills. You get access to CLI and the source code of our templates. This lets you extend and customise functionalities, user flows and interfaces. Moreover, you are able to access our rendering system and almost all tracking solutions available on the market through a straightforward JavaScript API. And if you find yourself developing a brand new template other people could benefit from – we will help you wrap it up and re-sell through our platform!
 
-Within almost 10 years of development, we have created an AR framework which we are now opening to the world. It is a platform-independent solution offering a range of HTML-based Template Application that may be used out-of-the-box or customized using JavaScript-based API. Use you favorite JS libraries (think - React, Angular, Vue.js) to give your workflow an efficiency boost and switch seamlessly between available tracking systems with a minimal effort.
+- Advanced users.
+- Efficient, JavaScript-based API.
+- Extend the ready-to-use templates or develop your own ones.
 
-### Our Apps
+### Skills
 
-Want to have an idea of the System capabilities?
-Check our resources:
-[Showcases](https://www.viewar.com/showcases/) - chosen custom applications prepared for our Clients
-[ViewAR Templates](https://www.viewar.com/templates/) - Download the ViewAR SDK App and try our templates
-[ViewAR Features](https://www.viewar.com/features/)
+##### Necessary:
 
-### Read next
+Front End development skills (preferably including React)
 
-Want to know more? Check the following links:
+##### Good-to-have:
 
-- [Understand the Technology Stack](sdk/getting-started/stack)
-- [Play around with the ViewAR API Sandbox](tutorials/tutorials--overview--playground.md)
+Advance 3D editing (UV layouts creation, texturing etc, ...)
+
+[How to create an app with the ViewAR SDK?](https://www.viewar.com/sdk-augmented-reality-developers-resellers-agencies/)
+
+### ViewAR SDK Tutorials
+
+[> ARvatar](/tutorials/arvatar/arvatar-app-creation.md)<br>
+[> Drone Control](tutorials/arvatar/drone.md)<br>
+[> Product Visualization](/tutorials/react/create-your-first-ar-app.md)
+
+#### ViewAR API Sandbox
+
+[Learn more...](00--sdk/sdk--playground/sdk--playground--overview.md)
+
+#### Getting Started
+
+[Learn more...](00--sdk/sdk--getting-started/sdk--getting-started--overview.md)
+
+#### ViewAR System Basic Concepts
+
+[Learn more...](00--sdk/sdk--basic-concepts/sdk--basic-concepts--overview.md)
+
+#### ViewAR API Quickstart
+
+[Learn more...](00--sdk/sdk--api-quickstart/sdk--api-quickstart--overview.md)
+
+#### Tutorials
+
+[Learn more...](00--sdk/sdk--tutorials/sdk--tutorials--overview.md)
+
+#### ViewAR API Reference
+
+[Learn more...](00--sdk/sdk--api-reference/sdk--api-reference--overview.md)
