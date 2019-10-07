@@ -95,3 +95,13 @@ header/nav colors:
 .nav-footer .viewarLogo:hover {
   opacity: 0.4;
 }
+
+/***********************
+**    shared UI        *
+***********************/
+
+.button .arrow-prev,
+.button .arrow-next {
+  position: relative;
+  bottom: 2px;
+}
