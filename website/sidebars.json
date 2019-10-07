@@ -1,25 +1,7 @@
 {
   "docs": {
     "ViewAR": ["introduction", "stack", "creating_apps", "app_builder", "faq"],
-    "SDK": [
-      "sdk/introduction",
-      "sdk/cli",
-      "sdk/basic_concepts",
-      {
-        "type": "subcategory",
-        "label": "Quickstart",
-        "ids": [
-          "sdk/quickstart/overview",
-          "sdk/quickstart/scene_manager",
-          "sdk/quickstart/model_manager",
-          "sdk/quickstart/instances",
-          "sdk/quickstart/tracking",
-          "sdk/quickstart/touches",
-          "sdk/quickstart/cameras",
-          "sdk/quickstart/freeze_frames"
-        ]
-      }
-    ],
+    "SDK": ["sdk/introduction", "sdk/cli", "sdk/basic_concepts", "sdk/quickstart"],
     "Tutorials": [
       "tutorials/overview",
       "tutorials/arvatar/arvatar",

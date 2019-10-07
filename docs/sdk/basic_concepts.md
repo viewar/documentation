@@ -13,11 +13,6 @@ Below, you will find an overview of basic concepts of the ViewAR API.
 - [Cameras](sdk/basic_concepts/cameras)
 - [Freeze Frames](sdk/basic_concepts/freeze-frames)
 
-#### Read next
-
-- [ViewAR API References](http://test2.3.viewar.com/docs/index.html)
-- [ViewAR JavaScript API Playground](https://webversion.viewar.com/com.viewar.sandbox/100/)
-
 ## Scene Manager
 
 #### Scene
@@ -174,11 +169,6 @@ Object Recognition is a computer vision technique for identifying 2D/3D objects.
 | **VisionLib**        | iOS, Android          | No                   | No          | No              | No                             | Yes                      | No                | No                         | Yes              |
 | **Placenote**        | iOS                   | Yes                  | Yes         | No              | No                             | Pointcloud               | Yes               | No                         | No               |
 | **6D.ai**            | iOS                   | Yes                  | Yes         | Yes             | No                             | No                       | Yes               | No                         | Yes              |
-
-#### Read next
-
-- [API Quickstart - Tracking](sdk/quickstart/tracking)
-- [ViewAR API References](http://test2.3.viewar.com/docs/index.html)
 
 ## Cameras
 
