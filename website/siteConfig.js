@@ -40,7 +40,13 @@ const siteConfig = {
   headerLinks: [
     {
       doc:   'introduction',
-      label: 'Docs',
+      label: 'About ViewAR',
+    }, {
+      doc:   'sdk/getting_started/overview',
+      label: 'SDK',
+    }, {
+      doc:   'tutorials/overview',
+      label: 'Tutorials',
     },
     // {
     //   blog:  true,
@@ -95,6 +101,9 @@ const siteConfig = {
   // Open Graph and Twitter card images.
   ogImage:      'img/undraw_online.svg',
   twitterImage: 'img/undraw_tweetstorm.svg',
+
+  // TODO: create id for fb page-app
+  // facebookAppId: 'ViewARcom',
 
   // For sites with a sizable amount of content, set collapsible to true.
   // Expand/collapse the links and subcategories under categories.

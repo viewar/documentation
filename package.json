@@ -1,6 +1,6 @@
 {
   "name": "viewar-documentation",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Documentation of ViewAR's SDK and API",
   "scripts": {
     "test": "mocha",
