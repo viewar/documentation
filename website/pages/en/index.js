@@ -53,7 +53,7 @@ class HomeSplash extends React.PureComponent {
 
     const Button = (props) => (
       <div className="pluginWrapper buttonWrapper">
-        <a className="button" href={props.href} target={props.target}>
+        <a className={`button${props.isPrimary ? ' isPrimary' : ''}`} href={props.href} target={props.target}>
           {props.children}
         </a>
       </div>
