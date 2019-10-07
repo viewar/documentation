@@ -77,6 +77,4 @@ Restart the application on your phone, then slightly move it to left to right fi
 
 The best part here is that by default each model is draggable. You only need to touch the model on the screen and move it around. Using two fingers you can even rotate the model.
 
-![](https://user-images.githubusercontent.com/223045/49593584-32497e80-f974-11e8-9df8-4b508b3bc2bf.gif)
-
-[< Previous Step](/tutorials/react/load-and-insert-a-model.md) ｜ [Next Step >](/tutorials/react/create-a-material-selector.md)
+![](/img/model_dragable.gif)
