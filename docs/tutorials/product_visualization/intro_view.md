@@ -9,7 +9,7 @@ In this step we want to improve the user experience by adding an introduction vi
 
 We want to give the user a preview of the chairs, tell them what they can do and a button to get started. The screen requires some styling, but apart from that is rather simple.
 
-![](https://user-images.githubusercontent.com/223045/49935922-b0f16f00-fed2-11e8-8ec1-5ad9a3b3e290.png)
+![](/img/mammoth_chair.png)
 
 We create a file `Welcome.js` and add the code below. Be aware that this time we again need to set the pointer-events to auto for the button.
 
