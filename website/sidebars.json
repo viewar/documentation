@@ -15,6 +15,15 @@
       },
       {
         "type": "subcategory",
+        "label": "Guidebot",
+        "ids": [
+          "tutorials/guidebot/about",
+          "tutorials/guidebot/app_builder",
+          "tutorials/guidebot/cli"
+        ]
+      },
+      {
+        "type": "subcategory",
         "label": "Helpar",
         "ids": [
           "tutorials/helpar/about",
