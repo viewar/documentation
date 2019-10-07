@@ -47,6 +47,19 @@
       "tutorials/arvatar/arvatar",
       {
         "type": "subcategory",
+        "label": "Product Visualization",
+        "ids": [
+          "tutorials/product_visualization/overview",
+          "tutorials/product_visualization/setup",
+          "tutorials/product_visualization/initialize_sdk",
+          "tutorials/product_visualization/intro_view",
+          "tutorials/product_visualization/model",
+          "tutorials/product_visualization/material_selector",
+          "tutorials/product_visualization/ar_camera"
+        ]
+      },
+      {
+        "type": "subcategory",
         "label": "Manuals",
         "ids": [
           "tutorials/manuals/furniture_live",
