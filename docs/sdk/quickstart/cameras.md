@@ -3,7 +3,8 @@ id: cameras
 title: Cameras
 ---
 
-[Cameras](sdk/sdk--basic-concepts/sdk--basic-concepts--cameras.md) control how the current scene is viewed. In ViewAR System, there are three types of Cameras, all held in and controlled by the Camera Object:
+[Cameras](sdk/basic_concepts/cameras) control how the current scene is viewed.  
+In ViewAR System, there are three types of Cameras, all held in and controlled by the Camera Object:
 
 - **Perspective Camera** (perspectiveCamera)
 - **Virtual Reality Camera** (vrCamera)

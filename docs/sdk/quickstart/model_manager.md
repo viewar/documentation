@@ -7,7 +7,7 @@ title: Model Manager
 
 A 3D Model is a collection of data, resources, and assets that describe a virtual object. In the ViewAR System, models are created externally by 3D designers and uploaded to ViewAR 3D CMS, making them available to apps built using ViewAR SDK.
 
-Model Manager provides access to all [Models](sdk/sdk--basic-concepts/sdk--basic-concepts--models.md) used in a ViewAR App and can request additional ones from repository.
+Model Manager provides access to all [Models](sdk/basic_concepts/models) used in a ViewAR App and can request additional ones from repository.
 
 ###### Tip
 
@@ -34,7 +34,7 @@ _Keep in mind that every Model ID is unique in the scale of the whole ViewAR CMS
 
 #### Accessing Categories
 
-Every Model visible in a ViewAR App must be assigned to a [Category](sdk/sdk--basic-concepts/sdk--basic-concepts--models.md).
+Every Model visible in a ViewAR App must be assigned to a [Category](sdk/basic_concepts/models).
 [ViewAR Developer Portal](https://developer.viewar.com) > My Content > All Items > Model Editor > Category\_
 
 To access the Model's Root Category use:

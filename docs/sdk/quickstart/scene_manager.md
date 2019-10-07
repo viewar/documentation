@@ -3,7 +3,7 @@ id: scene_manager
 title: Scene Manager
 ---
 
-[Scene](sdk/sdk--basic-concepts/sdk--basic-concepts--scene.md) is a collection of all virtual objects. Objects may be organised into Ungrouped and Grouped Containers. Scene Manipulation is possible through a Scene Manager.
+[Scene](/sdk/basic_concepts/scene_manager) is a collection of all virtual objects. Objects may be organised into Ungrouped and Grouped Containers. Scene Manipulation is possible through a Scene Manager.
 
 #### Insert a Container into a Scene {#insertcontainer}
 
@@ -46,7 +46,7 @@ const instance = await sceneManager.insertModel(model, { parent: container });
 
 #### Remove a node from a scene
 
-A Node can be an [Instance](sdk/sdk--basic-concepts/sdk--basic-concepts--models.md of a Model or [Container](sdk/sdk--basic-concepts/sdk--basic-concepts--scene.md). To remove a Node from a Scene, you need to pass the Instance into a `removeNode` method. You can access Scene Nodes by using the children property of the scene property.
+A Node can be an [Instance](/sdk/basic_concepts/models) of a Model or [Container](/sdk/basic_concepts/scene_manager). To remove a Node from a Scene, you need to pass the Instance into a `removeNode` method. You can access Scene Nodes by using the children property of the scene property.
 
 ```js
 const instance = sceneManager.scene.children[0];

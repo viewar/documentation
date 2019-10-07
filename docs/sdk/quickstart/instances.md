@@ -3,7 +3,7 @@ id: instances
 title: Instances
 ---
 
-[Model Instance](sdk/sdk--basic-concepts/sdk--basic-concepts--models.md) is a unique occurence of a model inserted in a ViewAR App. It is basically a copy of a Model loaded from the Model Catalogue and assigned to a variable in the application. While the original Model remains unchanged, the Model Instance may be manipulated inside the program.
+[Model Instance](sdk/basic_concepts/models) is a unique occurence of a model inserted in a ViewAR App. It is basically a copy of a Model loaded from the Model Catalogue and assigned to a variable in the application. While the original Model remains unchanged, the Model Instance may be manipulated inside the program.
 
 #### Change a pose of the Model Instance
 
