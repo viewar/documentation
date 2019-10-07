@@ -4,7 +4,7 @@
     "SDK": ["sdk/introduction", "sdk/cli", "sdk/basic_concepts", "sdk/quickstart"],
     "Tutorials": [
       "tutorials/overview",
-      "tutorials/arvatar/arvatar",
+      "tutorials/arvatar",
       {
         "type": "subcategory",
         "label": "Product Visualization",
