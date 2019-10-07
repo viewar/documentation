@@ -8,26 +8,11 @@ The ViewAR JavaScript API lets you access the Scene, Models, Cameras and Trackin
 It would be a good idea to get an overview of the ViewAR API logic before diving into this chapter.
 If you haven't done it yet, give our [Basic Concepts](/sdk/basic_concepts/overview) section a moment.
 
-Below, you will find detailed description of JavaScript commands for the topics above:
-
-- [Scene Manager](/sdk/quickstart/scene_manager)
-- [Model Manager](/sdk/quickstart/model_manager)
-- [Instances](/sdk/quickstart/instances)
-- [Tracking](/sdk/quickstart/tracking)
-- [Touches](/sdk/quickstart/touches)
-- [Cameras](/sdk/quickstart/cameras)
-- [Freeze Frames](/sdk/quickstart/freeze_frames)
-
-#### Read next
-
-- [ViewAR API References](http://test2.3.viewar.com/docs/index.html)
-- [ViewAR JavaScript API Playground](https://webversion.viewar.com/com.viewar.sandbox/100/)
-
 ## Scene Manager
 
 [Scene](/sdk/basic_concepts/scene_manager) is a collection of all virtual objects. Objects may be organised into Ungrouped and Grouped Containers. Scene Manipulation is possible through a Scene Manager.
 
-#### Insert a Container into a Scene {#insertcontainer}
+### Insert a Container into a Scene {#insertcontainer}
 
 A Container is able to contain multiple models or other containers. To insert a new Container use the statement bellow. The method `insertContainer` returns the inserted instance, so you can use it later on.
 
@@ -39,7 +24,7 @@ const pose = {
 const container = await sceneManager.insertContainer({ pose });
 ```
 
-#### Insert a model into a scene {#insertmodel}
+### Insert a model into a scene {#insertmodel}
 
 You can insert a model into a Scene by passing the model as the first argument into the `insertModel` method.
 The optional second argument is an object which holds configurations, for example the pose of the model. The method `insertModel` returns the inserted instance, so that you can use it later on.
@@ -66,7 +51,7 @@ const pose = {
 const instance = await sceneManager.insertModel(model, { parent: container });
 ```
 
-#### Remove a node from a scene
+### Remove a node from a scene
 
 A Node can be an [Instance](/sdk/basic_concepts/models) of a Model or [Container](/sdk/basic_concepts/scene_manager). To remove a Node from a Scene, you need to pass the Instance into a `removeNode` method. You can access Scene Nodes by using the children property of the scene property.
 
@@ -75,11 +60,11 @@ const instance = sceneManager.scene.children[0];
 await sceneManager.removeNode(instance);
 ```
 
-#### Scene State
+## Scene State
 
 The Scene State holds all the information about the current setup of the Scene, such as inserted Nodes and their current state e.g. pose and visibility. At any point during the runtime, it is possible to serialise the current Scene State. Keep in mind that the Animation State and Tracking State do not get serialised, meaning that they cannot be saved (although their initial values may be defined for example at app start). The serialised State can than be stored and recovered later on, for example in order to provide Save/Load functionality. Furthermore, it is possible to synchronise Scene States between devices.
 
-#### Retrieve & save the current Scene State
+### Retrieve & save the current Scene State
 
 To retrieve and save the current Scene State to the local storage, use the following statement:
 
@@ -95,7 +80,7 @@ const sceneState = await sceneManager.getSceneStateSafe();
 localStorage.setItem('sceneState', JSON.stringify(sceneState));
 ```
 
-#### Set a Scene State
+### Set a Scene State
 
 To set a Scene State, use the `setSceneState` method and pass the `sceneState` object as an argument. In this example we load the Scene State saved locally in from the example above.
 
@@ -106,17 +91,17 @@ await sceneManager.setSceneState(sceneState);
 
 ## Model Manager
 
-#### Model
+### Model
 
 A 3D Model is a collection of data, resources, and assets that describe a virtual object. In the ViewAR System, models are created externally by 3D designers and uploaded to ViewAR 3D CMS, making them available to apps built using ViewAR SDK.
 
 Model Manager provides access to all [Models](sdk/basic_concepts/models) used in a ViewAR App and can request additional ones from repository.
 
-###### Tip
+#### Tip
 
 _The Model Manager offers a convenient method `downloadAll\(\)` that downloads and caches all models and their assets used by an application. This way, the program may be fully usable offline._
 
-#### Fetching a Model from the Catalogue
+### Fetching a Model from the Catalogue
 
 In order to be able to insert a Model into a Scene, you may retrieve it from the 3D Catalogue. The findModel method does not download the actual model files, but only the Model description. This means that, in order to actually insert it in your scene, you'll need an addditional command ([sceneManager.insertModel]). The Model download happens when inserting.
 
@@ -130,12 +115,12 @@ const model = modelManager.findModelById(20); // by Model ID
 const model = modelManager.findModelByForeignKey('sheep'); // by Foreign Key
 ```
 
-###### Tip
+#### Tip
 
 _Keep in mind that every Model ID is unique in the scale of the whole ViewAR CMS, whereas the same Foreign Key may be assigned to multiple Models. The Foreign Key may be defined in the Model Editor.
 [ViewAR Developer Portal](https://developer.viewar.com) > My Content > All Items > Model Editor > Foreign Key_
 
-#### Accessing Categories
+### Accessing Categories
 
 Every Model visible in a ViewAR App must be assigned to a [Category](sdk/basic_concepts/models).
 [ViewAR Developer Portal](https://developer.viewar.com) > My Content > All Items > Model Editor > Category\_
@@ -152,7 +137,7 @@ To access the Category's children (they can be models or other Categories), use:
 modelManager.rootCategory.children;
 ```
 
-###### Tip
+#### Tip
 
 _You can go a multiple levels deep:_
 
@@ -160,7 +145,7 @@ _You can go a multiple levels deep:_
 modelManager.rootCategory.children[0].children;
 ```
 
-#### Download all App Models
+### Download all App Models
 
 In order to fetch all Models (and their assets) used by the Application, so that the program would be fully usable offline, go for:
 
@@ -172,7 +157,7 @@ await modelManager.downloadAll();
 
 Tracking Systems try to estimate the world pose \(position and orientation\) of a mobile device \(e.g. phone, tablet, head mounted display\) in real-time. ViewAR System integrates numerous technological solutions and offers them through a coherent JavaScript API, so that you wouldn't have to worry about details of a particular technology integration. Furthermore, if a more robust Tracking System appears on the market, you can switch to it with a minimal effort.
 
-#### Activating, Deactivating & Resetting tracking
+### Activating, Deactivating & Resetting tracking
 
 A chosen Tracking System may be managed as follows:
 
@@ -182,11 +167,11 @@ await viewarApi.trackers.ARKit.reset(); // Reset tracking.
 await viewarApi.trackers.ARKit.deactivate(); // Disable tracking.
 ```
 
-###### Tip
+#### Tip
 
 _There can only be one tracking active at a time. If one tracker gets enabled, the previous active tracker gets deactivated automatically._
 
-#### Trackers list
+### Trackers list
 
 The used trackers list may be accessed as follows:
 
@@ -211,7 +196,7 @@ const onTrackingTargetStatusChanged = async function() {
 tracker.on('trackingTargetStatusChanged', onTrackingTargetStatusChanged);
 ```
 
-###### Tip
+#### Tip
 
 _After deactivating or resetting a tracker, it needs to be calibrated again. This means that the detected and/or confirmed ground plane gets lost._
 
@@ -224,7 +209,7 @@ In ViewAR System, there are three types of Cameras, all held in and controlled b
 - **Virtual Reality Camera** (vrCamera)
 - **Augmented Reality Camera** (arCamera)
 
-## Activating a Camera
+### Activating a Camera
 
 To activate a Camera, call the corresponding asynchronous function.  
 The Camera's internal state will be automatically set to _active_.
@@ -244,7 +229,7 @@ let camera = cameras.perspectiveCamera; // Activate the Perspective Camera.
 await camera.activate();
 ```
 
-## Check the Camera state
+### Check the Camera state
 
 One can easily check if a specific camera is active at the moment:
 
@@ -258,7 +243,7 @@ if (camera.active) {
 }
 ```
 
-## Enable/disable stereoscopic rendering
+### Enable/disable stereoscopic rendering
 
 For Head-Mounted Displays \(HMD\), the stereoscopic rendering should be enabled. Then two pictures, horizontally next to each other, will be rendered to the display instead of one. This setting must be enabled/disabled for each camera individually.
 
@@ -270,11 +255,11 @@ await camera.enableHmdMode(); // Enable stereoscopic rendering for head-mounted 
 await camera.disableHmdMode(); // Disable stereoscopic rendering for head-mounted displays.
 ```
 
-## Camera Pose
+### Camera Pose
 
 The Camera Pose defines the position and orientation of the camera in the 3D space \(virtual or real world, respectively\). It is defined differently for each Camera.
 
-### Perspective Camera (perspectiveCamera)
+#### Perspective Camera (perspectiveCamera)
 
 The Perspective Camera's Pose is defined with the use of:
 
@@ -288,7 +273,7 @@ The Perspective Camera's Pose is defined with the use of:
 }
 ```
 
-### Virtual Reality Camera (vrCamera)
+#### Virtual Reality Camera (vrCamera)
 
 The Virtual Reality Camera's Pose is defined with the use of:
 
@@ -302,7 +287,7 @@ orientation: { w, x, y, z }
 }
 ```
 
-### Augmented Reality Camera (arCamera)
+#### Augmented Reality Camera (arCamera)
 
 The Augmented Reality Camera's Pose is defined with the use of:
 
@@ -316,7 +301,7 @@ orientation: { w, x, y, z }
 }
 ```
 
-## Get the current Camera Pose
+### Get the current Camera Pose
 
 For performance reasons, if a user moves around with the device or within the scene, the Pose is _not_ updated automatically. Therefore, before working with the Camera Pose, it is necessary to retrieve and update it.
 
@@ -343,7 +328,7 @@ camera.startPoseUpdate(interval);
 camera.stopPoseUpdate();
 ```
 
-## Get Pose in the viewing direction
+### Get Pose in the viewing direction
 
 Sometimes it comes in handy to get the Pose at a certain distance in front of the Camera (e.g. to insert a Model Instance in front of the user). The asynchronous method `getPoseInViewingDirection` calculates a point in the 3D space in front of the Camera at a specified distance and returns its Pose assigning the Camera's orientation. Keep in mind that, no matter the Camera orientation, the distance is measured horizontally taking the Camera Origin as the start point. The function may be used for every Camera.
 
@@ -435,7 +420,7 @@ The following interactions with the Camera are recognized by touching any space 
 
 The default behavior can also be changed manually by using our [JavaScript API Reference](/docs/sdk/sdk--api-reference/sdk--api-reference--overview.md).
 
-#### Touches & UI Elements
+### Touches & UI Elements
 
 Touches interpretation works top-down, menaing that - unless specified otherwise - they are caught by the first element on their way. In order to make an element "invisible" to the Touches, use a CSS class property `pointer-events`:
 
@@ -455,6 +440,52 @@ Keep in mind that the approach above will also affect all Children of the `examp
 button {
   pointer-events: auto;
 }
+```
+
+## instances
+
+[Model Instance](sdk/basic_concepts/models) is a unique occurence of a model inserted in a ViewAR App. It is basically a copy of a Model loaded from the Model Catalogue and assigned to a variable in the application. While the original Model remains unchanged, the Model Instance may be manipulated inside the program.
+
+### Change pose
+
+Every Model Instance has a pose, describing its position, orientation and scale. It can be accessed through the `pose` property of an Instance.
+
+```js
+instance.pose = {
+  position: { x: 0, y: 0, z: 0 },
+  orientation: { w: 1, x: 0, y: 0, z: 0 },
+  scale: { x: 1, y: 1, z: 1 },
+};
+```
+
+To change the position of an instance you can pass a pose object into the `setPose` method. The new pose object is merged with the old one, so you do not need to provide every single pose property.
+
+```js
+const oldPosition = instance.pose.position;
+
+await instance.setPose({
+  position: {
+    x: oldPosition.x + 100,
+    y: 100,
+    z: 100,
+  },
+});
+```
+
+### Change visibility
+
+Every Model Instance has a Boolean `visible` property which may be changed using the `setVisibility`:
+
+```js
+await instance.setVisibility(true);
+await instance.setVisibility(false);
+```
+
+Conveniently, the Model Instance or Container visibility may be set at the moment of their insertion into the Scene, by passing the `visible` property into the configuration object:
+
+```js
+const model = await modelManager.getModelFromRepository(20);
+await sceneManager.insertModel(model, { visible: false });
 ```
 
 ### Read next

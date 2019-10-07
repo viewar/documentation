@@ -36,10 +36,6 @@ Ungrouped Containers are used for logical grouping of Scene Objects, however, th
 
 Grouped Containers encapsulate their children and make them behave as a single object with respect to interaction. This feature is used for creating complex objects using other scene objects as parts. Moreover, they may be manipulated programatically (e.g. by chaning their pose or visibility).
 
-#### Read more
-
-[API Quickstart - Scene Manager](sdk/quickstart/scene_manager)
-
 ## Models
 
 A Model is a collection of data, resources, and assets that fully describe a virtual 3D object. In the ViewAR System, models are created externally by 3D designers and uploaded to ViewAR CMS, making them available to apps built using ViewAR SDK.
@@ -131,11 +127,6 @@ But worry not, here comes a cheat sheet:
 - The Category the Model is in, needs to be available in the Application
   [ViewAR Developer Portal](https://developer.viewar.com) > My Apps > App Editor > Advanced > Content Category Settings
 
-#### Read more
-
-- [API Quickstart - Model Manager](sdk/quickstart/model_manager)
-- [API Quickstart - Instances](sdk/quickstart/instances)
-
 ## Tracking
 
 Tracking Systems try to estimate the world pose \(position and orientation\) of a mobile device \(e.g. phone, tablet, head mounted display\) in real-time. They may be inside-out (done entirely on the device) or outside-in (where external sensors are used).
@@ -190,10 +181,6 @@ Takes input from device’s camera and gyroscope. Combined with state-of-the-art
 
 _Every Camera has a Stereoscopic Mode, also called a HMD (Head-Mounted Display) Mode, that allows for the apps to be used within headsets._
 
-#### Read more
-
-- [API Quickstart - Cameras](sdk/quickstart/cameras)
-
 ### Freeze Frames
 
 ---
@@ -202,6 +189,7 @@ At the current state of technology, it is extremely impractical to faithfully sc
 
 AR Camera supports freezing and unfreezing of the Camera View. While frozen, Camera feed and Pose do not get updated, so that the image may easily be saved. Freeze Frames may be switched between while preserving the spatial relations between scene objects as expected. They can also be uploaded to the cloud storage and shared between users of the app.
 
-#### Read more
+### Read more
 
-- [API Quickstart - Freeze Frame](sdk/quickstart/freeze_frames)
+- [API Quickstart - Model Manager](sdk/quickstart/model_manager)
+- [API Quickstart - Instances](sdk/quickstart/instances)
