@@ -47,6 +47,18 @@
       "tutorials/arvatar/arvatar",
       {
         "type": "subcategory",
+        "label": "Manuals",
+        "ids": [
+          "tutorials/manuals/furniture_live",
+          "tutorials/manuals/guidebot_placenote",
+          "tutorials/manuals/guidebot_qr",
+          "tutorials/manuals/helpar_agent",
+          "tutorials/manuals/helpar_user",
+          "tutorials/manuals/wallart"
+        ]
+      },
+      {
+        "type": "subcategory",
         "label": "Drone",
         "ids": [
           "tutorials/drone/overview",
