@@ -21,6 +21,15 @@
           "tutorials/helpar/app_builder",
           "tutorials/helpar/cli"
         ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Furniture Live",
+        "ids": [
+          "tutorials/furniture_live/about",
+          "tutorials/furniture_live/app_builder",
+          "tutorials/furniture_live/cli"
+        ]
       }
     ],
     "SDK": [
