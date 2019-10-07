@@ -1,12 +1,23 @@
 {
   "docs": {
     "ViewAR": ["introduction", "stack", "creating_apps", "app_builder", "faq"],
-    "Tutorials": ["tutorials/overview", "tutorials/wallart/wallart"],
+    "Tutorials": [
+      "tutorials/overview",
+      "tutorials/wallart/wallart",
+      {
+        "type": "subcategory",
+        "label": "Wallart",
+        "ids": ["tutorials/wallart/wallart", "tutorials/wallart/app_builder"]
+      }
+    ],
     "SDK": [
       "sdk",
       "sdk/introduction",
       "sdk/testsubsub/introduction2",
       "sdk/getting-started/stack"
     ]
+  },
+  "tutorials": {
+    "Wallart": ["tutorials/wallart/wallart"]
   }
 }
