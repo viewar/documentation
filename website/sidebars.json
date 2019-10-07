@@ -56,6 +56,18 @@
           "sdk/quickstart/cameras",
           "sdk/quickstart/freeze_frames"
         ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Basic Concepts",
+        "ids": [
+          "sdk/basic_concepts/overview",
+          "sdk/basic_concepts/scene_management",
+          "sdk/basic_concepts/models",
+          "sdk/basic_concepts/tracking",
+          "sdk/basic_concepts/cameras",
+          "sdk/basic_concepts/freeze_frames"
+        ]
       }
     ]
   }
