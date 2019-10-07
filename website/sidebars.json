@@ -1,15 +1,131 @@
 {
   "docs": {
-    "ViewAR": [
-      "introduction",
-      "sdk/stack",
-      "sdk/faq"
-    ],
+    "ViewAR": ["introduction", "stack", "creating_apps", "app_builder", "faq"],
     "SDK": [
       "sdk",
-      "sdk/introduction",
-      "sdk/testsubsub/introduction2",
-      "sdk/getting-started/stack"
+      {
+        "type": "subcategory",
+        "label": "Getting Started",
+        "ids": [
+          "sdk/getting_started/overview",
+          "sdk/getting_started/cli_setup",
+          "sdk/getting_started/initialize_project",
+          "sdk/getting_started/phone_setup",
+          "sdk/getting_started/deployment",
+          "sdk/getting_started/testing"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Basic Concepts",
+        "ids": [
+          "sdk/basic_concepts/overview",
+          "sdk/basic_concepts/scene_management",
+          "sdk/basic_concepts/models",
+          "sdk/basic_concepts/tracking",
+          "sdk/basic_concepts/cameras",
+          "sdk/basic_concepts/freeze_frames"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Quickstart",
+        "ids": [
+          "sdk/quickstart/overview",
+          "sdk/quickstart/scene_manager",
+          "sdk/quickstart/model_manager",
+          "sdk/quickstart/instances",
+          "sdk/quickstart/tracking",
+          "sdk/quickstart/touches",
+          "sdk/quickstart/cameras",
+          "sdk/quickstart/freeze_frames"
+        ]
+      }
+    ],
+    "Tutorials": [
+      "tutorials/overview",
+      "tutorials/arvatar/arvatar",
+      {
+        "type": "subcategory",
+        "label": "Product Visualization",
+        "ids": [
+          "tutorials/product_visualization/overview",
+          "tutorials/product_visualization/setup",
+          "tutorials/product_visualization/initialize_sdk",
+          "tutorials/product_visualization/intro_view",
+          "tutorials/product_visualization/model",
+          "tutorials/product_visualization/material_selector",
+          "tutorials/product_visualization/ar_camera"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Manuals",
+        "ids": [
+          "tutorials/manuals/furniture_live",
+          "tutorials/manuals/guidebot_placenote",
+          "tutorials/manuals/guidebot_qr",
+          "tutorials/manuals/helpar_agent",
+          "tutorials/manuals/helpar_user",
+          "tutorials/manuals/wallart"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Drone",
+        "ids": [
+          "tutorials/drone/overview",
+          "tutorials/drone/getting_started",
+          "tutorials/drone/camera",
+          "tutorials/drone/model",
+          "tutorials/drone/joysticks",
+          "tutorials/drone/advanced"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Wallart",
+        "ids": [
+          "tutorials/wallart/about",
+          "tutorials/wallart/app_builder",
+          "tutorials/wallart/cli"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Guidebot",
+        "ids": [
+          "tutorials/guidebot/about",
+          "tutorials/guidebot/app_builder",
+          "tutorials/guidebot/cli"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Helpar",
+        "ids": [
+          "tutorials/helpar/about",
+          "tutorials/helpar/app_builder",
+          "tutorials/helpar/cli"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Furniture Live",
+        "ids": [
+          "tutorials/furniture_live/about",
+          "tutorials/furniture_live/app_builder",
+          "tutorials/furniture_live/cli"
+        ]
+      }
+    ],
+    "Advances Guides": [
+      "advanced_guides/hardware",
+      "advanced_guides/power_economy",
+      "advanced_guides/publishing",
+      "advanced_guides/euler_angles",
+      "advanced_guides/quaternion",
+      "advanced_guides/radian"
     ]
   }
 }
