@@ -53,7 +53,7 @@ class HomeSplash extends React.PureComponent {
 
     const Button = (props) => (
       <div className="pluginWrapper buttonWrapper">
-        <a className="button" href={props.href} target={props.target}>
+        <a className={`button${props.isPrimary ? ' isPrimary' : ''}`} href={props.href} target={props.target}>
           {props.children}
         </a>
       </div>
@@ -65,9 +65,9 @@ class HomeSplash extends React.PureComponent {
         <div className="inner">
           <ProjectTitle siteConfig={siteConfig} />
           <PromoSection>
-            <Button href="#try">Try It Out</Button>
-            <Button href={docUrl('doc1.html')}>Example Link</Button>
-            <Button href={docUrl('doc2.html')}>Example Link 2</Button>
+            <Button href="https://webversion.viewar.com/com.viewar.sandbox/100/" isPrimary>Try It Out</Button>
+            <Button href={docUrl('sdk')} isPrimary>SDK Documentation</Button>
+            <Button href={docUrl('introduction')} isPrimary>About ViewAr</Button>
           </PromoSection>
         </div>
       </SplashContainer>
@@ -198,15 +198,21 @@ class Index extends React.PureComponent {
     };
 
     return (
-      <div>
+      <div className="mainWrapper">
         <HomeSplash siteConfig={siteConfig} language={language} />
+        <div className="bgVideoWrapper">
+          <video id="welcome_header_video" playsInline muted autoPlay loop className="bgVideo">
+            <source src="https://www.viewar.com/wp-content/themes/vrt/img/videos/viewar_background.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
         <div className="mainContainer">
-          <Features />
-          <FeatureCallout />
+          {/* <Features />
+           <FeatureCallout />
           <LearnHow />
           <TryOut />
           <Description />
-          <Showcase />
+          <Showcase /> */}
         </div>
       </div>
     );
