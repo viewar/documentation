@@ -3,11 +3,11 @@ id: model
 title: Insert drone
 ---
 
-In this part you'll fetch a ready drone model (including animations) from the repository and make it hover in front of the user. If you aren't familiar with working with the [instances](references/instances.md), it's a good idea to read up on it first.
+In this part you'll fetch a ready drone model (including animations) from the repository and make it hover in front of the user. If you aren't familiar with working with the [instances](/docs/quickstart/instances), it's a good idea to read up on it first.
 
 #### Fetch model from repository
 
-Still in the _useEffect_ function, use the ViewAR API functionality to [fetch the drone 3D model from the repository](references/model-manager.md).
+Still in the _useEffect_ function, use the ViewAR API functionality to [fetch the drone 3D model from the repository](/docs/quickstart/model_manager).
 
 ```js
 const droneModel = await viewarApi.modelManager.fetchModelFromRepository('74334');
@@ -72,12 +72,10 @@ useEffect(() => {
 
 At this point, you should be able to run the app on you mobile device and see the image from its back camera with the drone hovering in front of the device.
 
-![](/assets/drone-phone-step2-v03-web.jpg)
+![](/img/drone-phone-step2-v03-web.jpg)
 _Screenshot from the Drone Control App_
 
-[< Previous Step](tutorials/tutorials--drone/tutorials--drone--02--camera.md) ｜ [Next Step >](tutorials/tutorials--drone/tutorials--drone--04--joysticks.md)
-
-<br>
 ##### Useful reads:
-* [Working with the Model Manager](references/model-manager.md)
-* [Working with the Model Instance](references/instances.md)
+
+- [Working with the Model Manager](/docs/quickstart/model_manager)
+- [Working with the Model Instance](/docs/quickstart/instances)

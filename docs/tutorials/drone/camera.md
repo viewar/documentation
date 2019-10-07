@@ -69,4 +69,4 @@ _Screenshot from the Drone Control App_
 
 ##### Useful reads:
 
-[> Working with the Cameras](references/cameras.md)
+- [Working with the Cameras](/docs/quickstart/cameras)

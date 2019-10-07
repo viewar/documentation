@@ -5,8 +5,8 @@ title: Getting started
 
 Make sure that you have the following installed and ready:
 
-- ViewAR CLI - [(more...)](command-line-interface-cli/viewar-cli-setup.md)
-- ViewAR SDK App on your mobile device set up - [(more...)](command-line-interface-cli/phone-setup.md)
+- [CLI Setup](/docs/getting_started/cli_setup)
+- [Mobile Device Setup](/docs/getting_started/phone_setup)
 
 ### Checkout the Drone App boilerplate
 
@@ -51,7 +51,8 @@ Go with the following settings:
 
 ```
 
-####What is going on under the hood?
+#### What is going on under the hood?
+
 A new JavaScript project has just got initialized, containing:
 
 - `src`directory with:
@@ -64,9 +65,11 @@ A new JavaScript project has just got initialized, containing:
   - viewAR-specific config files, e.g.:
     - `.viewar-config` - containing the app-specific and deployment information (e.g. AppID, deployment token)
 
-####See the app running
-#####Working version
-######Web version
+#### See the app running
+
+##### Working version
+
+###### Web version
 
 You may now switch into the directory and start the development server in the mock mode:
 
@@ -77,7 +80,8 @@ npm run start:mock
 
 Since we are building an AR application, it is important for this example that you started the mocked server. Otherwise the web 3D engine would be started, which would collide with the 3D engine on a phone.
 
-######Mobile device
+###### Mobile device
+
 First, make sure that your phone and computer are in the same local network.
 
 Next start the ViewAR SDK app, switch to LAN Development Mode and fill the fields with:
@@ -93,7 +97,7 @@ Start the ViewAR SDK App on you mobile device, turn off the LAN mode and fill in
 1. Your App ID
 2. App Version (leaving this field empty will result in the app using the default setting: <=100)
 
-![](/assets/drone-phone-step0-v02-web.jpg)
+![](/img/drone-phone-step0-v02-web.jpg)
 _Screenshot from the Drone Control Boilerplate App_
 
 Try removing the "Hello World." message and seeing the changes on your mobile device in the LAN mode before going further.
@@ -115,11 +119,3 @@ Remember to remove both the definition and the rendering.
         <Joystick onChange={handleLeftJoystickInput} />
       </div>
 ```
-
-[< Previous Step](tutorials/tutorials--drone/00--tutorials--drone--overview.md) ｜ [Next Step >](tutorials/tutorials--drone/tutorials--drone--02--camera.md)
-
-##### Useful reads:
-
-[> ViewAR CLI](command-line-interface-cli/viewar-cli-setup.md)
-[> Mobile Device](command-line-interface-cli/phone-setup.md)
-[> ViewAR Developer Account](http://developer.viewar.com)

@@ -34,10 +34,10 @@ Let's use the left joystick to control our drone's orientation. This step is sli
 
 What we need to do:
 
-- Import the necessary math components (`Quaterion`, `Vector3`) ,
-- Store our drone's `orientation` as a [Quaternion](quaternion.md),
-- Convert the `orientation` values into [Euler angles](euler-angles.md),
-- Convert the Quaternion values of `yaw` to [radians](radian.md),
+- Import the necessary math components (`Quaterion`, `Vector3`),
+- Store our drone's `orientation` as a [Quaternion](/docs/advanced_concepts/quaternion),
+- Convert the `orientation` values into [Euler angles](/docs/advanced_concepts/euler_angles),
+- Convert the Quaternion values of `yaw` to [radians](/docs/advanced_concepts/radian),
 - Calculate the rotation change to be applied to the drone instance (in radians, preferably setting a multiplication factor to make the change more distinct) and store it in a new constant value
 - Apply the new orientation value to the model instance
 
@@ -77,7 +77,7 @@ const handleLeftJoystickInput = ({ x, y }) => {
 
 At this point, you should be able to manipulate the drone instance's position with the use of the joysticks.
 
-![](/assets/drone-phone-step3-v02-web.jpg)
+![](/img/drone-phone-step3-v02-web.jpg)
 _Screenshot from the Drone Control App_
 
 Got everything working?
@@ -87,11 +87,9 @@ Great, you're free to go play around with the App already!
 
 In case you're craving for something extra, check out the [Advanced](tutorials/arvatar/drone/advanced.md) settings and make the drone fly in its looking direction.
 
-[< Previous Step](tutorials/tutorials--drone/tutorials--drone--03--model.md) ｜ [Next Step (Advanced) >](tutorials/tutorials--drone/tutorials--drone--05--advanced.md)
-
-<br>
 ##### Useful reads:
-* [Working with a Model Instance](references/instances.md.md).
-* [Math - Quaternion](quaternion.md)
-* [Math - Euler angles](euler-angles.md)
-* [Math - Radian](radian.md)
+
+- [Working with a Model Instance](/docs/sdk/quickstart/instances).
+- [Math - Quaternion](/docs/advanced_concepts/quaternion)
+- [Math - Euler angles](/docs/advanced_concepts/euler_angles)
+- [Math - Radians](/docs/advanced_concepts/radian)
