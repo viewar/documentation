@@ -61,11 +61,11 @@ class HomeSplash extends React.PureComponent {
 
     return (
       <SplashContainer>
-        <Logo img_src={`${baseUrl}img/undraw_monitor.svg`} />
+        {/* <Logo img_src={`${baseUrl}img/undraw_monitor.svg`} /> */}
         <div className="inner">
           <ProjectTitle siteConfig={siteConfig} />
           <PromoSection>
-            <Button href="https://webversion.viewar.com/com.viewar.sandbox/100/" isPrimary>Try It Out</Button>
+            <Button href="https://webversion.viewar.com/com.viewar.sandbox/100/" isPrimary>Live Example</Button>
             <Button href={docUrl('sdk')} isPrimary>SDK Documentation</Button>
             <Button href={docUrl('introduction')} isPrimary>About ViewAr</Button>
           </PromoSection>

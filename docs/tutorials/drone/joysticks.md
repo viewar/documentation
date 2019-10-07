@@ -85,7 +85,7 @@ Great, you're free to go play around with the App already!
 
 ### Want more..?
 
-In case you're craving for something extra, check out the [Advanced](tutorials/arvatar/drone/advanced.md) settings and make the drone fly in its looking direction.
+In case you're craving for something extra, check out the [Advanced](/docs/tutorials/drone/advanced) settings and make the drone fly in its looking direction.
 
 ##### Useful reads:
 

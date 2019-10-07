@@ -19,6 +19,6 @@ Advance 3D editing (UV layouts creation, texturing etc, ...)
 
 ### ViewAR SDK Tutorials
 
-[> ARvatar](/tutorials/arvatar/arvatar-app-creation.md)<br>
-[> Drone Control](tutorials/arvatar/drone.md)<br>
-[> Product Visualization](/tutorials/react/create-your-first-ar-app.md)
+- [ARvatar](/tutorials/arvatar/arvatar)
+- [Drone Control](tutorials/drone/overview)
+- [Product Visualization](/tutorials/product_visualization/overview)
