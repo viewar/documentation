@@ -1,5 +1,5 @@
 ---
-id: sdk
+id: introduction
 title: Introduction
 ---
 
@@ -12,24 +12,15 @@ And if you find yourself developing a brand new template other people could bene
 - Efficient, JavaScript-based API.
 - Extend the ready-to-use templates or develop your own ones.
 
-### Skills
-
-##### Necessary:
+### Necessary Skills
 
 Front End development skills (preferably including React)
 
-##### Good-to-have:
-
+**Good-to-have**  
 Advance 3D editing (UV layouts creation, texturing etc, ...)
 
 [How to create an app with the ViewAR SDK?](https://www.viewar.com/sdk-augmented-reality-developers-resellers-agencies/)
 
-### ViewAR SDK Tutorials
-
-- [ARvatar](/docs/tutorials/arvatar/arvatar)
-- [Product Visualization](/docs/tutorials/product_visualization/overview)
-- [Drone Control](/docs/tutorials/drone/overview)
-
-#### ViewAR API Sandbox
+### ViewAR API Sandbox
 
 See ViewAR in an [live example](https://webversion.viewar.com/com.viewar.sandbox/100/)

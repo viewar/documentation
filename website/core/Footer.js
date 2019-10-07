@@ -47,13 +47,16 @@ class Footer extends React.PureComponent {
             <a href={this.docUrl('creating_apps')}>
               How to create Apps
             </a>
+            <a href={this.docUrl('faq')}>
+              FAQs
+            </a>
           </div>
           <div>
             <h5>SDK</h5>
             <a href={this.pageUrl('sdk')}>Introduction</a>
-            <a href={this.pageUrl('docs/getting_started/overview')}>Getting Started</a>
-            <a href={this.pageUrl('docs/basic_concepts/overview')}>Basic Concepts</a>
-            <a href={this.pageUrl('docs/quickstart/overview')}>Quickstart</a>
+            <a href={this.pageUrl('docs/sdk/getting_started')}>Getting Started</a>
+            <a href={this.pageUrl('docs/sdk/basic_concepts')}>Basic Concepts</a>
+            <a href={this.pageUrl('docs/sdk/quickstart')}>Quickstart</a>
           </div>
           <div>
             <h5>Tutorials</h5>
