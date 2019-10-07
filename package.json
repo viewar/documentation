@@ -2,6 +2,10 @@
   "name": "viewar-documentation",
   "version": "1.0.0",
   "description": "Documentation of ViewAR's SDK and API",
+  "scripts": {
+    "test": "mocha",
+    "postinstall": "cd ./website && npm install"
+  },
   "main": "index.js",
   "directories": {
     "doc": "docs"
@@ -13,9 +17,6 @@
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-react": "^7.16.0",
     "prettier": "^1.18.2"
-  },
-  "scripts": {
-    "test": "mocha"
   },
   "repository": {
     "type": "git",
