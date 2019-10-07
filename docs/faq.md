@@ -3,7 +3,7 @@ id: faq
 title: FAQs
 ---
 
-#### GENERAL
+## General Topics
 
 - **What skills do I need to have to work with the AppBuilder?**  
   No skills at all. That’s the whole reason of AppBuilder! :\)
@@ -23,7 +23,7 @@ title: FAQs
 * **Do I need to purchase a license?**  
   Any application may be tested through an SDK App, available both for iOS and Android. However, if you want to publish it, enable for commercial use or extend its functionality by editing the source code, then a license would be necessary.
 
-#### USER ACCOUNT
+## User Account
 
 - **How do I change my password?**  
   If you remember you password but **want to change it**, log in to our [Developer Portal](http://developer.viewar.com/),  
@@ -34,7 +34,7 @@ title: FAQs
   _Advanced Settings_ is an advanced option which gives you access to additional properties functionalities of your models like defining a _foreign key_ or Template creation.  
   It is deactivated by default and completely free of charge. You may turn it on in the [My Account section](http://developer.viewar.com/user/account).
 
-#### APPLICATION
+## Application
 
 - **How to use ViewAR SDK application?**  
   The ViewAR SDK App is a mothership for all our applications - it comes with the basic structure of your app e.g. the code necessary for communication with our Core, managing tracking systems. All it needs are functionalities and UI which you have prepared prepare in the AppBuilder or with the use of our SDK. In order to run a custom app through our SDK App, provide the App-ID and version to be used. After start, type in those informations and you're ready to go!
@@ -48,7 +48,7 @@ title: FAQs
 * **How can I change the App-ID of my application?**  
   Unfortunately, it is not possible. You may, however, create a new one with a new App-ID. Keep in mind that every App-ID needs to be unique.
 
-#### MODEL
+## Model
 
 - **How do I add a model to the application?**  
   In order to add a model to the application, you must upload it through the _Model Manager._

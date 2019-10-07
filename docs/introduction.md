@@ -11,14 +11,12 @@ Within almost 10 years of development, we have created an AR framework which we 
 **Use you favorite JS libraries** (React, Angular, Vue.js, etc.) to give your workflow an efficiency boost and switch seamlessly between available tracking systems with a minimal effort.
 
 ### Our Apps
+
 Want to have an idea of the System capabilities?  
-Check our resources:  
-* [Showcases](https://www.viewar.com/showcases/) - chosen custom applications prepared for our Clients
-* [ViewAR Templates](https://www.viewar.com/templates/) - Download the ViewAR SDK App and try our templates
-* [ViewAR Features](https://www.viewar.com/features/)
+Check our resources:
 
-### Read next
-Want to know more? Check the following links:  
-* [Understand the Technology Stack](sdk/getting-started/stack)
-* [Play around with the ViewAR API Sandbox](tutorials/tutorials--overview--playground.md)
-
+- [ViewAR Features](https://www.viewar.com/features/)
+- [Showcases](https://www.viewar.com/showcases/)  
+  chosen custom applications prepared for our Clients
+- [ViewAR Templates](https://www.viewar.com/templates/)  
+  Download the ViewAR SDK App and try our templates
