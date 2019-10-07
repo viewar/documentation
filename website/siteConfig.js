@@ -42,7 +42,7 @@ const siteConfig = {
       doc:   'introduction',
       label: 'About ViewAR',
     }, {
-      doc:   'sdk/getting_started/overview',
+      doc:   'sdk/introduction',
       label: 'SDK',
     }, {
       doc:   'tutorials/overview',

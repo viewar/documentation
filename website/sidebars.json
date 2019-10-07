@@ -2,19 +2,8 @@
   "docs": {
     "ViewAR": ["introduction", "stack", "creating_apps", "app_builder", "faq"],
     "SDK": [
-      "sdk",
-      {
-        "type": "subcategory",
-        "label": "Getting Started",
-        "ids": [
-          "sdk/getting_started/overview",
-          "sdk/getting_started/cli_setup",
-          "sdk/getting_started/initialize_project",
-          "sdk/getting_started/phone_setup",
-          "sdk/getting_started/deployment",
-          "sdk/getting_started/testing"
-        ]
-      },
+      "sdk/introduction",
+      "sdk/cli",
       {
         "type": "subcategory",
         "label": "Basic Concepts",
