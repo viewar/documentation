@@ -15,4 +15,4 @@ Now that you know what this tutorial is about, let’s start your AR journey!
 
 The final example can be found here for reference: [https://github.com/nikgraf/ar-app](https://github.com/nikgraf/ar-app)
 
-[Let's get started! >](/tutorials/react/setup.md)
+[Let's get started! >](./setup)

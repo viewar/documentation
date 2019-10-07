@@ -7,7 +7,7 @@ Wall Art is a product visualisation app dedicated to 2D objects with of a vertic
 
 #### Ready to go?
 
-- [User Manual](tutorials/wallart/wallart-user-manual.md)  
+- [User Manual](/docs/tutorials/manuals/wallart)  
   Learn to use the App
 - [Create with the App Builder](./app_builder)  
   Create your own version with the App Builder

@@ -12,11 +12,11 @@ Every Template is fully functional and may be used as-is or styled with CSS dire
 
 #### AppBuilder Tutorials
 
-- [Furniture Live](tutorials/furniture-live/furniture-live.md)  
+- [Furniture Live](/docs/tutorials/furniture_live/about)  
   Intuitive, quality product visualisation app.
-- [helpar](tutorials/helpar/helpar.md)  
+- [helpar](/docs/tutorials/helpar/about)  
   Remote assistance app.
-- [GuideBOT](tutorials/guidebot/indoor-navigation.md)  
+- [GuideBOT](/docs/tutorials/guidebot/about)  
   Indoor navigation app with an animated character.
-- [Wall Art](tutorials/wall-art/wall-art.md)  
+- [Wall Art](/docs/tutorials/wallart/about)  
   Product visualisation app dedicated to 2D objects with of a vertical orientation.
