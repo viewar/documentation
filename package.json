@@ -1,0 +1,31 @@
+{
+  "name": "viewar-documentation",
+  "version": "1.0.0",
+  "description": "Documentation of ViewAR's SDK and API",
+  "scripts": {
+    "test": "mocha",
+    "postinstall": "cd ./website && npm install"
+  },
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^6.5.1",
+    "eslint-config-viewar": "git+https://github.com/DoubleU23/eslint-config-viewar.git",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-react": "^7.16.0",
+    "prettier": "^1.18.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viewar/viewar-documentation.git"
+  },
+  "author": "ViewAr <office@viewar.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/viewar/viewar-documentation/issues"
+  },
+  "homepage": "https://github.com/viewar/viewar-documentation#readme"
+}

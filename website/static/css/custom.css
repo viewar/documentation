@@ -9,16 +9,16 @@
 **  *********************/
 
 body {
-    font-family: 'Catamaran', sans-serif;
+  font-family: 'Catamaran', sans-serif;
 
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: 'Catamaran', sans-serif;
-    color: #666;
-    background-color: white;
-    font-weight: 200;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Catamaran', sans-serif;
+  color: #666;
+  background-color: white;
+  font-weight: 200;
 }
 
 /** *********************
@@ -35,21 +35,30 @@ header/nav colors:
 */
 
 .fixedHeaderContainer {
-    background-color: #282f39;
+  background-color: #282f39;
+  padding: 12px 0;
+}
+.fixedHeaderContainer header img {
+  height: 80%;
+}
+.fixedHeaderContainer header .headerTitleWithLogo {
+  padding-top: 14px;
 }
 
-.navigationSlider .slidingNav ul {
-    background: #282f39;
+.fixedHeaderContainer header .headerTitleWithLogo .navigationSlider .slidingNav ul {
+  background: #282f39;
 }
 
 /* inactive links */
 .navigationSlider .slidingNav ul li a {
-    background-color: #282f39;
+  background-color: #282f39;
 }
-
 /* active links */
-.navigationSlider .slidingNav ul li > a:focus, .navigationSlider .slidingNav ul li > a:hover, .navigationSlider .slidingNav ul li.siteNavItemActive > a, .navigationSlider .slidingNav ul li.siteNavGroupActive > a {
-    background-color: #363f4d;
+.navigationSlider .slidingNav ul li > a:focus,
+.navigationSlider .slidingNav ul li > a:hover,
+.navigationSlider .slidingNav ul li.siteNavItemActive > a,
+.navigationSlider .slidingNav ul li.siteNavGroupActive > a {
+  background-color: #363f4d;
 }
 
 /** *********************
@@ -57,19 +66,42 @@ header/nav colors:
 **  *********************/
 
 .nav-footer {
-    background-color: #282f39;
-    color: #b9b9b9;
+  background-color: #282f39;
+  color: #b9b9b9;
 }
 
 .nav-footer .sitemap h5 {
-    color: #b9b9b9;
+  color: #b9b9b9;
 
-    font-size: 1.5em;
-    margin: 0 0 5px 0;
-    font-weight: 200;
-    line-height: 1em;
+  font-size: 1.5em;
+  margin: 0 0 5px 0;
+  font-weight: 200;
+  line-height: 1em;
 }
 
-.footer_item a, .footer_item_big a {
-    color: #fff;
+.footer_item a,
+.footer_item_big a {
+  color: #fff;
+}
+
+.nav-footer .viewarLogo {
+  display: block;
+  margin: 1em auto;
+  opacity: 1;
+  transition: opacity 0.15s ease-in-out;
+  width: 170px;
+}
+
+.nav-footer .viewarLogo:hover {
+  opacity: 0.4;
+}
+
+/***********************
+**    shared UI        *
+***********************/
+
+.button .arrow-prev,
+.button .arrow-next {
+  position: relative;
+  bottom: 2px;
 }
