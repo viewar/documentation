@@ -21,7 +21,7 @@ Next, install the viewar-cli globally by entering the following command into you
 
 You only need to install this tool once. When out of date, it will alert you and provide update instructions.
 
-### ViewAR account
+### create account
 
 Create a free ViewAR [account](https://developer.viewar.com/user/register). You will need the credentials to be able to create new apps, upload and manage 3D content and much more. You may log in directly from the terminal:
 
@@ -51,11 +51,13 @@ Before installing the developer tools, you'll need to make sure that you have tw
 - node.js version 6.0.0 or higher
 - the npm \(&gt;= v3.0.0\) package manager
 
-Next, install the viewar-cli globally by entering the following command into your terminal:
-
+Next, install the viewar-cli globally by entering the following command into your terminal:  
 `npm install -g viewar-cli`
 
-You will only need to install this tool once. It will alert you when it's out of date, and provide instruction on how to update it.
+> run `npx viewar` to verify installation.
+
+You will only need to install this tool once.  
+It will alert you when it's out of date, and provide instruction on how to update it.
 
 ### Initialization
 
@@ -67,15 +69,34 @@ where PROJECT_NAME is the name of your new application. Once it's been created a
 
 Navigate in your web browser to `http://localhost:8080/` to access the application. To edit the application's code start from `src/index.js` .
 
-### Deploying
+### Deployment
 
-To deploy the app you first need to create an empty application at [http://developer.viewar.com](http://developer.viewar.com). Than open the application directory in the terminal and enter `viewar show-token`. Enter the first part of the displayed token \(until the dash\) into the application settings on the application website, to connect the boilerplate application with the system. **\[ I have not found the option to enter the token, plus we should maybe only display the public and important part of the token\]**
+To deploy the app you first need to create an empty application at [http://developer.viewar.com](http://developer.viewar.com). Than open the application directory in the terminal and enter `viewar show-token`. Enter the first part of the displayed token \(until the dash\) into the application settings on the application website, to connect the boilerplate application with the system.
+
+<!---
+**\[ I have not found the option to enter the token, plus we should maybe only display the public and important part of the token\]**
+--->
 
 Finally you have to enter `npm run deploy`via terminal to deploy the app. You can now download the ViewAR SDK app from AppStore on your iOS device and enter the App ID you entered while creating the empty application to launch the app on the device.
 
-### Additional Commands
+### Mobile device setup
 
-With `viewar set-token` you are able to change the token if you are for example moving between different projects which should use the same App ID. You can also generate a completely new token by entering `viewar generate-token`. You can also look up all the available commands by simply entering `viewar` without any commands.
+Next you need to setup your phone. While the mock mode allows you to develop the UI quickly using mocked tracking events, especially for the first try it's more fun using a real phone.
+
+Download the ViewAR SDK App either from the
+
+- Apple Store [https://itunes.apple.com/us/app/viewar-sdk/id1097511807](https://itunes.apple.com/us/app/viewar-sdk/id1097511807)
+- Google Play Store [https://play.google.com/store/apps/details?id=com.viewar.sdk](https://play.google.com/store/apps/details?id=com.viewar.sdk)
+
+![](/img/viewar sdk2.svg)
+
+Make sure that your phone and computer are in the same local network.
+
+Next start the app, switch to LAN Development Mode and fill the fields with
+
+1. Your App ID
+2. Version can be empty
+3. IP and port of your mocked server
 
 ## Run your app
 
@@ -97,44 +118,14 @@ It comes with 2 buttons in the bottom-right corner, letting you simulate _tracki
 
 Your web browser will open `http://localhost:8080/` to access the application.
 
-### Start creating your app
+#### Start creating your app
 
-To edit the application's code start from `src/index.js` .
-
-#### ViewAR SDK Tutorials
-
-- [ARvatar](/tutorials/arvatar/arvatar)
-- [Drone Control](tutorials/drone/overview)
-- [Product Visualization](/tutorials/product_visualization/overview)
-
-## Mobile device setup
-
-Next you need to setup your phone. While the mock mode allows you to develop the UI quickly using mocked tracking events, especially for the first try it's more fun using a real phone.
-
-Download the ViewAR SDK App either from the
-
-- Apple Store [https://itunes.apple.com/us/app/viewar-sdk/id1097511807](https://itunes.apple.com/us/app/viewar-sdk/id1097511807)
-- Google Play Store [https://play.google.com/store/apps/details?id=com.viewar.sdk](https://play.google.com/store/apps/details?id=com.viewar.sdk)
-
-![](/img/viewar sdk2.svg)
-
-Make sure that your phone and computer are in the same local network.
-
-Next start the app, switch to LAN Development Mode and fill the fields with
-
-1. Your App ID
-2. Version can be empty
-3. IP and port of your mocked server
+To edit the application's code start from `src/index.js` .  
+Or have a look at the [Tutorials](../tutorials/overview)
 
 ## Deployment
-
-### Deploy your app
 
 To deploy the app you first need to create an application at [http://developer.viewar.com](http://developer.viewar.com).  
 In order to activate your template to an app, you need to run:
 
 `viewar deploy APP-ID APP-VERSION`
-
-### Additional Commands
-
-You can look up all the available commands by simply running `viewar` without any parameters.
