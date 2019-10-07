@@ -37,20 +37,34 @@ class Footer extends React.PureComponent {
             )}
           </a>
           <div>
-            <h5>Docs</h5>
-            <a href={this.docUrl('doc1.html', this.props.language)}>
-              Getting Started (or other categories)
+            <h5>ViewAR</h5>
+            <a href={this.docUrl('introduction')}>
+              Introduction
             </a>
-            <a href={this.docUrl('doc2.html', this.props.language)}>
-              Guides (or other categories)
+            <a href={this.docUrl('stack')}>
+              Technology Stack
             </a>
-            <a href={this.docUrl('doc3.html', this.props.language)}>
-              API Reference (or other categories)
+            <a href={this.docUrl('creating_apps')}>
+              How to create Apps
             </a>
           </div>
           <div>
+            <h5>SDK</h5>
+            <a href={this.pageUrl('sdk')}>Introduction</a>
+            <a href={this.pageUrl('docs/getting_started/overview')}>Getting Started</a>
+            <a href={this.pageUrl('docs/basic_concepts/overview')}>Basic Concepts</a>
+            <a href={this.pageUrl('docs/quickstart/overview')}>Quickstart</a>
+          </div>
+          <div>
+            <h5>Tutorials</h5>
+            <a href={this.pageUrl('docs/furniture_live/about')}>Furniture Live</a>
+            <a href={this.pageUrl('docs/guidebot/about')}>Guidebot</a>
+            <a href={this.pageUrl('docs/helpar/about')}>Helpar</a>
+            <a href={this.pageUrl('docs/tutorials/overview')}>More ...</a>
+          </div>
+          {/* <div>
             <h5>Community</h5>
-            <a href={this.pageUrl('users.html', this.props.language)}>User Showcase</a>
+            <a href={this.pageUrl('users.html')}>User Showcase</a>
             <a
               href="https://stackoverflow.com/questions/tagged/"
               target="_blank"
@@ -62,11 +76,15 @@ class Footer extends React.PureComponent {
             <a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">
               Twitter
             </a>
-          </div>
+          </div> */}
           <div>
             <h5>More</h5>
-            <a href={`${this.props.config.baseUrl}blog`}>Blog</a>
-            <a href="https://github.com/">GitHub</a>
+            <a href="http://viewar.com/">ViewAR Website</a>
+            <a href="https://github.com/viewar">GitHub</a>
+            <a href="https://www.facebook.com/ViewARcom/">Facebook</a>
+            <a href="https://www.youtube.com/channel/UCOst_5NF5DoJWRkEdajGJIg">Youtube</a>
+            {/*! doesn't work properly
+            will fix with feat/socialIntegration
             <a
               className="github-button"
               href={this.props.config.repoUrl}
@@ -77,7 +95,7 @@ class Footer extends React.PureComponent {
               aria-label="Star this project on GitHub"
             >
               Star
-            </a>
+            </a> */}
             {this.props.config.twitterUsername && (
               <div className="social">
                 <a

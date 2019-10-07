@@ -96,6 +96,9 @@ const siteConfig = {
   ogImage:      'img/undraw_online.svg',
   twitterImage: 'img/undraw_tweetstorm.svg',
 
+  // TODO: create id for fb page-app
+  // facebookAppId: 'ViewARcom',
+
   // For sites with a sizable amount of content, set collapsible to true.
   // Expand/collapse the links and subcategories under categories.
   docsSideNavCollapsible: true,

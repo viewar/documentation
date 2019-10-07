@@ -1,9 +1,7 @@
 ---
 id: overview
-title: Overview
+title: Template Tutorials
 ---
-
-### Templates Tutorials
 
 Get started with one of our Templates, either through the App Builder or our CLI.
 
