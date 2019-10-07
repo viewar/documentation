@@ -1,6 +1,7 @@
 {
   "docs": {
     "ViewAR": ["introduction", "stack", "creating_apps", "app_builder", "faq"],
+    "Tutorials": ["tutorials/overview", "tutorials/wallart/wallart"],
     "SDK": [
       "sdk",
       "sdk/introduction",
