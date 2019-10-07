@@ -36,8 +36,5 @@
     "FIXME:",
     "ISSUE:",
     "REFACTOR:"
-  ],
-  "atlascode.jira.workingSite": {
-    "baseUrlSuffix": "viewar.com"
-  }
+  ]
 }
