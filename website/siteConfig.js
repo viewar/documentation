@@ -40,7 +40,13 @@ const siteConfig = {
   headerLinks: [
     {
       doc:   'introduction',
-      label: 'Docs',
+      label: 'About ViewAR',
+    }, {
+      doc:   'sdk/getting_started/overview',
+      label: 'SDK',
+    }, {
+      doc:   'tutorials/overview',
+      label: 'Tutorials',
     },
     // {
     //   blog:  true,
