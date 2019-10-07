@@ -97,6 +97,14 @@ header/nav colors:
 }
 
 /***********************
+**    Pages/index      *
+***********************/
+
+.promoSection .promoRow .pluginRowBlock .button {
+  margin: 0 16px;
+}
+
+/***********************
 **    shared UI        *
 ***********************/
 

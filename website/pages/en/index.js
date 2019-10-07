@@ -65,9 +65,9 @@ class HomeSplash extends React.PureComponent {
         <div className="inner">
           <ProjectTitle siteConfig={siteConfig} />
           <PromoSection>
-            <Button href="#try">Try It Out</Button>
-            <Button href={docUrl('doc1.html')}>Example Link</Button>
-            <Button href={docUrl('doc2.html')}>Example Link 2</Button>
+            <Button href="https://webversion.viewar.com/com.viewar.sandbox/100/">Try It Out</Button>
+            <Button href={docUrl('sdk')} isPrimary>SDK Documentation</Button>
+            <Button href={docUrl('introduction')}>About ViewAr</Button>
           </PromoSection>
         </div>
       </SplashContainer>
