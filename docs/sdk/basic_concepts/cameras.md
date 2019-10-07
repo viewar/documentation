@@ -21,6 +21,6 @@ Takes input from device’s camera and gyroscope. Combined with state-of-the-art
 
 _Every Camera has a Stereoscopic Mode, also called a HMD (Head-Mounted Display) Mode, that allows for the apps to be used within headsets._
 
-#### Read next
+#### Read more
 
-[API Quickstart - Cameras](sdk/quickstart/cameras)
+- [API Quickstart - Cameras](sdk/quickstart/cameras)

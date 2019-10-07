@@ -7,6 +7,6 @@ At the current state of technology, it is extremely impractical to faithfully sc
 
 AR Camera supports freezing and unfreezing of the Camera View. While frozen, Camera feed and Pose do not get updated, so that the image may easily be saved. Freeze Frames may be switched between while preserving the spatial relations between scene objects as expected. They can also be uploaded to the cloud storage and shared between users of the app.
 
-#### Read next
+#### Read more
 
 - [API Quickstart - Freeze Frame](sdk/quickstart/freeze_frames)

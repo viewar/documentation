@@ -37,5 +37,5 @@ Object Recognition is a computer vision technique for identifying 2D/3D objects.
 
 #### Read next
 
-[API Quickstart - Tracking](sdk/quickstart/tracking) - ViewAR API Tracking guide
-[ViewAR API References](http://test2.3.viewar.com/docs/index.html) - Complete list of the ViewAR API References
+- [API Quickstart - Tracking](sdk/quickstart/tracking)
+- [ViewAR API References](http://test2.3.viewar.com/docs/index.html)

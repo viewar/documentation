@@ -24,6 +24,6 @@ Ungrouped Containers are used for logical grouping of Scene Objects, however, th
 
 Grouped Containers encapsulate their children and make them behave as a single object with respect to interaction. This feature is used for creating complex objects using other scene objects as parts. Moreover, they may be manipulated programatically (e.g. by chaning their pose or visibility).
 
-#### Read next
+#### Read more
 
-[API Quickstart - Scene](sdk/sdk--api-quickstart/sdk--api-quickstart--scene-manager.md)
+[API Quickstart - Scene Manager](sdk/quickstart/scene_manager)

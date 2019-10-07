@@ -92,7 +92,7 @@ But worry not, here comes a cheat sheet:
 - The Category the Model is in, needs to be available in the Application
   [ViewAR Developer Portal](https://developer.viewar.com) > My Apps > App Editor > Advanced > Content Category Settings
 
-#### Read next
+#### Read more
 
-[API Quickstart - Model Manager](sdk/sdk--api-quickstart/sdk--api-quickstart--model-manager.md)
-[API Quickstart - Instances](sdk/sdk--api-quickstart/sdk--api-quickstart--instances.md)
+- [API Quickstart - Model Manager](sdk/quickstart/model_manager)
+- [API Quickstart - Instances](sdk/quickstart/instances)

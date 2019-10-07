@@ -11,7 +11,7 @@ Below, you will find an overview of basic concepts of the ViewAR API.
 - [Models](sdk/basic_concepts/models)
 - [Tracking](sdk/basic_concepts/tracking)
 - [Cameras](sdk/basic_concepts/cameras)
-- [Freeze Frame](sdk/basic_concepts/freeze-frame)
+- [Freeze Frames](sdk/basic_concepts/freeze-frames)
 
 ### Read next
 
