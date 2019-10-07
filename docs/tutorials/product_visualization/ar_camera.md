@@ -34,6 +34,4 @@ init();
 
 Restart the application on your phone, then slightly move it to left to right filming the ground in front of you until you see the \`is tracking true\` alert. It should look like this:
 
-![](/assets/ar-tutorial-camera-alert.png)
-
-[< Previous Step](/tutorials/react/initialising-the-viewar-sdk.md) ｜ [Next Step >](/tutorials/react/load-and-insert-a-model.md)
+![](/img/ar-tutorial-camera-alert.png)
