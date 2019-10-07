@@ -20,8 +20,5 @@
       "sdk/testsubsub/introduction2",
       "sdk/getting-started/stack"
     ]
-  },
-  "tutorials": {
-    "Wallart": ["tutorials/wallart/wallart"]
   }
 }

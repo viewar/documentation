@@ -75,5 +75,5 @@ Following settings are available in the ui config:
 
 ## Support
 
-Documentation: https://viewar.gitbooks.io/sdk-documentation/content/
-Tutorials: https://developer.viewar.com/site/tutorials
+- [Documentation](/docs)
+- [Tutorials](https://developer.viewar.com/site/tutorials)
