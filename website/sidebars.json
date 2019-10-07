@@ -7,7 +7,7 @@
         "type": "subcategory",
         "label": "Wallart",
         "ids": [
-          "tutorials/wallart/wallart",
+          "tutorials/wallart/about",
           "tutorials/wallart/app_builder",
           "tutorials/wallart/cli"
         ]

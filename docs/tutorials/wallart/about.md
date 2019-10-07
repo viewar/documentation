@@ -1,5 +1,5 @@
 ---
-id: wallart
+id: about
 title: About
 ---
 
