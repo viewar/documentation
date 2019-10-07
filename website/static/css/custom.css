@@ -100,8 +100,30 @@ header/nav colors:
 **    Pages/index      *
 ***********************/
 
+.mainWrapper .bgVideoWrapper {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  position: absolute;
+}
+
+.mainBgVideo {
+  width: 100%;
+  -webkit-transform: scaley(-1);
+  transform: scaley(-1);
+}
+
 .promoSection .promoRow .pluginRowBlock .button {
   margin: 0 16px;
+}
+
+.homeWrapper,
+.projectTitle {
+  color: #fff;
 }
 
 /***********************
@@ -113,7 +135,7 @@ header/nav colors:
   color: #fff;
 }
 .button.isPrimary:hover {
-  background-color: #fff;
+  background-color: transparent;
   color: #a41f1f;
 }
 

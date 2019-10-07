@@ -65,9 +65,9 @@ class HomeSplash extends React.PureComponent {
         <div className="inner">
           <ProjectTitle siteConfig={siteConfig} />
           <PromoSection>
-            <Button href="https://webversion.viewar.com/com.viewar.sandbox/100/">Try It Out</Button>
+            <Button href="https://webversion.viewar.com/com.viewar.sandbox/100/" isPrimary>Try It Out</Button>
             <Button href={docUrl('sdk')} isPrimary>SDK Documentation</Button>
-            <Button href={docUrl('introduction')}>About ViewAr</Button>
+            <Button href={docUrl('introduction')} isPrimary>About ViewAr</Button>
           </PromoSection>
         </div>
       </SplashContainer>
@@ -198,8 +198,14 @@ class Index extends React.PureComponent {
     };
 
     return (
-      <div>
+      <div className="mainWrapper">
         <HomeSplash siteConfig={siteConfig} language={language} />
+        <div className="bgVideoWrapper">
+          <video id="welcome_header_video" playsInline muted autoPlay loop className="bgVideo">
+            <source src="https://www.viewar.com/wp-content/themes/vrt/img/videos/viewar_background.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
         <div className="mainContainer">
           {/* <Features />
            <FeatureCallout />
