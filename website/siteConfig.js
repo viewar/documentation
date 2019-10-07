@@ -36,8 +36,10 @@ const siteConfig = {
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
   //   organizationName: 'JoelMarcey'
 
+  onPageNav:              'separate',
+  docsSideNavCollapsible: true,
   // For no header links in the top nav bar -> headerLinks: [],
-  headerLinks: [
+  headerLinks:            [
     {
       doc:   'introduction',
       label: 'About ViewAR',
