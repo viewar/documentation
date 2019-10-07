@@ -47,6 +47,18 @@
       "tutorials/arvatar/arvatar",
       {
         "type": "subcategory",
+        "label": "Drone",
+        "ids": [
+          "tutorials/drone/overview",
+          "tutorials/drone/getting_started",
+          "tutorials/drone/camera",
+          "tutorials/drone/model",
+          "tutorials/drone/joysticks",
+          "tutorials/drone/advanced"
+        ]
+      },
+      {
+        "type": "subcategory",
         "label": "Wallart",
         "ids": [
           "tutorials/wallart/about",
