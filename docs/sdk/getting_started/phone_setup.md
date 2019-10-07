@@ -10,7 +10,7 @@ Download the ViewAR SDK App either from the
 - Apple Store [https://itunes.apple.com/us/app/viewar-sdk/id1097511807](https://itunes.apple.com/us/app/viewar-sdk/id1097511807)
 - Google Play Store [https://play.google.com/store/apps/details?id=com.viewar.sdk](https://play.google.com/store/apps/details?id=com.viewar.sdk)
 
-![](/assets/viewar sdk2.svg)
+![](/img/viewar sdk2.svg)
 
 Make sure that your phone and computer are in the same local network.
 

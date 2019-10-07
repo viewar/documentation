@@ -17,14 +17,14 @@ If you know exactly which app and version you wish to load, all you need to do i
 
 ##### Using My Apps list
 
-If you are unsure what data to input go to _My Apps_, find the appropriate application and click on the _Test_ icon: ![](/assets/test-icon.png)
+If you are unsure what data to input go to _My Apps_, find the appropriate application and click on the _Test_ icon: ![](/img/test-icon.png)
 
-You will see a following pop-up message:![](/assets/test-the-app.png)  
+You will see a following pop-up message:![](/img/test-the-app.png)  
 Click on the _Test web Version_ button. A new window will pop up and load your app in the browser.
 
 ##### From App Wizard
 
-Go to _My Apps_, find the appropriate application and click on the _Edit_ icon: ![](/assets/edit-icon.png)
+Go to _My Apps_, find the appropriate application and click on the _Edit_ icon: ![](/img/edit-icon.png)
 
 Follow to the _Testing_ step in the app wizard, click on the _Test web Version_ button. A new window will pop up and load your app in the browser.
 
@@ -72,16 +72,16 @@ If you know exactly which app and version you wish to load, all you need to do i
 
 ##### Using My Apps list
 
-If you are unsure what data to input go to _My Apps_, find the appropriate application and click on the _Test_ icon: ![](/assets/test-icon.png)
+If you are unsure what data to input go to _My Apps_, find the appropriate application and click on the _Test_ icon: ![](/img/test-icon.png)
 
 You will see a following pop-up message:
 
-![](/assets/test-the-app.png)  
+![](/img/test-the-app.png)  
 Click on the _Test web Version_ button. A new window will pop up and load your app in the browser.
 
 ##### From App Wizard
 
-Go to _My Apps_, find the appropriate application and click on the _Edit_ icon: ![](/assets/edit-icon.png)
+Go to _My Apps_, find the appropriate application and click on the _Edit_ icon: ![](/img/edit-icon.png)
 
 Follow to the _Testing_ step in the app wizard, click on the _Test web Version_ button. A new window will pop up and load your app in the browser.
 

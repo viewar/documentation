@@ -14,6 +14,6 @@ Any orientation can be achieved by composing three elemental rotations, i.e., ro
 
 Euler angles between two reference frames may be defined only if both frames have the same handedness. In such a case, the geometrical definition begins by defining the line of nodes (N) as the intersection of the planes xy and XY. Using it, the three Euler angles can be defined as follows:
 
-![](/assets/Eulerangles-with-explanation.jpg)
+![](/img/Eulerangles-with-explanation.jpg)
 
 _Proper (static) Euler angles geometrical definition. Image source: Wikipedia_
