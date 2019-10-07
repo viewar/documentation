@@ -9,7 +9,7 @@ _Furniture Live_ template is compatible with iOS, Android and runs in the browse
 
 #### Ready to go?
 
-- [User Manual](furniture-live-user-manual.md)  
+- [User Manual](/docs/tutorials/manuals/furniture_live)  
   learn how to use the application
 - [Create with the App Builder](./app_builder)  
   no programming knowledge required
@@ -19,7 +19,7 @@ _Furniture Live_ template is compatible with iOS, Android and runs in the browse
 #### Support
 
 - [Template information](https://www.viewar.com/template/funiture-live/)
-- [Documentation](/sdk/content/)
+- [Documentation](/docs/sdk/overview)
 
 #### Pricing
 

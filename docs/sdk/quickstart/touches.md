@@ -17,7 +17,7 @@ The following interactions with the Camera are recognized by touching any space 
 - **Single finger** - rotate
 - **Two fingers** - move
 
-The default behavior can also be changed manually by using our [JavaScript API Reference](00--sdk/sdk--api-reference/sdk--api-reference--overview.md).
+The default behavior can also be changed manually by using our [JavaScript API Reference](/docs/sdk/sdk--api-reference/sdk--api-reference--overview.md).
 
 #### Touches & UI Elements
 

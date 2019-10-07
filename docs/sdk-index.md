@@ -23,30 +23,30 @@ Advance 3D editing (UV layouts creation, texturing etc, ...)
 
 ### ViewAR SDK Tutorials
 
-[> ARvatar](/tutorials/arvatar/arvatar-app-creation.md)<br>
-[> Drone Control](tutorials/arvatar/drone.md)<br>
-[> Product Visualization](/tutorials/react/create-your-first-ar-app.md)
+[> ARvatar](/docs/tutorials/arvatar/arvatar-app-creation.md)<br>
+[> Product Visualization](/docs/tutorials/react/create-your-first-ar-app.md)
+[> Drone Control](/docs/tutorials/drone/overview)<br>
 
 #### ViewAR API Sandbox
 
-[Learn more...](00--sdk/sdk--playground/sdk--playground--overview.md)
+[Learn more...](/docs/sdk/sdk--playground/sdk--playground--overview.md)
 
 #### Getting Started
 
-[Learn more...](00--sdk/sdk--getting-started/sdk--getting-started--overview.md)
+[Learn more...](/docs/sdk/getting_started/overview)
 
 #### ViewAR System Basic Concepts
 
-[Learn more...](00--sdk/sdk--basic-concepts/sdk--basic-concepts--overview.md)
+[Learn more...](/docs/sdk/basic_concepts/overview)
 
 #### ViewAR API Quickstart
 
-[Learn more...](00--sdk/sdk--api-quickstart/sdk--api-quickstart--overview.md)
+[Learn more...](/docs/sdk/quickstart/overview.md)
 
 #### Tutorials
 
-[Learn more...](00--sdk/sdk--tutorials/sdk--tutorials--overview.md)
+[Learn more...](/docs/tutorials/overview)
 
 #### ViewAR API Reference
 
-[Learn more...](00--sdk/sdk--api-reference/sdk--api-reference--overview.md)
+[Learn more...](/docs/sdk/reference/sdk--api-reference--overview.md)

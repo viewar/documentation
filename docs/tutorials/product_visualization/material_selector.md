@@ -69,7 +69,7 @@ No we need to know which materials are available for this model. In our case we 
 
 That said there are more materials and properties in this structure, but based on the above structure we can create a MaterialSelector component.
 
-**Note:** The model was prepared using the ViewAR Material Editor. You can find more information on how to do that in the section [ViewAR Material Editor](/setup-materials.md).
+**Note:** The model was prepared using the ViewAR Material Editor. You can find more information on how to do that in the section [ViewAR Material Editor](./material_selector.md).
 
 We create a file `MaterialSelector.js` allowing us to switch between materials. Before we edit the file we install the package  
 styled-components.

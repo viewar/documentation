@@ -36,10 +36,11 @@ Using state-of-the-art frameworks like React, Angular or Vue.js will let you cre
 
 ViewAR API is an object-oriented JavaScript-based API, offering an interface for the communication between the UI and the core. It can be used to get access to the features offered by the ViewAR Core:
 
-- [Scene Manager](sdk/sdk--basic-concepts/sdk--basic-concepts--scene.md),
-- [Model Manager](sdk/sdk--basic-concepts/sdk--basic-concepts--models.md),
-- [Cameras](sdk/sdk--basic-concepts/sdk--basic-concepts--cameras.md),
-- [Trackings](sdk/sdk--basic-concepts/sdk--basic-concepts--tracking.md),
+- [Scene Manager](/docs/sdk/basic_concepts/scene_management)
+- [Model Manager](/docs/sdk/basic_concepts/models)
+- [Cameras](/docs/sdk/basic_concepts/cameras)
+- [Freeze Frames](/docs/sdk/basic_concepts/freeze_frames)
+- [Tracking](/docs/sdk/basic_concepts/tracking)
 - App Utilities.
 
 #### ViewAR Backend

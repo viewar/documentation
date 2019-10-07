@@ -7,16 +7,16 @@ Remote support has never been easier. Incorporate one-to-one calls into a user-f
 
 #### Ready to go?
 
-- [User Manual](helpar-user-manual.md)
-- [Create with the App Builder](helpar-app-builder.md)  
+- [Create with the App Builder](./app_builder)  
   no programming knowledge required
-- [Create with the ViewAR CLI](helpar-cli.md)  
+- [Create with the ViewAR CLI](./cli)
+- [User Manual](/docs/tutorials/manuals/helpar_user)  
   web development skills required (HTML, CSS, JavaScript, optionally - React)
 
 #### Support
 
 - [Template information](https://www.viewar.com/template/helpar-remote-assistance/)
-- [Documentation](/docs/sdk/content/)
+- [SDK Documentation](/docs/sdk/overview)
 
 #### Pricing
 

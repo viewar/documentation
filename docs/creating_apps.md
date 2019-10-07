@@ -17,7 +17,7 @@ Create your Augmented Reality applications easily and effortlessly. Choose a tem
 - No prior programming knowledge required!
 - Ready-to-use templates.
 
-[Learn more...](00--app-builder/app-builder--overview.md)
+[Learn more...](/docs/app_builder)
 
 ### ViewAR SDK
 
@@ -29,4 +29,4 @@ Need more freedom? Using the ViewAR Augmented Reality SDK, you can create your o
 - Efficient, JavaScript-based API.
 - Extend the ready-to-use templates or develop your own ones.
 
-[Learn more...](00--sdk/sdk--overview.md)
+[Learn more...](/docs/sdk)
