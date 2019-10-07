@@ -7,7 +7,7 @@ title: App Builder
 
 The ViewAR™ AppBuilder is the easiest way to build your augmented reality apps. It allows developers to build augmented reality and virtual reality apps based on HTML templates. It is a modular structure, utilising our almost 10-years-long development experience and lessons learned from over 50 projects. Ready-to-use templates allow for the user focus to be shifted to styling and content. The System is suitable for professional programmers as well as for beginners.
 
-More information: https://www.viewar.com/app-builder/
+[More information](https://www.viewar.com/app-builder/)
 
 #### Prerequisites
 
@@ -15,7 +15,7 @@ All you need is a web browser and a web connection. No programming knowledge req
 
 #### Create an account
 
-Create a free user account on the ViewAR Developer portal: https://developer.viewar.com.
+Create a free user account on the [ViewAR Developer portal](https://developer.viewar.com).
 
 #### Choose a template
 

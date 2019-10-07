@@ -81,7 +81,7 @@ This will build your app in release mode and save the changes to the server. Aft
 
 There are two options for testing your application: you may either do it directly in the web browser (in the mock or full mode) or run it on a mobile device using the ViewAR SDK app.
 
-More info about testing [here](testing.md).
+More info about testing [here](/docs/testing.md).
 
 ### Experiment!
 

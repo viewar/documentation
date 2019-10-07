@@ -3,6 +3,7 @@
     "ViewAR": ["introduction", "stack", "creating_apps", "app_builder", "faq"],
     "Tutorials": [
       "tutorials/overview",
+      "tutorials/arvatar/arvatar",
       {
         "type": "subcategory",
         "label": "Wallart",
@@ -20,8 +21,7 @@
           "tutorials/helpar/app_builder",
           "tutorials/helpar/cli"
         ]
-      },
-      "tutorials/arvatar/arvatar"
+      }
     ],
     "SDK": [
       "sdk",
