@@ -80,4 +80,4 @@ Currently in the testing phase.
 #### More
 
 To learn more about Tracking Systems supported by ViewAR and their more detailed description,  
-please refer to the _Tracking Section_ in [Basic Concepts](https://viewar.gitbooks.io/sdk-documentation/basic-concepts.html)
+please refer to our [Basic Concepts of Tracking](/docs/sdk/basic_concepts/tracking).
