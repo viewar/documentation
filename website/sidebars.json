@@ -81,6 +81,14 @@
           "sdk/quickstart/freeze_frames"
         ]
       }
+    ],
+    "Advances Guides": [
+      "advanced_guides/hardware",
+      "advanced_guides/power_economy",
+      "advanced_guides/publishing",
+      "advanced_guides/euler_angles",
+      "advanced_guides/quaternion",
+      "advanced_guides/radian"
     ]
   }
 }
