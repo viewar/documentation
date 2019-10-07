@@ -12,6 +12,15 @@
           "tutorials/wallart/cli"
         ]
       },
+      {
+        "type": "subcategory",
+        "label": "Helpar",
+        "ids": [
+          "tutorials/helpar/about",
+          "tutorials/helpar/app_builder",
+          "tutorials/helpar/cli"
+        ]
+      },
       "tutorials/arvatar/arvatar"
     ],
     "SDK": [
