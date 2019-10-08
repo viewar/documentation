@@ -36,7 +36,10 @@ const siteConfig = {
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
   //   organizationName: 'JoelMarcey'
 
+  // On page navigation for the current documentation page.
   onPageNav:              'separate',
+  // For sites with a sizable amount of content, set collapsible to true.
+  // Expand/collapse the links and subcategories under categories.
   docsSideNavCollapsible: true,
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks:            [
@@ -97,10 +100,8 @@ const siteConfig = {
   // Add custom scripts here that would be placed in <script> tags.
   scripts: [ 'https://buttons.github.io/buttons.js' ],
 
-  // On page navigation for the current documentation page.
-  onPageNav: 'separate',
   // No .html extensions for paths.
-  cleanUrl:  true,
+  cleanUrl: true,
 
   // Open Graph and Twitter card images.
   ogImage:      'img/undraw_online.svg',
@@ -108,10 +109,6 @@ const siteConfig = {
 
   // TODO: create id for fb page-app
   // facebookAppId: 'ViewARcom',
-
-  // For sites with a sizable amount of content, set collapsible to true.
-  // Expand/collapse the links and subcategories under categories.
-  docsSideNavCollapsible: true,
 
   // Show documentation's last contributor's name.
   // enableUpdateBy: true,

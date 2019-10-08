@@ -44,7 +44,7 @@ If you want to start with one of our Templates, read more [here](https://www.vie
 
 The viewar-cli is a command line tool, which allows you to initialize new boilerplate ViewAR applications based on pure JavaScript or React. Viewar-cli lets you also deploy your application so it can be accessed from an iOS/Android device. In this section we show you how to install the viewar-cli in order to create and deploy a viewar-application.
 
-#### Installation
+### Installation
 
 Before installing the developer tools, you'll need to make sure that you have two prerequisites installed:
 
