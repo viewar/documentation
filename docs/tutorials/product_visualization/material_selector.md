@@ -256,4 +256,4 @@ function App(props) {
 }
 ```
 
-![](/img/material_selector.gif)
+![](assets/material_selector.gif)

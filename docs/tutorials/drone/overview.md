@@ -14,7 +14,7 @@ To check out the final effect, download the **ViewAR SDK App** (either from the 
 Bundle ID: **com.viewar.drone**
 Version: **1**
 
-![](/img/drone-phone-step3-v02-web.jpg)
+![](assets/drone-phone-step3-v02-web.jpg)
 _Screenshot from the Drone Control App_
 
 ### What exactly will you do & learn?

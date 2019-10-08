@@ -97,7 +97,7 @@ Start the ViewAR SDK App on you mobile device, turn off the LAN mode and fill in
 1. Your App ID
 2. App Version (leaving this field empty will result in the app using the default setting: <=100)
 
-![](/img/drone-phone-step0-v02-web.jpg)
+![](assets/drone-phone-step0-v02-web.jpg)
 _Screenshot from the Drone Control Boilerplate App_
 
 Try removing the "Hello World." message and seeing the changes on your mobile device in the LAN mode before going further.

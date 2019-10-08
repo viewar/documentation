@@ -34,4 +34,4 @@ init();
 
 Restart the application on your phone, then slightly move it to left to right filming the ground in front of you until you see the \`is tracking true\` alert. It should look like this:
 
-![](/img/ar-tutorial-camera-alert.png)
+![](assets/ar-tutorial-camera-alert.png)

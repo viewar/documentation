@@ -77,7 +77,7 @@ const handleLeftJoystickInput = ({ x, y }) => {
 
 At this point, you should be able to manipulate the drone instance's position with the use of the joysticks.
 
-![](/img/drone-phone-step3-v02-web.jpg)
+![](assets/drone-phone-step3-v02-web.jpg)
 _Screenshot from the Drone Control App_
 
 Got everything working?
