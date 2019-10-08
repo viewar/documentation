@@ -3,7 +3,7 @@ id: helpar_agent
 title: Helpar Agent
 ---
 
-### Manual
+## Manual
 
 We’ll show you how to use a helpar app as a Support Agent.
 
@@ -18,12 +18,11 @@ We’ll show you how to use a helpar app as a Support Agent.
 - Answer a **remote assistance connection ** in Augmented Reality.
 - **Save a session into the helpar database**.
 
-#### Let's get started!
+#### Setup
 
-#####Setup:
 Download the ViewAR SDK App from the App Store or Google Play Store.
 
-##### Using the app:
+## Using the app
 
 Start the ViewAR SDK App. You can either use our sample demo (App ID: **helpar.demo**, version: **100**) or your own app [created with the App Builder](tutorials/helpar/app_builder) or [with the CLI](tutorials/helpar/cli).
 
@@ -39,7 +38,7 @@ Watch the User filming the object and start the conversation to get a better und
 
 ![](assets/helpar - Tutorial - 2 - assistant.jpg)
 
-##### Annotations
+### Annotations
 
 When the feature points are in place both of you may start placing annotations on the object. The User's touches will be marked with red dots, while you will have a variety of different graphic elements to choose from.
 
@@ -49,7 +48,7 @@ After providing User all the necessary information, you may end the call.
 
 ![helpar - User Manual - Screenshots - 3](assets/helpar%20-%20Tutorial%20-%203.jpg)
 
-##### Saving the record to the database
+### Save the record to DB
 
 Getting remote assistance is useful, but what if we could make a good use of those already made calls?
 
@@ -59,6 +58,6 @@ After the connection with a User is terminated, you'll be automatically redirect
 
 ![](assets/helpar%20-%20Tutorial%20-%204%20-%20assistant.jpg)
 
-##### More to come
+## More to come
 
 We are still working on improvements for this template, adding new features every week.
