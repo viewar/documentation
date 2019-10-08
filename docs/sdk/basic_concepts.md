@@ -123,11 +123,11 @@ But worry not, here comes a cheat sheet:
 
 Tracking Systems try to estimate the world pose \(position and orientation\) of a mobile device \(e.g. phone, tablet, head mounted display\) in real-time. They may be inside-out (done entirely on the device) or outside-in (where external sensors are used).
 
-### Marker-base Tracking
+#### Marker-base Tracking
 
 Marker-based tracking uses fixed marker images, which are recognized by the tracking systems in order to calculate the pose of a device. Markers can be QR-Codes, Magazines, Photos or any kind of 2D images. Markers have to be known by the tracking system before they can be recognized. Inaccuracies occur as soon as the marker is not visible in the camera frame, because pose information can not be updated. Therefore, extended tracking uses additional methods to estimate the pose of a marker even if it is not visible in the camera.
 
-### Marker-less Tracking
+#### Marker-less Tracking
 
 Marker-less tracking uses camera input for detecting unique retrievable patterns \(i.e. feature points\) in the surrounding environment, for estimating the camera's pose.
 
@@ -157,15 +157,15 @@ Object Recognition is a computer vision technique for identifying 2D/3D objects.
 
 Cameras control how the current scene is viewed. In ViewAR System, there are three types of Cameras, all held in and controlled by the Camera Object:
 
-### Perspective Camera
+#### Perspective Camera
 
 Offers a bird’s eye view of the scene in a VR environment. Its main feature is an ability to change its pose (moving, rotating, dollying, etc.) by the user interaction with the viewport, either with touches or a mouse. A grid view is used.
 
-### Virtual Reality Camera
+#### Virtual Reality Camera
 
 Offers a first-person view of the scene. It reads gyroscope input for rotation, but its movement needs to be passed programmatically. Movement can be implemented by on-screen joysticks for handheld devices, keyboard input for browser platforms, and bluetooth joysticks when using the HMD mode.
 
-### Augmented Reality Camera
+#### Augmented Reality Camera
 
 Takes input from device’s camera and gyroscope. Combined with state-of-the-art environment tracking systems, it provides an immersive AR experience. It is currently not available on the browser platform.
 
