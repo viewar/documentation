@@ -169,9 +169,13 @@ Offers a first-person view of the scene. It reads gyroscope input for rotation, 
 
 Takes input from device’s camera and gyroscope. Combined with state-of-the-art environment tracking systems, it provides an immersive AR experience. It is currently not available on the browser platform.
 
-###### Tip
+> _Every Camera has a Stereoscopic Mode, also called a HMD (Head-Mounted Display) Mode,_  
+> _that allows for the apps to be used within VR Hardware like Oculus Rift, HTC Vive or similar._
 
-_Every Camera has a Stereoscopic Mode, also called a HMD (Head-Mounted Display) Mode, that allows for the apps to be used within headsets._
+<!---
+unsure about statement
+forerly end of sentence: to be used within headsets
+--->
 
 ### Freeze Frames
 
