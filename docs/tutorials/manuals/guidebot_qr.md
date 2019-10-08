@@ -25,7 +25,7 @@ Following this tutorial you'll learn how to use a GuideBOT indoor navigation app
 
 - For the sake of the demo, we’ll use a set of test QR codes (link above). Print them in an A4 format and make sure that the dimensions of the **QR codes **themselves are 18 x 18 cm. It is important to ensure the proper scaling.
 
-![](/img/QR-code-small.png)
+![](assets/QR-code-small.png)
 
 - Find appropriate places for your QR codes. The general rule is that the closer they are, the higher the tracking precision will be. At the current state of technology, the ARKit (the tracking system you are using) has an average horizontal drift of 1 m per 20 m. It means that for every 20 meter you walk away from the last point of calibration (QR code), the possible horizontal drift would be 1 m. Depending on the functionality of your app, a certain difference is tolerable. It may be controlled with the maximum distance between QR codes. We suggest placing them with a maximum distance of 20 m to 50 m.
 
@@ -42,14 +42,14 @@ Following this tutorial you'll learn how to use a GuideBOT indoor navigation app
 - Open the application, click on the padlock icon and type in your [Developer Portal](https://developer.viewar.com) credentials.
 - Click on _New map_. Give it an easily recognisable name and save.
 
-![](/img/GuideBOT - Tutorial - 1.jpg)
+![](assets/GuideBOT - Tutorial - 1.jpg)
 
 ##### Configure tracking
 
 - You'll now be asked to configure the tracking.
 - First, **ARKit** needs to be initialised. Do it by moving your device slowly in a sideways manner (move a step left and right, don't just turn!). As soon as the calibration graphic disappears, you'll know that the ARKit tracking has been configured - the ground has been detected and the relative coordinates system has been created.
 
-![](/img/GuideBOT - Tutorial - 2 - QR.jpg)
+![](assets/GuideBOT - Tutorial - 2 - QR.jpg)
 
 - Now, scan the first **QR code**. Wait for the blue circle to appear. If you have placed more QR codes.
 
@@ -59,7 +59,7 @@ Following this tutorial you'll learn how to use a GuideBOT indoor navigation app
 
 - Aim with the ring and tap the **Create Waypoints** button to place a waypoint. Do this multiple times to create the points of a path. Every next point will be connected to the previous one. You can also tap a way point to select it and to start placing waypoints from there.
 
-![](/img/GuideBOT - Tutorial - 3.jpg)
+![](assets/GuideBOT - Tutorial - 3.jpg)
 
 ##### Define **POIs** (Points Of Interest)
 
@@ -71,7 +71,7 @@ It may be for example an object at an exhibition, a conference room or a hotel r
 - Enter a title for the POI. This name will be used for recognition (when you ask the GuideBOT a question).
 - Save it and continue with setting up your path or the next POI.
 
-![](/img/GuideBOT - Tutorial - 4.jpg)
+![](assets/GuideBOT - Tutorial - 4.jpg)
 
 - When you're done with setting up all data, save the map.
 

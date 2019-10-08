@@ -31,13 +31,13 @@ Click on the _Padlock_ icon in the top-right corner. Login.
 
 When a connection request appears on the screen, answer the call.
 
-![](/img/helpar - Tutorial - 1 - assistant.jpg)
+![](assets/helpar - Tutorial - 1 - assistant.jpg)
 
 When the call gets answered, the User's camera image will be streamed to your device. Feature Points detected by the User's application, touches and audio will also be transferred. _(Feature points are characteristic points in the camera image - clear changes of colour, object edges etc.. They are used to create a 3D representation of the object/scene used for the tracking to hold ion place.)_
 
 Watch the User filming the object and start the conversation to get a better understanding of the problem.
 
-![](/img/helpar - Tutorial - 2 - assistant.jpg)
+![](assets/helpar - Tutorial - 2 - assistant.jpg)
 
 ##### Annotations
 
@@ -57,7 +57,7 @@ That's exactly why we have introduced a **helpar database**.
 
 After the connection with a User is terminated, you'll be automatically redirected to a Save Screen. If you find the advise you have just given possibly useful for other users, it is highly recommended to save it to the database. You'll be asked to define a name and keywords for your record. It will later be accessible through the _Search Database_ field in the Home Screen. After filming the object the annotations were recorded on, it will be possible to display the information without the live remote support of an assistant.
 
-![](/img/helpar - Tutorial - 4 - assistant.jpg)
+![](assets/helpar - Tutorial - 4 - assistant.jpg)
 
 ##### More to come
 

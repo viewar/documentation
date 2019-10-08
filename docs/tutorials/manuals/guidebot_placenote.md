@@ -36,7 +36,7 @@ More information about [Placenote](https://placenote.com/).
 - Open the application, click on the padlock icon and type in your [Developer Portal](https://developer.viewar.com) credentials.
 - Click on _New map_. Give it an easily recognisable name and save.
 
-![](/img/GuideBOT - Tutorial - 1.jpg)
+![](assets/GuideBOT - Tutorial - 1.jpg)
 
 ##### Configure tracking
 
@@ -50,12 +50,12 @@ More information about [Placenote](https://placenote.com/).
   Be aware that the tracking will struggle and may fail if the environment changes a lot.  
   You should also try to avoid filming a learned area twice since tracking drift might have added up, learning the same area again. This will result in jumps in the tracking.
 
-![](/img/Wikitude-Instant-Tracking-Scene-Mapping.png)
+![](assets/Wikitude-Instant-Tracking-Scene-Mapping.png)
 <br>_Picture credits: Wikitude_
 
 <br>Don't worry, you don't have to blind-guess whether the feature points are getting defined properly! The app gives you feedback marking every created point with a red cube.
 
-![](/img/GuideBOT - Tutorial - 2 - Placenote.jpg)
+![](assets/GuideBOT - Tutorial - 2 - Placenote.jpg)
 
 <br><br>When you're ready, move on to defining **paths** for the users to follow.
 
@@ -65,7 +65,7 @@ More information about [Placenote](https://placenote.com/).
 
 - Aim with the ring and tap the **Create Waypoints** button to place a waypoint. Do this multiple times to create the points of a path. Every next point will be connected to the previous one. You can also tap a way point to select it and to start placing waypoints from there.
 
-![](/img/GuideBOT - Tutorial - 3.jpg)
+![](assets/GuideBOT - Tutorial - 3.jpg)
 
 - **TIP:** As you keep moving through the scene, the Placenote tracking is constantly learning the environment. To improve its performance, help it learn most efficiently: from time to time (every couple of meters) repeat the environment recording procedure described above (in the **Configure Tracking** point).
 
@@ -79,7 +79,7 @@ It may be for example an object at an exhibition, a conference room or a hotel r
 - Enter a title for the POI. This name will be used for recognition (when you ask the GuideBOT a question).
 - Save it and continue with setting up your path or the next POI.
 
-![](/img/GuideBOT - Tutorial - 4.jpg)
+![](assets/GuideBOT - Tutorial - 4.jpg)
 
 - When you're done with setting up all data, save the map.
 

@@ -32,13 +32,13 @@ Click on _Call Support_ to initiate a remote assistance call.
 
 Film the object and move a bit (steps sideways to left and right) to initiate the call.
 
-![helpar - User Manual - Screenshots - 1](/img/helpar - Tutorial - 1.jpg)
+![helpar - User Manual - Screenshots - 1](assets/helpar - Tutorial - 1.jpg)
 
 When the call gets answered, the camera image will come back. Film the object from different sides in order to let the application create a decent number of feature points. _(Feature points are characteristic points in the camera image - clear changes of colour, object edges etc.. They are used to create a 3D representation of the object/scene used for the tracking to hold ion place.)_
 
 In the meantime, you may start a conversation with the assistant who has answered your call. She/he can also see the camera image from your device.
 
-![helpar - User Manual - Screenshots - 2](/img/helpar - Tutorial - 2.jpg)
+![helpar - User Manual - Screenshots - 2](assets/helpar - Tutorial - 2.jpg)
 
 ##### Annotations
 
@@ -50,7 +50,7 @@ Due to the 3D tracking you may walk around it without loosing the notes.
 
 After getting all the necessary information, you may end the call.
 
-![helpar - User Manual - Screenshots - 3](/img/helpar - Tutorial - 3.jpg)
+![helpar - User Manual - Screenshots - 3](assets/helpar - Tutorial - 3.jpg)
 
 ##### Browsing the database
 
@@ -58,7 +58,7 @@ Getting remote assistance is useful, but what if we could make a good use of tho
 
 That's exactly why we have introduced a **helpar database**. On the home screen you have a button saying _Search Database_. It lets you browse through a library of saved and highest rated annotations. Be aware that you need to film the object it was recorded with, in order to see the annotations.
 
-![helpar - User Manual - Screenshots - 4](/img/helpar - Tutorial - 4.jpg)
+![helpar - User Manual - Screenshots - 4](assets/helpar - Tutorial - 4.jpg)
 
 ##### More to come
 
