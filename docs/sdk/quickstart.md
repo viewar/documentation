@@ -99,7 +99,7 @@ A 3D Model is a collection of data, resources, and assets that describe a virtua
 
 > _The Model Manager offers a convenient method `downloadAll\(\)` that downloads and caches all models and their assets used by an application. This way, the program may be fully usable offline._
 
-### Fetching a Model from the Catalogue
+### Fetch a Model from the Catalogue
 
 In order to be able to insert a Model into a Scene, you may retrieve it from the 3D Catalogue. The findModel method does not download the actual model files, but only the Model description. This means that, in order to actually insert it in your scene, you'll need an addditional command ([sceneManager.insertModel]). The Model download happens when inserting.
 
@@ -148,7 +148,7 @@ await modelManager.downloadAll();
 
 Tracking Systems try to estimate the world pose \(position and orientation\) of a mobile device \(e.g. phone, tablet, head mounted display\) in real-time. ViewAR System integrates numerous technological solutions and offers them through a coherent JavaScript API, so that you wouldn't have to worry about details of a particular technology integration. Furthermore, if a more robust Tracking System appears on the market, you can switch to it with a minimal effort.
 
-### Activating, Deactivating & Resetting tracking
+### Activate, Deactivate and Reset
 
 > _There can only be one tracking active at a time._  
 > _If one tracker gets enabled, the previous active tracker gets deactivated automatically._
