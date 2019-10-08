@@ -42,14 +42,14 @@ Following this tutorial you'll learn how to use a GuideBOT indoor navigation app
 - Open the application, click on the padlock icon and type in your [Developer Portal](https://developer.viewar.com) credentials.
 - Click on _New map_. Give it an easily recognisable name and save.
 
-![](assets/GuideBOT - Tutorial - 1.jpg)
+![](assets/GuideBOT%20-%20Tutorial%20-%201.jpg)
 
 ##### Configure tracking
 
 - You'll now be asked to configure the tracking.
 - First, **ARKit** needs to be initialised. Do it by moving your device slowly in a sideways manner (move a step left and right, don't just turn!). As soon as the calibration graphic disappears, you'll know that the ARKit tracking has been configured - the ground has been detected and the relative coordinates system has been created.
 
-![](assets/GuideBOT - Tutorial - 2 - QR.jpg)
+![](assets/GuideBOT%20-%20Tutorial%20-%202%20-%20QR.jpg)
 
 - Now, scan the first **QR code**. Wait for the blue circle to appear. If you have placed more QR codes.
 
@@ -59,7 +59,7 @@ Following this tutorial you'll learn how to use a GuideBOT indoor navigation app
 
 - Aim with the ring and tap the **Create Waypoints** button to place a waypoint. Do this multiple times to create the points of a path. Every next point will be connected to the previous one. You can also tap a way point to select it and to start placing waypoints from there.
 
-![](assets/GuideBOT - Tutorial - 3.jpg)
+![](assets/GuideBOT%20-%20Tutorial%20-%203.jpg)
 
 ##### Define **POIs** (Points Of Interest)
 
@@ -71,7 +71,7 @@ It may be for example an object at an exhibition, a conference room or a hotel r
 - Enter a title for the POI. This name will be used for recognition (when you ask the GuideBOT a question).
 - Save it and continue with setting up your path or the next POI.
 
-![](assets/GuideBOT - Tutorial - 4.jpg)
+![](assets/GuideBOT%20-%20Tutorial%20-%204.jpg)
 
 - When you're done with setting up all data, save the map.
 

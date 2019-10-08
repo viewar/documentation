@@ -47,7 +47,7 @@ Due to the nature of tracking, at the moment the annotations may only be placed 
 
 After providing User all the necessary information, you may end the call.
 
-![helpar - User Manual - Screenshots - 3](/img/helpar - Tutorial - 3.jpg)
+![helpar - User Manual - Screenshots - 3](assets/helpar%20-%20Tutorial%20-%203.jpg)
 
 ##### Saving the record to the database
 
@@ -57,7 +57,7 @@ That's exactly why we have introduced a **helpar database**.
 
 After the connection with a User is terminated, you'll be automatically redirected to a Save Screen. If you find the advise you have just given possibly useful for other users, it is highly recommended to save it to the database. You'll be asked to define a name and keywords for your record. It will later be accessible through the _Search Database_ field in the Home Screen. After filming the object the annotations were recorded on, it will be possible to display the information without the live remote support of an assistant.
 
-![](assets/helpar - Tutorial - 4 - assistant.jpg)
+![](assets/helpar%20-%20Tutorial%20-%204%20-%20assistant.jpg)
 
 ##### More to come
 
