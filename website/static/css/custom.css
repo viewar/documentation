@@ -130,6 +130,21 @@ header/nav colors:
 **    shared UI        *
 ***********************/
 
+h1,
+h2,
+h3 {
+  clear: both;
+}
+
+article p img,
+article iframe {
+  max-height: 300px;
+}
+article p img[title='float'] {
+  float: right;
+  margin-left: 24px;
+}
+
 .button.isPrimary {
   background-color: #a41f1f;
   color: #fff;

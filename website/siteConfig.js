@@ -43,10 +43,12 @@ const siteConfig = {
     {
       doc:   'introduction',
       label: 'About ViewAR',
-    }, {
+    },
+    {
       doc:   'sdk/introduction',
       label: 'SDK',
-    }, {
+    },
+    {
       doc:   'tutorials/overview',
       label: 'Tutorials',
     },
