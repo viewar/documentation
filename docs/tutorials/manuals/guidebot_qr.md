@@ -23,7 +23,7 @@ Following this tutorial you'll learn how to use a GuideBOT indoor navigation app
 
 ##### Place the QR code set in the area you want to navigate around.
 
-- For the sake of the demo, we’ll use a set of test QR codes (link above). Print them in an A4 format and make sure that the dimensions of the **QR codes **themselves are 18 x 18 cm. It is important to ensure the proper scaling.
+- For the sake of the demo, we’ll use a set of test QR codes (link above). Print them in an A4 format and make sure that the dimensions of the **QR codes** themselves are 18 x 18 cm. It is important to ensure the proper scaling.
 
 ![](assets/QR-code-small.png)
 
