@@ -65,7 +65,7 @@ An example below:
 
 _Additionally, Models may have arbitrary app-specific data attached to them. This data may be used by the app in order to provide further functionality beyond what’s offered by ViewAR SDK. App-specific data has no meaning outside the app itself._
 
-#### Models storage
+#### Model Storage
 
 For performance reasons, it's often recommended not to bundle the models with the App, but store them in ViewAR CMS and download to the App on demand. ViewAR SDK encapsulates resources management (download, upload, caching) and provides access to them through a simple set of commands within ViewAR API. Models may be either fetched on demand or a downloaded as a set (in which case the app would also work offline).
 
@@ -97,7 +97,7 @@ This may be achieved with the following Categories:
 - "Bindings" _(Root Category),_
 - ...
 
-#### Instances
+#### Model Instances
 
 A Model may be fetched from the repository and its [Instance](sdk/quickstart/instances) may be inserted into the application's Scene. The same model may be inserted repeteadly, each time as a new Instance.
 
