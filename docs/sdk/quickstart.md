@@ -3,16 +3,18 @@ id: quickstart
 title: Quickstart
 ---
 
+> _have a look at the ViewAR's [interactive live example](https://webversion.viewar.com/com.viewar.sandbox/100/)._
+
 The ViewAR JavaScript API lets you access the Scene, Models, Cameras and Tracking Systems functionalities offered by the ViewAR Core from the ViewAR Application. In other words - it serves as an abstraction layer between the HTML UI and the C++ ViewAR Core. It allows you to utilize functionalitites of different services (think - ARKit, ARCore, Placenote, ...) with a unified set of JS commands. What it means, is that no platform-specific or device-specific knowledge is neccessary and that you may seamlessly switch between different technolgies (e.g. tracking systems).
 
 It would be a good idea to get an overview of the ViewAR API logic before diving into this chapter.
-If you haven't done it yet, give our [Basic Concepts](/sdk/basic_concepts/overview) section a moment.
+If you haven't done it yet, give our [Basic Concepts](./basic_concepts) section a moment.
 
 ## Scene Manager
 
-[Scene](/sdk/basic_concepts/scene_manager) is a collection of all virtual objects. Objects may be organised into Ungrouped and Grouped Containers. Scene Manipulation is possible through a Scene Manager.
+[Scene](./basic_concepts#scene) is a collection of all virtual objects. Objects may be organised into Ungrouped and Grouped Containers. Scene Manipulation is possible through a Scene Manager.
 
-### Insert a Container into a Scene {#insertcontainer}
+### Insert a Container into a Scene
 
 A Container is able to contain multiple models or other containers. To insert a new Container use the statement bellow. The method `insertContainer` returns the inserted instance, so you can use it later on.
 
@@ -24,7 +26,7 @@ const pose = {
 const container = await sceneManager.insertContainer({ pose });
 ```
 
-### Insert a model into a scene {#insertmodel}
+### Insert a model into a scene
 
 You can insert a model into a Scene by passing the model as the first argument into the `insertModel` method.
 The optional second argument is an object which holds configurations, for example the pose of the model. The method `insertModel` returns the inserted instance, so that you can use it later on.
@@ -53,7 +55,7 @@ const instance = await sceneManager.insertModel(model, { parent: container });
 
 ### Remove a node from a scene
 
-A Node can be an [Instance](/sdk/basic_concepts/models) of a Model or [Container](/sdk/basic_concepts/scene_manager). To remove a Node from a Scene, you need to pass the Instance into a `removeNode` method. You can access Scene Nodes by using the children property of the scene property.
+A Node can be an [Instance](./basic_concepts#model-instances) of a Model or [Container](./basic_concepts#containers). To remove a Node from a Scene, you need to pass the Instance into a `removeNode` method. You can access Scene Nodes by using the children property of the scene property.
 
 ```js
 const instance = sceneManager.scene.children[0];
@@ -64,7 +66,7 @@ await sceneManager.removeNode(instance);
 
 The Scene State holds all the information about the current setup of the Scene, such as inserted Nodes and their current state e.g. pose and visibility. At any point during the runtime, it is possible to serialise the current Scene State. Keep in mind that the Animation State and Tracking State do not get serialised, meaning that they cannot be saved (although their initial values may be defined for example at app start). The serialised State can than be stored and recovered later on, for example in order to provide Save/Load functionality. Furthermore, it is possible to synchronise Scene States between devices.
 
-### Retrieve & save the current Scene State
+### get current Scene State
 
 To retrieve and save the current Scene State to the local storage, use the following statement:
 
@@ -93,15 +95,13 @@ await sceneManager.setSceneState(sceneState);
 
 ### Model
 
-A 3D Model is a collection of data, resources, and assets that describe a virtual object. In the ViewAR System, models are created externally by 3D designers and uploaded to ViewAR 3D CMS, making them available to apps built using ViewAR SDK.
+A 3D Model is a collection of data, resources, and assets that describe a virtual object. In the ViewAR System, models are created externally by 3D designers and uploaded to ViewAR 3D CMS.
 
-Model Manager provides access to all [Models](sdk/basic_concepts/models) used in a ViewAR App and can request additional ones from repository.
+**The Model Manager** provides access to all loaded [Models](./basic_concepts#models) and can fetch additional ones from repository.
 
-#### Tip
+> _The Model Manager offers a convenient method `downloadAll\(\)` that downloads and caches all models and their assets used by an application. This way, the program may be fully usable offline._
 
-_The Model Manager offers a convenient method `downloadAll\(\)` that downloads and caches all models and their assets used by an application. This way, the program may be fully usable offline._
-
-### Fetching a Model from the Catalogue
+### Fetch a Model from the Catalogue
 
 In order to be able to insert a Model into a Scene, you may retrieve it from the 3D Catalogue. The findModel method does not download the actual model files, but only the Model description. This means that, in order to actually insert it in your scene, you'll need an addditional command ([sceneManager.insertModel]). The Model download happens when inserting.
 
@@ -115,15 +115,13 @@ const model = modelManager.findModelById(20); // by Model ID
 const model = modelManager.findModelByForeignKey('sheep'); // by Foreign Key
 ```
 
-#### Tip
-
-_Keep in mind that every Model ID is unique in the scale of the whole ViewAR CMS, whereas the same Foreign Key may be assigned to multiple Models. The Foreign Key may be defined in the Model Editor.
-[ViewAR Developer Portal](https://developer.viewar.com) > My Content > All Items > Model Editor > Foreign Key_
+> _Keep in mind that every Model ID is unique in the scale of the whole ViewAR CMS, whereas the same Foreign Key may be assigned to multiple Models. The Foreign Key may be defined in the Model Editor_  
+> under _[ViewAR Developer Portal](https://developer.viewar.com) > My Content > All Items > Model Editor > Foreign Key_
 
 ### Accessing Categories
 
-Every Model visible in a ViewAR App must be assigned to a [Category](sdk/basic_concepts/models).
-[ViewAR Developer Portal](https://developer.viewar.com) > My Content > All Items > Model Editor > Category\_
+Every Model visible in a ViewAR App must be assigned to a [Category](./basic_concepts#model-categories).  
+_[ViewAR Developer Portal](https://developer.viewar.com) > My Content > All Items > Model Editor > Category_
 
 To access the Model's Root Category use:
 
@@ -134,14 +132,9 @@ modelManager.rootCategory;
 To access the Category's children (they can be models or other Categories), use:
 
 ```js
+// access categories children
 modelManager.rootCategory.children;
-```
-
-#### Tip
-
-_You can go a multiple levels deep:_
-
-```js
+// access deeper levels of the sceneTree
 modelManager.rootCategory.children[0].children;
 ```
 
@@ -157,7 +150,10 @@ await modelManager.downloadAll();
 
 Tracking Systems try to estimate the world pose \(position and orientation\) of a mobile device \(e.g. phone, tablet, head mounted display\) in real-time. ViewAR System integrates numerous technological solutions and offers them through a coherent JavaScript API, so that you wouldn't have to worry about details of a particular technology integration. Furthermore, if a more robust Tracking System appears on the market, you can switch to it with a minimal effort.
 
-### Activating, Deactivating & Resetting tracking
+### Activate, Deactivate and Reset
+
+> _There can only be one tracking active at a time._  
+> _If one tracker gets enabled, the previous active tracker gets deactivated automatically._
 
 A chosen Tracking System may be managed as follows:
 
@@ -166,10 +162,6 @@ await viewarApi.trackers.ARKit.activate(); // Enable tracking.
 await viewarApi.trackers.ARKit.reset(); // Reset tracking.
 await viewarApi.trackers.ARKit.deactivate(); // Disable tracking.
 ```
-
-#### Tip
-
-_There can only be one tracking active at a time. If one tracker gets enabled, the previous active tracker gets deactivated automatically._
 
 ### Trackers list
 
@@ -196,13 +188,12 @@ const onTrackingTargetStatusChanged = async function() {
 tracker.on('trackingTargetStatusChanged', onTrackingTargetStatusChanged);
 ```
 
-#### Tip
-
-_After deactivating or resetting a tracker, it needs to be calibrated again. This means that the detected and/or confirmed ground plane gets lost._
+> _After deactivating or resetting a tracker, it needs to be calibrated again._  
+> _This means that the detected and/or confirmed ground plane gets lost._
 
 ## Cameras
 
-[Cameras](sdk/basic_concepts/cameras) control how the current scene is viewed.  
+[Cameras](./basic_concepts#cameras) control how the current scene is viewed.  
 In ViewAR System, there are three types of Cameras, all held in and controlled by the Camera Object:
 
 - **Perspective Camera** (perspectiveCamera)
@@ -278,7 +269,7 @@ The Perspective Camera's Pose is defined with the use of:
 The Virtual Reality Camera's Pose is defined with the use of:
 
 - position (3d vector)
-- orientation ([Quaternion](/docs/advanced_guides/quaternion))
+- orientation ([Quaternion](advanced_guides/quaternion.md))
 
 ```javascript
 {
@@ -292,7 +283,7 @@ orientation: { w, x, y, z }
 The Augmented Reality Camera's Pose is defined with the use of:
 
 - position (3d vector)
-- orientation ([Quaternion](/docs/advanced_guides/quaternion))
+- orientation ([Quaternion](advanced_guides/quaternion.md))
 
 ```javascript
 {
@@ -418,7 +409,7 @@ The following interactions with the Camera are recognized by touching any space 
 - **Single finger** - rotate
 - **Two fingers** - move
 
-The default behavior can also be changed manually by using our [JavaScript API Reference](/docs/sdk/sdk--api-reference/sdk--api-reference--overview.md).
+The default behavior can also be changed manually by using our [JavaScript API Reference](http://test2.3.viewar.com/docs/index.html).
 
 ### Touches & UI Elements
 
@@ -444,7 +435,7 @@ button {
 
 ## instances
 
-[Model Instance](sdk/basic_concepts/models) is a unique occurence of a model inserted in a ViewAR App. It is basically a copy of a Model loaded from the Model Catalogue and assigned to a variable in the application. While the original Model remains unchanged, the Model Instance may be manipulated inside the program.
+[Model Instance](./basic_concepts#model-instances) is a unique occurence of a model inserted in a ViewAR App. It is basically a copy of a Model loaded from the Model Catalogue and assigned to a variable in the application. While the original Model remains unchanged, the Model Instance may be manipulated inside the program.
 
 ### Change pose
 

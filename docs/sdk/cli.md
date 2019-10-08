@@ -11,7 +11,7 @@ First, make sure that you have the following prerequisites installed:
 - [npm](https://www.npmjs.com/) \(&gt;= v3.0.0\)
 - [git](https://meet.google.com/linkredirect?authuser=0&dest=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fgit-osx-installer%2Ffiles%2F)
 
-### Install viewar-cli
+#### install viewar-cli
 
 Next, install the viewar-cli globally by entering the following command into your terminal:
 
@@ -21,7 +21,7 @@ Next, install the viewar-cli globally by entering the following command into you
 
 You only need to install this tool once. When out of date, it will alert you and provide update instructions.
 
-### create account
+#### create account
 
 Create a free ViewAR [account](https://developer.viewar.com/user/register). You will need the credentials to be able to create new apps, upload and manage 3D content and much more. You may log in directly from the terminal:
 
@@ -59,7 +59,7 @@ Next, install the viewar-cli globally by entering the following command into you
 You will only need to install this tool once.  
 It will alert you when it's out of date, and provide instruction on how to update it.
 
-### Initialization
+#### Initialization
 
 Initialize a new javascript application by opening the terminal in your project directory and entering the following command:
 
@@ -69,26 +69,17 @@ where PROJECT_NAME is the name of your new application. Once it's been created a
 
 Navigate in your web browser to `http://localhost:8080/` to access the application. To edit the application's code start from `src/index.js` .
 
-### Deployment
+## SDK App
 
-To deploy the app you first need to create an empty application at [http://developer.viewar.com](http://developer.viewar.com). Than open the application directory in the terminal and enter `viewar show-token`. Enter the first part of the displayed token \(until the dash\) into the application settings on the application website, to connect the boilerplate application with the system.
+![](assets/viewar%20sdk2.svg 'float')
 
-<!---
-**\[ I have not found the option to enter the token, plus we should maybe only display the public and important part of the token\]**
---->
+Next you need to setup your phone.  
+While the mock mode allows you to develop the UI quickly using mocked tracking events, especially for the first try it's more fun using a real phone.
 
-Finally you have to enter `npm run deploy`via terminal to deploy the app. You can now download the ViewAR SDK app from AppStore on your iOS device and enter the App ID you entered while creating the empty application to launch the app on the device.
+**Download the ViewAR SDK App**
 
-### Mobile device setup
-
-Next you need to setup your phone. While the mock mode allows you to develop the UI quickly using mocked tracking events, especially for the first try it's more fun using a real phone.
-
-Download the ViewAR SDK App either from the
-
-- Apple Store [https://itunes.apple.com/us/app/viewar-sdk/id1097511807](https://itunes.apple.com/us/app/viewar-sdk/id1097511807)
-- Google Play Store [https://play.google.com/store/apps/details?id=com.viewar.sdk](https://play.google.com/store/apps/details?id=com.viewar.sdk)
-
-![](/img/viewar sdk2.svg)
+- [Apple Store](https://itunes.apple.com/us/app/viewar-sdk/id1097511807)
+- [Google Play Store](https://play.google.com/store/apps/details?id=com.viewar.sdk)
 
 Make sure that your phone and computer are in the same local network.
 
@@ -125,7 +116,13 @@ Or have a look at the [Tutorials](../tutorials/overview)
 
 ## Deployment
 
-To deploy the app you first need to create an application at [http://developer.viewar.com](http://developer.viewar.com).  
-In order to activate your template to an app, you need to run:
+To deploy the app you first need to create an empty application at [http://developer.viewar.com](http://developer.viewar.com). Than open the application directory in the terminal and enter `viewar show-token`. Enter the first part of the displayed token \(until the dash\) into the application settings on the application website, to connect the boilerplate application with the system.
 
+In order to activate your template to an app, you need to run:  
 `viewar deploy APP-ID APP-VERSION`
+
+Finally you have to enter `npm run deploy`via terminal to deploy the app. You can now download the ViewAR SDK app from AppStore on your iOS device and enter the App ID you entered while creating the empty application to launch the app on the device.
+
+<!---
+**\[ I have not found the option to enter the token, plus we should maybe only display the public and important part of the token\]**
+--->

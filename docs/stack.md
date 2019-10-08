@@ -5,7 +5,7 @@ title: Technology Stack
 
 ViewAR System is a platform-independent modular structure integrating the majority of hard- and software field-specific components available on the market.
 
-![](/img/SystemStructureSketch.jpg)
+![](assets/SystemStructureSketch.jpg)
 
 ViewAR Apps consist of:
 
