@@ -71,14 +71,15 @@ Navigate in your web browser to `http://localhost:8080/` to access the applicati
 
 ## SDK App
 
-Next you need to setup your phone. While the mock mode allows you to develop the UI quickly using mocked tracking events, especially for the first try it's more fun using a real phone.
+![](assets/viewar%20sdk2.svg 'float')
 
-Download the ViewAR SDK App either from the
+Next you need to setup your phone.  
+While the mock mode allows you to develop the UI quickly using mocked tracking events, especially for the first try it's more fun using a real phone.
 
-- Apple Store [https://itunes.apple.com/us/app/viewar-sdk/id1097511807](https://itunes.apple.com/us/app/viewar-sdk/id1097511807)
-- Google Play Store [https://play.google.com/store/apps/details?id=com.viewar.sdk](https://play.google.com/store/apps/details?id=com.viewar.sdk)
+**Download the ViewAR SDK App**
 
-![](assets/viewar%20sdk.svg)
+- [Apple Store](https://itunes.apple.com/us/app/viewar-sdk/id1097511807)
+- [Google Play Store](https://play.google.com/store/apps/details?id=com.viewar.sdk)
 
 Make sure that your phone and computer are in the same local network.
 
