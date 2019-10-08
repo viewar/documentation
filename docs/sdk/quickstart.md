@@ -113,15 +113,13 @@ const model = modelManager.findModelById(20); // by Model ID
 const model = modelManager.findModelByForeignKey('sheep'); // by Foreign Key
 ```
 
-#### Tip
-
-_Keep in mind that every Model ID is unique in the scale of the whole ViewAR CMS, whereas the same Foreign Key may be assigned to multiple Models. The Foreign Key may be defined in the Model Editor.
-[ViewAR Developer Portal](https://developer.viewar.com) > My Content > All Items > Model Editor > Foreign Key_
+> _Keep in mind that every Model ID is unique in the scale of the whole ViewAR CMS, whereas the same Foreign Key may be assigned to multiple Models. The Foreign Key may be defined in the Model Editor_  
+> under _[ViewAR Developer Portal](https://developer.viewar.com) > My Content > All Items > Model Editor > Foreign Key_
 
 ### Accessing Categories
 
-Every Model visible in a ViewAR App must be assigned to a [Category](./basic_concepts#model-categories).
-[ViewAR Developer Portal](https://developer.viewar.com) > My Content > All Items > Model Editor > Category\_
+Every Model visible in a ViewAR App must be assigned to a [Category](./basic_concepts#model-categories).  
+_[ViewAR Developer Portal](https://developer.viewar.com) > My Content > All Items > Model Editor > Category_
 
 To access the Model's Root Category use:
 
@@ -132,14 +130,9 @@ modelManager.rootCategory;
 To access the Category's children (they can be models or other Categories), use:
 
 ```js
+// access categories children
 modelManager.rootCategory.children;
-```
-
-#### Tip
-
-_You can go a multiple levels deep:_
-
-```js
+// access deeper levels of the sceneTree
 modelManager.rootCategory.children[0].children;
 ```
 
@@ -157,6 +150,9 @@ Tracking Systems try to estimate the world pose \(position and orientation\) of 
 
 ### Activating, Deactivating & Resetting tracking
 
+> _There can only be one tracking active at a time._  
+> _If one tracker gets enabled, the previous active tracker gets deactivated automatically._
+
 A chosen Tracking System may be managed as follows:
 
 ```js
@@ -164,10 +160,6 @@ await viewarApi.trackers.ARKit.activate(); // Enable tracking.
 await viewarApi.trackers.ARKit.reset(); // Reset tracking.
 await viewarApi.trackers.ARKit.deactivate(); // Disable tracking.
 ```
-
-#### Tip
-
-_There can only be one tracking active at a time. If one tracker gets enabled, the previous active tracker gets deactivated automatically._
 
 ### Trackers list
 
@@ -194,9 +186,8 @@ const onTrackingTargetStatusChanged = async function() {
 tracker.on('trackingTargetStatusChanged', onTrackingTargetStatusChanged);
 ```
 
-#### Tip
-
-_After deactivating or resetting a tracker, it needs to be calibrated again. This means that the detected and/or confirmed ground plane gets lost._
+> _After deactivating or resetting a tracker, it needs to be calibrated again._  
+> _This means that the detected and/or confirmed ground plane gets lost._
 
 ## Cameras
 
