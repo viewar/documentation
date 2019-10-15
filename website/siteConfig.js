@@ -55,10 +55,10 @@ const siteConfig = {
       doc:   'tutorials/overview',
       label: 'Tutorials',
     },
-    // {
-    //   blog:  true,
-    //   label: 'Blog',
-    // },
+    {
+      page:   'examples/test',
+      label:  'example test',
+    },
   ],
 
   // If you have users set above, you add it here:

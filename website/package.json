@@ -9,6 +9,8 @@
     "rename-version": "docusaurus-rename-version"
   },
   "devDependencies": {
+    "@codesandbox/react-embed": "0.0.14",
     "docusaurus": "^1.13.0"
-  }
+  },
+  "dependencies": {}
 }
