@@ -64,7 +64,7 @@ export default () => {
 
 At this point, you should be able to run the app on you mobile device and see the image from its back camera.
 
-![](/img/drone-phone-step1-v03-web.jpg)
+![](assets/drone-phone-step1-v03-web.jpg)
 _Screenshot from the Drone Control App_
 
 ##### Useful reads:

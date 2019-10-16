@@ -37,7 +37,7 @@ Start the ViewAR SDK App. You can either use our sample demo (App ID: **furnitur
 
 When your Furniture Live App launches, choose the Live Mode. When you see the camera picture, configure the tracking following the instructions on the screen.
 
-![](/img/Furniture%20Live%20-%20Tutorial%20-%201.jpg)
+![](assets/Furniture%20Live%20-%20Tutorial%20-%201.jpg)
 
 Point a camera at an empty space in the room. Take into consideration that the model will appear around 1.2m in front of you, so make sure that you have enough space for it. You'll naturally be able to move it later, but just to avoid confusion.
 
@@ -45,25 +45,25 @@ Click on the _+_ button to enter the library and pick the desired piece of furni
 
 You may walk around to see your design from all sides and angles. You can still move it around, if you fell like it!
 
-![](/img/Furniture%20Live%20-%20Tutorial%20-%202.jpg)
+![](assets/Furniture%20Live%20-%20Tutorial%20-%202.jpg)
 
 Click on the model to display its editable properties. The white label in the bottom of the screen displays the following information: the object property being edited (above) and its chosen option (below).
 
-![](/img/Furniture%20Live%20-%20Tutorial%20-%203.jpg)
+![](assets/Furniture%20Live%20-%20Tutorial%20-%203.jpg)
 
 Your projects may be saved and retrieved from the _Projects Folder_ at any time. Simply go back to the Home Screen and enter the _Projects_ menu.
 
-![](/img/Furniture%20Live%20-%20Tutorial%20-%207.jpg)
+![](assets/Furniture%20Live%20-%20Tutorial%20-%207.jpg)
 
 Tipping the _three dots_ button will open an additional menu. Explore different options like taking a screenshot and sharing it, entering the shopping cart to see a summary of objects in the scene or saving the project.
 
-![](/img/Furniture%20Live%20-%20Tutorial%20-%204.jpg)
+![](assets/Furniture%20Live%20-%20Tutorial%20-%204.jpg)
 
-![](/img/Furniture%20Live%20-%20Tutorial%20-%205.jpg)
+![](assets/Furniture%20Live%20-%20Tutorial%20-%205.jpg)
 
 If you have doubts about the User Interface, just tap the _Help_ button. Descriptions of buttons and gestures will be displayed.
 
-![](/img/Furniture%20Live%20-%20Tutorial%20-%206.jpg)
+![](assets/Furniture%20Live%20-%20Tutorial%20-%206.jpg)
 
 ##### Sketching a 3D model of your room:
 
@@ -71,28 +71,28 @@ The Furniture Live Application is equipped with a powerful tool call **Room Buil
 
 After initialising the tracking mark corners of your room.
 
-![](/img/Furniture%20Live%20-%20Tutorial%20-%208.jpg)
+![](assets/Furniture%20Live%20-%20Tutorial%20-%208.jpg)
 
 Next, define the room height. Mark doors...
 
-![](/img/Furniture%20Live%20-%20Tutorial%20-%209.jpg)
+![](assets/Furniture%20Live%20-%20Tutorial%20-%209.jpg)
 
 ...and windows. After confirming the last window, a 3D model of the room will be generated and you'll be moved to a View Selection Menu. Select the 3D View to see the model.
 
-![](/img/Furniture%20Live%20-%20Tutorial%20-%2010.jpg)
+![](assets/Furniture%20Live%20-%20Tutorial%20-%2010.jpg)
 
 How does it look? Have you got everything right? If not, that's where you can make adjustments. Try moving wall corners, adding windows and doors, changing their dimensions and geometry.
 
-![](/img/Furniture%20Live%20-%20Tutorial%20-%2011.jpg)
+![](assets/Furniture%20Live%20-%20Tutorial%20-%2011.jpg)
 
 Also finishing materials of walls and floor may be adjusted.
 
-![](/img/Furniture%20Live%20-%20Tutorial%20-%2012.jpg)
+![](assets/Furniture%20Live%20-%20Tutorial%20-%2012.jpg)
 
 Just as in the **Live View**, you may add furniture and save the project at any time.
 
-![](/img/Furniture%20Live%20-%20Tutorial%20-%2014.jpg)
+![](assets/Furniture%20Live%20-%20Tutorial%20-%2014.jpg)
 
 One of the advantages of having an actual 3D model of your space is the fact that it preserves its full editability after reopening. Try also using the **Walk Mode**. Use the pads to navigate around. At any point you may also enter your _Shopping Cart_ to display a summary of all elements in the scene.
 
-![](/img/Furniture%20Live%20-%20Tutorial%20-%2015.jpg)
+![](assets/Furniture%20Live%20-%20Tutorial%20-%2015.jpg)

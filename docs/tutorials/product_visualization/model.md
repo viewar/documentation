@@ -73,8 +73,8 @@ init();
 
 Restart the application on your phone, then slightly move it to left to right filming the ground in front of you until you see the chair. It should looks like this:
 
-![](/img/ar-tutorial-camera-chair.png)
+![](assets/ar-tutorial-camera-chair.png)
 
 The best part here is that by default each model is draggable. You only need to touch the model on the screen and move it around. Using two fingers you can even rotate the model.
 
-![](/img/model_dragable.gif)
+![](assets/model_dragable.gif)
