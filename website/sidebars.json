@@ -8,7 +8,6 @@
         "type": "subcategory",
         "label": "Template Tutorials",
         "ids": [
-          "tutorials/template_tutorials/arvatar",
           "tutorials/template_tutorials/wallart",
           "tutorials/template_tutorials/helpar",
           "tutorials/template_tutorials/guidebot",
@@ -18,7 +17,7 @@
       {
         "type": "subcategory",
         "label": "SDK Tutorials",
-        "ids": ["tutorials/sdk_tutorials/drone"]
+        "ids": ["tutorials/sdk_tutorials/drone", "tutorials/sdk_tutorials/arvatar"]
       },
       {
         "type": "subcategory",
