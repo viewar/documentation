@@ -17,6 +17,11 @@
       },
       {
         "type": "subcategory",
+        "label": "SDK Tutorials",
+        "ids": ["tutorials/sdk_tutorials/drone"]
+      },
+      {
+        "type": "subcategory",
         "label": "Product Visualization",
         "ids": [
           "tutorials/product_visualization/overview",
