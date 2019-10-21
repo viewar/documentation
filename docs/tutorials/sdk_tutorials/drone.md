@@ -48,7 +48,7 @@ _If you don't feel entirely comfortable in the skillset above, you might benefit
   <br>OR
 - ARCore compatible Android device
 
-_Check the list of [compatible devices](/docs/advanced_guides/hardware)._
+_Check the list of [compatible devices](/docs/additional_information/hardware)._
 
 ## Getting Started
 

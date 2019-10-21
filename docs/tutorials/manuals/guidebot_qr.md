@@ -9,7 +9,7 @@ Following this tutorial you'll learn how to use a GuideBOT indoor navigation app
 
 ##### Device requirements
 
-- An iOS, ARKit compatible device - see: [supported hardware](/docs/sdk/advanced_guides/hardware).
+- An iOS, ARKit compatible device - see: [supported hardware](/docs/sdk/additional_information/hardware).
 - Up-to-date version of the ViewAR SDK App (available from the App Store (iOS)).<br>You can use our sample demo App ID: **guidebot.qr.demo**, version: **100**.
 - A printed copy of a set of our [demo QR codes](http://www.viewar.com/wp-content/uploads/2018/12/GuideBOT-QRcodes-1.pdf)
 

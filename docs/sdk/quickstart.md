@@ -269,7 +269,7 @@ The Perspective Camera's Pose is defined with the use of:
 The Virtual Reality Camera's Pose is defined with the use of:
 
 - position (3d vector)
-- orientation ([Quaternion](advanced_guides/quaternion.md))
+- orientation ([Quaternion](additional_information/quaternion.md))
 
 ```javascript
 {
@@ -283,7 +283,7 @@ orientation: { w, x, y, z }
 The Augmented Reality Camera's Pose is defined with the use of:
 
 - position (3d vector)
-- orientation ([Quaternion](advanced_guides/quaternion.md))
+- orientation ([Quaternion](/quaternion.md))
 
 ```javascript
 {

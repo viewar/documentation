@@ -10,7 +10,7 @@ We’ll show you how to use a helpar app as a Support Agent.
 #### What you'll need
 
 - An **iOS ARKit compatible mobile device**.  
-  You may have a look at the [supported hardware](/docs/sdk/advanced_guides/hardware).
+  You may have a look at the [supported hardware](/docs/sdk/additional_information/hardware).
 - Up-to-date version of the **ViewAR SDK App** (available from the App Store (iOS)).
 
 #### What you'll learn to do:
