@@ -10,7 +10,7 @@ We’ll show you how to use a helpar app.
 #### What you'll need
 
 - An **iOS ARKit compatible mobile device**.  
-  <br>You may verify the compatibility [here](/docs/sdk/advanced_guides/hardware).
+  <br>You may verify the compatibility [here](/docs/sdk/additional_information/hardware).
 - Up-to-date version of the **ViewAR SDK App** (available from the App Store (iOS)).
 
 #### What you'll learn to do:
