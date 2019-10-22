@@ -7,6 +7,9 @@ Learn how to create a GuideBOT indoor navigation application.
 Two tracking versions available: using QR codes or the Placenote tracking.
 
 - More about the [GuideBOT Template](https://www.viewar.com/template/guidebot/)
+- User Manuals
+  - [QR version](../manuals/guidebot_qr.md)
+  - [Placenote version](../manuals/guidebot_placenote.md)
 - Learn to setup GuideBOT Template with the [App Builder](./app_builder) or [CLI](./cli).
 
 ### INTRODUCTION

@@ -12,7 +12,7 @@ Remote support has never been easier. Incorporate one-to-one calls into a user-f
 - [Create with the App Builder](./app_builder)  
   no programming knowledge required
 - [Create with the ViewAR CLI](./cli)
-- [User Manual](/docs/tutorials/manuals/helpar_user)  
+- [User Manual](../manuals/helpar_user)  
   web development skills required (HTML, CSS, JavaScript, optionally - React)
 
 #### Support
