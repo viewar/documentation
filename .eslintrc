@@ -1,6 +1,6 @@
 {
   "root": true,
-  "extends": "viewar/env/react",
+  "extends": "./node_modules/@viewar/config-eslint/env/react",
   "rules": {
     //*********************
     //* docusaurus tweaks *

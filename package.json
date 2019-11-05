@@ -1,6 +1,6 @@
 {
   "name": "viewar-documentation",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "Documentation of ViewAR's SDK and API",
   "scripts": {
     "test": "mocha",
@@ -12,10 +12,8 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "eslint": "^6.5.1",
-    "eslint-config-viewar": "git+https://github.com/DoubleU23/eslint-config-viewar.git",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-react": "^7.16.0",
+    "@viewar/config-eslint": "^1.7.0",
+    "eslint": "^6.6.0",
     "prettier": "^1.18.2"
   },
   "repository": {

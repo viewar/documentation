@@ -8,7 +8,7 @@ Following this tutorial you'll learn how to use the demo version and, optionally
 
 #### Ready to go?
 
-- [User Manual](/manuals/wallart)  
+- [User Manual](../manuals/wallart)  
   Learn to use the App
 - [Create with the App Builder](#app_builder)  
   Create your own version with the App Builder

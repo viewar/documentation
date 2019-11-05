@@ -7,10 +7,10 @@ The radian is the SI (French: _Système International d'Unités_) unit for measu
 
 **1 rad = 180/π degrees ≈ 57.3 degrees**
 
-![](/img/radians-1rad-2.jpg)
+![](../assets/radians-1rad-2.jpg)
 _Source: Wikipedia_
 
 A complete revolution is 2π radians. It follows that the magnitude in radians of one complete revolution (360 degrees) is the length of the entire circumference divided by the radius, or 2πr / r, or 2π. Thus 2π radians is equal to 360 degrees, meaning that one radian is equal to 180/π degrees.
 
-![](/img/radians-circle.gif)
+![](../assets/radians-circle.gif)
 _Source: Wikipedia_

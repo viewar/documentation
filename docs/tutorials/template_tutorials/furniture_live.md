@@ -9,7 +9,7 @@ _Furniture Live_ template is compatible with iOS, Android and runs in the browse
 
 #### Ready to go?
 
-- [User Manual](/docs/tutorials/manuals/furniture_live)  
+- [User Manual](../manuals/furniture_live.md)  
   learn how to use the application
 - [Create with the App Builder](./app_builder)  
   no programming knowledge required
