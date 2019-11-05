@@ -41,6 +41,14 @@ const siteConfig = {
   // For sites with a sizable amount of content, set collapsible to true.
   // Expand/collapse the links and subcategories under categories.
   docsSideNavCollapsible: true,
+
+  // docsearch api
+  algolia:                {
+    apiKey:         '5207094edcc772e8784736cd40203ef0',
+    indexName:      'viewar',
+    placeholder:    'Search SDK',
+    algoliaOptions: {}, // Optional, if provided by Algolia
+  },
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks:            [
     {
@@ -55,10 +63,10 @@ const siteConfig = {
       doc:   'tutorials/overview',
       label: 'Tutorials',
     },
-    // {
-    //   blog:  true,
-    //   label: 'Blog',
-    // },
+    {
+      label:  'Search',
+      search: true,
+    },
   ],
 
   // If you have users set above, you add it here:
