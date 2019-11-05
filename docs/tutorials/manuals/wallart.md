@@ -11,7 +11,7 @@ Wall Art is a product visualisation app dedicated to 2D objects with of vertical
 
 - An **iOS or Android mobile device**.  
   Make sure that it's compatible with one of the marker-less tracking systems (ARKit for iOS, ARCore for Android).  
-  You may have a look at the [supported hardware](/docs/sdk/advanced_guides/hardware).
+  You may have a look at the [supported hardware](/docs/sdk/additional_information/hardware).
 - Up-to-date version of the **ViewAR SDK App** (available from the App Store (iOS)).
 
 #### What you'll learn to do:

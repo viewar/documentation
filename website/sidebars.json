@@ -48,13 +48,13 @@
         ]
       }
     ],
-    "Advances Guides": [
-      "advanced_guides/hardware",
-      "advanced_guides/power_economy",
-      "advanced_guides/publishing",
-      "advanced_guides/euler_angles",
-      "advanced_guides/quaternion",
-      "advanced_guides/radian"
+    "Additional Information": [
+      "additional_information/hardware",
+      "additional_information/power_economy",
+      "additional_information/publishing",
+      "additional_information/euler_angles",
+      "additional_information/quaternion",
+      "additional_information/radian"
     ]
   }
 }
