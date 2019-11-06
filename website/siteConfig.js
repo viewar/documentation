@@ -46,7 +46,7 @@ const siteConfig = {
   algolia:                {
     apiKey:         '5207094edcc772e8784736cd40203ef0',
     indexName:      'viewar',
-    placeholder:    'Search SDK',
+    placeholder:    'Search',
     algoliaOptions: {}, // Optional, if provided by Algolia
   },
   // For no header links in the top nav bar -> headerLinks: [],
