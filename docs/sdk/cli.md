@@ -17,8 +17,6 @@ Next, install the viewar-cli globally by entering the following command into you
 
 `npm install -g viewar-cli`
 
-\(You might need to use `sudo npm install -g viewar-cli` to have the right permissions.\)
-
 You only need to install this tool once. When out of date, it will alert you and provide update instructions.
 
 #### create account
