@@ -3,7 +3,9 @@ id: troubleshooting
 title: Trouble Shooting
 ---
 
-## EACCES: permission denied
+## Installation
+
+### EACCES: permission denied
 
 if you see this error, try to fix the directory permissions with the following commands  
 _(you can copy the whole block into your terminal)_
