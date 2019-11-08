@@ -751,7 +751,9 @@ Animations need to be in one model if you've got multiple animations that should
 Animations should be in 24fps.
 Right now our converter doesn't support animations yet, so we have to manually export them in house. If there are multiple animations we will also need the frame ranges for the animations and the duration of that animation in seconds (in case it should play faster or slower than real-time).
 
-### Final touches
+### Export
+
+#### Final touches
 
 - Delete History, Freeze Transformations, set vertex normals to face and assign smoothing groups \(hard, soft edges\). Check for mesh issues with available clean up tools.
 
@@ -762,8 +764,6 @@ Right now our converter doesn't support animations yet, so we have to manually e
   - Reference cubes or other geometry that is used as a reference for translation or rotation values for the converter shouldn't be frozen or they will loose the values that are important for the Converter. \(See: References/Portals/Snappoints\)
 
 - At the end, set vertex normals to face and issue the smoothing groups \(they get lost when deleting history\).
-
-### Export
 
 #### File Formats
 
@@ -847,8 +847,6 @@ which is always reserved by ViewAR engine for the ambient occlusion map
 
 The ViewAR System comes with a Material Editor, letting you define material options for models. We use the originally applied material names (coming from a 3D software) to split the model into so called _surfaces_. You can then define a single or multiple materials for each surface.
 
-### Interface overview
-
 ![](/assets/MaterialEditorEmptyNumbered.jpg)  
 _1 - Model Preview  
 2 - Material / Texture / Environment  
@@ -857,7 +855,7 @@ _1 - Model Preview
 
 Specific surfaces can be selected in two ways: by double-clicking the model in the _Model Preview_ or by selecting a surface name from the top-right menu. Active surfaces gets highlighted in pink.
 
-### Upload textures
+### Textures
 
 > Textures are graphic files in .jpg or .png format, which are used to create materials. For information on creating materials, scroll down.
 
@@ -870,7 +868,7 @@ In the _Toolbox_ click to open the upload dialog or simply drag and drop you tex
 
 ![](/assets/MaterialEditorTextureUpload.jpg)
 
-### Upload Environment Maps
+### Environment Maps
 
 > Environment maps are graphic files in .jpg format, which are used to create materials. For information on creating materials, scroll down.
 
@@ -878,7 +876,7 @@ If you want to use different environment cubemaps, you can either click on the _
 
 ![](/assets/MaterialEditorNewCubemap.jpg)
 
-### Create Materials
+### Create Material
 
 > Upload textures before you start working on your material.
 
@@ -930,12 +928,9 @@ TODO: add delete icon.
 ### Group Surfaces
 
 If you want two surfaces to change at the same time, the display name of the two surface materials needs to be the same and the amount of options needs to be the same as well.
-
-### Save Changes
-
 Once you are done setting up your materials and material options, click on _Save Options_ in the top right.
 
-### Test
+### View and Test
 
 To test you changes, open the _Single Product View_ in a new incognito window \(otherwise, the changes won't be visible\).
 
@@ -945,7 +940,7 @@ To test you changes, open the _Single Product View_ in a new incognito window \(
 
 If you have already set up a model with the same materials assigned to the same geometry names (derived from material names from a 3D software), you can input the model ID of the set up model in the top right panel and click on _Clone_, then _Save Options_.
 
-### Textures
+### Dos & Donts
 
 #### Dos
 
