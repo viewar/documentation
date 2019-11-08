@@ -7,11 +7,11 @@ The ViewAR System provides a web interface for model upload and management.
 
 ## Content upload
 
-### Register / Login
+### Login
 
 Create a free account and login on: [http://developer.viewar.com/user/login](http://developer.viewar.com/user/login)
 
-### Create / Edit Category
+### Category
 
 Go to the _Content_ tab, select _Categories_ and create a new _Category_.
 
@@ -33,7 +33,7 @@ Fill in following data:
 
 Save!
 
-### 3D Models:
+### 3D Model
 
 To go to the model section, go to "Content" and then click on "3D Models"
 ![](/assets/3DModelsMenue.jpg)
