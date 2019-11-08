@@ -60,7 +60,7 @@ const siteConfig = {
       label: 'SDK',
     },
     {
-      doc: '3d_content/getting_started',
+      doc: '3d_content/introduction',
       label: '3D Content',
     },
     {
