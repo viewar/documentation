@@ -15,11 +15,11 @@ Create a free account and login on: [http://developer.viewar.com/user/login](htt
 
 Go to the _Content_ tab, select _Categories_ and create a new _Category_.
 
-![](/assets/MenueCategories.jpg)
+![](../assets/MenueCategories.jpg)
 
 Click on _+ Create new category:_
-![](/assets/EmptyCategories.jpg)
-![](/assets/CreateEditCategories.jpg)
+![](../assets/EmptyCategories.jpg)
+![](../assets/CreateEditCategories.jpg)
 
 Fill in following data:
 
@@ -36,15 +36,15 @@ Save!
 ### 3D Model
 
 To go to the model section, go to "Content" and then click on "3D Models"
-![](/assets/3DModelsMenue.jpg)
+![](../assets/3DModelsMenue.jpg)
 
 #### Uploading a model
 
 To upload a new Model, click on _Upload new model:_
 
-![](/assets/3DModelsEmpty.jpg)
+![](../assetsts/3DModelsEmpty.jpg)
 
-![](/assets/UploadModelEmpty.jpg)
+![](../assets/UploadModelEmpty.jpg)
 
 - **Name:** Choose a name: “Brand - Item Name”
 
@@ -76,10 +76,10 @@ To upload a new Model, click on _Upload new model:_
 
 - **Accept Terms and Conditions**: Required for upload.
 
-![](/assets/UploadModel.jpg)
+![](../assets/UploadModel.jpg)
 
 - **Save/Upload:**
-  ![](/assets/MaterialEditorEmpty.jpg)![](/assets/3DModels.jpg)
+  ![](../assets/MaterialEditorEmpty.jpg)![](../assets/3DModels.jpg)
   Once the Upload is complete, you will end up in the Material Editor, for more information about the material editor, go to [ViewAR Material Editor](#ViewAR Material Editor)
 
 ## Model List
@@ -108,19 +108,19 @@ Uploading 3D Content may be confusing, doesn't it? That's why we've prepared Mod
 
 ### Picture-Uploader
 
-![](/assets/Screen Shot 2019-02-01 at 09.13.28.png)
+![](../assets/Screen Shot 2019-02-01 at 09.13.28.png)
 
 Use it for uploading images to be used as pictures placed on the walls. Files uploaded with the use of this assistant will have a vertical orientation and be interpreted as a poster/painting. Using this assistant will require setting a real-world size of the graphics.
 
 ### Video-Uploader
 
-![](/assets/Screen Shot 2019-02-01 at 09.13.33.png)
+![](../assets/Screen Shot 2019-02-01 at 09.13.33.png)
 
 Use it for uploading clips to be used as videos. Files uploaded with the use of this assistant will have a vertical orientation. Using this assistant will require setting a real-world size of the graphics.
 
 ### Custom 3D-Uploader
 
-![](/assets/Screen Shot 2019-02-01 at 09.13.17.png)
+![](../assets/Screen Shot 2019-02-01 at 09.13.17.png)
 
 Use it for uploading custom 3D models. This mode is intended for experienced 3D designers and enables for definition of advanced settings.
 
@@ -543,11 +543,11 @@ The ViewAR System accepts polygon models in 3D files formats of _.fbx_ and _.obj
 
 The ViewAR System can handle objects and scenes with up to 800k Tris, however, it also depends largely on the platform/device which is going to be used. An older iPhone or iPad won't be able to handle such a high polycount model, while the Web version would still have a good performance.  
 Refer to the following examples of well-optimised models with Tri-Count, plus a suggested maximum for similar assets:  
-![](/assets/cabinetpolycount.JPG)  
+![](../assets/cabinetpolycount.JPG)  
 Keep in mind that this cabinet's interior is also modelled. Simple hard surface objects, like cabinets, don't need a lot of polygons to look good. Try to keep it below 50k triangles.  
-![](/assets/sofapolycount.JPG)  
+![](../assets/sofapolycount.JPG)  
 For complex geometries, like the sofa above, use polygon density differentiation. Try to stay below 200k Triangles. If needed, try baking smaller into the ambient occlusion map.  
-![](/assets/AApolycount2.JPG)  
+![](../assets/AApolycount2.JPG)  
 Sometimes even more complex models are needed, be aware that this can cause performance problems and crashes with older platform.
 
 #### Polygon Distribution and Edgeflow
@@ -591,10 +591,10 @@ All of those can, but don’t necessarily have to cause issues for the converter
 - We use a two uvset workflow. The first uvset \(uv0\) for tiled textures which can be overlapping and the second \(uv1\) for ambient occlusion or other maps that have to fit in the uv 0-1 space without any overlapping faces. Textures should be scaled by scaling the uvs in uv0 or later when setting up materials in our material editor.
 
 UV0:  
-![](/assets/UV0.JPG)
+![](../assets/UV0.JPG)
 
 UV1:  
-![](/assets/UV1.JPG)
+![](../assets/UV1.JPG)
 
 - Pixel Density should be consistent for tiled textures \(they still need to be sharp at closeup\)
 
@@ -610,7 +610,7 @@ The advantages for this workflow are very visible in the images below. While the
 
 Baked textures are supported as well, but for the best results we highly recommend to use the 2 UV Set workflow. You can use this workflow with non-overlapping UV Layouts as well as long as you duplicate the UV Layout into a second UV Set, however this is just a workaround for our system since we expect 2 UV Sets for layered textures.
 
-**Left**: Baked Textures; **Right**: Tiled Texture with AO Map ![](/assets/screenshot006.jpg)
+**Left**: Baked Textures; **Right**: Tiled Texture with AO Map ![](../assets/screenshot006.jpg)
 
 #### Naming Convention
 
@@ -644,14 +644,14 @@ Naming is also important for our converter that reacts to specific prefixes:
 
 For this guide we are going to work through a very simplified version of our workflow. The steps are usually the same, but how you unwrap will be different with more complex objects.
 
-First step is to create a uvlayout and unwrap in order for the texture to be visualized properly. Add an "Unwrap UVW" modifier.![](/assets/UV1.jpg)Open the UV Editor![](/assets/UV2.jpg)Select the object and use the appropriate projection \(we are going with the simple Box Map here\) and unwrap \(quick peal here\)![](/assets/UV4.jpg)![](/assets/UV5.jpg)Make sure that all uvshells have the same pixel density \(we recommend 20pixels/cm @1024x1024\) or scale the uvs to your texture needs \(rather than scaling the texture in the texture settings, since will be ignored in our converter\). You can later scale the textures in our material editor as well.![](/assets/UV6.jpg)The first UV Set \(uv0\) is usually used for tiled textures which can have overlapping UVs. For the ambientocclusionmap.jpg we need a non-overlapping UVset and hence need to create a second one \(uv1\). For this we can save the already created UVs so we can load it in uv1 or we can just create an new uvset. Either way we need a second Unwrap UVW Modifier. After you created the second modifier we need to assign it to the second uv channel \(uv1\). A pop up will appear with a channel change warning. Click abandon, then either load saved UVWs or create a new non-overlapping UVW unwrap.![](/assets/UV7.jpg)The next step is to create and assign materials to your object as well as link the maps to both the proper channels as well as UV Set. Click "M" to open the material editor. Open up the "Maps" dropdown menu, check Ambient Color \(you might have to click on the small symbol on the right\) and Diffuse Color then click on "No Map" to link the textures. In to next pop up choose "Bitmap" and assign your diffuse textures and ambientocclusionmap.jpg![](/assets/UV8.jpg)The materialeditor then changes to the "texture level" where you need to assign the proper UV Channel. To get back to the "material level" use the small icon called "Go To Parent". After linking all textures properly you are ready for export.![](/assets/UV9.jpg)
+First step is to create a uvlayout and unwrap in order for the texture to be visualized properly. Add an "Unwrap UVW" modifier.![](../assets/UV1.jpg)Open the UV Editor![](../assets/UV2.jpg)Select the object and use the appropriate projection \(we are going with the simple Box Map here\) and unwrap \(quick peal here\)![](../assets/UV4.jpg)![](../assets/UV5.jpg)Make sure that all uvshells have the same pixel density \(we recommend 20pixels/cm @1024x1024\) or scale the uvs to your texture needs \(rather than scaling the texture in the texture settings, since will be ignored in our converter\). You can later scale the textures in our material editor as well.![](../assets/UV6.jpg)The first UV Set \(uv0\) is usually used for tiled textures which can have overlapping UVs. For the ambientocclusionmap.jpg we need a non-overlapping UVset and hence need to create a second one \(uv1\). For this we can save the already created UVs so we can load it in uv1 or we can just create an new uvset. Either way we need a second Unwrap UVW Modifier. After you created the second modifier we need to assign it to the second uv channel \(uv1\). A pop up will appear with a channel change warning. Click abandon, then either load saved UVWs or create a new non-overlapping UVW unwrap.![](../assets/UV7.jpg)The next step is to create and assign materials to your object as well as link the maps to both the proper channels as well as UV Set. Click "M" to open the material editor. Open up the "Maps" dropdown menu, check Ambient Color \(you might have to click on the small symbol on the right\) and Diffuse Color then click on "No Map" to link the textures. In to next pop up choose "Bitmap" and assign your diffuse textures and ambientocclusionmap.jpg![](../assets/UV8.jpg)The materialeditor then changes to the "texture level" where you need to assign the proper UV Channel. To get back to the "material level" use the small icon called "Go To Parent". After linking all textures properly you are ready for export.![](../assets/UV9.jpg)
 
 #### Autodesk Maya
 
-First create a UV Layout for your object with your preferred uv mapping workflow. Unfold and unwrap it.[![](/assets/uvlayout1.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/uvlayout1.jpg)The first UV Set \(following called uv0\) is used for tiled texture. Scaling textures should be either done by scaling the uvs of uv0 or within our material editor settings. We recommend using 20pixels/cm at a resolution of 1024x1024 as a standard for uv0. Once all UV shells have consistent pixel density, duplicate uv0, either by using the "copy" function in the UV Set Editor or in the UV Editor by selecting the UVs and then using Polygons-&gt;Copy UVs to UV Set-&gt;Copy into New UV Set.[![](/assets/uvlayout2.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/uvlayout2.jpg)  
-[![](/assets/uvlayout3.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/uvlayout3.jpg)Once this is done, lay out the UVs in the second UV Set \(following called uv1\) in an optimized fashion, using as much of the texture space as possible. Hard to see or hidden parts of the UV Layout should be scaled down to not waste texture space.[![](/assets/uvlayout3unfoldLayout.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/uvlayout3unfoldLayout.jpg)Next assign a new material \(Lambert/Phong recommended\). Link the required tiled texture to the diffuse color channel and the ambientocclusionmap.jpg to the ambient color channel. To do that click on the checkered box on the right of the channel in "Common Material Attributes", chose "File" and then browse for your texture. In general the texture should be in the same Folder as the fbx that you'll export.[![](/assets/uvlayout5.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/uvlayout5.jpg)[![](/assets/uvlayout6.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/uvlayout6.jpg)[![](/assets/uvlayout6_2.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/uvlayout6_2.jpg)[![](/assets/uvlayout8.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/uvlayout8.jpg)[![](/assets/uvlayout9.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/uvlayout9.jpg)You will notice that the ambient occlusion map is not properly layout out. All textures are using uv0 as default. To fix this we have to link the right UV Set by clicking on the mesh, holding "Shift" and the right mouse button and select "UV Linking" in the opening Menu.[![](/assets/uvlayout10.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/uvlayout10.jpg)[![](/assets/uvlayout11.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/uvlayout11.jpg)Notice how in "map1" - our uv0 - both maps are selected on the right side in the Relationship Editor.
+First create a UV Layout for your object with your preferred uv mapping workflow. Unfold and unwrap it.[![](../assets/uvlayout1.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/uvlayout1.jpg)The first UV Set \(following called uv0\) is used for tiled texture. Scaling textures should be either done by scaling the uvs of uv0 or within our material editor settings. We recommend using 20pixels/cm at a resolution of 1024x1024 as a standard for uv0. Once all UV shells have consistent pixel density, duplicate uv0, either by using the "copy" function in the UV Set Editor or in the UV Editor by selecting the UVs and then using Polygons-&gt;Copy UVs to UV Set-&gt;Copy into New UV Set.[![](../assets/uvlayout2.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/uvlayout2.jpg)  
+[![](../assets/uvlayout3.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/uvlayout3.jpg)Once this is done, lay out the UVs in the second UV Set \(following called uv1\) in an optimized fashion, using as much of the texture space as possible. Hard to see or hidden parts of the UV Layout should be scaled down to not waste texture space.[![](../assets/uvlayout3unfoldLayout.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/uvlayout3unfoldLayout.jpg)Next assign a new material \(Lambert/Phong recommended\). Link the required tiled texture to the diffuse color channel and the ambientocclusionmap.jpg to the ambient color channel. To do that click on the checkered box on the right of the channel in "Common Material Attributes", chose "File" and then browse for your texture. In general the texture should be in the same Folder as the fbx that you'll export.[![](../assets/uvlayout5.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/uvlayout5.jpg)[![](../assets/uvlayout6.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/uvlayout6.jpg)[![](../assets/uvlayout6_2.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/uvlayout6_2.jpg)[![](../assets/uvlayout8.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/uvlayout8.jpg)[![](../assets/uvlayout9.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/uvlayout9.jpg)You will notice that the ambient occlusion map is not properly layout out. All textures are using uv0 as default. To fix this we have to link the right UV Set by clicking on the mesh, holding "Shift" and the right mouse button and select "UV Linking" in the opening Menu.[![](../assets/uvlayout10.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/uvlayout10.jpg)[![](../assets/uvlayout11.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/uvlayout11.jpg)Notice how in "map1" - our uv0 - both maps are selected on the right side in the Relationship Editor.
 
-Click on uv1 \("uvSet1" in the picture\) and then click on the proper texture file \(here "file2"\) to assign the texture to the right UV Set.[![](/assets/uvlayout12_2.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/uvlayout12_2.jpg)You are now ready to export your model as an fbx. Put all necessary files into an archive in a flat structure and upload it in our system. Your model is now ready to go for further edits in our system. For more details look in the according entries of this Gitbook.
+Click on uv1 \("uvSet1" in the picture\) and then click on the proper texture file \(here "file2"\) to assign the texture to the right UV Set.[![](../assets/uvlayout12_2.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/uvlayout12_2.jpg)You are now ready to export your model as an fbx. Put all necessary files into an archive in a flat structure and upload it in our system. Your model is now ready to go for further edits in our system. For more details look in the according entries of this Gitbook.
 
 You can find the sample content here: [UVLayout.zip](https://www.dropbox.com/s/jsxmpsmhvmg8sh5/UVLayout.zip?dl=1 'UV Layout')
 
@@ -718,26 +718,26 @@ Vray produces - with the right settings - by far the best results. There are plu
 
 #### Maya & Turtle Renderer
 
-First step in Maya is to enable the Turtle Renderer Plug-in. For this go to Windows-&gt;Settings/Preferences-&gt;Plug-in Manager and open it. Scroll down and check the boxes for the Turtle Plug-in.[![](/assets/Turtle1.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Turtle1.jpg)[![](/assets/Turtle2.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Turtle2.jpg)Assign a plain white lambert to the object to be baked. Select the model, hold "Shift" and the right mouse button then select "Assign New Material" in the opening menu and choose lambert.[![](/assets/Turtle3.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Turtle3.jpg)[![](/assets/Turtle4.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Turtle4.jpg)Open up the Render Settings and select the Turtle Renderer.[![](/assets/Turtle5.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Turtle5.jpg)Go to the Turtle Tab, change the Render Type to Baking.[![](/assets/Turtle6.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Turtle6.jpg)Move on to the Global Illumination Tab and Enable Global Illumination. Depending on your needs you can adjust the render settings to your liking, but we will stick to the basics for now.[![](/assets/Turtle7.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Turtle7.jpg)Go to the Environment Tab and choose Sky Light for both "Environment and GI Environment". Set the "Sky Color" to plain white for a neutral result.[![](/assets/Turtle8.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Turtle8.jpg)Go to the "Baking" Tab and check the box "Bake selected surfaces"[![](/assets/Turtle9.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Turtle9.jpg)Scroll down to the Common and Texture Baker Settings. Here you set up the resolution of your bake, the edge dilation width, how and where your maps are saved and if the bakes \(when you have multiple objects in one uvset\) should be merged into one map instead of multiple. Here you also need to set which UV Set should be baked, if you have multiple.[![](/assets/Turtle10.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Turtle10.jpg)Scroll further down and only check "Ambient"[![](/assets/Turtle11.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Turtle11.jpg)With everything set up, select the model, open the Render View and Render. You can either look up the results in the folder you set up before or just save the image from this view.[![](/assets/Turtle12.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Turtle12.jpg)To review the result assign the ambientocclusionmap.jpg to the color channel of your material.[![](/assets/Turtle13.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Turtle13.jpg)The quality and rendertime is highly dependent on your the settings and resolution that you use for the bake. For the final result I suggest baking at a higher resolution and then reducing the image size after.[![](/assets/Turtle14.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Turtle14.jpg)
+First step in Maya is to enable the Turtle Renderer Plug-in. For this go to Windows-&gt;Settings/Preferences-&gt;Plug-in Manager and open it. Scroll down and check the boxes for the Turtle Plug-in.[![](../assets/Turtle1.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Turtle1.jpg)[![](../assets/Turtle2.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Turtle2.jpg)Assign a plain white lambert to the object to be baked. Select the model, hold "Shift" and the right mouse button then select "Assign New Material" in the opening menu and choose lambert.[![](../assets/Turtle3.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Turtle3.jpg)[![](../assets/Turtle4.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Turtle4.jpg)Open up the Render Settings and select the Turtle Renderer.[![](../assets/Turtle5.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Turtle5.jpg)Go to the Turtle Tab, change the Render Type to Baking.[![](../assets/Turtle6.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Turtle6.jpg)Move on to the Global Illumination Tab and Enable Global Illumination. Depending on your needs you can adjust the render settings to your liking, but we will stick to the basics for now.[![](../assets/Turtle7.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Turtle7.jpg)Go to the Environment Tab and choose Sky Light for both "Environment and GI Environment". Set the "Sky Color" to plain white for a neutral result.[![](../assets/Turtle8.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Turtle8.jpg)Go to the "Baking" Tab and check the box "Bake selected surfaces"[![](../assets/Turtle9.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Turtle9.jpg)Scroll down to the Common and Texture Baker Settings. Here you set up the resolution of your bake, the edge dilation width, how and where your maps are saved and if the bakes \(when you have multiple objects in one uvset\) should be merged into one map instead of multiple. Here you also need to set which UV Set should be baked, if you have multiple.[![](../assets/Turtle10.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Turtle10.jpg)Scroll further down and only check "Ambient"[![](../assets/Turtle11.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Turtle11.jpg)With everything set up, select the model, open the Render View and Render. You can either look up the results in the folder you set up before or just save the image from this view.[![](../assets/Turtle12.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Turtle12.jpg)To review the result assign the ambientocclusionmap.jpg to the color channel of your material.[![](../assets/Turtle13.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Turtle13.jpg)The quality and rendertime is highly dependent on your the settings and resolution that you use for the bake. For the final result I suggest baking at a higher resolution and then reducing the image size after.[![](../assets/Turtle14.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Turtle14.jpg)
 
 #### Maya & Arnold Renderer
 
-Open a Scene with the model that is supposed to be baked.[![](/assets/Arnold1.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Arnold1.jpg)Select the model, hold "Shift" and the right mouse button then select "Assign New Material" in the opening menu.[![](/assets/Arnold2.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Arnold2.jpg)In the new window click on "aiAmbientOcclusion" to assign the Arnold specific ambient occlusion material.[![](/assets/Arnold3.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Arnold3.jpg)In the Attribute Editor you can adjust the properties of this material for different looks. We'll leave it at the standard settings for now. The most important one however are the samples. Those have the biggest impact on the quality and render time of the bake, 6 samples should be enough for most cases.[![](/assets/Arnold4.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Arnold4.jpg)Make sure that the model is selected and then in the menu go to "Arnold"-&gt;"Utilities"-&gt;"Render Selection To Texture"[![](/assets/Arnold5.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Arnold5.jpg)If you have a newer version of Maya/Arnold than I \(Maya 2017\) then the pop up will look like the picture below and you can skip a couple of steps that I'm going through later. Make sure to select an output folder, set the resolution you need and that the "Extend Edges" box is checked. This is important to fix black lines at the UV cuts. The resolution and Camera Samples have a high impact on both quality and render times. If you have multiple UV Sets input the name of the UV Set without overlapping, if it's the first UV Set leave it empty.  
-[![](/assets/newerArnold.png)](https://viewar.gitbooks.io/sdk-documentation/content/assets/newerArnold.png)  
+Open a Scene with the model that is supposed to be baked.[![](../assets/Arnold1.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Arnold1.jpg)Select the model, hold "Shift" and the right mouse button then select "Assign New Material" in the opening menu.[![](../assets/Arnold2.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Arnold2.jpg)In the new window click on "aiAmbientOcclusion" to assign the Arnold specific ambient occlusion material.[![](../assets/Arnold3.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Arnold3.jpg)In the Attribute Editor you can adjust the properties of this material for different looks. We'll leave it at the standard settings for now. The most important one however are the samples. Those have the biggest impact on the quality and render time of the bake, 6 samples should be enough for most cases.[![](../assets/Arnold4.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Arnold4.jpg)Make sure that the model is selected and then in the menu go to "Arnold"-&gt;"Utilities"-&gt;"Render Selection To Texture"[![](../assets/Arnold5.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Arnold5.jpg)If you have a newer version of Maya/Arnold than I \(Maya 2017\) then the pop up will look like the picture below and you can skip a couple of steps that I'm going through later. Make sure to select an output folder, set the resolution you need and that the "Extend Edges" box is checked. This is important to fix black lines at the UV cuts. The resolution and Camera Samples have a high impact on both quality and render times. If you have multiple UV Sets input the name of the UV Set without overlapping, if it's the first UV Set leave it empty.  
+[![](../assets/newerArnold.png)](https://viewar.gitbooks.io/sdk-documentation/content/assets/newerArnold.png)  
 Arnold can only output ".exr" files when you are rendering textures, so before using it in our system you have to convert it to jpg.
 
-The steps below are needed if you have an older Maya/Arnold version. The Render To Texture window is a lot reduced and most importantly the "Extend Edges" feature is missing producing bad texture seams. You can also only bake the first UV Set, so make sure it's non-overlapping.[![](/assets/Arnold6.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Arnold6.jpg)To fix the texture issues in the baked map download "xNormal" here: [https://xnormal.net/](https://xnormal.net/)  
+The steps below are needed if you have an older Maya/Arnold version. The Render To Texture window is a lot reduced and most importantly the "Extend Edges" feature is missing producing bad texture seams. You can also only bake the first UV Set, so make sure it's non-overlapping.[![](../assets/Arnold6.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Arnold6.jpg)To fix the texture issues in the baked map download "xNormal" here: [https://xnormal.net/](https://xnormal.net/)  
 xNormal is a free tool with a lot of functions, but in this case we only need the Photoshop plugins it provides.  
 Install x-normal and the Photoshop tools. Open the baked .exr in photoshop and choose the "As Transparency" option.  
-[![](/assets/Arnold7.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Arnold7.jpg)  
-Next either export it as ".png" or use the quick-export function:[![](/assets/Arnold8.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Arnold8.jpg)Open the created PNG in PS and open up "Filter"-&gt;"xNormal"-&gt;"xN Dilation"[![](/assets/Arnold9.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Arnold9.jpg)The standard settings are sufficient. Of course you can use different workflows to add Dilation/Edge Padding to the map, but this is the easiest way to do it for this case, even if it is a bit roundabout. Click on "Do It!" and save the result as "ambientocclusionmap.jpg"[![](/assets/Arnold10.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Arnold10.jpg)Next assign a new material to the object and link the texture to check the result of the bake.[![](/assets/Arnold11.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Arnold11.jpg)
+[![](../assets/Arnold7.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Arnold7.jpg)  
+Next either export it as ".png" or use the quick-export function:[![](../assets/Arnold8.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Arnold8.jpg)Open the created PNG in PS and open up "Filter"-&gt;"xNormal"-&gt;"xN Dilation"[![](../assets/Arnold9.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Arnold9.jpg)The standard settings are sufficient. Of course you can use different workflows to add Dilation/Edge Padding to the map, but this is the easiest way to do it for this case, even if it is a bit roundabout. Click on "Do It!" and save the result as "ambientocclusionmap.jpg"[![](../assets/Arnold10.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Arnold10.jpg)Next assign a new material to the object and link the texture to check the result of the bake.[![](../assets/Arnold11.jpg)](https://viewar.gitbooks.io/sdk-documentation/content/assets/Arnold11.jpg)
 
 #### xNormal
 
-xNormal is a free software that offers a lot of tools mainly focused around baking and converting a variety of essential maps needed for a lot of 3D texturing workflows. In this tutorial we will only focus on baking an ambient occlusion map. You can find xNormal here: [https://xnormal.net/](https://xnormal.net/)![](/assets/xnormal1.jpg)xNormal is based around the High- to Low-Poly Model workflow. If you don't have a High-Poly model available, just import the same model as "High definition mesh" and "Low definitions mesh".  
-Click on "High definition meshes" and right-click into the window, then click on "Add meshes" and browse for your model.![](/assets/xnormal2.jpg)Then do the same with "Low definition meshes".![](/assets/xnormal3.jpg)Once you imported your meshes the xNormal window should look like this:![](/assets/xnormal4.jpg)Next click on "Baking options" to get to the baking window. Choose the folder you want to save the map to and the file format at "Output File". Set a resolution \(biggest impact on quality and render-time\) and Edge padding. Depending on the resolution it should be between 4 and 16 pixels. The dilation/edge padding should not bleed into other uv shells.  
+xNormal is a free software that offers a lot of tools mainly focused around baking and converting a variety of essential maps needed for a lot of 3D texturing workflows. In this tutorial we will only focus on baking an ambient occlusion map. You can find xNormal here: [https://xnormal.net/](https://xnormal.net/)![](../assets/xnormal1.jpg)xNormal is based around the High- to Low-Poly Model workflow. If you don't have a High-Poly model available, just import the same model as "High definition mesh" and "Low definitions mesh".  
+Click on "High definition meshes" and right-click into the window, then click on "Add meshes" and browse for your model.![](../assets/xnormal2.jpg)Then do the same with "Low definition meshes".![](../assets/xnormal3.jpg)Once you imported your meshes the xNormal window should look like this:![](../assets/xnormal4.jpg)Next click on "Baking options" to get to the baking window. Choose the folder you want to save the map to and the file format at "Output File". Set a resolution \(biggest impact on quality and render-time\) and Edge padding. Depending on the resolution it should be between 4 and 16 pixels. The dilation/edge padding should not bleed into other uv shells.  
 You can choose between three renderers "Optix/CUDA" is the fastest, but needs a lot more rays for good results than the others. "Open RL" is a lot faster than the standard "Bucket Renderer" and looks almost the same. There are small differences near UV Cuts and hard edges, you'll have to decide yourself which you prefer.  
-Check only the "Ambient occlusion" box.![](/assets/xnormal5.jpg)Click on the option box on the right of the "Ambient occlusion" box to set up the AO settings. You can change the look of the AO here, the most important setting however is the amount of rays. 512 rays should be enough for most cases, however depending on the resolution the two slower renderers \(Open RL/Bucket\) take a very long time to bake. If you go lower than 512 rays the CUDA renderer will have visible noise in the map.![](/assets/xnormal6.jpg)After you have set up the baker click on "Generate Maps" to bake. With the stats you can compare render times between the bakers and decide yourself what the best quality/performance balance is for your use cases and the hardware that you have access to.![](/assets/xnormal8.jpg)
+Check only the "Ambient occlusion" box.![](../assets/xnormal5.jpg)Click on the option box on the right of the "Ambient occlusion" box to set up the AO settings. You can change the look of the AO here, the most important setting however is the amount of rays. 512 rays should be enough for most cases, however depending on the resolution the two slower renderers \(Open RL/Bucket\) take a very long time to bake. If you go lower than 512 rays the CUDA renderer will have visible noise in the map.![](../assets/xnormal6.jpg)After you have set up the baker click on "Generate Maps" to bake. With the stats you can compare render times between the bakers and decide yourself what the best quality/performance balance is for your use cases and the hardware that you have access to.![](../assets/xnormal8.jpg)
 
 ### Animation
 
@@ -847,7 +847,7 @@ which is always reserved by ViewAR engine for the ambient occlusion map
 
 The ViewAR System comes with a Material Editor, letting you define material options for models. We use the originally applied material names (coming from a 3D software) to split the model into so called _surfaces_. You can then define a single or multiple materials for each surface.
 
-![](/assets/MaterialEditorEmptyNumbered.jpg)  
+![](../assets/MaterialEditorEmptyNumbered.jpg)  
 _1 - Model Preview  
 2 - Material / Texture / Environment  
 3 - Toolbox  
@@ -862,11 +862,11 @@ Specific surfaces can be selected in two ways: by double-clicking the model in t
 In order to add a new texture, click on the _Textures_ tab in the bottom left corner. You can select public or private textures (only visible for your account. Default setting is private).
 To upload a new texture, click on "New Texture".
 
-![](/assets/MaterialEditorTextureUploadEmpty.jpg)
+![](../assets/MaterialEditorTextureUploadEmpty.jpg)
 
 In the _Toolbox_ click to open the upload dialog or simply drag and drop you textures into the marked area. You can rename textures, set them to public and change the thumbnail of the texture that will be used in the app, useful if you want to highlight a specific part of the texture for example. Click upload when you are ready.
 
-![](/assets/MaterialEditorTextureUpload.jpg)
+![](../assets/MaterialEditorTextureUpload.jpg)
 
 ### Environment Maps
 
@@ -874,7 +874,7 @@ In the _Toolbox_ click to open the upload dialog or simply drag and drop you tex
 
 If you want to use different environment cubemaps, you can either click on the _Environment Maps_ tab in the bottom left and then _New Environment Map_ or in the _Textures_ Toolbox on _Environment Map Uploader_. This will open the Cubemap Upload Dialog. You can name your Cubemap, set it to public or change the thumbnail. To upload the cubemaps simply drag and drop it to the according squares.
 
-![](/assets/MaterialEditorNewCubemap.jpg)
+![](../assets/MaterialEditorNewCubemap.jpg)
 
 ### Create Material
 
@@ -882,7 +882,7 @@ If you want to use different environment cubemaps, you can either click on the _
 
 Select a surface, click on _New Material_ and the toolbox will display your options.
 
-![](/assets/MaterialEditorSurfaceSelection.jpg)![](/assets/MaterialEditorNewMaterialTexture.jpg)
+![](../assets/MaterialEditorSurfaceSelection.jpg)![](../assets/MaterialEditorNewMaterialTexture.jpg)
 
 Fill in the following information:
 
@@ -909,7 +909,7 @@ _Mix Mode:_ Controls the blending mode of the material.
 
 ### Material Options
 
-![](/assets/MaterialEditorAssignMaterials.jpg)
+![](../assets/MaterialEditorAssignMaterials.jpg)
 
 To assign materials drag and drop them to the intended surface material from the bottom left, to the top right in the _surface material_ panel. In this example I want the fabric to have material options.
 
@@ -917,9 +917,9 @@ To assign materials drag and drop them to the intended surface material from the
 TODO: add screenshot that shows the process. do multiple screenshots and use transparency. First mouse positions are more transparent and then they become less transparent when moving to the surface.
 --->
 
-![](/assets/MaterialEditorMaterialOptions.jpg)
+![](../assets/MaterialEditorMaterialOptions.jpg)
 
-You can edit the display name of the surface and materials with a double-click. You can also change sorting of the materials by dragging the three dots icon. Delete options by clicking the icon: ![](/assets/Screen Shot 2018-08-31 at 14.27.07.png)
+You can edit the display name of the surface and materials with a double-click. You can also change sorting of the materials by dragging the three dots icon. Delete options by clicking the icon: ![](../assets/Screen Shot 2018-08-31 at 14.27.07.png)
 
 <!---
 TODO: add delete icon.
@@ -934,7 +934,7 @@ Once you are done setting up your materials and material options, click on _Save
 
 To test you changes, open the _Single Product View_ in a new incognito window \(otherwise, the changes won't be visible\).
 
-![](/assets/MaterialOptionsSingleproductview.jpg)
+![](../assets/MaterialOptionsSingleproductview.jpg)
 
 ### Clone Material Setup
 

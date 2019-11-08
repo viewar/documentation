@@ -5,7 +5,7 @@ title: Sample Models
 
 To get you started, our Team has prepared a few Sample Models. Let's play around with one of them, so that you get a grasp of how things work!
 
-## Download sample data
+## Download
 
 Go to Support/3D Sample Files \([link](http://developer.viewar.com/downloads)\) and download Mammoth Chair 3D model.
 <br>The zip file contains:
@@ -31,7 +31,7 @@ Now, download **Mammoth Chair Sample Textures**.
 
 - _933.jpg_ - green fabric texture
 
-## Upload sample model
+## Upload
 
 Go to _Content/3D Models_, click on _+Upload a new model_ and provide obligatory data:
 
@@ -75,8 +75,9 @@ Go to _Materials. In the right hand-side menu find find the surface group you wo
 
 ## View
 
-Now you can see your model listed as available in the _Contents_ menu. Click on the _Model Viewer_ icon ![](https://lh4.googleusercontent.com/w4bKCRoz07i1DYB5R_mPP8FRcDo1Ux32AVBWEjPS9zpG22k1tiIlQmFuB8TUnGM173l5ba0zYz3uCB9zhPIDut4FjvJ5ou9mk7fptE-AQbThQhIEd2JF3AlQHC_RPMxrSh5nYNu9) in order to see your model and its defined material options. If you would like to customise your model, click the _Material Editor_ icon ![](https://lh6.googleusercontent.com/sSqyPH8d6cwDn6gQHrRERtsG8fW4YeLhZMuh3DczBOKrpBSs6rb0Q4Y-bFNHCvHWU7MHIsP383B4ZbulqJtF4K5LMzfzEmDhaUHto6mz5GC6peGi1v0D9N9r3qwL7TETwy_279Mz)
+Now you can see your model listed as available in the _My Content_ menu.
+Click on the _Model Viewer_ icon in order to see your model and its defined material options. If you would like to customise your model, click the _Material Editor_ icon
 
 ## Test
 
-Refresh the app. Your new model should appear among available objects. If not, click on the _Edit icon _![](/assets/import.png)_ and make sure that the Active_ field is marked.
+Refresh the app. Your new model should appear among available objects. If not, click on the _Edit_ icon and make sure that the _Active_ field is marked.
