@@ -193,275 +193,6 @@ description.data
 <p>To download the file, log into your account and go to the following URL: <a href="https://developer.viewar.com/custom/universal/action:download">https://developer.viewar.com/custom/universal/action:download</a>.</p>
 <p>You may now edit the file locally and upload it, when you're done. There is no need to keep all rows in your table - you may update only the ones which require a change. The models are recognised by the <em><em>Model ID</em></em>, therefore pay special attention <em>not to change it</em>!</p>
 <p>To upload an updated file, log into your account and go to the following URL: <a href="https://developer.viewar.com/custom/universal/action:upload">https://developer.viewar.com/custom/universal/action:upload</a>.</p>
-<h2><a class="anchor" aria-hidden="true" id="advanced"></a><a href="#advanced" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Advanced</h2>
-<h3><a class="anchor" aria-hidden="true" id="snapping"></a><a href="#snapping" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Snapping</h3>
-<p>When inserting a model in a scene, it may be useful to use another model as a reference for the new model position.</p>
-<h4><a class="anchor" aria-hidden="true" id="example-use-case"></a><a href="#example-use-case" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Example use case</h4>
-<p>To illustrate, imagine a product visualisation application, where a user is allowed to choose between different table tops. Every table top has not only different set of materials provided, but also a distinct shape and dimensions. Moreover, table legs on which those tops are to be placed also have their individual heights and shapes. Normally, in such a case, every time a switch of a table element was to be made, a set of information about the current properties of all elements would have to be retrieved and processed before a new element would be inserted. Even worse - what if the container with the table elements was moved? Or if we were to replace 20 table tops at once?</p>
-<p>It would be helpful to make the models pull to one another. Furthermore, it would be even better to have them pull one another just in one direction, so that the table remained on the ground with the table top laying peacefully on it, instead of floating in the thin air, if a shorter leg was introduced.</p>
-<h4><a class="anchor" aria-hidden="true" id="snappoints"></a><a href="#snappoints" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Snappoints</h4>
-<p>The snapping settings are handled by introducing a pair of matching <strong>Snappoints</strong> - one in each model (one model, however, may contain multiple Snappoints, as long as they don't overlap). They are generated automatically by the ViewAR System Converter on the basis of special cubes inserted by 3D Artists in the models. It may seem tricky at first, but let us guide you through the process and it should become clear quite soon.</p>
-<blockquote>
-<p>The ViewAR System Converter replaces the cubes with Snappoints. It means that there is no need to worry about their visibility in the App.</p>
-</blockquote>
-<p>Here is a list of information the ViewAR System Converter extracts from the cubes.</p>
-<ul>
-<li><strong>Point of Origin</strong> (translation)</li>
-<li><strong>Orientation</strong> (rotation)</li>
-<li><strong>Name</strong></li>
-</ul>
-<h5><a class="anchor" aria-hidden="true" id="point-of-origin"></a><a href="#point-of-origin" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Point of Origin</h5>
-<p>The cube's Point of Origin (stored in its <em>translation</em> property) becomes a Point of Origin of a new Snappoint.</p>
-<h5><a class="anchor" aria-hidden="true" id="orientation"></a><a href="#orientation" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Orientation</h5>
-<p>The cube's Orientation value (stored in its rotation property) become the Orientation values of a new Snappoint.</p>
-<h5><a class="anchor" aria-hidden="true" id="name"></a><a href="#name" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Name</h5>
-<p>Here comes the tricky part, but stay with us :)</p>
-<p>Every Snappoint has properties called <em>plug</em> (one or more) and <em>socket</em> (always just one).</p>
-<ul>
-<li>In order for 2 cubes to snap, one of them needs to have a plug and the other - a socket with the same name.</li>
-<li>A socket may only accept one plug at a time.</li>
-<li>Numbers of plugs and sockets don't have to match 1:1. One socket may serve multiple plugs (e.g. table tops may be placed on one table leg).</li>
-</ul>
-<p>The cube's Name is your way of communicating to the ViewAR System Converter the Snappoint properties. Here is how it works.</p>
-<p>A correct cube name follows the pattern below:</p>
-<pre><code class="hljs css language-json">SNAPPOINT__PLUG1_PLUG2_PLUG3__SOCKET1__SNAPPOINTNAME
-</code></pre>
-<pre><code class="hljs css language-json">Explanation: (1)__(2)__(3)__(4)
-</code></pre>
-<p>(1) <em>SNAPPOINT</em> - a prefix informing the converter that the mesh is a <em>snappoint</em>  <br>
-(2) <em>PLUGS</em> - separated with a single underscore (&quot;_&quot;) names defining <em>snappoint's</em> plugs. If a <em>snappoint</em> has no plug, &quot;dummyplug&quot; should be inserted.<br>
-(3) <em>SOCKETS</em> - separated with a single underscore (&quot;_&quot;) names defining <em>snappoint's</em> sockets. If a <em>snappoint</em> has no sockets, &quot;dummysocket&quot; should be inserted.<br>
-(4) <em>SNAPPOINTNAME</em> - a suffix defining a <em>snappoint's</em> name. It is not an active part of the name, just a note for 3D designers and developers.</p>
-<blockquote>
-<p>There is no specific maximum of snappoints, plugs, sockets, however try to keep the naming short.</p>
-</blockquote>
-<p><strong>HowTo:</strong>  <br>
-In a 3D software, open your model and create a small cube (the cube will not be removed from the scene, therefore keep it as small as possible e.g. 1x1x1 units). Move it to the position where the <em>snappoint</em> is supposed to be. Then, rotate it so that the front of the cube points in the direction where other object should be snapped. <em>Snappoints</em> need to face each other and their tops need to point in the same direction. Scaling of the <em>snappoint</em> does not affect it's functionality. Name the cube according to the above naming convention.</p>
-<p>IMPORTANT: DO NOT freeze the transformation or delete history of cubes. This information is needed for our converter and are essential!</p>
-<p>You can also download a prepared snappoint here: <a href="http://it5.at/trac/viewar/raw-attachment/wiki/Converter/Snappoint.fbx">Snappoint.fbx</a></p>
-<h3><a class="anchor" aria-hidden="true" id="parametric-models"></a><a href="#parametric-models" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Parametric Models</h3>
-<p>Sometimes a fixed object geometry is not enough. For example, in order to create a product customisation application where not only material finishings but also product dimensions may be adjusted, so-called <strong>Parametric Models</strong> would be needed. These are 3D objects which geometric characteristics may be algorithmically adjusted. This may relate to overall attributes of the object (e.g. it’s length and width) or properties of its elements (e.g. radius of corners curvature).</p>
-<p>Let’s take an example of a plain cube with the following properties:</p>
-<ul>
-<li><strong>point of origin:</strong> [0, 0, 0]</li>
-<li><strong>x-dimension:</strong> [int], x∈ &lt;1, 20&gt;</li>
-<li><strong>y-dimension:</strong> [int], y∈ &lt;1, 20&gt;</li>
-<li><strong>z-dimension:</strong> [int], z∈ &lt;1, 20&gt;</li>
-</ul>
-<p>Additionally, we add a numerical property describing a radius of curvature of its corners (asssumption: the curvature is symmetrical, identical in all directions and same for all corners):</p>
-<ul>
-<li><strong>cornerRadius</strong>: [int], cornerRadius∈ &lt;0, 90&gt;</li>
-</ul>
-<p>In order to use such a model in the application, one needs the following components:</p>
-<ul>
-<li><strong>3D Model</strong> - created in a 3D modelling software (e.g. Autodesk Maya),</li>
-<li><strong>Data file</strong> - a JSON describing the 3D Model's properties. This file is also configured in the <strong>My Content Tab</strong>, however, its Category needs to be set to &quot;Data&quot; (otherwise, the System will be awaiting a 3D model). A portion of an example data file below:</li>
-</ul>
-<pre><code class="hljs css language-json">{
-    "dimensions": {
-        "x": 10,
-        "y": 10,
-        "z": 10
-    },
-    "parameters": [
-        {
-            "name": "Width",
-            "type": "manipulation",
-            "value": {
-                "default": 10,
-                "max": 20,
-                "min": 1,
-                "type": "number"
-            }
-        },
-        {
-        "name": "Length",
-            "type": "manipulation",
-            "value": {
-                "default": 10,
-                "max": 20,
-                "min": 1,
-                "type": "number"
-            }
-        },
-        {
-        "name": "Height",
-            "type": "manipulation",
-            "value": {
-                "default": 10,
-                "max": 20,
-                "min": 1,
-                "type": "number"
-            }
-        },
-        {
-        "name": "Radius",
-            "type": "manipulation",
-            "value": {
-                "default": 0,
-                "max": 90,
-                "min": 0,
-                "type": "number"
-            }
-        }
-    ],
-    (...)
-}
-</code></pre>
-<ul>
-<li><strong>Way to access / manipulate the properties</strong> - Values of the parameters may either be defined in the application code (e.g. one may create a parametric model of a bench being adjusted automatically to fit the length of the wall) or exposed to the user (e.g. allowing for awning width manipulation).</li>
-</ul>
-<h4><a class="anchor" aria-hidden="true" id="texturing"></a><a href="#texturing" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Texturing</h4>
-<p>Texturing a Parametric Model requires understanding possible modifications of the model. From the ViewAR Core side, there is a special real-time UV layout updating process implemented. Depending on which parts of the model would be stretched, the 3D object gets divided in sections with UV layouts applied accordingly. When parameters are changed, the UV layout of static parts remains untouched, while the layout of the altered elements gets regenerated in real-time. In this way, it is ensured that changes in geometry are followed by appropriate changes in the UV layout.</p>
-<h4><a class="anchor" aria-hidden="true" id="example"></a><a href="#example" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Example</h4>
-<p>A good example of the use of Parametric Models is the <a href="https://www.viewar.com/showcase/markilux/">Markilux App</a>.</p>
-<blockquote>
-<p>Development and integration of parametric models is a complex issue, therefore we strongly encourage you to use our support on that matter. Custom 3D objects may be requested via the <a href="http://developer.viewar.com/jobs/add">Request 3D Model Form</a>.</p>
-</blockquote>
-<h3><a class="anchor" aria-hidden="true" id="configurations"></a><a href="#configurations" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Configurations</h3>
-<p>In order to create complex scenes with model interdependencies encoded, we use <strong>Configurations</strong>. Technically speaking, a Configuration is a JSON file defining logical rules of model properties or possibilities of loading sets of models into the scene.</p>
-<p>Below an example of a portion of configuration defining geometry options for a table top:</p>
-<pre><code class="hljs css language-js">{
-    <span class="hljs-string">"configuration"</span>: {
-        <span class="hljs-string">"properties"</span>: [{
-            <span class="hljs-string">"name"</span>: <span class="hljs-string">"Table_top"</span>,
-            <span class="hljs-string">"type"</span>: <span class="hljs-string">"part"</span>,
-            <span class="hljs-string">"valueType"</span>: <span class="hljs-string">"enumerated"</span>,
-            <span class="hljs-string">"values"</span>: [{
-                    <span class="hljs-string">"name"</span>: <span class="hljs-string">"Table top - Round"</span>,
-                    <span class="hljs-string">"foreignKey"</span>: <span class="hljs-string">"table-top-round"</span>
-                },
-                {
-                    <span class="hljs-string">"name"</span>: <span class="hljs-string">"Table top - Rectangular"</span>,
-                    <span class="hljs-string">"foreignKey"</span>: <span class="hljs-string">"table-top-rectangular"</span>
-                },
-                {
-                    <span class="hljs-string">"name"</span>: <span class="hljs-string">"Table top - Square"</span>,
-                    <span class="hljs-string">"foreignKey"</span>: <span class="hljs-string">"table-top-square"</span>
-                }
-
-            ]
-        }]
-    }
-}
-</code></pre>
-<p>and a portion of configuration defining material options for that table top:</p>
-<pre><code class="hljs css language-js">{
-    <span class="hljs-string">"configuration"</span>: {
-        <span class="hljs-string">"properties"</span>: [{
-            <span class="hljs-string">"name"</span>: <span class="hljs-string">"Table_top"</span>,
-            <span class="hljs-string">"type"</span>: <span class="hljs-string">"material"</span>,
-            <span class="hljs-string">"valueType"</span>: <span class="hljs-string">"enumerated"</span>,
-            <span class="hljs-string">"values"</span>: [{
-                    <span class="hljs-string">"name"</span>: <span class="hljs-string">"White Marble"</span>
-                },
-                {
-                    <span class="hljs-string">"name"</span>: <span class="hljs-string">"Pink Marble"</span>
-                },
-                {
-                    <span class="hljs-string">"name"</span>: <span class="hljs-string">"Decorative Concrete"</span>
-                }
-            ]
-        }]
-    }
-}
-</code></pre>
-<h3><a class="anchor" aria-hidden="true" id="reference-models"></a><a href="#reference-models" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Reference Models</h3>
-<p>When creating complex objects taking up a lot of memory, it is a good idea to split them into lighter portions and, instead of inserting them all in one model file, provide a list of references to the group of smaller models. Such an entity is called a <strong>Reference Model.</strong></p>
-<p>Technically speaking, it is a JSON file, providing references to models which are to be downloaded. Each one is identified through a unique ID (UID).</p>
-<blockquote>
-<p>The order of the list is used as an order of download. In case of less efficient internet connections, it may result in object appearing one by one. You may want to keep it in mind and, for example, build up a tall building from the bottom to the top.</p>
-</blockquote>
-<p>Below is a snippet of a Reference Model file.</p>
-<pre><code class="hljs css language-json">{
-    "converter": {...},
-    "meshes": {
-        "skyscraper-groundfloor": [],
-        "skyscraper-mainbody": [],
-        "skyscraper-spire": []
-},
-    "references": [
-        {
-            "UID": "1",
-            "name": "skyscraper-groundfloor",
-            "pose": {
-                "orientation": {
-                    "w": 1,
-                    "x": 0,
-                    "y": 0,
-                    "z": 0
-                },
-                "position": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 0
-                },
-                "scale": {
-                    "x": 1,
-                    "y": 1,
-                    "z": 1
-                }
-            },
-            "version": "1",
-            "type": "environment",
-            "foreign_key": ""
-        },
-        {
-            "UID": "2",
-            "name": "skyscraper-mainbody",
-            "pose": {
-                "orientation": {
-                    "w": 1,
-                    "x": 0,
-                    "y": 0,
-                    "z": 0
-                },
-                "position": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 20
-                },
-                "scale": {
-                    "x": 1,
-                    "y": 1,
-                    "z": 1
-                }
-            },
-            "version": "3",
-            "type": "environment",
-            "foreign_key": ""
-        },
-        {
-            "UID": "3",
-            "name": "skyscraper-groundfloor",
-            "pose": {
-                "orientation": {
-                    "w": 1,
-                    "x": 0,
-                    "y": 0,
-                    "z": 0
-                },
-                "position": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 90
-                },
-                "scale": {
-                    "x": 1,
-                    "y": 1,
-                    "z": 1
-                }
-            },
-            "version": "1",
-            "type": "environment",
-            "foreign_key": ""
-        }
-    ]
-}
-</code></pre>
-<h3><a class="anchor" aria-hidden="true" id="animations"></a><a href="#animations" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Animations</h3>
-<p>Add animations to models or their parts. You will be able to access them through the JavaScript API, controlling their speed, number of iterations and triggering actions.</p>
-<hr>
 <h2><a class="anchor" aria-hidden="true" id="guidelines-for-content-creation"></a><a href="#guidelines-for-content-creation" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Guidelines for content creation</h2>
 <p>In order for a model to be available in a ViewAR Application, it needs to be uploaded to the ViewAR System. In this section we will lead you through the process and give you some tips on performance optimisation.</p>
 <h3><a class="anchor" aria-hidden="true" id="modelling"></a><a href="#modelling" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Modelling</h3>
@@ -740,7 +471,276 @@ Once you are done setting up your materials and material options, click on <em>S
 <ul>
 <li>No special characters, especially &quot;ä,ö,ü, etc&quot;.</li>
 </ul>
-</span></div></article></div><div class="docLastUpdate"><em>Last updated on 11/13/2019</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/documentation/docs/3d_content/sample_models"><span class="arrow-prev">← </span><span>Sample Models</span></a><a class="docs-next button" href="/documentation/docs/3d_content/troubleshooting"><span>Troubleshooting</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#content-upload">Content upload</a><ul class="toc-headings"><li><a href="#login">Login</a></li><li><a href="#category">Category</a></li><li><a href="#3d-model">3D Model</a></li></ul></li><li><a href="#model-list">Model List</a><ul class="toc-headings"><li><a href="#preview-a-model">Preview a Model</a></li><li><a href="#material-editor">Material Editor</a></li></ul></li><li><a href="#model-upload-assistants">Model Upload Assistants</a><ul class="toc-headings"><li><a href="#picture-uploader">Picture-Uploader</a></li><li><a href="#video-uploader">Video-Uploader</a></li><li><a href="#custom-3d-uploader">Custom 3D-Uploader</a></li></ul></li><li><a href="#custom-model-info">Custom Model Info</a><ul class="toc-headings"><li><a href="#download">Download</a></li><li><a href="#upload-download">Upload / download</a></li></ul></li><li><a href="#advanced">Advanced</a><ul class="toc-headings"><li><a href="#snapping">Snapping</a></li><li><a href="#parametric-models">Parametric Models</a></li><li><a href="#configurations">Configurations</a></li><li><a href="#reference-models">Reference Models</a></li><li><a href="#animations">Animations</a></li></ul></li><li><a href="#guidelines-for-content-creation">Guidelines for content creation</a><ul class="toc-headings"><li><a href="#modelling">Modelling</a></li><li><a href="#materials">Materials</a></li><li><a href="#uv-setup">UV Setup</a></li><li><a href="#ambient-occlusion-maps">Ambient Occlusion Maps</a></li><li><a href="#animation">Animation</a></li><li><a href="#export">Export</a></li></ul></li><li><a href="#material-editor-1">Material Editor</a><ul class="toc-headings"><li><a href="#textures">Textures</a></li><li><a href="#environment-maps">Environment Maps</a></li><li><a href="#create-material">Create Material</a></li><li><a href="#material-options">Material Options</a></li><li><a href="#group-surfaces">Group Surfaces</a></li><li><a href="#view-and-test">View and Test</a></li><li><a href="#clone-material-setup">Clone Material Setup</a></li><li><a href="#dos-amp-donts">Dos &amp; Donts</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/documentation/" class="nav-home"></a><div><h5>ViewAR</h5><a href="/documentation/docs/introduction">Introduction</a><a href="/documentation/docs/stack">Technology Stack</a><a href="/documentation/docs/creating_apps">How to create Apps</a><a href="/documentation/docs/faq">FAQs</a></div><div><h5>SDK</h5><a href="/documentation/sdk">Introduction</a><a href="/documentation/docs/sdk/getting_started">Getting Started</a><a href="/documentation/docs/sdk/basic_concepts">Basic Concepts</a><a href="/documentation/docs/sdk/quickstart">Quickstart</a></div><div><h5>Tutorials</h5><a href="/documentation/docs/furniture_live/about">Furniture Live</a><a href="/documentation/docs/guidebot/about">Guidebot</a><a href="/documentation/docs/helpar/about">Helpar</a><a href="/documentation/docs/tutorials/overview">More ...</a></div><div><h5>More</h5><a href="http://viewar.com/">ViewAR Website</a><a href="https://github.com/viewar">GitHub</a><a href="https://www.facebook.com/ViewARcom/">Facebook</a><a href="https://www.youtube.com/channel/UCOst_5NF5DoJWRkEdajGJIg">Youtube</a></div></section><a href="https://viewar.com/" target="_blank" rel="noreferrer noopener" class="viewarLogo"><img src="/documentation/img/viewar_logo.svg" alt="ViewAr Website" width="170" height="45"/></a><section class="copyright">Copyright © 2019 ViewAr GmbH</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+<h2><a class="anchor" aria-hidden="true" id="advanced"></a><a href="#advanced" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Advanced</h2>
+<h3><a class="anchor" aria-hidden="true" id="snapping"></a><a href="#snapping" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Snapping</h3>
+<p>When inserting a model in a scene, it may be useful to use another model as a reference for the new model position.</p>
+<h4><a class="anchor" aria-hidden="true" id="example-use-case"></a><a href="#example-use-case" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Example use case</h4>
+<p>To illustrate, imagine a product visualisation application, where a user is allowed to choose between different table tops. Every table top has not only different set of materials provided, but also a distinct shape and dimensions. Moreover, table legs on which those tops are to be placed also have their individual heights and shapes. Normally, in such a case, every time a switch of a table element was to be made, a set of information about the current properties of all elements would have to be retrieved and processed before a new element would be inserted. Even worse - what if the container with the table elements was moved? Or if we were to replace 20 table tops at once?</p>
+<p>It would be helpful to make the models pull to one another. Furthermore, it would be even better to have them pull one another just in one direction, so that the table remained on the ground with the table top laying peacefully on it, instead of floating in the thin air, if a shorter leg was introduced.</p>
+<h4><a class="anchor" aria-hidden="true" id="snappoints"></a><a href="#snappoints" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Snappoints</h4>
+<p>The snapping settings are handled by introducing a pair of matching <strong>Snappoints</strong> - one in each model (one model, however, may contain multiple Snappoints, as long as they don't overlap). They are generated automatically by the ViewAR System Converter on the basis of special cubes inserted by 3D Artists in the models. It may seem tricky at first, but let us guide you through the process and it should become clear quite soon.</p>
+<blockquote>
+<p>The ViewAR System Converter replaces the cubes with Snappoints. It means that there is no need to worry about their visibility in the App.</p>
+</blockquote>
+<p>Here is a list of information the ViewAR System Converter extracts from the cubes.</p>
+<ul>
+<li><strong>Point of Origin</strong> (translation)</li>
+<li><strong>Orientation</strong> (rotation)</li>
+<li><strong>Name</strong></li>
+</ul>
+<h5><a class="anchor" aria-hidden="true" id="point-of-origin"></a><a href="#point-of-origin" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Point of Origin</h5>
+<p>The cube's Point of Origin (stored in its <em>translation</em> property) becomes a Point of Origin of a new Snappoint.</p>
+<h5><a class="anchor" aria-hidden="true" id="orientation"></a><a href="#orientation" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Orientation</h5>
+<p>The cube's Orientation value (stored in its rotation property) become the Orientation values of a new Snappoint.</p>
+<h5><a class="anchor" aria-hidden="true" id="name"></a><a href="#name" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Name</h5>
+<p>Here comes the tricky part, but stay with us :)</p>
+<p>Every Snappoint has properties called <em>plug</em> (one or more) and <em>socket</em> (always just one).</p>
+<ul>
+<li>In order for 2 cubes to snap, one of them needs to have a plug and the other - a socket with the same name.</li>
+<li>A socket may only accept one plug at a time.</li>
+<li>Numbers of plugs and sockets don't have to match 1:1. One socket may serve multiple plugs (e.g. table tops may be placed on one table leg).</li>
+</ul>
+<p>The cube's Name is your way of communicating to the ViewAR System Converter the Snappoint properties. Here is how it works.</p>
+<p>A correct cube name follows the pattern below:</p>
+<pre><code class="hljs css language-json">SNAPPOINT__PLUG1_PLUG2_PLUG3__SOCKET1__SNAPPOINTNAME
+</code></pre>
+<pre><code class="hljs css language-json">Explanation: (1)__(2)__(3)__(4)
+</code></pre>
+<p>(1) <em>SNAPPOINT</em> - a prefix informing the converter that the mesh is a <em>snappoint</em>  <br>
+(2) <em>PLUGS</em> - separated with a single underscore (&quot;_&quot;) names defining <em>snappoint's</em> plugs. If a <em>snappoint</em> has no plug, &quot;dummyplug&quot; should be inserted.<br>
+(3) <em>SOCKETS</em> - separated with a single underscore (&quot;_&quot;) names defining <em>snappoint's</em> sockets. If a <em>snappoint</em> has no sockets, &quot;dummysocket&quot; should be inserted.<br>
+(4) <em>SNAPPOINTNAME</em> - a suffix defining a <em>snappoint's</em> name. It is not an active part of the name, just a note for 3D designers and developers.</p>
+<blockquote>
+<p>There is no specific maximum of snappoints, plugs, sockets, however try to keep the naming short.</p>
+</blockquote>
+<p><strong>HowTo:</strong>  <br>
+In a 3D software, open your model and create a small cube (the cube will not be removed from the scene, therefore keep it as small as possible e.g. 1x1x1 units). Move it to the position where the <em>snappoint</em> is supposed to be. Then, rotate it so that the front of the cube points in the direction where other object should be snapped. <em>Snappoints</em> need to face each other and their tops need to point in the same direction. Scaling of the <em>snappoint</em> does not affect it's functionality. Name the cube according to the above naming convention.</p>
+<p>IMPORTANT: DO NOT freeze the transformation or delete history of cubes. This information is needed for our converter and are essential!</p>
+<p>You can also download a prepared snappoint here: <a href="http://it5.at/trac/viewar/raw-attachment/wiki/Converter/Snappoint.fbx">Snappoint.fbx</a></p>
+<h3><a class="anchor" aria-hidden="true" id="parametric-models"></a><a href="#parametric-models" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Parametric Models</h3>
+<p>Sometimes a fixed object geometry is not enough. For example, in order to create a product customisation application where not only material finishings but also product dimensions may be adjusted, so-called <strong>Parametric Models</strong> would be needed. These are 3D objects which geometric characteristics may be algorithmically adjusted. This may relate to overall attributes of the object (e.g. it’s length and width) or properties of its elements (e.g. radius of corners curvature).</p>
+<p>Let’s take an example of a plain cube with the following properties:</p>
+<ul>
+<li><strong>point of origin:</strong> [0, 0, 0]</li>
+<li><strong>x-dimension:</strong> [int], x∈ &lt;1, 20&gt;</li>
+<li><strong>y-dimension:</strong> [int], y∈ &lt;1, 20&gt;</li>
+<li><strong>z-dimension:</strong> [int], z∈ &lt;1, 20&gt;</li>
+</ul>
+<p>Additionally, we add a numerical property describing a radius of curvature of its corners (asssumption: the curvature is symmetrical, identical in all directions and same for all corners):</p>
+<ul>
+<li><strong>cornerRadius</strong>: [int], cornerRadius∈ &lt;0, 90&gt;</li>
+</ul>
+<p>In order to use such a model in the application, one needs the following components:</p>
+<ul>
+<li><strong>3D Model</strong> - created in a 3D modelling software (e.g. Autodesk Maya),</li>
+<li><strong>Data file</strong> - a JSON describing the 3D Model's properties. This file is also configured in the <strong>My Content Tab</strong>, however, its Category needs to be set to &quot;Data&quot; (otherwise, the System will be awaiting a 3D model). A portion of an example data file below:</li>
+</ul>
+<pre><code class="hljs css language-json">{
+    "dimensions": {
+        "x": 10,
+        "y": 10,
+        "z": 10
+    },
+    "parameters": [
+        {
+            "name": "Width",
+            "type": "manipulation",
+            "value": {
+                "default": 10,
+                "max": 20,
+                "min": 1,
+                "type": "number"
+            }
+        },
+        {
+        "name": "Length",
+            "type": "manipulation",
+            "value": {
+                "default": 10,
+                "max": 20,
+                "min": 1,
+                "type": "number"
+            }
+        },
+        {
+        "name": "Height",
+            "type": "manipulation",
+            "value": {
+                "default": 10,
+                "max": 20,
+                "min": 1,
+                "type": "number"
+            }
+        },
+        {
+        "name": "Radius",
+            "type": "manipulation",
+            "value": {
+                "default": 0,
+                "max": 90,
+                "min": 0,
+                "type": "number"
+            }
+        }
+    ],
+    (...)
+}
+</code></pre>
+<ul>
+<li><strong>Way to access / manipulate the properties</strong> - Values of the parameters may either be defined in the application code (e.g. one may create a parametric model of a bench being adjusted automatically to fit the length of the wall) or exposed to the user (e.g. allowing for awning width manipulation).</li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="texturing"></a><a href="#texturing" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Texturing</h4>
+<p>Texturing a Parametric Model requires understanding possible modifications of the model. From the ViewAR Core side, there is a special real-time UV layout updating process implemented. Depending on which parts of the model would be stretched, the 3D object gets divided in sections with UV layouts applied accordingly. When parameters are changed, the UV layout of static parts remains untouched, while the layout of the altered elements gets regenerated in real-time. In this way, it is ensured that changes in geometry are followed by appropriate changes in the UV layout.</p>
+<h4><a class="anchor" aria-hidden="true" id="example"></a><a href="#example" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Example</h4>
+<p>A good example of the use of Parametric Models is the <a href="https://www.viewar.com/showcase/markilux/">Markilux App</a>.</p>
+<blockquote>
+<p>Development and integration of parametric models is a complex issue, therefore we strongly encourage you to use our support on that matter. Custom 3D objects may be requested via the <a href="http://developer.viewar.com/jobs/add">Request 3D Model Form</a>.</p>
+</blockquote>
+<h3><a class="anchor" aria-hidden="true" id="configurations"></a><a href="#configurations" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Configurations</h3>
+<p>In order to create complex scenes with model interdependencies encoded, we use <strong>Configurations</strong>. Technically speaking, a Configuration is a JSON file defining logical rules of model properties or possibilities of loading sets of models into the scene.</p>
+<p>Below an example of a portion of configuration defining geometry options for a table top:</p>
+<pre><code class="hljs css language-js">{
+    <span class="hljs-string">"configuration"</span>: {
+        <span class="hljs-string">"properties"</span>: [{
+            <span class="hljs-string">"name"</span>: <span class="hljs-string">"Table_top"</span>,
+            <span class="hljs-string">"type"</span>: <span class="hljs-string">"part"</span>,
+            <span class="hljs-string">"valueType"</span>: <span class="hljs-string">"enumerated"</span>,
+            <span class="hljs-string">"values"</span>: [{
+                    <span class="hljs-string">"name"</span>: <span class="hljs-string">"Table top - Round"</span>,
+                    <span class="hljs-string">"foreignKey"</span>: <span class="hljs-string">"table-top-round"</span>
+                },
+                {
+                    <span class="hljs-string">"name"</span>: <span class="hljs-string">"Table top - Rectangular"</span>,
+                    <span class="hljs-string">"foreignKey"</span>: <span class="hljs-string">"table-top-rectangular"</span>
+                },
+                {
+                    <span class="hljs-string">"name"</span>: <span class="hljs-string">"Table top - Square"</span>,
+                    <span class="hljs-string">"foreignKey"</span>: <span class="hljs-string">"table-top-square"</span>
+                }
+
+            ]
+        }]
+    }
+}
+</code></pre>
+<p>and a portion of configuration defining material options for that table top:</p>
+<pre><code class="hljs css language-js">{
+    <span class="hljs-string">"configuration"</span>: {
+        <span class="hljs-string">"properties"</span>: [{
+            <span class="hljs-string">"name"</span>: <span class="hljs-string">"Table_top"</span>,
+            <span class="hljs-string">"type"</span>: <span class="hljs-string">"material"</span>,
+            <span class="hljs-string">"valueType"</span>: <span class="hljs-string">"enumerated"</span>,
+            <span class="hljs-string">"values"</span>: [{
+                    <span class="hljs-string">"name"</span>: <span class="hljs-string">"White Marble"</span>
+                },
+                {
+                    <span class="hljs-string">"name"</span>: <span class="hljs-string">"Pink Marble"</span>
+                },
+                {
+                    <span class="hljs-string">"name"</span>: <span class="hljs-string">"Decorative Concrete"</span>
+                }
+            ]
+        }]
+    }
+}
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="reference-models"></a><a href="#reference-models" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Reference Models</h3>
+<p>When creating complex objects taking up a lot of memory, it is a good idea to split them into lighter portions and, instead of inserting them all in one model file, provide a list of references to the group of smaller models. Such an entity is called a <strong>Reference Model.</strong></p>
+<p>Technically speaking, it is a JSON file, providing references to models which are to be downloaded. Each one is identified through a unique ID (UID).</p>
+<blockquote>
+<p>The order of the list is used as an order of download. In case of less efficient internet connections, it may result in object appearing one by one. You may want to keep it in mind and, for example, build up a tall building from the bottom to the top.</p>
+</blockquote>
+<p>Below is a snippet of a Reference Model file.</p>
+<pre><code class="hljs css language-json">{
+    "converter": {...},
+    "meshes": {
+        "skyscraper-groundfloor": [],
+        "skyscraper-mainbody": [],
+        "skyscraper-spire": []
+},
+    "references": [
+        {
+            "UID": "1",
+            "name": "skyscraper-groundfloor",
+            "pose": {
+                "orientation": {
+                    "w": 1,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "position": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            },
+            "version": "1",
+            "type": "environment",
+            "foreign_key": ""
+        },
+        {
+            "UID": "2",
+            "name": "skyscraper-mainbody",
+            "pose": {
+                "orientation": {
+                    "w": 1,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "position": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 20
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            },
+            "version": "3",
+            "type": "environment",
+            "foreign_key": ""
+        },
+        {
+            "UID": "3",
+            "name": "skyscraper-groundfloor",
+            "pose": {
+                "orientation": {
+                    "w": 1,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "position": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 90
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            },
+            "version": "1",
+            "type": "environment",
+            "foreign_key": ""
+        }
+    ]
+}
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="animations"></a><a href="#animations" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Animations</h3>
+<p>Add animations to models or their parts. You will be able to access them through the JavaScript API, controlling their speed, number of iterations and triggering actions.</p>
+<hr>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 11/13/2019</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/documentation/docs/3d_content/sample_models"><span class="arrow-prev">← </span><span>Sample Models</span></a><a class="docs-next button" href="/documentation/docs/3d_content/troubleshooting"><span>Troubleshooting</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#content-upload">Content upload</a><ul class="toc-headings"><li><a href="#login">Login</a></li><li><a href="#category">Category</a></li><li><a href="#3d-model">3D Model</a></li></ul></li><li><a href="#model-list">Model List</a><ul class="toc-headings"><li><a href="#preview-a-model">Preview a Model</a></li><li><a href="#material-editor">Material Editor</a></li></ul></li><li><a href="#model-upload-assistants">Model Upload Assistants</a><ul class="toc-headings"><li><a href="#picture-uploader">Picture-Uploader</a></li><li><a href="#video-uploader">Video-Uploader</a></li><li><a href="#custom-3d-uploader">Custom 3D-Uploader</a></li></ul></li><li><a href="#custom-model-info">Custom Model Info</a><ul class="toc-headings"><li><a href="#download">Download</a></li><li><a href="#upload-download">Upload / download</a></li></ul></li><li><a href="#guidelines-for-content-creation">Guidelines for content creation</a><ul class="toc-headings"><li><a href="#modelling">Modelling</a></li><li><a href="#materials">Materials</a></li><li><a href="#uv-setup">UV Setup</a></li><li><a href="#ambient-occlusion-maps">Ambient Occlusion Maps</a></li><li><a href="#animation">Animation</a></li><li><a href="#export">Export</a></li></ul></li><li><a href="#material-editor-1">Material Editor</a><ul class="toc-headings"><li><a href="#textures">Textures</a></li><li><a href="#environment-maps">Environment Maps</a></li><li><a href="#create-material">Create Material</a></li><li><a href="#material-options">Material Options</a></li><li><a href="#group-surfaces">Group Surfaces</a></li><li><a href="#view-and-test">View and Test</a></li><li><a href="#clone-material-setup">Clone Material Setup</a></li><li><a href="#dos-amp-donts">Dos &amp; Donts</a></li></ul></li><li><a href="#advanced">Advanced</a><ul class="toc-headings"><li><a href="#snapping">Snapping</a></li><li><a href="#parametric-models">Parametric Models</a></li><li><a href="#configurations">Configurations</a></li><li><a href="#reference-models">Reference Models</a></li><li><a href="#animations">Animations</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/documentation/" class="nav-home"></a><div><h5>ViewAR</h5><a href="/documentation/docs/introduction">Introduction</a><a href="/documentation/docs/stack">Technology Stack</a><a href="/documentation/docs/creating_apps">How to create Apps</a><a href="/documentation/docs/faq">FAQs</a></div><div><h5>SDK</h5><a href="/documentation/sdk">Introduction</a><a href="/documentation/docs/sdk/getting_started">Getting Started</a><a href="/documentation/docs/sdk/basic_concepts">Basic Concepts</a><a href="/documentation/docs/sdk/quickstart">Quickstart</a></div><div><h5>Tutorials</h5><a href="/documentation/docs/furniture_live/about">Furniture Live</a><a href="/documentation/docs/guidebot/about">Guidebot</a><a href="/documentation/docs/helpar/about">Helpar</a><a href="/documentation/docs/tutorials/overview">More ...</a></div><div><h5>More</h5><a href="http://viewar.com/">ViewAR Website</a><a href="https://github.com/viewar">GitHub</a><a href="https://www.facebook.com/ViewARcom/">Facebook</a><a href="https://www.youtube.com/channel/UCOst_5NF5DoJWRkEdajGJIg">Youtube</a></div></section><a href="https://viewar.com/" target="_blank" rel="noreferrer noopener" class="viewarLogo"><img src="/documentation/img/viewar_logo.svg" alt="ViewAr Website" width="170" height="45"/></a><section class="copyright">Copyright © 2019 ViewAr GmbH</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
                 document.addEventListener('keyup', function(e) {
                   if (e.target !== document.body) {
                     return;
