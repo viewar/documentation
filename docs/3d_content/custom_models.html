@@ -57,7 +57,7 @@
         </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">Custom Models</h1></header><article><div><span><p>The ViewAR System provides a web interface for model upload and management.</p>
 <h2><a class="anchor" aria-hidden="true" id="content-upload"></a><a href="#content-upload" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Content upload</h2>
 <h3><a class="anchor" aria-hidden="true" id="login"></a><a href="#login" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Login</h3>
-<p>Create a free account and login on: <a href="http://developer.viewar.com/user/login">http://developer.viewar.com/user/login</a></p>
+<p>Create a free account and login on the <a href="http://developer.viewar.com/user/login">ViewAR Delevoper Portal</a>.</p>
 <h3><a class="anchor" aria-hidden="true" id="category"></a><a href="#category" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Category</h3>
 <p>Go to the <em>Content</em> tab, select <em>Categories</em> and create a new <em>Category</em>.</p>
 <p><img src="../assets/MenueCategories.jpg" alt=""></p>
@@ -569,7 +569,7 @@ Naming is also important for our converter that reacts to specific prefixes:</p>
 <li><p>As we said before, Cinema4D always uses the first UVW-tag for baking the ambient occlusion map. On the contrary to the ViewAR engine, which uses the second UVW-tag for the ambient occlusion map. Therefore we have to switch the order of the two UVW-tags for all objects, so that the second one contains the UV-layout for the ambient occlusion map and the first one the UV-layout for the tileable texture.</p></li>
 <li><p>Export your scene in the FBX file format (File &gt; Export... &gt; FBX... (*.fbx))</p></li>
 <li><p>Rename the image file of the baked ambient occlusion map to &quot;ambientocclusionmap.jpg&quot; and ZIP it together with the FBX-file of your 3D scene.</p></li>
-<li><p>Login to the ViewAR <a href="http://developer.viewar.com/user/login">Developer Portal</a>. Go to the 3D model upload page (Content &gt; 3D Models &gt; +Upload new model).
+<li><p>Login to the the <a href="http://developer.viewar.com/user/login">ViewAR Delevoper Portal</a>. Go to the 3D model upload page (Content &gt; 3D Models &gt; +Upload new model).
 Fill out the form (Name, Foreign Key, etc.) and drag&amp;drop the previously created ZIP-file onto the &quot;Model bundle&quot; input field and press &quot;Upload&quot;.</p></li>
 <li><p>After pressing the &quot;Upload&quot; button the ViewAR Material Editor opens automatically.</p></li>
 </ol>
@@ -647,7 +647,7 @@ Right now our converter doesn't support animations yet, so we have to manually e
 <p>7) As we said before, Cinema4D always uses the first UVW-tag for baking the ambient occlusion map. On the contrary to the ViewAR engine, which uses the second UVW-tag for the ambient occlusion map. Therefore we have to switch the order of the two UVW-tags for all objects, so that the secod one contains the UV-layout for the ambient occlusion map and the first one the UV-layout for the tileable texture.</p>
 <p>8) Export your scene in the FBX file format (File &gt; Export... &gt; FBX... (*.fbx))</p>
 <p>9) Rename the image file of the baked ambient occlusion map to &quot;ambientocclusionmap.jpg&quot; and ZIP it together with the FBX-file of your 3D scene.</p>
-<p>10) Login to your ViewAR account <a href="http://developer.viewar.com/user/login">http://developer.viewar.com/user/login</a>. Go to the 3D model upload page (Content &gt; 3D Models &gt; +Upload new model).</p>
+<p>10) Login to the <a href="http://developer.viewar.com/user/login">ViewAR Delevoper Portal</a>. Go to the 3D model upload page (Content &gt; 3D Models &gt; +Upload new model).</p>
 <p>Fill out the form (Name, Foreign Key, etc.) and drag&amp;drop the previously created ZIP-file onto the &quot;Model bundle&quot; input field and press &quot;Upload&quot;.</p>
 <p>11) After pressing the &quot;Upload&quot; button the ViewAR Material Editor opens automatically.</p>
 <p>which is always reserved by ViewAR engine for the ambient occlusion map</p>
@@ -661,7 +661,7 @@ Right now our converter doesn't support animations yet, so we have to manually e
 <p>7) As we said before, Cinema4D always uses the first UVW-tag for baking the ambient occlusion map. On the contrary to the ViewAR engine, which uses the second UVW-tag for the ambient occlusion map. Therefore we have to switch the order of the two UVW-tags for all objects, so that the secod one contains the UV-layout for the ambient occlusion map and the first one the UV-layout for the tileable texture.</p>
 <p>8) Export your scene in the FBX file format (File &gt; Export... &gt; FBX... (*.fbx))</p>
 <p>9) Rename the image file of the baked ambient occlusion map to &quot;ambientocclusionmap.jpg&quot; and ZIP it together with the FBX-file of your 3D scene.</p>
-<p>10) Login to your ViewAR account <a href="http://developer.viewar.com/user/login">http://developer.viewar.com/user/login</a>. Go to the 3D model upload page (Content &gt; 3D Models &gt; +Upload new model).</p>
+<p>10) Login to the <a href="http://developer.viewar.com/user/login">ViewAR Delevoper Portal</a>. Go to the 3D model upload page (Content &gt; 3D Models &gt; +Upload new model).</p>
 <p>Fill out the form (Name, Foreign Key, etc.) and drag&amp;drop the previously created ZIP-file onto the &quot;Model bundle&quot; input field and press &quot;Upload&quot;.</p>
 <p>11) After pressing the &quot;Upload&quot; button the ViewAR Material Editor opens automatically.</p>
 <p>which is always reserved by ViewAR engine for the ambient occlusion map</p>
