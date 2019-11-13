@@ -674,7 +674,7 @@ You can find the sample content here: [UVLayout.zip](https://www.dropbox.com/s/j
 8. Export your scene in the FBX file format (File > Export... > FBX... (\*.fbx))
 
 9. Rename the image file of the baked ambient occlusion map to "ambientocclusionmap.jpg" and ZIP it together with the FBX-file of your 3D scene.
-10. Login to your ViewAR account http://developer.viewar.com/user/login. Go to the 3D model upload page (Content > 3D Models > +Upload new model).
+10. Login to the ViewAR [Developer Portal](http://developer.viewar.com/user/login). Go to the 3D model upload page (Content > 3D Models > +Upload new model).
     Fill out the form (Name, Foreign Key, etc.) and drag&drop the previously created ZIP-file onto the "Model bundle" input field and press "Upload".
 
 11. After pressing the "Upload" button the ViewAR Material Editor opens automatically.
