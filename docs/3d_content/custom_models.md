@@ -204,319 +204,6 @@ You may now edit the file locally and upload it, when you're done. There is no n
 
 To upload an updated file, log into your account and go to the following URL: [https://developer.viewar.com/custom/universal/action:upload](https://developer.viewar.com/custom/universal/action:upload).
 
-## Advanced
-
-### Snapping
-
-When inserting a model in a scene, it may be useful to use another model as a reference for the new model position.
-
-#### Example use case
-
-To illustrate, imagine a product visualisation application, where a user is allowed to choose between different table tops. Every table top has not only different set of materials provided, but also a distinct shape and dimensions. Moreover, table legs on which those tops are to be placed also have their individual heights and shapes. Normally, in such a case, every time a switch of a table element was to be made, a set of information about the current properties of all elements would have to be retrieved and processed before a new element would be inserted. Even worse - what if the container with the table elements was moved? Or if we were to replace 20 table tops at once?
-
-It would be helpful to make the models pull to one another. Furthermore, it would be even better to have them pull one another just in one direction, so that the table remained on the ground with the table top laying peacefully on it, instead of floating in the thin air, if a shorter leg was introduced.
-
-#### Snappoints
-
-The snapping settings are handled by introducing a pair of matching **Snappoints** - one in each model (one model, however, may contain multiple Snappoints, as long as they don't overlap). They are generated automatically by the ViewAR System Converter on the basis of special cubes inserted by 3D Artists in the models. It may seem tricky at first, but let us guide you through the process and it should become clear quite soon.
-
-> The ViewAR System Converter replaces the cubes with Snappoints. It means that there is no need to worry about their visibility in the App.
-
-Here is a list of information the ViewAR System Converter extracts from the cubes.
-
-- **Point of Origin** \(translation\)
-- **Orientation** \(rotation\)
-- **Name**
-
-##### Point of Origin
-
-The cube's Point of Origin (stored in its _translation_ property) becomes a Point of Origin of a new Snappoint.
-
-##### Orientation
-
-The cube's Orientation value (stored in its rotation property) become the Orientation values of a new Snappoint.
-
-##### Name
-
-Here comes the tricky part, but stay with us :)
-
-Every Snappoint has properties called _plug_ (one or more) and _socket_ (always just one).
-
-- In order for 2 cubes to snap, one of them needs to have a plug and the other - a socket with the same name.
-- A socket may only accept one plug at a time.
-- Numbers of plugs and sockets don't have to match 1:1. One socket may serve multiple plugs \(e.g. table tops may be placed on one table leg\).
-
-The cube's Name is your way of communicating to the ViewAR System Converter the Snappoint properties. Here is how it works.
-
-A correct cube name follows the pattern below:
-
-```json
-SNAPPOINT__PLUG1_PLUG2_PLUG3__SOCKET1__SNAPPOINTNAME
-```
-
-```json
-Explanation: (1)__(2)__(3)__(4)
-```
-
-\(1\) _SNAPPOINT_ - a prefix informing the converter that the mesh is a _snappoint_  
-\(2\) _PLUGS_ - separated with a single underscore \("\_"\) names defining _snappoint's_ plugs. If a _snappoint_ has no plug, "dummyplug" should be inserted.  
-\(3\) _SOCKETS_ - separated with a single underscore \("\_"\) names defining _snappoint's_ sockets. If a _snappoint_ has no sockets, "dummysocket" should be inserted.  
-\(4\) _SNAPPOINTNAME_ - a suffix defining a _snappoint's_ name. It is not an active part of the name, just a note for 3D designers and developers.
-
-> There is no specific maximum of snappoints, plugs, sockets, however try to keep the naming short.
-
-**HowTo:**  
-In a 3D software, open your model and create a small cube \(the cube will not be removed from the scene, therefore keep it as small as possible e.g. 1x1x1 units\). Move it to the position where the _snappoint_ is supposed to be. Then, rotate it so that the front of the cube points in the direction where other object should be snapped. _Snappoints_ need to face each other and their tops need to point in the same direction. Scaling of the _snappoint_ does not affect it's functionality. Name the cube according to the above naming convention.
-
-IMPORTANT: DO NOT freeze the transformation or delete history of cubes. This information is needed for our converter and are essential!
-
-You can also download a prepared snappoint here: [Snappoint.fbx](http://it5.at/trac/viewar/raw-attachment/wiki/Converter/Snappoint.fbx)
-
-### Parametric Models
-
-Sometimes a fixed object geometry is not enough. For example, in order to create a product customisation application where not only material finishings but also product dimensions may be adjusted, so-called **Parametric Models** would be needed. These are 3D objects which geometric characteristics may be algorithmically adjusted. This may relate to overall attributes of the object \(e.g. it’s length and width\) or properties of its elements \(e.g. radius of corners curvature\).
-
-Let’s take an example of a plain cube with the following properties:
-
-- **point of origin:** \[0, 0, 0\]
-- **x-dimension:** \[int\], x∈ &lt;1, 20&gt;
-- **y-dimension:** \[int\], y∈ &lt;1, 20&gt;
-- **z-dimension:** \[int\], z∈ &lt;1, 20&gt;
-
-Additionally, we add a numerical property describing a radius of curvature of its corners (asssumption: the curvature is symmetrical, identical in all directions and same for all corners):
-
-- **cornerRadius**: \[int\], cornerRadius∈ &lt;0, 90&gt;
-
-In order to use such a model in the application, one needs the following components:
-
-- **3D Model** - created in a 3D modelling software \(e.g. Autodesk Maya\),
-- **Data file** - a JSON describing the 3D Model's properties. This file is also configured in the **My Content Tab**, however, its Category needs to be set to "Data" (otherwise, the System will be awaiting a 3D model). A portion of an example data file below:
-
-```json
-{
-    "dimensions": {
-        "x": 10,
-        "y": 10,
-        "z": 10
-    },
-    "parameters": [
-        {
-            "name": "Width",
-            "type": "manipulation",
-            "value": {
-                "default": 10,
-                "max": 20,
-                "min": 1,
-                "type": "number"
-            }
-        },
-        {
-        "name": "Length",
-            "type": "manipulation",
-            "value": {
-                "default": 10,
-                "max": 20,
-                "min": 1,
-                "type": "number"
-            }
-        },
-        {
-        "name": "Height",
-            "type": "manipulation",
-            "value": {
-                "default": 10,
-                "max": 20,
-                "min": 1,
-                "type": "number"
-            }
-        },
-        {
-        "name": "Radius",
-            "type": "manipulation",
-            "value": {
-                "default": 0,
-                "max": 90,
-                "min": 0,
-                "type": "number"
-            }
-        }
-    ],
-    (...)
-}
-```
-
-- **Way to access / manipulate the properties** - Values of the parameters may either be defined in the application code (e.g. one may create a parametric model of a bench being adjusted automatically to fit the length of the wall) or exposed to the user (e.g. allowing for awning width manipulation).
-
-#### Texturing
-
-Texturing a Parametric Model requires understanding possible modifications of the model. From the ViewAR Core side, there is a special real-time UV layout updating process implemented. Depending on which parts of the model would be stretched, the 3D object gets divided in sections with UV layouts applied accordingly. When parameters are changed, the UV layout of static parts remains untouched, while the layout of the altered elements gets regenerated in real-time. In this way, it is ensured that changes in geometry are followed by appropriate changes in the UV layout.
-
-#### Example
-
-A good example of the use of Parametric Models is the [Markilux App](https://www.viewar.com/showcase/markilux/).
-
-> Development and integration of parametric models is a complex issue, therefore we strongly encourage you to use our support on that matter. Custom 3D objects may be requested via the [Request 3D Model Form](http://developer.viewar.com/jobs/add).
-
-### Configurations
-
-In order to create complex scenes with model interdependencies encoded, we use **Configurations**. Technically speaking, a Configuration is a JSON file defining logical rules of model properties or possibilities of loading sets of models into the scene.
-
-Below an example of a portion of configuration defining geometry options for a table top:
-
-```js
-{
-    "configuration": {
-        "properties": [{
-            "name": "Table_top",
-            "type": "part",
-            "valueType": "enumerated",
-            "values": [{
-                    "name": "Table top - Round",
-                    "foreignKey": "table-top-round"
-                },
-                {
-                    "name": "Table top - Rectangular",
-                    "foreignKey": "table-top-rectangular"
-                },
-                {
-                    "name": "Table top - Square",
-                    "foreignKey": "table-top-square"
-                }
-
-            ]
-        }]
-    }
-}
-```
-
-and a portion of configuration defining material options for that table top:
-
-```js
-{
-    "configuration": {
-        "properties": [{
-            "name": "Table_top",
-            "type": "material",
-            "valueType": "enumerated",
-            "values": [{
-                    "name": "White Marble"
-                },
-                {
-                    "name": "Pink Marble"
-                },
-                {
-                    "name": "Decorative Concrete"
-                }
-            ]
-        }]
-    }
-}
-```
-
-### Reference Models
-
-When creating complex objects taking up a lot of memory, it is a good idea to split them into lighter portions and, instead of inserting them all in one model file, provide a list of references to the group of smaller models. Such an entity is called a **Reference Model.**
-
-Technically speaking, it is a JSON file, providing references to models which are to be downloaded. Each one is identified through a unique ID \(UID\).
-
-> The order of the list is used as an order of download. In case of less efficient internet connections, it may result in object appearing one by one. You may want to keep it in mind and, for example, build up a tall building from the bottom to the top.
-
-Below is a snippet of a Reference Model file.
-
-```json
-{
-    "converter": {...},
-    "meshes": {
-        "skyscraper-groundfloor": [],
-        "skyscraper-mainbody": [],
-        "skyscraper-spire": []
-},
-    "references": [
-        {
-            "UID": "1",
-            "name": "skyscraper-groundfloor",
-            "pose": {
-                "orientation": {
-                    "w": 1,
-                    "x": 0,
-                    "y": 0,
-                    "z": 0
-                },
-                "position": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 0
-                },
-                "scale": {
-                    "x": 1,
-                    "y": 1,
-                    "z": 1
-                }
-            },
-            "version": "1",
-            "type": "environment",
-            "foreign_key": ""
-        },
-        {
-            "UID": "2",
-            "name": "skyscraper-mainbody",
-            "pose": {
-                "orientation": {
-                    "w": 1,
-                    "x": 0,
-                    "y": 0,
-                    "z": 0
-                },
-                "position": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 20
-                },
-                "scale": {
-                    "x": 1,
-                    "y": 1,
-                    "z": 1
-                }
-            },
-            "version": "3",
-            "type": "environment",
-            "foreign_key": ""
-        },
-        {
-            "UID": "3",
-            "name": "skyscraper-groundfloor",
-            "pose": {
-                "orientation": {
-                    "w": 1,
-                    "x": 0,
-                    "y": 0,
-                    "z": 0
-                },
-                "position": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 90
-                },
-                "scale": {
-                    "x": 1,
-                    "y": 1,
-                    "z": 1
-                }
-            },
-            "version": "1",
-            "type": "environment",
-            "foreign_key": ""
-        }
-    ]
-}
-```
-
-### Animations
-
-Add animations to models or their parts. You will be able to access them through the JavaScript API, controlling their speed, number of iterations and triggering actions.
-
----
-
 ## Guidelines for content creation
 
 In order for a model to be available in a ViewAR Application, it needs to be uploaded to the ViewAR System. In this section we will lead you through the process and give you some tips on performance optimisation.
@@ -953,3 +640,316 @@ If you have already set up a model with the same materials assigned to the same 
 #### Donts
 
 - No special characters, especially "ä,ö,ü, etc".
+
+## Advanced
+
+### Snapping
+
+When inserting a model in a scene, it may be useful to use another model as a reference for the new model position.
+
+#### Example use case
+
+To illustrate, imagine a product visualisation application, where a user is allowed to choose between different table tops. Every table top has not only different set of materials provided, but also a distinct shape and dimensions. Moreover, table legs on which those tops are to be placed also have their individual heights and shapes. Normally, in such a case, every time a switch of a table element was to be made, a set of information about the current properties of all elements would have to be retrieved and processed before a new element would be inserted. Even worse - what if the container with the table elements was moved? Or if we were to replace 20 table tops at once?
+
+It would be helpful to make the models pull to one another. Furthermore, it would be even better to have them pull one another just in one direction, so that the table remained on the ground with the table top laying peacefully on it, instead of floating in the thin air, if a shorter leg was introduced.
+
+#### Snappoints
+
+The snapping settings are handled by introducing a pair of matching **Snappoints** - one in each model (one model, however, may contain multiple Snappoints, as long as they don't overlap). They are generated automatically by the ViewAR System Converter on the basis of special cubes inserted by 3D Artists in the models. It may seem tricky at first, but let us guide you through the process and it should become clear quite soon.
+
+> The ViewAR System Converter replaces the cubes with Snappoints. It means that there is no need to worry about their visibility in the App.
+
+Here is a list of information the ViewAR System Converter extracts from the cubes.
+
+- **Point of Origin** \(translation\)
+- **Orientation** \(rotation\)
+- **Name**
+
+##### Point of Origin
+
+The cube's Point of Origin (stored in its _translation_ property) becomes a Point of Origin of a new Snappoint.
+
+##### Orientation
+
+The cube's Orientation value (stored in its rotation property) become the Orientation values of a new Snappoint.
+
+##### Name
+
+Here comes the tricky part, but stay with us :)
+
+Every Snappoint has properties called _plug_ (one or more) and _socket_ (always just one).
+
+- In order for 2 cubes to snap, one of them needs to have a plug and the other - a socket with the same name.
+- A socket may only accept one plug at a time.
+- Numbers of plugs and sockets don't have to match 1:1. One socket may serve multiple plugs \(e.g. table tops may be placed on one table leg\).
+
+The cube's Name is your way of communicating to the ViewAR System Converter the Snappoint properties. Here is how it works.
+
+A correct cube name follows the pattern below:
+
+```json
+SNAPPOINT__PLUG1_PLUG2_PLUG3__SOCKET1__SNAPPOINTNAME
+```
+
+```json
+Explanation: (1)__(2)__(3)__(4)
+```
+
+\(1\) _SNAPPOINT_ - a prefix informing the converter that the mesh is a _snappoint_  
+\(2\) _PLUGS_ - separated with a single underscore \("\_"\) names defining _snappoint's_ plugs. If a _snappoint_ has no plug, "dummyplug" should be inserted.  
+\(3\) _SOCKETS_ - separated with a single underscore \("\_"\) names defining _snappoint's_ sockets. If a _snappoint_ has no sockets, "dummysocket" should be inserted.  
+\(4\) _SNAPPOINTNAME_ - a suffix defining a _snappoint's_ name. It is not an active part of the name, just a note for 3D designers and developers.
+
+> There is no specific maximum of snappoints, plugs, sockets, however try to keep the naming short.
+
+**HowTo:**  
+In a 3D software, open your model and create a small cube \(the cube will not be removed from the scene, therefore keep it as small as possible e.g. 1x1x1 units\). Move it to the position where the _snappoint_ is supposed to be. Then, rotate it so that the front of the cube points in the direction where other object should be snapped. _Snappoints_ need to face each other and their tops need to point in the same direction. Scaling of the _snappoint_ does not affect it's functionality. Name the cube according to the above naming convention.
+
+IMPORTANT: DO NOT freeze the transformation or delete history of cubes. This information is needed for our converter and are essential!
+
+You can also download a prepared snappoint here: [Snappoint.fbx](http://it5.at/trac/viewar/raw-attachment/wiki/Converter/Snappoint.fbx)
+
+### Parametric Models
+
+Sometimes a fixed object geometry is not enough. For example, in order to create a product customisation application where not only material finishings but also product dimensions may be adjusted, so-called **Parametric Models** would be needed. These are 3D objects which geometric characteristics may be algorithmically adjusted. This may relate to overall attributes of the object \(e.g. it’s length and width\) or properties of its elements \(e.g. radius of corners curvature\).
+
+Let’s take an example of a plain cube with the following properties:
+
+- **point of origin:** \[0, 0, 0\]
+- **x-dimension:** \[int\], x∈ &lt;1, 20&gt;
+- **y-dimension:** \[int\], y∈ &lt;1, 20&gt;
+- **z-dimension:** \[int\], z∈ &lt;1, 20&gt;
+
+Additionally, we add a numerical property describing a radius of curvature of its corners (asssumption: the curvature is symmetrical, identical in all directions and same for all corners):
+
+- **cornerRadius**: \[int\], cornerRadius∈ &lt;0, 90&gt;
+
+In order to use such a model in the application, one needs the following components:
+
+- **3D Model** - created in a 3D modelling software \(e.g. Autodesk Maya\),
+- **Data file** - a JSON describing the 3D Model's properties. This file is also configured in the **My Content Tab**, however, its Category needs to be set to "Data" (otherwise, the System will be awaiting a 3D model). A portion of an example data file below:
+
+```json
+{
+    "dimensions": {
+        "x": 10,
+        "y": 10,
+        "z": 10
+    },
+    "parameters": [
+        {
+            "name": "Width",
+            "type": "manipulation",
+            "value": {
+                "default": 10,
+                "max": 20,
+                "min": 1,
+                "type": "number"
+            }
+        },
+        {
+        "name": "Length",
+            "type": "manipulation",
+            "value": {
+                "default": 10,
+                "max": 20,
+                "min": 1,
+                "type": "number"
+            }
+        },
+        {
+        "name": "Height",
+            "type": "manipulation",
+            "value": {
+                "default": 10,
+                "max": 20,
+                "min": 1,
+                "type": "number"
+            }
+        },
+        {
+        "name": "Radius",
+            "type": "manipulation",
+            "value": {
+                "default": 0,
+                "max": 90,
+                "min": 0,
+                "type": "number"
+            }
+        }
+    ],
+    (...)
+}
+```
+
+- **Way to access / manipulate the properties** - Values of the parameters may either be defined in the application code (e.g. one may create a parametric model of a bench being adjusted automatically to fit the length of the wall) or exposed to the user (e.g. allowing for awning width manipulation).
+
+#### Texturing
+
+Texturing a Parametric Model requires understanding possible modifications of the model. From the ViewAR Core side, there is a special real-time UV layout updating process implemented. Depending on which parts of the model would be stretched, the 3D object gets divided in sections with UV layouts applied accordingly. When parameters are changed, the UV layout of static parts remains untouched, while the layout of the altered elements gets regenerated in real-time. In this way, it is ensured that changes in geometry are followed by appropriate changes in the UV layout.
+
+#### Example
+
+A good example of the use of Parametric Models is the [Markilux App](https://www.viewar.com/showcase/markilux/).
+
+> Development and integration of parametric models is a complex issue, therefore we strongly encourage you to use our support on that matter. Custom 3D objects may be requested via the [Request 3D Model Form](http://developer.viewar.com/jobs/add).
+
+### Configurations
+
+In order to create complex scenes with model interdependencies encoded, we use **Configurations**. Technically speaking, a Configuration is a JSON file defining logical rules of model properties or possibilities of loading sets of models into the scene.
+
+Below an example of a portion of configuration defining geometry options for a table top:
+
+```js
+{
+    "configuration": {
+        "properties": [{
+            "name": "Table_top",
+            "type": "part",
+            "valueType": "enumerated",
+            "values": [{
+                    "name": "Table top - Round",
+                    "foreignKey": "table-top-round"
+                },
+                {
+                    "name": "Table top - Rectangular",
+                    "foreignKey": "table-top-rectangular"
+                },
+                {
+                    "name": "Table top - Square",
+                    "foreignKey": "table-top-square"
+                }
+
+            ]
+        }]
+    }
+}
+```
+
+and a portion of configuration defining material options for that table top:
+
+```js
+{
+    "configuration": {
+        "properties": [{
+            "name": "Table_top",
+            "type": "material",
+            "valueType": "enumerated",
+            "values": [{
+                    "name": "White Marble"
+                },
+                {
+                    "name": "Pink Marble"
+                },
+                {
+                    "name": "Decorative Concrete"
+                }
+            ]
+        }]
+    }
+}
+```
+
+### Reference Models
+
+When creating complex objects taking up a lot of memory, it is a good idea to split them into lighter portions and, instead of inserting them all in one model file, provide a list of references to the group of smaller models. Such an entity is called a **Reference Model.**
+
+Technically speaking, it is a JSON file, providing references to models which are to be downloaded. Each one is identified through a unique ID \(UID\).
+
+> The order of the list is used as an order of download. In case of less efficient internet connections, it may result in object appearing one by one. You may want to keep it in mind and, for example, build up a tall building from the bottom to the top.
+
+Below is a snippet of a Reference Model file.
+
+```json
+{
+    "converter": {...},
+    "meshes": {
+        "skyscraper-groundfloor": [],
+        "skyscraper-mainbody": [],
+        "skyscraper-spire": []
+},
+    "references": [
+        {
+            "UID": "1",
+            "name": "skyscraper-groundfloor",
+            "pose": {
+                "orientation": {
+                    "w": 1,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "position": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            },
+            "version": "1",
+            "type": "environment",
+            "foreign_key": ""
+        },
+        {
+            "UID": "2",
+            "name": "skyscraper-mainbody",
+            "pose": {
+                "orientation": {
+                    "w": 1,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "position": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 20
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            },
+            "version": "3",
+            "type": "environment",
+            "foreign_key": ""
+        },
+        {
+            "UID": "3",
+            "name": "skyscraper-groundfloor",
+            "pose": {
+                "orientation": {
+                    "w": 1,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "position": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 90
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            },
+            "version": "1",
+            "type": "environment",
+            "foreign_key": ""
+        }
+    ]
+}
+```
+
+### Animations
+
+Add animations to models or their parts. You will be able to access them through the JavaScript API, controlling their speed, number of iterations and triggering actions.
+
+---
