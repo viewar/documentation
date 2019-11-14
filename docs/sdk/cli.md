@@ -25,12 +25,7 @@ Create a free ViewAR [account](https://developer.viewar.com/user/register). You 
 
 `viewar login`
 
----
-
-id: initialize_project
-title: Initialize an App/Template
-
----
+#### initialize a project
 
 Initialize a new JavaScript application by opening the terminal in your project directory and entering the following command:
 
