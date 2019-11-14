@@ -52,7 +52,7 @@ Before installing the developer tools, you'll need to make sure that you have tw
 Next, install the viewar-cli globally by entering the following command into your terminal:  
 `npm install -g viewar-cli`
 
-> run `npx viewar` to verify installation.
+> run `viewar --version` to verify installation.
 
 You will only need to install this tool once.  
 It will alert you when it's out of date, and provide instruction on how to update it.
