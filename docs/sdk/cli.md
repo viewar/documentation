@@ -52,7 +52,7 @@ Next, install the viewar-cli globally by entering the following command into you
 You will only need to install this tool once.  
 It will alert you when it's out of date, and provide instruction on how to update it.
 
-#### Initialization
+### Initialization
 
 Initialize a new javascript application by opening the terminal in your project directory and entering the following command:
 
