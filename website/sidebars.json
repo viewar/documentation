@@ -1,7 +1,13 @@
 {
   "docs": {
     "ViewAR": ["introduction", "stack", "creating_apps", "faq"],
-    "SDK": ["sdk/introduction", "sdk/cli", "sdk/basic_concepts", "sdk/quickstart"],
+    "SDK": [
+      "sdk/introduction",
+      "sdk/cli",
+      "sdk/basic_concepts",
+      "sdk/quickstart",
+      "sdk/troubleshooting"
+    ],
     "Tutorials": [
       "tutorials/overview",
       {
