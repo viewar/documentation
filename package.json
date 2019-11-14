@@ -3,8 +3,10 @@
   "version": "1.5.0",
   "description": "Documentation of ViewAR's SDK and API",
   "scripts": {
+    "format": "prettier **/*.{css,scss,md,json} --write",
     "test": "mocha",
-    "postinstall": "cd ./website && npm install"
+    "postinstall": "cd ./website && npm install",
+    "precommit": "npm run format"
   },
   "main": "index.js",
   "directories": {
@@ -14,6 +16,7 @@
   "devDependencies": {
     "@viewar/config-eslint": "^1.7.0",
     "eslint": "^6.6.0",
+    "husky": "^3.0.9",
     "prettier": "^1.19.1"
   },
   "repository": {
