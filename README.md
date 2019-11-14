@@ -12,15 +12,32 @@ _if you have no SSH key registered on Github, remove `USE_SSH=true` from command
 
 ## Changelog
 
-### [1.5.0](https://github.com/viewar/documentation/compare/v1.4.0...v1.5.0) (2019-11-05)
+# [1.7.0](https://github.com/viewar/viewar-documentation/compare/v1.6.0...v1.7.0) (2019-11-14)
 
-#### Bug Fixes
+### Bug Fixes
 
-- **deps:** use '@viewar/config-eslint' from npm registry ([0120319](https://github.com/viewar/documentation/commit/0120319))
+- **installationInstructions:** add 'troubleshooting.md' and increase required versions ([#41](https://github.com/viewar/viewar-documentation/issues/41)) ([9638d1a](https://github.com/viewar/viewar-documentation/commit/9638d1a))
+- **version check command** ([44912cd](https://github.com/viewar/viewar-documentation/commit/44912cd))
 
-#### Features
+### Features
 
-- **search:** enable search by adding algolia config and api-key ([bd0e85d](https://github.com/viewar/documentation/commit/bd0e85d))
+- add husky and format on precommit ([369ebc2](https://github.com/viewar/viewar-documentation/commit/369ebc2))
+
+# [1.6.0](https://github.com/viewar/viewar-documentation/compare/v1.5.0...v1.6.0) (2019-11-08)
+
+### Features
+
+- **3d content** - add documentation section for 3d content
+
+# [1.5.0](https://github.com/viewar/viewar-documentation/compare/v1.4.0...v1.5.0) (2019-11-05)
+
+### Bug Fixes
+
+- **deps:** use '@viewar/config-eslint' from npm registry ([0120319](https://github.com/viewar/viewar-documentation/commit/0120319))
+
+### Features
+
+- **search:** enable search by adding algolia config and api-key ([bd0e85d](https://github.com/viewar/viewar-documentation/commit/bd0e85d))
 
 ### [1.4.0](https://github.com/viewar/viewar-documentation/compare/v1.3.0...v1.4.0) (2019-10-21)
 
