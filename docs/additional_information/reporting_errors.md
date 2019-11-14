@@ -45,4 +45,4 @@ Take a series of screenshots / screenrecording documentating how to re-create th
   - floor (e.g. wood, tiles, grass)
   - lighting conditions (e.g. sunny day, dark room with local lighting)
 
-Please send all the information to: contact@viewar.com and we will come back to you as soon as possible!
+Please send all the information to: help@viewar.com and we will come back to you as soon as possible!
