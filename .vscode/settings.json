@@ -30,11 +30,5 @@
    * ATLASSIAN
    * jira and bitbucket integration
    */
-  "atlascode.jira.todoIssues.triggers": [
-    "TODO:",
-    "BUG:",
-    "FIXME:",
-    "ISSUE:",
-    "REFACTOR:"
-  ]
+  "atlascode.jira.todoIssues.triggers": ["TODO:", "BUG:", "FIXME:", "ISSUE:", "REFACTOR:"]
 }
