@@ -7,9 +7,9 @@ title: CLI Usage
 
 First, make sure that you have the following prerequisites installed:
 
-- [node.js](https://nodejs.org/en/download/) \(&gt;= v6.0.0 and &lt;= v10.0.0\)
-- [npm](https://www.npmjs.com/) \(&gt;= v3.0.0\)
-- [git](https://meet.google.com/linkredirect?authuser=0&dest=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fgit-osx-installer%2Ffiles%2F)
+- [node.js](https://nodejs.org/en/download/) (&gt;= v10.0.0)
+- [npm](https://www.npmjs.com/) (&gt;= v5.6.0)
+- [git](https://git-scm.com/)
 
 #### install viewar-cli
 
@@ -17,9 +17,7 @@ Next, install the viewar-cli globally by entering the following command into you
 
 `npm install -g viewar-cli`
 
-\(You might need to use `sudo npm install -g viewar-cli` to have the right permissions.\)
-
-You only need to install this tool once. When out of date, it will alert you and provide update instructions.
+> if you have problems, installing 'viewar-cli', have a look at the [troubleshooting](./troubleshooting) page.
 
 #### create account
 
