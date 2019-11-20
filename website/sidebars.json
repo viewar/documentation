@@ -1,6 +1,11 @@
 {
   "docs": {
-    "ViewAR": ["introduction", "stack", "creating_apps", "faq"],
+    "ViewAR": [
+      "introduction",
+      "stack",
+      "creating_apps",
+      "faq"
+    ],
     "SDK": [
       "sdk/introduction",
       "sdk/cli",
@@ -19,26 +24,7 @@
       "tutorials/overview",
       {
         "type": "subcategory",
-        "label": "Template Tutorials",
-        "ids": [
-          "tutorials/template_tutorials/wallart",
-          "tutorials/template_tutorials/helpar",
-          "tutorials/template_tutorials/guidebot",
-          "tutorials/template_tutorials/furniture_live"
-        ]
-      },
-      {
-        "type": "subcategory",
-        "label": "SDK Tutorials",
-        "ids": [
-          "tutorials/sdk_tutorials/arvatar",
-          "tutorials/sdk_tutorials/drone",
-          "tutorials/sdk_tutorials/product_visualization"
-        ]
-      },
-      {
-        "type": "subcategory",
-        "label": "Manuals",
+        "label": "App Manuals",
         "ids": [
           "tutorials/manuals/furniture_live",
           "tutorials/manuals/guidebot_placenote",
@@ -50,14 +36,21 @@
       },
       {
         "type": "subcategory",
-        "label": "Drone",
+        "label": "Template Tutorials",
         "ids": [
-          "tutorials/drone/overview",
-          "tutorials/drone/getting_started",
-          "tutorials/drone/camera",
-          "tutorials/drone/model",
-          "tutorials/drone/joysticks",
-          "tutorials/drone/advanced"
+          "tutorials/template_tutorials/furniture_live",
+          "tutorials/template_tutorials/guidebot",
+          "tutorials/template_tutorials/helpar",
+          "tutorials/template_tutorials/wallart"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "SDK Tutorials",
+        "ids": [
+          "tutorials/sdk_tutorials/arvatar",
+          "tutorials/sdk_tutorials/drone",
+          "tutorials/sdk_tutorials/product_visualization"
         ]
       }
     ],
