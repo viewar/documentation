@@ -16,10 +16,9 @@ _Furniture Live_ template is compatible with iOS, Android and runs in the browse
 - [Create with the ViewAR CLI](./cli)  
   web development skills required (HTML, CSS, JavaScript, optionally - React)
 
-#### Support
+#### More
 
-- [Template information](https://www.viewar.com/template/funiture-live/)
-- [Documentation](/docs/sdk/overview)
+- More about the [Furniture Live Template](https://www.viewar.com/template/funiture-live/)
 
 #### Pricing
 

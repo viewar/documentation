@@ -15,10 +15,9 @@ Remote support has never been easier. Incorporate one-to-one calls into a user-f
   web development skills required (HTML, CSS, JavaScript, optionally - React)
 - [User Manual](../manuals/helpar_user)
 
-#### Support
+#### More
 
-- [Template information](https://www.viewar.com/template/helpar-remote-assistance/)
-- [SDK Documentation](/docs/sdk/overview)
+- More about the [helpar Template](https://www.viewar.com/template/helpar-remote-assistance/)
 
 #### Pricing
 

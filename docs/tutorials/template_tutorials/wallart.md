@@ -13,10 +13,9 @@ Following this tutorial you'll learn how to use the demo version and, optionally
 - [Create with the App Builder](#app_builder)  
   Create your own version with the App Builder
 
-#### Support
+#### More
 
-- [ViewAR SDK Documentation](/docs/sdk)
-- More about the [Wall Art Template](https://www.viewar.com/template/wallart/)
+- More about the [Wall Art Template](https://www.viewar.com/template/wall-art/)
 
 #### Pricing
 
