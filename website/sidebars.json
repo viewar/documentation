@@ -1,11 +1,6 @@
 {
   "docs": {
-    "ViewAR": [
-      "introduction",
-      "stack",
-      "creating_apps",
-      "faq"
-    ],
+    "ViewAR": ["introduction", "stack", "creating_apps", "faq"],
     "SDK": [
       "sdk/introduction",
       "sdk/cli",
