@@ -1,0 +1,271 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Add a Material Selector · Documentation</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="In this step we want to a user interface to allow users to switch between the various materials supported by this model."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Add a Material Selector · Documentation"/><meta property="og:type" content="website"/><meta property="og:url" content="https://viewar.github.io/documentation/"/><meta property="og:description" content="In this step we want to a user interface to allow users to switch between the various materials supported by this model."/><meta property="og:image" content="https://viewar.github.io/documentation/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://viewar.github.io/documentation/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/documentation/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/documentation/js/scrollSpy.js"></script><link rel="stylesheet" href="/documentation/css/main.css"/><script src="/documentation/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/documentation/"><img class="logo" src="/documentation/img/viewar_logo.svg" alt="Documentation"/><h2 class="headerTitleWithLogo">Documentation</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/documentation/docs/introduction" target="_self">About ViewAR</a></li><li class="siteNavGroupActive"><a href="/documentation/docs/sdk/introduction" target="_self">SDK</a></li><li class="siteNavGroupActive"><a href="/documentation/docs/tutorials/overview" target="_self">Tutorials</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Product Visualization</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">ViewAR<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/documentation/docs/introduction">Introduction</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/stack">Technology Stack</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/creating_apps">Creating Apps</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/faq">FAQs</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">SDK<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/documentation/docs/sdk/introduction">Introduction</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/sdk/cli">CLI Usage</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/sdk/basic_concepts">Basic Concepts</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/sdk/quickstart">Quickstart</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Tutorials<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/documentation/docs/tutorials/overview">Template Tutorials</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Product Visualization</h4><ul><li class="navListItem"><a class="navItem" href="/documentation/docs/tutorials/product_visualization/overview">overview</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/tutorials/product_visualization/setup">Setup</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/tutorials/product_visualization/initialize_sdk">Initialise the SDK</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/tutorials/product_visualization/intro_view">Add an Introduction</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/tutorials/product_visualization/model">Load and Insert a Model</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/documentation/docs/tutorials/product_visualization/material_selector">Add a Material Selector</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/tutorials/product_visualization/ar_camera">Activate AR tracking</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Manuals</h4><ul><li class="navListItem"><a class="navItem" href="/documentation/docs/tutorials/manuals/furniture_live">Furniture Live</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/tutorials/manuals/guidebot_placenote">GuideBOT Placenote</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/tutorials/manuals/guidebot_qr">GuideBOT QR</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/tutorials/manuals/helpar_agent">Helpar Agent</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/tutorials/manuals/helpar_user">Helpar User</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/tutorials/manuals/wallart">Wallart</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Drone</h4><ul><li class="navListItem"><a class="navItem" href="/documentation/docs/tutorials/drone/overview">Overview</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/tutorials/drone/getting_started">Getting started</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/tutorials/drone/camera">Activate AR tracking</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/tutorials/drone/model">Insert drone</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/tutorials/drone/joysticks">Handling joystick input</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/tutorials/drone/advanced">Advanced</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Wallart</h4><ul><li class="navListItem"><a class="navItem" href="/documentation/docs/tutorials/wallart/about">About</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/tutorials/wallart/app_builder">App Builder</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/tutorials/wallart/cli">CLI</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Guidebot</h4><ul><li class="navListItem"><a class="navItem" href="/documentation/docs/tutorials/guidebot/about">About</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/tutorials/guidebot/app_builder">App Builder</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/tutorials/guidebot/cli">CLI</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Helpar</h4><ul><li class="navListItem"><a class="navItem" href="/documentation/docs/tutorials/helpar/about">About</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/tutorials/helpar/app_builder">App Builder</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/tutorials/helpar/cli">CLI</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Furniture Live</h4><ul><li class="navListItem"><a class="navItem" href="/documentation/docs/tutorials/furniture_live/about">About</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/tutorials/furniture_live/app_builder">App Builder</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/tutorials/furniture_live/cli">CLI</a></li></ul></div></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Advances Guides<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/documentation/docs/advanced_guides/hardware">Supported hardware</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/advanced_guides/power_economy">Power Economy</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/advanced_guides/publishing">Publishing</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/advanced_guides/euler_angles">Euler angles</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/advanced_guides/quaternion">Quaternions</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/advanced_guides/radian">Radian</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">Add a Material Selector</h1></header><article><div><span><p>In this step we want to a user interface to allow users to switch between the various materials supported by this model.</p>
+<p>To do so we want to use React to render our UI. To do this in the same index.js file we can render a Hello world text:</p>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+<span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">'react-dom'</span>;
+<span class="hljs-keyword">import</span> viewarApi <span class="hljs-keyword">from</span> <span class="hljs-string">'viewar-api'</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">App</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Hello World<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
+}
+
+<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">init</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">await</span> viewarApi.init();
+  <span class="hljs-comment">// viewar code …</span>
+
+  ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">App</span> /&gt;</span>, document.getElementById('app'));
+}
+
+init();
+</span></code></pre>
+<p>No we need to know which materials are available for this model. In our case we can extract them from the `chair.properies`. All of them are materials and the object contains this information:</p>
+<pre><code class="hljs css language-js">{
+  <span class="hljs-string">"Fabric"</span>: {
+    <span class="hljs-string">"name"</span>: <span class="hljs-string">"Fabric"</span>,
+    <span class="hljs-string">"values"</span>: [
+      {
+        <span class="hljs-string">"key"</span>: <span class="hljs-string">"123"</span>,
+        <span class="hljs-string">"imageUrl"</span>: <span class="hljs-string">"https://api.viewar.com/resources/DownloadImage/display:1/id:36662/name:thumb_36662_1481894366%23%23FabricmatMammothFabric1_123.jpg"</span>
+      },
+      {
+        <span class="hljs-string">"key"</span>: <span class="hljs-string">"152"</span>,
+        <span class="hljs-string">"imageUrl"</span>: <span class="hljs-string">"https://api.viewar.com/resources/DownloadImage/display:1/id:36662/name:thumb_36662_1481894366%23%23FabricmatMammothFabric1_152.jpg"</span>
+      },
+    ],
+    <span class="hljs-string">"value"</span>: {
+      <span class="hljs-string">"key"</span>: <span class="hljs-string">"123"</span>,
+      <span class="hljs-string">"imageUrl"</span>: <span class="hljs-string">"https://api.viewar.com/resources/DownloadImage/display:1/id:36662/name:thumb_36662_1481894366%23%23FabricmatMammothFabric1_123.jpg"</span>
+    }
+  },
+  <span class="hljs-string">"Wood"</span>: {
+    <span class="hljs-string">"name"</span>: <span class="hljs-string">"Wood"</span>,
+    <span class="hljs-string">"values"</span>: [
+      {
+        <span class="hljs-string">"key"</span>: <span class="hljs-string">"beech"</span>,
+        <span class="hljs-string">"imageUrl"</span>: <span class="hljs-string">"https://api.viewar.com/resources/DownloadImage/display:1/id:36662/name:thumb_36662_1481894366%23%23WoodmatMammothWood1_beech.jpg"</span>
+      },
+      {
+        <span class="hljs-string">"key"</span>: <span class="hljs-string">"darkrawwood2"</span>,
+        <span class="hljs-string">"imageUrl"</span>: <span class="hljs-string">"https://api.viewar.com/resources/DownloadImage/display:1/id:36662/name:thumb_36662_1481894366%23%23WoodmatMammothWood1_darkrawwood2.jpg"</span>
+      }
+    ],
+    <span class="hljs-string">"value"</span>: {
+      <span class="hljs-string">"key"</span>: <span class="hljs-string">"beech"</span>,
+      <span class="hljs-string">"imageUrl"</span>: <span class="hljs-string">"https://api.viewar.com/resources/DownloadImage/display:1/id:36662/name:thumb_36662_1481894366%23%23WoodmatMammothWood1_beech.jpg"</span>
+    }
+  }
+}
+</code></pre>
+<p>That said there are more materials and properties in this structure, but based on the above structure we can create a MaterialSelector component.</p>
+<p><strong>Note:</strong> The model was prepared using the ViewAR Material Editor. You can find more information on how to do that in the section <a href="/documentation/docs/tutorials/product_visualization/material_selector">ViewAR Material Editor</a>.</p>
+<p>We create a file <code>MaterialSelector.js</code> allowing us to switch between materials. Before we edit the file we install the package<br>
+styled-components.</p>
+<pre><code class="hljs">npm install --<span class="hljs-built_in">save</span> styled-<span class="hljs-built_in">components</span>
+</code></pre>
+<p>In <code>MaterialSelector.js</code> we import React and create a couple styled components.</p>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+<span class="hljs-keyword">import</span> styled <span class="hljs-keyword">from</span> <span class="hljs-string">'styled-components'</span>;
+
+<span class="hljs-keyword">const</span> MaterialSelect = styled.input<span class="hljs-string">`
+  width: 50px;
+  height: 50px;
+  border-radius: 200rem;
+  pointer-events: auto;
+  margin: 0 0.5rem;
+  border: 2px solid <span class="hljs-subst">${(props) =&gt; (props.active ? <span class="hljs-string">'#fff'</span> : <span class="hljs-string">'transparent'</span>)}</span>;
+
+  :focus {
+    outline: 0;
+    border: 2px solid '#fff';
+  }
+`</span>;
+
+<span class="hljs-keyword">const</span> Row = styled.div<span class="hljs-string">`
+  text-align: center;
+
+  :last-child {
+    margin-bottom: 2rem;
+  }
+`</span>;
+
+<span class="hljs-keyword">const</span> Info = styled.p<span class="hljs-string">`
+  font-size: 1.6rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+`</span>;
+</code></pre>
+<p>Next up we iterate over the list of values and show the one that's active:</p>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">MaterialSelector</span>(<span class="hljs-params">{ materials, onUpdateMaterial }</span>) </span>{
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      {Object.values(materials).map((material) =&gt; (
+        <span class="hljs-tag">&lt;<span class="hljs-name">Row</span> <span class="hljs-attr">key</span>=<span class="hljs-string">{material.name}</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">Info</span>&gt;</span>{material.name}<span class="hljs-tag">&lt;/<span class="hljs-name">Info</span>&gt;</span>
+          {material.values.map((option) =&gt; (
+            <span class="hljs-tag">&lt;<span class="hljs-name">MaterialSelect</span>
+              <span class="hljs-attr">type</span>=<span class="hljs-string">"image"</span>
+              <span class="hljs-attr">src</span>=<span class="hljs-string">{option.imageUrl}</span>
+              <span class="hljs-attr">alt</span>=<span class="hljs-string">{option.key}</span>
+              <span class="hljs-attr">key</span>=<span class="hljs-string">{option.key}</span>
+              <span class="hljs-attr">active</span>=<span class="hljs-string">{option.key</span> === <span class="hljs-string">material.value.key}</span>
+              <span class="hljs-attr">onClick</span>=<span class="hljs-string">{(evt)</span> =&gt;</span> {
+                evt.preventDefault();
+                onUpdateMaterial(material.name, option.key);
+              }}
+            /&gt;
+          ))}
+        <span class="hljs-tag">&lt;/<span class="hljs-name">Row</span>&gt;</span>
+      ))}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  );
+}
+</span></code></pre>
+<p>Next we can use the material selector once the chair is loaded and inserted into the scene</p>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">import</span> MaterialSelector <span class="hljs-keyword">from</span> <span class="hljs-string">'./MaterialSelector'</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">App</span>(<span class="hljs-params">props</span>) </span>{
+  <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">updateMaterial</span>(<span class="hljs-params">key, value</span>) </span>{
+    <span class="hljs-keyword">await</span> props.chair.setPropertyValues({ [key]: value });
+  }
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">MaterialSelector</span>
+      <span class="hljs-attr">materials</span>=<span class="hljs-string">{props.chair.properties}</span>
+      <span class="hljs-attr">onUpdateMaterial</span>=<span class="hljs-string">{updateMaterial}</span>
+    /&gt;</span>
+  );
+}
+</span></code></pre>
+<p>Then we need to render our UI. We can do this using ReactDOM and pass the chair instance into the app function as a prop.</p>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">const</span> chair = <span class="hljs-keyword">await</span> viewarApi.sceneManager.insertModel(chairModel, { pose });
+ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">App</span> <span class="hljs-attr">chair</span>=<span class="hljs-string">{chair}</span> /&gt;</span>, document.getElementById('app'));
+</span></code></pre>
+<p>Great, this will already work, in the sense that once we click on a material the chair material will update. Unfortunately the React UI won't since we haven't indicated to React that it should re-render. The issue here is that we basically have two different rendering engines (the 3D engine and the DOM UI) not being connected. That's good, because then one doesn't block the other, but it requires us to keep updates in sync.</p>
+<p><strong>Note:</strong> There are multiple ways to tackle this now. For once we could move all the chair properties into the state of a React component and update the chair properties with a callback on state updates. The other way is to stick to updating the properties directly on the model and force a React re-render once we know the model instance changed. In this case we go for the lat</p>
+<p>Next up we somehow need to trigger an update whenever the material changes. Therefor we are going to use React Hooks.</p>
+<p>Since there is no hook that simply tells React to re-render we create our own. The state is a number and it just increases it by one every time it's invoked and therefor triggering an update.</p>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">import</span> React, { useReducer } <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+
+<span class="hljs-keyword">const</span> useForceUpdate = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> useReducer(<span class="hljs-function">(<span class="hljs-params">state</span>) =&gt;</span> state + <span class="hljs-number">1</span>, <span class="hljs-number">0</span>)[<span class="hljs-number">1</span>];
+</code></pre>
+<p>Now we can update our <code>updateMaterial</code> function to force a re-render once the material update succeeded.</p>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">import</span> React, { useReducer } <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+
+<span class="hljs-keyword">const</span> useForceUpdate = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> useReducer(<span class="hljs-function">(<span class="hljs-params">state</span>) =&gt;</span> state + <span class="hljs-number">1</span>, <span class="hljs-number">0</span>)[<span class="hljs-number">1</span>];
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">App</span>(<span class="hljs-params">props</span>) </span>{
+  <span class="hljs-keyword">const</span> forceUpdate = useForceUpdate();
+
+  <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">updateMaterial</span>(<span class="hljs-params">key, value</span>) </span>{
+    <span class="hljs-keyword">await</span> props.chair.setPropertyValues({ [key]: value });
+    forceUpdate();
+  }
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">MaterialSelector</span>
+      <span class="hljs-attr">materials</span>=<span class="hljs-string">{props.chair.properties}</span>
+      <span class="hljs-attr">onUpdateMaterial</span>=<span class="hljs-string">{updateMaterial}</span>
+    /&gt;</span>
+  );
+}
+</span></code></pre>
+<p>Last but not least we can improve the positioning of our material selector by adding some global styles into our <code>index.js</code>.</p>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">import</span> { createGlobalStyle } <span class="hljs-keyword">from</span> <span class="hljs-string">'styled-components'</span>;
+
+<span class="hljs-keyword">const</span> GlobalStyle = createGlobalStyle<span class="hljs-string">`
+  body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+  }
+
+  #app {
+    pointer-events: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+`</span>;
+</code></pre>
+<p>**Note: **In the global styles we set the pointer-events to none and for the material inputs we reset it to auto. This is needed to make sure the clicks can bubble through the event down to the 3D view in order to drag the model by touching the screen.</p>
+<p>Last but not least we need to add the GobalStyle component to our React tree.</p>
+<pre><code class="hljs css language-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">App</span>(<span class="hljs-params">props</span>) </span>{
+  <span class="hljs-keyword">const</span> forceUpdate = useForceUpdate();
+
+  <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">updateMaterial</span>(<span class="hljs-params">key, value</span>) </span>{
+    <span class="hljs-keyword">await</span> props.chair.setPropertyValues({ [key]: value });
+    forceUpdate();
+  }
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">React.Fragment</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">GlobalStyle</span> /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">MaterialSelector</span>
+        <span class="hljs-attr">materials</span>=<span class="hljs-string">{props.chair.properties}</span>
+        <span class="hljs-attr">onUpdateMaterial</span>=<span class="hljs-string">{updateMaterial}</span>
+      /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">React.Fragment</span>&gt;</span>
+  );
+}
+</span></code></pre>
+<p><img src="/documentation/docs/assets/material_selector.gif" alt=""></p>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 10/8/2019</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/documentation/docs/tutorials/product_visualization/model"><span class="arrow-prev">← </span><span>Load and Insert a Model</span></a><a class="docs-next button" href="/documentation/docs/tutorials/product_visualization/ar_camera"><span>Activate AR tracking</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/documentation/" class="nav-home"></a><div><h5>ViewAR</h5><a href="/documentation/docs/introduction">Introduction</a><a href="/documentation/docs/stack">Technology Stack</a><a href="/documentation/docs/creating_apps">How to create Apps</a><a href="/documentation/docs/faq">FAQs</a></div><div><h5>SDK</h5><a href="/documentation/sdk">Introduction</a><a href="/documentation/docs/sdk/getting_started">Getting Started</a><a href="/documentation/docs/sdk/basic_concepts">Basic Concepts</a><a href="/documentation/docs/sdk/quickstart">Quickstart</a></div><div><h5>Tutorials</h5><a href="/documentation/docs/furniture_live/about">Furniture Live</a><a href="/documentation/docs/guidebot/about">Guidebot</a><a href="/documentation/docs/helpar/about">Helpar</a><a href="/documentation/docs/tutorials/overview">More ...</a></div><div><h5>More</h5><a href="http://viewar.com/">ViewAR Website</a><a href="https://github.com/viewar">GitHub</a><a href="https://www.facebook.com/ViewARcom/">Facebook</a><a href="https://www.youtube.com/channel/UCOst_5NF5DoJWRkEdajGJIg">Youtube</a></div></section><a href="https://viewar.com/" target="_blank" rel="noreferrer noopener" class="viewarLogo"><img src="/documentation/img/viewar_logo.svg" alt="ViewAr Website" width="170" height="45"/></a><section class="copyright">Copyright © 2019 ViewAr GmbH</section></footer></div></body></html>
