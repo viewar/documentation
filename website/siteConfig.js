@@ -8,10 +8,6 @@
 
 // See https://docusaurus.io/docs/site-config for all the possible
 // site configuration options.
-
-
-console.log('process.env.NODE_ENV :', process.env.NODE_ENV);
-
 const extlink = require('remarkable-extlink');
 
 // List of projects/orgs using your project for the users page.
