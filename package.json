@@ -5,8 +5,12 @@
   "scripts": {
     "format": "prettier **/*.{css,scss,md,json} --write",
     "test": "mocha",
-    "postinstall": "cd ./website && npm install",
-    "precommit": "npm run format"
+    "postinstall": "cd ./website && npm install"
+  },
+  "lint-staged": {
+    "*.{js,json,md}": [
+      "pretty-quick --staged"
+    ]
   },
   "main": "index.js",
   "directories": {
@@ -17,6 +21,7 @@
     "@viewar/config-eslint": "^1.10.0",
     "eslint": "^6.7.2",
     "husky": "^3.1.0",
+    "lint-staged": "^9.5.0",
     "prettier": "^1.19.1"
   },
   "repository": {
