@@ -11,64 +11,64 @@
 // List of projects/orgs using your project for the users page.
 const users = [
   {
-    caption: 'User1',
+    caption:  'User1',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/image.jpg'.
-    image: '/img/undraw_open_source.svg',
+    image:    '/img/undraw_open_source.svg',
     infoLink: 'https://www.facebook.com',
-    pinned: true,
+    pinned:   true,
   },
 ];
 
 const siteConfig = {
-  title: 'Documentation', // Title for your website.
-  tagline: "of ViewAR's SDK and API",
+  title:   'Documentation', // Title for your website.
+  tagline: 'of ViewAR\'s SDK and API',
   // url:     'https://your-docusaurus-test-site.com', // Your website URL
   // baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
-  url: 'https://viewar.github.io',
+  url:     'https://viewar.github.io',
   baseUrl: '/documentation/',
 
   // Used for publishing and more
-  projectName: 'documentation',
+  projectName:      'documentation',
   organizationName: 'viewar',
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
   //   organizationName: 'JoelMarcey'
 
   // On page navigation for the current documentation page.
-  onPageNav: 'separate',
+  onPageNav:              'separate',
   // For sites with a sizable amount of content, set collapsible to true.
   // Expand/collapse the links and subcategories under categories.
   docsSideNavCollapsible: true,
 
   // docsearch api
   algolia: {
-    apiKey: '5207094edcc772e8784736cd40203ef0',
-    indexName: 'viewar',
-    placeholder: 'Search',
+    apiKey:         '5207094edcc772e8784736cd40203ef0',
+    indexName:      'viewar',
+    placeholder:    'Search',
     algoliaOptions: {}, // Optional, if provided by Algolia
   },
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     {
-      doc: 'introduction',
+      doc:   'introduction',
       label: 'About ViewAR',
     },
     {
-      doc: 'sdk/introduction',
+      doc:   'sdk/introduction',
       label: 'SDK',
     },
     {
-      doc: '3d_content/introduction',
+      doc:   '3d_content/introduction',
       label: '3D Content',
     },
     {
-      doc: 'tutorials/overview',
+      doc:   'tutorials/overview',
       label: 'Tutorials',
     },
     {
-      label: 'Search',
+      label:  'Search',
       search: true,
     },
   ],
@@ -79,11 +79,11 @@ const siteConfig = {
   /* path to images for header/footer */
   headerIcon: 'img/viewar_logo.svg',
   footerIcon: '',
-  favicon: 'img/favicon.ico',
+  favicon:    'img/favicon.ico',
 
   /* Colors for website */
   colors: {
-    primaryColor: '#a41f1f', // ViewAr - red
+    primaryColor:   '#a41f1f', // ViewAr - red
     secondaryColor: '#282f39', // ViewAr - headerbg
   },
 
@@ -102,7 +102,7 @@ const siteConfig = {
   */
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
-  copyright: `Copyright © ${new Date().getFullYear()} ViewAr GmbH`,
+  copyright: 'Copyright © 2019 ViewAR GmbH',
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
@@ -110,13 +110,13 @@ const siteConfig = {
   },
 
   // Add custom scripts here that would be placed in <script> tags.
-  scripts: ['https://buttons.github.io/buttons.js'],
+  scripts: [ 'https://buttons.github.io/buttons.js' ],
 
   // No .html extensions for paths.
   cleanUrl: true,
 
   // Open Graph and Twitter card images.
-  ogImage: 'img/undraw_online.svg',
+  ogImage:      'img/undraw_online.svg',
   twitterImage: 'img/undraw_tweetstorm.svg',
 
   // TODO: create id for fb page-app
