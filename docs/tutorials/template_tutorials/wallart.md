@@ -112,4 +112,3 @@ Following settings are available in the ui config:
   advancedAuthentication: false,  // Use advanced authentication with logins from http://dev2.viewar.com/auth/list.
 }
 ```
-

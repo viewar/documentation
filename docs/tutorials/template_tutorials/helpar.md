@@ -4,7 +4,7 @@ title: HelpAR
 ---
 
 Remote support has never been easier. Incorporate one-to-one calls into a user-friendly application and enhance the communication with synchronised touch transmission and visualisation. The application is even able to save annotations for later usage in a self-service approach. More about the [helpar Template](https://www.viewar.com/template/helpar-remote-assistance/)
-  
+
 <!-- TODO: add TOC -->
 
 ## App Builder
