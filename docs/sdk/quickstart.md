@@ -283,7 +283,7 @@ orientation: { w, x, y, z }
 The Augmented Reality Camera's Pose is defined with the use of:
 
 - position (3d vector)
-- orientation ([Quaternion](/quaternion.md))
+- orientation ([Quaternion](additional_information/quaternion.md))
 
 ```javascript
 {

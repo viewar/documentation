@@ -40,7 +40,7 @@ You'll checkout the unfinished Drone Control App from our Git Repository and fin
 - know your way around any chosen IDE and GitHub.
 - **good to have:** basic React skills.
 
-_If you don't feel entirely comfortable in the skillset above, you might benefit more from trying the [Templates Tutorials](templates.md) first._
+_If you don't feel entirely comfortable in the skillset above, you might benefit more from trying the [Templates Tutorials](/tutorials/overview) first._
 
 #### Hardware:
 

@@ -3,56 +3,35 @@ id: helpar
 title: HelpAR
 ---
 
-Remote support has never been easier. Incorporate one-to-one calls into a user-friendly application and enhance the communication with synchronised touch transmission and visualisation. The application is even able to save annotations for later usage in a self-service approach.
+Remote support has never been easier. Incorporate one-to-one calls into a user-friendly application and enhance the communication with synchronised touch transmission and visualisation. The application is even able to save annotations for later usage in a self-service approach. More about the [helpar Template](https://www.viewar.com/template/helpar-remote-assistance/)
 
 <!-- TODO: add TOC -->
 
-### Ready to go?
-
-- [Create with the App Builder](./app_builder)  
-  no programming knowledge required
-- [Create with the ViewAR CLI](./cli)
-  web development skills required (HTML, CSS, JavaScript, optionally - React)
-- [User Manual](../manuals/helpar_user)
-
-#### Support
-
-- [Template information](https://www.viewar.com/template/helpar-remote-assistance/)
-- [SDK Documentation](/docs/sdk/overview)
-
-#### Pricing
-
-Pricing available on request: <sdk@viewar.com>
-
 ## App Builder
 
-#### Create your own Furniture Live app using the ViewAR App Builder
+[ViewAR™ AppBuilder](https://www.viewar.com/app-builder/) is the easiest way to build your augmented reality apps. It allows developers to build augmented reality and virtual reality apps based on HTML templates. It is a modular structure, utilising our almost 10-years-long development experience and lessons learned from over 50 projects. Ready-to-use templates allow for the user focus to be shifted to styling and content. The System is suitable for professional programmers as well as for beginners.
 
-The ViewAR™ AppBuilder is the easiest way to build your augmented reality apps. It allows developers to build augmented reality and virtual reality apps based on HTML templates. It is a modular structure, utilising our almost 10-years-long development experience and lessons learned from over 50 projects. Ready-to-use templates allow for the user focus to be shifted to styling and content. The System is suitable for professional programmers as well as for beginners.
-
-[More information](https://www.viewar.com/app-builder/)
-
-#### Prerequisites
+### Prerequisites
 
 All you need is a web browser and a web connection. No programming knowledge required.
 
-#### Create an account
+### Create an account
 
 Create a free user account on the [ViewAR Developer portal](https://developer.viewar.com).
 
-#### Choose a template
+### Choose a template
 
 Browse through a list of available templates to find the **helpar**.
 
-#### Add app information
+### Add app information
 
 Choose a unique app ID that will be used to access your application. It is a good idea to use a syntax like: _company.project_ or _project.topic_.
 
-#### Style your app
+### Style your app
 
 Customise your application with a user-friendly Configurator view. It is an easy and intuitive way to change colours of backgrounds, buttons and text. If you are familiar with CSS, check out the second tab. Properties of each element may be accessed Left-Click while holding Shift.
 
-#### Test the app
+### Test the app
 
 That's it! You may now test your App! Download the ViewAR SDK Application from the App Store or Google Play store and type in the App ID defined in the Information tab. Should you not have access to a mobile device, many functionalities may also be tested in a browser by using the link provided.
 
@@ -69,20 +48,20 @@ In an IDE of your choice (for example WebStorm) navigate to a suitable directory
 
 Furthermore, make sure that you have a ViewAR account. It'll provide you storage for your 3D models and an overview of the apps created. Register at: https://developer.viewar.com/
 
-#### Install the ViewAR CLI
+### Install the ViewAR CLI
 
 The easiest way to setup a new ViewAR application is to use the ViewAR CLI.
 In the terminal run:
 
 `npm install -g viewar`.
 
-#### Login
+### Login
 
 It's necessary to login with your ViewAR account. Run:
 
 `viewar login`
 
-#### Create your first Project
+### Create your first Project
 
 Now, we need to create a JavaScript project with a copy of all Template files in a proper structure.
 
@@ -96,7 +75,7 @@ Let's initialise a project in a dedicated directory:
 
 `viewar init PROJECTNAME`
 
-#### Initialise a template project
+### Initialise a template project
 
 - _Select the user account for this app:_ navigate to your account.<br>
 - _Select a project type:_ Choose the _Sample Template_ to access the Template List.<br>
@@ -120,11 +99,11 @@ This will start the app without the 3D engine, letting you simulate AR emitters 
 
 This will start the app with the 3D engine (WebGL). It takes a bit longer to load but allows you to load 3D scenes and use VR features. This mode is not recommended for development.
 
-#### Test on your mobile device
+### Test on your mobile device
 
 You can test your application while developing using the ViewAR SDK app from the Appstore or Google Play Store. Start the ViewAR SDK app, enter the App ID, enter version, enable LAN development mode and update your IP address in the input field.
 
-#### Deploy/save your changes
+### Deploy/save your changes
 
 To save your changes to the server, use this command:
 
@@ -132,7 +111,7 @@ To save your changes to the server, use this command:
 
 This will build your app in release mode and save the changes to the server. After this, your app will be updated and everyone starting it will get the changes.
 
-#### Testing release version
+### Testing release version
 
 There are two options for testing your application: you may either do it directly in the web browser (in the mock or full mode) or run it on a mobile device using the ViewAR SDK app.
 
@@ -145,8 +124,8 @@ Now that you have your app all set and running, it's time to play around with it
 Browse our SDK Documentation for more information.
 
 Here are some topics to get you started:
-<br>[Basic Concepts](basic-concepts.md)
-<br>[JavaScript API Quickstart](references.md)
+<br>[Basic Concepts](../../sdk/basic_concepts.md)
+<br>[JavaScript API Quickstart](http://test2.3.viewar.com/docs/index.html)
 
 ### UI Config
 

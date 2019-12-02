@@ -53,6 +53,7 @@ class Footer extends React.PureComponent {
           </div>
           <div>
             <h5>SDK</h5>
+            <a href={this.pageUrl('sdk')}>API Reference</a>
             <a href={this.pageUrl('sdk')}>Introduction</a>
             <a href={this.pageUrl('docs/sdk/getting_started')}>Getting Started</a>
             <a href={this.pageUrl('docs/sdk/basic_concepts')}>Basic Concepts</a>

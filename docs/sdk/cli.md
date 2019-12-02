@@ -25,12 +25,7 @@ Create a free ViewAR [account](https://developer.viewar.com/user/register). You 
 
 `viewar login`
 
----
-
-id: initialize_project
-title: Initialize an App/Template
-
----
+#### initialize a project
 
 Initialize a new JavaScript application by opening the terminal in your project directory and entering the following command:
 
@@ -57,7 +52,7 @@ Next, install the viewar-cli globally by entering the following command into you
 You will only need to install this tool once.  
 It will alert you when it's out of date, and provide instruction on how to update it.
 
-#### Initialization
+### Initialization
 
 Initialize a new javascript application by opening the terminal in your project directory and entering the following command:
 

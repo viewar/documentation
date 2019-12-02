@@ -3,62 +3,39 @@ id: wallart
 title: Wall-ARt
 ---
 
-Wall Art is a **product visualisation app** dedicated to 2D objects with of a vertical orientation.  
-Following this tutorial you'll learn how to use the demo version and, optionally, create your own from the ViewAR Template.
-
-#### Ready to go?
-
-- [User Manual](../manuals/wallart)  
-  Learn to use the App
-- [Create with the App Builder](#app_builder)  
-  Create your own version with the App Builder
-
-#### Support
-
-- [ViewAR SDK Documentation](/docs/sdk)
-- More about the [Wall Art Template](https://www.viewar.com/template/wallart/)
-
-#### Pricing
-
-Pricing available on request: <sdk@viewar.com>
+[Wall Art Template](https://www.viewar.com/template/wall-art/) is a **product visualisation app** dedicated to 2D objects with of a vertical orientation. Following this tutorial you'll learn how to use the demo version and, optionally, create your own from the ViewAR Template.
 
 ## App Builder
 
-##### Create your own app using the ViewAR App Builder
-
-The ViewAR™ AppBuilder is the easiest way to build your augmented reality apps. It allows developers to build augmented reality and virtual reality apps based on HTML templates. It is a modular structure, utilising our almost 10-years-long development experience and lessons learned from over 50 projects. Ready-to-use templates allow for the user focus to be shifted to styling and content. The System is suitable for professional programmers as well as for beginners.
-
-Following this tutorial you'll learn how to create your own version of the Wall Art App using only the ViewAR App Builder. No programming knowledge required!
-
-[More information](https://www.viewar.com/app-builder/)
+[ViewAR™ AppBuilder](https://www.viewar.com/app-builder/) is the easiest way to build your augmented reality apps. It allows developers to build augmented reality and virtual reality apps based on HTML templates. It is a modular structure, utilising our almost 10-years-long development experience and lessons learned from over 50 projects. Ready-to-use templates allow for the user focus to be shifted to styling and content. The System is suitable for professional programmers as well as for beginners.
 
 ### Prerequisites
 
 All you need is a web browser and a web connection. No programming knowledge required, however, being familiar with HTML/CSS might broaden your possibilities.
 
-#### Create an account
+### Create an account
 
-Create a free user account on the [ViewAR Developer portal](https://developer.viewar.com)
+Create a free user account on the [ViewAR Developer Portal](https://developer.viewar.com)
 
-#### Choose a template
+### Choose a template
 
 Browse through a list of available templates to find the **Wall Art Template**.
 
-#### Add app information
+### Add app information
 
 Choose a unique app ID that will be used to access your application.  
 It is a good idea to use a syntax like: _company.project_ or _project.topic_.
 
-#### Style your app
+### Style your app
 
 Customise your application with a user-friendly Configurator view. It is an easy and intuitive way to change colours of backgrounds, buttons and text. If you are familiar with CSS, check out the second tab. Properties of each element may be accessed Left-Click while holding Shift.
 
-#### Add content
+### Add content
 
 Add content with the Content Manager. Some Sample Content is provided to get you started. Should you want to add your Custom Content straight away, use the button below. Be aware that you may only use 2D models in this template. Use the Picture Uploader (more about [Model Assistants](/docs/sdk/model-assistants 'Model Assistants')).
 Don't worry, you will be able to manage your models at any time, even after App publishing!
 
-#### Test app
+### Test app
 
 That's it! You may now test your App! Download the ViewAR SDK Application from the App Store or Google Play store and type in the App ID defined in the Information tab. Should you not have access to a mobile device, many functionalities may also be tested in a browser by using the link provided.
 
@@ -70,8 +47,6 @@ TODO: add deployment info
 
 Wall Art is a product visualisation app dedicated to 2D objects with of vertical orientation. We'll show you how to use it and, optionally, create your own from the ViewAR Template.
 
-#### Create your own app using the ViewAR Template
-
 ### Prerequisites
 
 In an IDE of your choice (for example WebStorm) navigate to a suitable directory and make sure that you have the following installed:
@@ -79,14 +54,14 @@ In an IDE of your choice (for example WebStorm) navigate to a suitable directory
 - Node.js (version 6.0.0 or higher)
 - npm package manager (version 3 or higher)
 
-#### Install the ViewAR CLI
+### Install the ViewAR CLI
 
 The easiest way to setup a new ViewAR application is to use the ViewAR CLI.
 In the terminal run:
 
 `npm install -g viewar-cli`.
 
-#### Create your first Project
+### Create your first Project
 
 Next we can initialise a project in a dedicated directory:
 
@@ -101,7 +76,7 @@ Next we can initialise a project in a dedicated directory:
 - _Enter the app version:_ Unless you have a really good reason, stick to 1.0 as default.<br>
 - _Select tracker(s)_: Choose the _ARKit_ (for iOS) and/or _ARCore_ (for Android).
 
-#### Run application in the browser
+### Run application in the browser
 
 You have 2 modes to choose from:<br>
 
@@ -137,8 +112,3 @@ Following settings are available in the ui config:
   advancedAuthentication: false,  // Use advanced authentication with logins from http://dev2.viewar.com/auth/list.
 }
 ```
-
-### Support
-
-- [Documentation](oveview.md)
-- [Tutorials](https://developer.viewar.com/site/tutorials)

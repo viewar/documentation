@@ -1,12 +1,16 @@
 {
   "name": "viewar-documentation",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "description": "Documentation of ViewAR's SDK and API",
   "scripts": {
     "format": "prettier **/*.{css,scss,md,json} --write",
-    "test": "mocha",
-    "postinstall": "cd ./website && npm install",
-    "precommit": "npm run format"
+    "test": "echo 'No tests specified'",
+    "postinstall": "cd ./website && npm install"
+  },
+  "lint-staged": {
+    "*.{js,json,md}": [
+      "pretty-quick --staged"
+    ]
   },
   "main": "index.js",
   "directories": {
@@ -14,10 +18,12 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@viewar/config-eslint": "^1.7.0",
-    "eslint": "^6.6.0",
-    "husky": "^3.0.9",
-    "prettier": "^1.19.1"
+    "@viewar/config-eslint": "^1.10.0",
+    "eslint": "^6.7.2",
+    "husky": "^3.1.0",
+    "lint-staged": "^9.5.0",
+    "prettier": "^1.19.1",
+    "remarkable-extlink": "^1.1.0"
   },
   "repository": {
     "type": "git",
