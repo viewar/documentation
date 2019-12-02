@@ -53,9 +53,23 @@ _if you have no SSH key registered on Github, remove `USE_SSH=true` from command
 
 - **search:** enable search by adding algolia config and api-key ([bd0e85d](https://github.com/viewar/viewar-documentation/commit/bd0e85d))
 
-### [1.4.0](https://github.com/viewar/viewar-documentation/compare/v1.3.0...v1.4.0) (2019-10-21)
+# [1.6.0](https://github.com/viewar/viewar-documentation/compare/v1.5.0...v1.6.0) (2019-11-08)
 
-`GIT_USER={USERNAME} CURRENT_BRANCH={BRANCH} USE_SSH=true npm run publish-gh-pages`
+### Features
+
+- **3d content** - add documentation section for 3d content
+
+# [1.5.0](https://github.com/viewar/viewar-documentation/compare/v1.4.0...v1.5.0) (2019-11-05)
+
+### Bug Fixes
+
+- **deps:** use '@viewar/config-eslint' from npm registry ([0120319](https://github.com/viewar/viewar-documentation/commit/0120319))
+
+### Features
+
+- **search:** enable search by adding algolia config and api-key ([bd0e85d](https://github.com/viewar/viewar-documentation/commit/bd0e85d))
+
+### [1.4.0](https://github.com/viewar/viewar-documentation/compare/v1.3.0...v1.4.0) (2019-10-21)
 
 - **docs:** Change Advanced Guides to Additional Information ([#31](https://github.com/viewar/documentation/pull/31))
 
