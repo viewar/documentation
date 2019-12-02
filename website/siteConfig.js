@@ -49,23 +49,19 @@ const siteConfig = {
   docsSideNavCollapsible: true,
 
   // For no header links in the top nav bar -> headerLinks: [],
+  // TODO: enable external headerlinks to be openened in new tab
   headerLinks: [
     {
       doc:   'sdk/introduction',
       label: 'SDK',
     },
     {
-      doc:   '3d_content/introduction',
-      label: '3D Content',
-    },
-    {
-      doc:   'tutorials/overview',
-      label: 'Tutorials',
+      href:   'http://viewar.com/',
+      label:  'Developer Portal',
     },
     {
       href:   'http://test2.3.viewar.com/docs/index.html',
       label:  'API',
-      extern: true,
     },
     {
       label:  'Search',

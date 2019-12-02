@@ -67,7 +67,7 @@ class HomeSplash extends React.PureComponent {
           <PromoSection>
             <Button href={docUrl('sdk/introduction')} isPrimary>SDK Documentation</Button>
             <Button href="http://test2.3.viewar.com/docs/index.html" target="_blank" isPrimary>API Reference</Button>
-            <Button href="http://viewar.com/" target="_blank" isPrimary>Website</Button>
+            <Button href="http://developer.viewar.com/" target="_blank" isPrimary>Developer Portal</Button>
           </PromoSection>
         </div>
       </SplashContainer>
