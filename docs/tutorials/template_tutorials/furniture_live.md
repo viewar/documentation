@@ -128,8 +128,8 @@ Browse our SDK Documentation for more information.
 
 Here are some topics to get you started:
 
-- [Basic Concepts](basic-concepts.md)
-- [JavaScript API Quickstart](references.md)
+- [Basic Concepts](../../sdk/basic_concepts.md)
+- [JavaScript API Quickstart](https://viewar.github.io/documentation/)
 
 ## UI Config
 

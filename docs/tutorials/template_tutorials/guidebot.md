@@ -138,7 +138,7 @@ There are two options for testing your application: you may either do it directl
 Some resources to get you started:
 
 - More info about [testing](testing.md).
-- User Manuals: [GuideBOT QR](tutorials/tutorials--manuals/tutorials--manuals--guidebot-qr.md) and [GuideBOT Placenote](tutorials/tutorials--manuals/tutorials--manuals--guidebot-placenote.md).
+- User Manuals: [GuideBOT QR](../manuals/guidebot_qr) and [GuideBOT Placenote](../manuals/guidebot_placenote).
 
 ### Experiment!
 
@@ -146,8 +146,8 @@ Now that you have your app all set and running, it's time to play around with it
 
 Browse our SDK Documentation for more information. Here are some topics to get you started:
 
-- [Basic Concepts](basic-concepts.md)
-- [JavaScript API Quickstart](references.md)
+- [Basic Concepts](../../sdk/basic_concepts.md)
+- [JavaScript API Quickstart](http://test2.3.viewar.com/docs/index.html)
 
 ### UI Config
 

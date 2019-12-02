@@ -124,8 +124,8 @@ Now that you have your app all set and running, it's time to play around with it
 Browse our SDK Documentation for more information.
 
 Here are some topics to get you started:
-<br>[Basic Concepts](basic-concepts.md)
-<br>[JavaScript API Quickstart](references.md)
+<br>[Basic Concepts](../../sdk/basic_concepts.md)
+<br>[JavaScript API Quickstart](http://test2.3.viewar.com/docs/index.html)
 
 ### UI Config
 
