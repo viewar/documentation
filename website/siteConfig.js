@@ -1,3 +1,4 @@
+
 /**
  * Copyright (c) 2017-present, Facebook, Inc.
  *
@@ -7,6 +8,11 @@
 
 // See https://docusaurus.io/docs/site-config for all the possible
 // site configuration options.
+
+
+console.log('process.env.NODE_ENV :', process.env.NODE_ENV);
+
+const extlink = require('remarkable-extlink');
 
 // List of projects/orgs using your project for the users page.
 const users = [
@@ -42,13 +48,6 @@ const siteConfig = {
   // Expand/collapse the links and subcategories under categories.
   docsSideNavCollapsible: true,
 
-  // docsearch api
-  algolia: {
-    apiKey:         '5207094edcc772e8784736cd40203ef0',
-    indexName:      'viewar',
-    placeholder:    'Search',
-    algoliaOptions: {}, // Optional, if provided by Algolia
-  },
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     {
@@ -131,6 +130,21 @@ const siteConfig = {
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
   //   repoUrl: 'https://github.com/facebook/test-site',
+
+  // docsearch api
+  algolia: {
+    apiKey:         '5207094edcc772e8784736cd40203ef0',
+    indexName:      'viewar',
+    placeholder:    'Search',
+    algoliaOptions: {}, // Optional, if provided by Algolia
+  },
+  markdownPlugins: [
+    function(md) {
+      extlink(md, {
+        host: process.env.NODE_ENV === 'development' ? 'localhost' : 'https://viewar.github.io/', // The hrefs that you DON'T want to be external
+      });
+    },
+  ],
 };
 
 module.exports = siteConfig;
