@@ -53,7 +53,7 @@ class HomeSplash extends React.PureComponent {
 
     const Button = (props) => (
       <div className="pluginWrapper buttonWrapper">
-        <a className={`button${props.isPrimary ? ' isPrimary' : ''}`} href={props.href} target={props.target}>
+        <a className={`button${props.isPrimary ? ' isPrimary' : ''}`} href={props.href} target={props.target} style={props.style}>
           {props.children}
         </a>
       </div>
@@ -65,9 +65,9 @@ class HomeSplash extends React.PureComponent {
         <div className="inner">
           <ProjectTitle siteConfig={siteConfig} />
           <PromoSection>
-            <Button href="https://webversion.viewar.com/com.viewar.sandbox/100/" isPrimary>Live Example</Button>
             <Button href={docUrl('sdk/introduction')} isPrimary>SDK Documentation</Button>
-            <Button href={docUrl('introduction')} isPrimary>About ViewAr</Button>
+            <Button href="http://test2.3.viewar.com/docs/index.html" target="_blank" isPrimary>API Reference</Button>
+            <Button href="http://viewar.com/" target="_blank" isPrimary>Website</Button>
           </PromoSection>
         </div>
       </SplashContainer>

@@ -51,10 +51,6 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     {
-      doc:   'introduction',
-      label: 'About ViewAR',
-    },
-    {
       doc:   'sdk/introduction',
       label: 'SDK',
     },
@@ -65,6 +61,11 @@ const siteConfig = {
     {
       doc:   'tutorials/overview',
       label: 'Tutorials',
+    },
+    {
+      href:   'http://test2.3.viewar.com/docs/index.html',
+      label:  'API',
+      extern: true,
     },
     {
       label:  'Search',
