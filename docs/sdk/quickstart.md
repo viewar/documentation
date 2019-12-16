@@ -481,5 +481,5 @@ await sceneManager.insertModel(model, { visible: false });
 
 ### Read next
 
-- [ViewAR API References](http://test2.3.viewar.com/docs/index.html)
 - [ViewAR JavaScript API Playground](https://webversion.viewar.com/com.viewar.sandbox/100/)
+- [ViewAR API References](http://test2.3.viewar.com/docs/index.html)

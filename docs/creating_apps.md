@@ -12,8 +12,7 @@ Need more freedom? Using the ViewAR Augmented Reality SDK, you can create your o
 - Efficient, JavaScript-based API.
 - Extend the ready-to-use templates or develop your own ones.
 
-Learn more about the [ViewAR SDK](../sdk/introduction).
-For a full list of API calls, check our [API Documentation](http://test2.3.viewar.com/docs/index.html).
+Learn more about the [ViewAR SDK](../sdk/introduction) and the [ViewAR API](../sdk/api).
 
 ViewAR is the leading Augmented Reality system, supporting numerous available tracking systems (think - ARKit, ARCore, Wikitude...). It's platform-independent and allows for easy and robust creation of efficient mobile and web applications. The modular structure integrates numerous hard- and software field-specific components available on the market.
 
@@ -34,7 +33,7 @@ It offers ready-to-use templates which may be used by non-developers as well as 
 
 Every Template is fully functional and may be used as-is or styled with CSS directly through our online App Builder. Therefore, there is no need for a local development environment or programming skills.
 
-[Learn more...](https://www.viewar.com/app-builder/)
+Learn more about the [ViewAR App Builder](https://www.viewar.com/app-builder/).
 
 ### AppBuilder Tutorials
 
@@ -44,4 +43,4 @@ Every Template is fully functional and may be used as-is or styled with CSS dire
   Remote assistance app.
 - [GuideBOT](./tutorials/template_tutorials/guidebot)  
   Indoor navigation app with an animated character.
-- [More...](./tutorials/template_tutorials/overview)
+- [More tutorials...](./tutorials/template_tutorials/overview)
