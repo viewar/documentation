@@ -131,14 +131,6 @@ To save your changes to the server, use this command:
 
 This will build your app in release mode and save the changes to the server. After this, your app will be updated and everyone starting it will get the changes.
 
-### Test the app
-
-There are two options for [running your application](../../sdk/cli#Runyourapp): you may either do it directly in the web browser (in the mock or full mode) or run it on a mobile device using the ViewAR SDK app.
-
-Some resources to get you started:
-
-- User Manuals: [GuideBOT QR](../manuals/guidebot_qr) and [GuideBOT Placenote](../manuals/guidebot_placenote).
-
 ### Experiment!
 
 Now that you have your app all set and running, it's time to play around with it a bit. Feel free to alter the existing functionalities or extend the app with some of your own choosing!
