@@ -43,6 +43,8 @@ ViewAR API is an object-oriented JavaScript-based API, offering an interface for
 - [Tracking](/docs/sdk/basic_concepts/tracking)
 - App Utilities.
 
+For a full list of API calls, check our [API Documentation](http://test2.3.viewar.com/docs/index.html).
+
 ## ViewAR Backend
 
 It stores and provides the 3D data, configurations and UIs for ViewAR Applications. By default, ViewAR Apps use a central ViewAR server. If required, it may be set up within the client’s own infrastructure. A ViewAR proxy server ([see on GitHub](https://github.com/viewar/viewar-proxy)) may also be set up in order to serve downloads from your server infrastructure.

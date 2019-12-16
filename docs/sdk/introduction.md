@@ -23,4 +23,7 @@ Advance 3D editing (UV layouts creation, texturing etc, ...)
 
 ### ViewAR API Sandbox
 
-See ViewAR in an [live example](https://webversion.viewar.com/com.viewar.sandbox/100/)
+Get the idea of the ViewAR System functionality with our [Sandbox](https://webversion.viewar.com/com.viewar.sandbox/100/).
+
+#### ViewAR API Documentation
+For a full list of API calls, check our [API Documentation](http://test2.3.viewar.com/docs/index.html).
