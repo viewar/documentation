@@ -44,8 +44,8 @@ That's it! You may now test your App! Download the ViewAR SDK Application from t
 
 More information may be found in the User Manuals:
 
-- [GuideBOT QR](/docs/tutorials/manuals/guidebot_qr)
-- [GuideBOT Placenote](/docs/tutorials/manuals/guidebot_placenote)
+- [GuideBOT QR](../manuals/guidebot_qr)
+- [GuideBOT Placenote](../manuals/guidebot_placenote)
 
 ## CLI
 
