@@ -1,12 +1,18 @@
 {
   "docs": {
-    "ViewAR": ["introduction", "stack", "creating_apps", "faq"],
+    "ViewAR": [
+      "introduction",
+      "stack",
+      "creating_apps",
+      "faq"
+    ],
     "SDK": [
       "sdk/introduction",
       "sdk/cli",
       "sdk/basic_concepts",
       "sdk/quickstart",
-      "sdk/troubleshooting"
+      "sdk/troubleshooting",
+      "sdk/api"
     ],
     "3D Content": [
       "3d_content/getting_started",
