@@ -1,6 +1,6 @@
 ---
 id: drone
-title: Drone
+title: Drone Control
 ---
 
 ## Overview
