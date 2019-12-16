@@ -12,7 +12,8 @@ Need more freedom? Using the ViewAR Augmented Reality SDK, you can create your o
 - Efficient, JavaScript-based API.
 - Extend the ready-to-use templates or develop your own ones.
 
-[Learn more...](/docs/sdk/introduction)
+Learn more about the [ViewAR SDK](../sdk/introduction).
+For a full list of API calls, check our [API Documentation](http://test2.3.viewar.com/docs/index.html).
 
 ViewAR is the leading Augmented Reality system, supporting numerous available tracking systems (think - ARKit, ARCore, Wikitude...). It's platform-independent and allows for easy and robust creation of efficient mobile and web applications. The modular structure integrates numerous hard- and software field-specific components available on the market.
 
