@@ -60,7 +60,7 @@ Furthermore, make sure that you have a ViewAR account. It'll provide you storage
 
 #### Device requirements
 
-- An iOS, ARKit compatible device - more about compatibility in our [Documentation](/docs/sdk/hardware#supported-hardware).
+- An iOS, ARKit compatible device - more about compatibility in our [Documentation](../../additional_information/hardware).
 - Up-to-date version of the ViewAR SDK App (available from the App Store (iOS)).
 - **For the QR version:** a printed copy of a set of our [demo QR codes](http://www.viewar.com/wp-content/uploads/2018/12/GuideBOT-QRcodes-1.pdf)
 
@@ -137,7 +137,6 @@ There are two options for testing your application: you may either do it directl
 
 Some resources to get you started:
 
-- More info about [testing](testing.md).
 - User Manuals: [GuideBOT QR](../manuals/guidebot_qr) and [GuideBOT Placenote](../manuals/guidebot_placenote).
 
 ### Experiment!
