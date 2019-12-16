@@ -37,10 +37,10 @@ Every Template is fully functional and may be used as-is or styled with CSS dire
 
 ### AppBuilder Tutorials
 
-- [Furniture Live](/docs/tutorials/furniture_live/about)  
+- [Furniture Live](./tutorials/template_tutorials/furniture_live)  
   Intuitive, quality product visualisation app.
-- [helpar](/docs/tutorials/helpar/about)  
+- [helpar](./tutorials/template_tutorials/helpar)  
   Remote assistance app.
-- [GuideBOT](/docs/tutorials/guidebot/about)  
+- [GuideBOT](./tutorials/template_tutorials/guidebot)  
   Indoor navigation app with an animated character.
-- [More ...](/docs/tutorials/overview)
+- [More...](./tutorials/template_tutorials/overview)
