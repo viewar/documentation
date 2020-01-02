@@ -108,19 +108,19 @@ Uploading 3D Content may be confusing, doesn't it? That's why we've prepared Mod
 
 ### Picture-Uploader
 
-![](../assets/Screen Shot 2019-02-01 at 09.13.28.png)
+![](../assets/uploadAssistant-pictureUploader.png)
 
 Use it for uploading images to be used as pictures placed on the walls. Files uploaded with the use of this assistant will have a vertical orientation and be interpreted as a poster/painting. Using this assistant will require setting a real-world size of the graphics.
 
 ### Video-Uploader
 
-![](../assets/Screen Shot 2019-02-01 at 09.13.33.png)
+![](../assets/uploadAssistant-videoUploader.png)
 
 Use it for uploading clips to be used as videos. Files uploaded with the use of this assistant will have a vertical orientation. Using this assistant will require setting a real-world size of the graphics.
 
 ### Custom 3D-Uploader
 
-![](../assets/Screen Shot 2019-02-01 at 09.13.17.png)
+![](../assets/uploadAssistant-custom3DUploader.png)
 
 Use it for uploading custom 3D models. This mode is intended for experienced 3D designers and enables for definition of advanced settings.
 
