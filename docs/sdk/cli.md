@@ -7,7 +7,7 @@ title: CLI Usage
 
 First, make sure that you have the following prerequisites installed:
 
-- [node.js](https://nodejs.org/en/download/) (&gt;= v10.0.0)
+- [node.js](https://nodejs.org/en/download/) (&gt;= 10.13.0)
 - [npm](https://www.npmjs.com/) (&gt;= v5.6.0)
 - [git](https://git-scm.com/)
 
