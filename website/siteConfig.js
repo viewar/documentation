@@ -48,19 +48,19 @@ const siteConfig = {
   // TODO: enable external headerlinks to be openened in new tab
   headerLinks: [
     {
+      href: 'http://viewar.com/',
+      label: 'ViewAR Developer Portal',
+    },
+    {
       doc: 'sdk/introduction',
-      label: 'SDK',
+      label: 'SDK Documentation',
     },
     {
-      href:   'http://viewar.com/',
-      label:  'Developer Portal',
+      href: 'http://test2.3.viewar.com/docs/index.html',
+      label: 'API Documentation',
     },
     {
-      href:   'http://test2.3.viewar.com/docs/index.html',
-      label:  'API',
-    },
-    {
-      label: 'Search',
+      label: 'Search in SDK Documentation',
       search: true,
     },
   ],
@@ -126,13 +126,13 @@ const siteConfig = {
 
   // docsearch api
   algolia: {
-    apiKey:         '5207094edcc772e8784736cd40203ef0',
-    indexName:      'viewar',
-    placeholder:    'Search',
+    apiKey: '5207094edcc772e8784736cd40203ef0',
+    indexName: 'viewar',
+    placeholder: 'Search',
     algoliaOptions: {}, // Optional, if provided by Algolia
   },
   markdownPlugins: [
-    function(md) {
+    function (md) {
       extlink(md, {
         host: process.env.NODE_ENV === 'development' ? 'localhost' : 'https://viewar.github.io/', // The hrefs that you DON'T want to be external
       });
