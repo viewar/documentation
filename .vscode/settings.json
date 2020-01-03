@@ -26,9 +26,7 @@
   "vsprettier.useEsLint": true,
   "vsprettier.useStyleLint": true,
   "vsprettier.requireConfig": true,
-  /**
-   * ATLASSIAN
-   * jira and bitbucket integration
-   */
-  "atlascode.jira.todoIssues.triggers": ["TODO:", "BUG:", "FIXME:", "ISSUE:", "REFACTOR:"]
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 }
