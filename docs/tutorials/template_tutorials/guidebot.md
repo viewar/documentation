@@ -44,8 +44,8 @@ That's it! You may now test your App! Download the ViewAR SDK Application from t
 
 More information may be found in the User Manuals:
 
-- [GuideBOT QR](/docs/tutorials/manuals/guidebot_qr)
-- [GuideBOT Placenote](/docs/tutorials/manuals/guidebot_placenote)
+- [GuideBOT QR](../manuals/guidebot_qr)
+- [GuideBOT Placenote](../manuals/guidebot_placenote)
 
 ## CLI
 
@@ -60,7 +60,7 @@ Furthermore, make sure that you have a ViewAR account. It'll provide you storage
 
 #### Device requirements
 
-- An iOS, ARKit compatible device - more about compatibility in our [Documentation](/docs/sdk/hardware#supported-hardware).
+- An iOS, ARKit compatible device - more about compatibility in our [Documentation](../../additional_information/hardware).
 - Up-to-date version of the ViewAR SDK App (available from the App Store (iOS)).
 - **For the QR version:** a printed copy of a set of our [demo QR codes](http://www.viewar.com/wp-content/uploads/2018/12/GuideBOT-QRcodes-1.pdf)
 
@@ -131,6 +131,7 @@ To save your changes to the server, use this command:
 
 This will build your app in release mode and save the changes to the server. After this, your app will be updated and everyone starting it will get the changes.
 
+<<<<<<< HEAD
 ### Test the app
 
 There are two options for testing your application: you may either do it directly in the web browser (in the mock or full mode) or run it on a mobile device using the ViewAR SDK app.
@@ -140,6 +141,8 @@ Some resources to get you started:
 - More info about [testing](testing.md).
 - User Manuals: [GuideBOT QR](../manuals/guidebot_qr) and [GuideBOT Placenote](../manuals/guidebot_placenote).
 
+=======
+>>>>>>> develop
 ### Experiment!
 
 Now that you have your app all set and running, it's time to play around with it a bit. Feel free to alter the existing functionalities or extend the app with some of your own choosing!
@@ -147,7 +150,11 @@ Now that you have your app all set and running, it's time to play around with it
 Browse our SDK Documentation for more information. Here are some topics to get you started:
 
 - [Basic Concepts](../../sdk/basic_concepts.md)
+<<<<<<< HEAD
 - [JavaScript API Quickstart](http://test2.3.viewar.com/docs/index.html)
+=======
+- [JavaScript API Quickstart](../../sdk/quickstart)
+>>>>>>> develop
 
 ### UI Config
 

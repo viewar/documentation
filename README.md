@@ -4,6 +4,10 @@
 
 [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=viewar/documentation)](https://dependabot.com)
 
+## Development
+
+change directory to `./website` and exec `npm run start`
+
 ## Deployment
 
 `GIT_USER={USERNAME} CURRENT_BRANCH={BRANCH} USE_SSH=true npm run publish-gh-pages`
