@@ -40,6 +40,8 @@ To go to the model section, go to "Content" and then click on "3D Models"
 
 #### Uploading a model
 
+> The ViewAR System is using a [Left-handed Cartesian Coordinate System](../additional_information/left-hand-coordinate-system.md).
+
 To upload a new Model, click on _Upload new model:_
 
 ![](../assetsts/3DModelsEmpty.jpg)
@@ -212,7 +214,7 @@ In order for a model to be available in a ViewAR Application, it needs to be upl
 
 #### Scene Setup
 
-First and foremost: **Up-Axis is the Y-Axis!**
+> First and foremost: The ViewAR System is using a [Left-handed Cartesian Coordinate System](../additional_information/left-hand-coordinate-system.md). Please verfiy your export settings before uploading any models!
 
 Furthermore, you can work with any unit you like but in real-life scale. Default units that we use are _cm_, therefore, if you are using different units, remember to apply a correct scale setting when uploading the model.
 
