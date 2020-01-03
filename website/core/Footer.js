@@ -6,8 +6,15 @@
  */
 
 const React = require('react');
+const TagManager = require('react-gtm-module');
 
 class Footer extends React.PureComponent {
+  componentDidMount() {
+    TagManager.initialize({
+      gtmId: 'GTM-PPQNQJ6',
+    });
+  }
+
   docUrl(doc, language) {
     const baseUrl = this.props.config.baseUrl;
     const docsUrl = this.props.config.docsUrl;
