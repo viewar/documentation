@@ -167,18 +167,17 @@ Offers a first-person view of the scene. It reads gyroscope input for rotation, 
 
 #### Augmented Reality Camera
 
-Takes input from device’s camera and gyroscope. Combined with state-of-the-art environment tracking systems, it provides an immersive AR experience. It is currently not available on the browser platform.
-
-> _Every Camera has a Stereoscopic Mode, also called a HMD (Head-Mounted Display) Mode,_  
-> _that allows for the apps to be used within VR Hardware like Oculus Rift, HTC Vive or similar._
+Displays the image from the device camera. Combined with state-of-the-art environment tracking systems, it provides an immersive AR experience. It is currently not available on the browser platform.
 
 <!---
 unsure about statement
 forerly end of sentence: to be used within headsets
+> _Every Camera has a Stereoscopic Mode, also called a HMD (Head-Mounted Display) Mode,_  
+> _that allows for the apps to be used within VR Hardware like Oculus Rift, HTC Vive or similar._
 --->
 
 ### Freeze Frames
 
-At the current state of technology, it is extremely impractical to faithfully scan and store real-world environments. Therefore, capturing and restoring of an Augmented Reality experience is practically impossible. ViewAR SDK offers a compromise in the form of Freeze Frames.
-
-AR Camera supports freezing and unfreezing of the Camera View. While frozen, Camera feed and Pose do not get updated, so that the image may easily be saved. Freeze Frames may be switched between while preserving the spatial relations between scene objects as expected. They can also be uploaded to the cloud storage and shared between users of the app.
+The ViewAR SDK offeres the ability to save and load so called freeze frames. An AR view consists of a camera image as a background plus a tracked position of the device & camera. Rendering the virtual items from exactly this perspective and putting it on top of the camera image background creates the illusion the item is real. And this is what we save a for a freeze frame: the camera background image and the tracked pose. 
+You can save and load such freeze frames and even switch between multiple freeze frames for one scene setup, so you can view the same scene from multiple views. 
+Freeze frames can be saved locally or to the cloud so you can even access them from another device.
