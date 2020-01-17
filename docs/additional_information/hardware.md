@@ -3,7 +3,7 @@ id: hardware
 title: Supported Hardware
 ---
 
-ViewAR applications support both iOS and Android. However, depending on the selected tracking solutions, some differences in devices' compatibility might appear.
+ViewAR applications support both iOS and Android. However, depending on the selected tracking system, some differences in device compatibility might appear.
 
 #### ARKit
 
