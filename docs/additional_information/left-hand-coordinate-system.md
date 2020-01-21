@@ -1,15 +1,15 @@
 ---
-id: left-handed-coordinate-system
-title: Left-handed Cartesian Coordinate System
+id: right-handed-coordinate-system
+title: Right-handed Cartesian Coordinate System
 ---
 
-ViewAR applications use the Left-handed Cartesian Coordinate System (see the graphic below).
+ViewAR applications use the Right-handed Cartesian Coordinate System (see the graphic below).
 > Long story short: **the Up-Axis is the Y-Axis!**
 
 ![](../assets/CoordinateSystem-sketch-v02.png)
 
-The Cartesian coordinate system you are most probably used to is called _Right-handed_, meaning that it follows the right-hand rule. The rule arose from the fact that the three axes of three-dimensional space have two possible orientations.
+The three axes defining the three-dimensional space of the Cartesian Coordinate System have two possible orientations. Therefore, there are two types of the system: Left-handed and Right-handed.
 
-The ViewAR System uses the Left-handed Cartesian Coordinate System, therefore, keep in mind to verify your export settings and translations applied to the models.
+The ViewAR System uses the Right-handed Cartesian Coordinate System, meaning that the x axis goes right, the y axis goes up, and the z axis runs towards you. Keep it in mindand verify your settings before export.
 
 If you are interested in learning more, [this Wikipedia article](https://en.wikipedia.org/wiki/Right-hand_rule) should be a good starting point.
