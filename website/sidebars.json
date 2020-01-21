@@ -56,7 +56,7 @@
       "additional_information/reporting_errors",
       "additional_information/publishing",
       "additional_information/euler_angles",
-      "additional_information/left-handed-coordinate-system",
+      "additional_information/right-handed-coordinate-system",
       "additional_information/power_economy",
       "additional_information/radian",
       "additional_information/quaternion"
