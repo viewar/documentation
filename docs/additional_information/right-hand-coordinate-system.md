@@ -6,7 +6,7 @@ title: Right-handed Cartesian Coordinate System
 ViewAR applications use the Right-handed Cartesian Coordinate System (see the graphic below).
 > Long story short: **the Up-Axis is the Y-Axis!**
 
-![](../assets/CoordinateSystem-sketch-v02.png)
+![](../assets/CoordinateSystem-sketch-v02.jpg)
 
 The three axes defining the three-dimensional space of the Cartesian Coordinate System have two possible orientations. Therefore, there are two types of the system: Left-handed and Right-handed.
 
