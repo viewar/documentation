@@ -178,6 +178,6 @@ forerly end of sentence: to be used within headsets
 
 ### Freeze Frames
 
-The ViewAR SDK offeres the ability to save and load so called freeze frames. An AR view consists of a camera image as a background plus a tracked position of the device & camera. Rendering the virtual items from exactly this perspective and putting it on top of the camera image background creates the illusion the item is real. And this is what we save a for a freeze frame: the camera background image and the tracked pose. Using a freeze frame you can still edit the scene in the frozen background image You can change materials, move or add items.  
+The ViewAR SDK offeres the ability to save and load so called freeze frames. An AR view consists of a camera image as a background plus a tracked position of the device & camera. Rendering the virtual items from exactly this perspective and putting it on top of the camera image background creates the illusion the item is real. And this is what we save a for a freeze frame: the camera background image and the tracked pose. Using a freeze frame you can still edit the scene in the frozen background image. You can change materials, move or add items.  
 You can save and load such freeze frames and even switch between multiple freeze frames for one scene setup, so you can view the same scene from multiple views. 
 Freeze frames can be saved locally or to the cloud so you can even access them from another device.
