@@ -11,5 +11,8 @@
   "devDependencies": {
     "cross-env": "^6.0.3",
     "docusaurus": "^1.14.0"
+  },
+  "dependencies": {
+    "react-gtm-module": "^2.0.8"
   }
 }
