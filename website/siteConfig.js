@@ -48,7 +48,7 @@ const siteConfig = {
   // TODO: enable external headerlinks to be openened in new tab
   headerLinks: [
     {
-      href: 'http://viewar.com/',
+      href: 'https://portal.viewar.com',
       label: 'ViewAR Developer Portal',
     },
     {
