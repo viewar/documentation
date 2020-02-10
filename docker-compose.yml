@@ -16,18 +16,3 @@ services:
       - ./website/sidebars.json:/app/website/sidebars.json
       - ./website/siteConfig.js:/app/website/siteConfig.js
     working_dir: /app/website
-  docusaurus-portal:
-    build: .
-    ports:
-      - 3001:3001
-      - 35730:35730
-    volumes:
-      - ./docs:/app/docs
-      - ./portal/blog:/app/portal/blog
-      - ./portal/core:/app/portal/core
-      - ./portal/i18n:/app/portal/i18n
-      - ./portal/pages:/app/portal/pages
-      - ./portal/static:/app/portal/static
-      - ./portal/sidebars.json:/app/portal/sidebars.json
-      - ./portal/siteConfig.js:/app/portal/siteConfig.js
-    working_dir: /app/portal
