@@ -11,5 +11,8 @@
   "devDependencies": {
     "cross-env": "^6.0.3",
     "docusaurus": "^1.14.0"
+  },
+  "dependencies": {
+    "remarkable-extlink": "^1.1.0"
   }
 }
