@@ -18,7 +18,6 @@
   "editor.formatOnSaveTimeout": 500,
   // eslint
   "eslint.alwaysShowStatus": true,
-  "eslint.autoFixOnSave": true,
   "eslint.run": "onType",
   "eslint.lintTask.enable": true,
   // prettier

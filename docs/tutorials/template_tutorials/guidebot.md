@@ -15,7 +15,7 @@ Learn how to create a [GuideBOT](https://www.viewar.com/template/guidebot/) indo
 
 - An iOS, ARKit compatible device - more about compatibility in our [Documentation](/docs/sdk/hardware#supported-hardware).
 - Up-to-date version of the ViewAR SDK App (available from the App Store (iOS)).
-- **For the QR version:** a printed copy of a set of our [demo QR codes](http://www.viewar.com/wp-content/uploads/2018/12/GuideBOT-QRcodes-1.pdf)
+- **For the QR version:** a printed copy of a set of our [demo QR codes](http://viewar.com/downloads/GuideBOT-QRcodes.pdf)
 
 #### Skillset
 

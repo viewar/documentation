@@ -1,0 +1,65 @@
+{
+  "docs": {
+    "ViewAR": [
+      "introduction",
+      "stack",
+      "creating_apps",
+      "faq"
+    ],
+    "SDK": [
+      "sdk/introduction",
+      "sdk/cli",
+      "sdk/basic_concepts",
+      "sdk/quickstart",
+      "sdk/troubleshooting",
+      "sdk/api"
+    ],
+    "3D Content": [
+      "3d_content/getting_started",
+      "3d_content/sample_models",
+      "3d_content/custom_models",
+      "3d_content/troubleshooting",
+      "3d_content/request_models"
+    ],
+    "Manuals": [
+      "tutorials/manuals/furniture_live",
+      "tutorials/manuals/guidebot_placenote",
+      "tutorials/manuals/guidebot_qr",
+      "tutorials/manuals/helpar_agent",
+      "tutorials/manuals/helpar_user",
+      "tutorials/manuals/wallart"
+    ],
+    "Tutorials": [
+      "tutorials/overview",
+      {
+        "type": "subcategory",
+        "label": "Template Tutorials",
+        "ids": [
+          "tutorials/template_tutorials/furniture_live",
+          "tutorials/template_tutorials/guidebot",
+          "tutorials/template_tutorials/helpar",
+          "tutorials/template_tutorials/wallart"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "SDK Tutorials",
+        "ids": [
+          "tutorials/sdk_tutorials/arvatar",
+          "tutorials/sdk_tutorials/drone",
+          "tutorials/sdk_tutorials/product_visualization"
+        ]
+      }
+    ],
+    "Additional Information": [
+      "additional_information/hardware",
+      "additional_information/reporting_errors",
+      "additional_information/publishing",
+      "additional_information/euler_angles",
+      "additional_information/right-handed-coordinate-system",
+      "additional_information/power_economy",
+      "additional_information/radian",
+      "additional_information/quaternion"
+    ]
+  }
+}
