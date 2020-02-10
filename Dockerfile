@@ -5,7 +5,15 @@ WORKDIR /app/website
 EXPOSE 3000 35729
 COPY ./docs /app/docs
 COPY ./website /app/website
-COPY ./portal-documentation /app/portal
-RUN yarn install
+RUN npm install
 
-CMD ["yarn", "start"]
+CMD ["npm", "start"] 
+
+WORKDIR /app/portal
+
+EXPOSE 3001 35730
+COPY ./docs /app/docs
+COPY ./portal /app/portal
+RUN npm install
+
+CMD ["npm", "start"] 
