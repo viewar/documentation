@@ -1,0 +1,177 @@
+/** *********************
+**      FONTS         **
+**  *********************/
+@import url('https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900');
+/* TODO:  https://docusaurus.io/docs/en/site-config#fonts-object */
+
+/** *********************
+**      BASE         **
+**  *********************/
+
+body {
+  font-family: 'Catamaran', sans-serif;
+
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Catamaran', sans-serif;
+  color: #666;
+  background-color: white;
+  font-weight: 200;
+}
+
+/** *********************
+**      HEADER         **
+**  *********************/
+
+/**
+header/nav colors:
+    original header: #282f39
+
+    inactive:   #363f4d
+    active:     #3d4857
+
+*/
+
+header > a {
+  display: none !important;
+}
+
+input#search_input_react {
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: #666;
+  font-size: 13px;
+  border: 1px solid;
+  border-color: #dfdfdf;
+  border-radius: 0;
+  padding-left: 2rem;
+  display: block;
+  width: 100%;
+  background-color: white;
+}
+
+input#search_input_react::placeholder {
+  color: #a3a5a9;
+}
+
+input#search_input_react,
+input#search_input_react:focus,
+input#search_input_react:active {
+  width: 240px;
+}
+
+input#search_input_react:focus,
+input#search_input_react:active {
+  color: #666;
+}
+
+.navSearchWrapper:before {
+  border: 1px solid #a3a5a9;
+  width: 10px;
+  height: 10px;
+}
+
+.navSearchWrapper:after {
+  background: #a3a5a9;
+  width: 2px;
+  height: 7px;
+  left: 35px;
+}
+
+.fixedHeaderContainer {
+  background-color: #f6f6f6;
+  padding: 0.5rem 1rem;
+}
+.fixedHeaderContainer header img {
+  height: 80%;
+}
+.fixedHeaderContainer header .headerTitleWithLogo {
+  padding-top: 14px;
+}
+
+.fixedHeaderContainer header .headerTitleWithLogo .navigationSlider .slidingNav ul {
+  background: #282f39;
+}
+
+/* inactive links */
+.navigationSlider .slidingNav ul li a {
+  background-color: #282f39;
+}
+/* active links */
+.navigationSlider .slidingNav ul li > a:focus,
+.navigationSlider .slidingNav ul li > a:hover,
+.navigationSlider .slidingNav ul li.siteNavItemActive > a,
+.navigationSlider .slidingNav ul li.siteNavGroupActive > a {
+  background-color: #363f4d;
+}
+
+/***********************
+**    Pages/index      *
+***********************/
+
+.mainWrapper .bgVideoWrapper {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  position: absolute;
+}
+
+.mainBgVideo {
+  width: 100%;
+  -webkit-transform: scaley(-1);
+  transform: scaley(-1);
+}
+
+.promoSection .promoRow .pluginRowBlock .button {
+  margin: 0 16px;
+}
+
+.homeWrapper,
+.projectTitle {
+  color: #fff;
+}
+
+/***********************
+**    shared UI        *
+***********************/
+
+h1,
+h2,
+h3 {
+  clear: both;
+}
+
+article p img,
+article iframe {
+  max-height: 300px;
+}
+article p img[title='float'] {
+  float: right;
+  margin-left: 24px;
+}
+
+.button.isPrimary {
+  background-color: #a41f1f;
+  color: #fff;
+}
+.button.isPrimary:hover {
+  background-color: transparent;
+  color: #a41f1f;
+}
+
+.button .arrow-prev,
+.button .arrow-next {
+  position: relative;
+  bottom: 2px;
+}

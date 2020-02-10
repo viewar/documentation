@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "examples": "docusaurus-examples",
+    "start": "cross-env NODE_ENV=development docusaurus-start",
+    "build": "docusaurus-build",
+    "publish-gh-pages": "docusaurus-publish",
+    "write-translations": "docusaurus-write-translations",
+    "version": "docusaurus-version",
+    "rename-version": "docusaurus-rename-version"
+  },
+  "devDependencies": {
+    "cross-env": "^6.0.3",
+    "docusaurus": "^1.14.0"
+  },
+  "dependencies": {
+    "query-string": "^6.10.1",
+    "remarkable-extlink": "^1.1.0"
+  }
+}
