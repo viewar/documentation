@@ -5,7 +5,14 @@
   "scripts": {
     "format": "prettier **/*.{css,scss,md,json} --write",
     "test": "echo 'No tests specified'",
-    "postinstall": "cd ./website && npm install"
+    "postinstall": "cd ./website && npm install",
+    "clean": "rimraf portal/build && rimraf website/build && rimraf build",
+    "git:checkout": "git clone --branch gh-pages git@github.com:viewar/documentation.git build",
+    "git:commit": "cd build && git add . && git commit -m 'Deploy new version' && git push",
+    "build:portal": "cd ./portal && npm run build",
+    "build:website": "cd ./website && npm run build",
+    "build:createbuildfolder": "cp -R website/build/documentation build && cp -R portal/build/portal build/portal",
+    "build": "npm run clean && npm run build:portal && npm run build:website && npm run git:checkout && npm run build:createbuildfolder && npm run git:commit"
   },
   "lint-staged": {
     "*.{js,json,md}": [
@@ -23,7 +30,10 @@
     "husky": "^3.1.0",
     "lint-staged": "^9.5.0",
     "prettier": "^1.19.1",
-    "remarkable-extlink": "^1.1.0"
+    "remarkable-extlink": "^1.1.0",
+    "rimraf": "^3.0.2",
+    "rsync": "^0.6.1",
+    "sftp-upload": "^1.0.1"
   },
   "repository": {
     "type": "git",

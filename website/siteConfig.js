@@ -1,4 +1,3 @@
-
 /**
  * Copyright (c) 2017-present, Facebook, Inc.
  *
@@ -132,9 +131,12 @@ const siteConfig = {
     algoliaOptions: {}, // Optional, if provided by Algolia
   },
   markdownPlugins: [
-    function (md) {
+    function(md) {
       extlink(md, {
-        host: process.env.NODE_ENV === 'development' ? 'localhost' : 'https://viewar.github.io/', // The hrefs that you DON'T want to be external
+        host:
+          process.env.NODE_ENV === 'development'
+            ? 'localhost'
+            : 'https://viewar.github.io/', // The hrefs that you DON'T want to be external
       });
     },
   ],

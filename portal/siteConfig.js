@@ -28,7 +28,7 @@ const siteConfig = {
   // baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   url: 'https://viewar.github.io',
-  baseUrl: '/portal/',
+  baseUrl: '/documentation/portal/',
 
   // Used for publishing and more
   projectName: 'portal',
