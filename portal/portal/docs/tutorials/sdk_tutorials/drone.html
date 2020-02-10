@@ -1,0 +1,412 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Drone Control · Documentation</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="## Overview"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Drone Control · Documentation"/><meta property="og:type" content="website"/><meta property="og:url" content="https://viewar.github.io/documentation/portal/"/><meta property="og:description" content="## Overview"/><meta property="og:image" content="https://viewar.github.io/documentation/portal/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://viewar.github.io/documentation/portal/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/documentation/portal/img/favicon.ico"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/documentation/portal/js/scrollSpy.js"></script><link rel="stylesheet" href="/documentation/portal/css/main.css"/><script src="/documentation/portal/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/documentation/portal/"><img class="logo" src="/documentation/portal/img/viewar_logo.svg" alt="Documentation"/><h2 class="headerTitleWithLogo">Documentation</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher singleRowMobileNav"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>SDK Tutorials</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">ViewAR<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/introduction">Introduction</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/stack">Technology Stack</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/creating_apps">Creating Apps</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/faq">FAQs</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">SDK<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/sdk/introduction">Introduction</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/sdk/cli">CLI Usage</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/sdk/basic_concepts">Basic Concepts</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/sdk/quickstart">Quickstart</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/sdk/troubleshooting">Trouble Shooting</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/sdk/api">ViewAR API</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">3D Content<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/3d_content/sample_models">Sample Models</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/3d_content/custom_models">Custom Models</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/3d_content/troubleshooting">Troubleshooting</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/3d_content/request_models">Request Models</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Manuals<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/tutorials/manuals/furniture_live">Furniture Live</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/tutorials/manuals/guidebot_placenote">GuideBOT Placenote</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/tutorials/manuals/guidebot_qr">GuideBOT QR</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/tutorials/manuals/helpar_agent">Helpar Agent</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/tutorials/manuals/helpar_user">Helpar User</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/tutorials/manuals/wallart">Wallart</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Tutorials<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/tutorials/overview">Tutorials Overview</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Template Tutorials</h4><ul><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/tutorials/template_tutorials/furniture_live">Furniture live</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/tutorials/template_tutorials/guidebot">GuideBOT</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/tutorials/template_tutorials/helpar">helpar</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/tutorials/template_tutorials/wallart">Wall-ARt</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">SDK Tutorials</h4><ul><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/tutorials/sdk_tutorials/arvatar">Arvatar</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/documentation/portal/docs/tutorials/sdk_tutorials/drone">Drone Control</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/tutorials/sdk_tutorials/product_visualization">Product Visualization</a></li></ul></div></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Additional Information<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/additional_information/hardware">Supported Hardware</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/additional_information/reporting_errors">Reporting Errors</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/additional_information/publishing">Publishing</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/additional_information/euler_angles">Euler angles</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/additional_information/right-handed-coordinate-system">Right-handed Cartesian Coordinate System</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/additional_information/power_economy">Power Economy</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/additional_information/radian">Radian</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/additional_information/quaternion">Quaternions</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">Drone Control</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="overview"></a><a href="#overview" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Overview</h2>
+<p>The Drone Control App is a single-page React application built with the help of the ViewAR SDK. It allows a user to control a drone's movement with two virtual joysticks displayed on the screen.</p>
+<h4><a class="anchor" aria-hidden="true" id="what-will-you-build"></a><a href="#what-will-you-build" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>What will you build?</h4>
+<p>The app will be streaming the image from your device's back camera, with a 3D model of a drone placed in the real-scale. You'll be able to control the drone's movement with two virtual joysticks displayed on the screen.</p>
+<p>To check out the final effect, download the <strong>ViewAR SDK App</strong> (either from the App Store or Google Play Store) on an ARKit/ARCore compatible device and input the following data:</p>
+<p>Bundle ID: <strong>com.viewar.drone</strong>
+Version: <strong>1</strong></p>
+<p><img src="/documentation/portal/docs/assets/drone-phone-step3-v02-web.jpg" alt="">
+<em>Screenshot from the Drone Control App</em></p>
+<h4><a class="anchor" aria-hidden="true" id="what-exactly-will-you-do-learn"></a><a href="#what-exactly-will-you-do-learn" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>What exactly will you do &amp; learn?</h4>
+<p>You'll checkout the unfinished Drone Control App from our Git Repository and finish it, following our step by step instructions. At the end of this tutorial you'll know how to:</p>
+<ul>
+<li>activate the AR camera and tracking,</li>
+<li>import a 3D model, activate its animation and manipulate pose,</li>
+<li>use user input (from joysticks) to influence the behavior of the app.</li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="how-long-will-it-take"></a><a href="#how-long-will-it-take" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>How long will it take?</h4>
+<p>1-2 hours.</p>
+<h3><a class="anchor" aria-hidden="true" id="what-will-you-need"></a><a href="#what-will-you-need" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>What will you need?</h3>
+<h4><a class="anchor" aria-hidden="true" id="skillset"></a><a href="#skillset" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Skillset:</h4>
+<ul>
+<li>basic HTML &amp; CSS knowledge,</li>
+<li>intermediate JS skills,</li>
+<li>know your way around any chosen IDE and GitHub.</li>
+<li><strong>good to have:</strong> basic React skills.</li>
+</ul>
+<p><em>If you don't feel entirely comfortable in the skillset above, you might benefit more from trying the <a href="/tutorials/overview">Templates Tutorials</a> first.</em></p>
+<h4><a class="anchor" aria-hidden="true" id="hardware"></a><a href="#hardware" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Hardware:</h4>
+<ul>
+<li>ARKit compatible iOS device
+<br>OR</li>
+<li>ARCore compatible Android device</li>
+</ul>
+<p><em>Check the list of <a href="/docs/additional_information/hardware">compatible devices</a>.</em></p>
+<h2><a class="anchor" aria-hidden="true" id="getting-started"></a><a href="#getting-started" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Getting Started</h2>
+<p>Make sure that you have the following installed and ready:</p>
+<ul>
+<li><a href="/docs/getting_started/cli_setup">CLI Setup</a></li>
+<li><a href="/docs/getting_started/phone_setup">Mobile Device Setup</a></li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="checkout-the-drone-app-boilerplate"></a><a href="#checkout-the-drone-app-boilerplate" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Checkout the Drone App boilerplate</h4>
+<h3><a class="anchor" aria-hidden="true" id="login"></a><a href="#login" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Login</h3>
+<p>Before we start, make sure you're logged in with your <a href="http://developer.viewar.com" target="_blank" rel="nofollow noreferrer noopener">ViewAR Account</a> because this is where your app will be linked to. The registration is easy and free.</p>
+<p>As soon as you're registered, into your terminal/command prompt go for:</p>
+<pre><code class="hljs css language-bash">viewar login
+</code></pre>
+<p>Now, create a directory and initialize a new project inside it:</p>
+<pre><code class="hljs css language-bash">viewar init directoryName
+</code></pre>
+<p>Choose your user from the list displayed.</p>
+<pre><code class="hljs css language-bash">Select the user account <span class="hljs-keyword">for</span> this app. Navigate through the list with the up/down arrow keys.
+❯ userName &lt;userName@viewar.com&gt;
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="initialize-the-boilerplate-app"></a><a href="#initialize-the-boilerplate-app" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Initialize the boilerplate app</h3>
+<p>Now, the CLI will ask a couple of questions to configure an app for you.
+Go with the following settings:</p>
+<pre><code class="hljs css language-bash">-&gt; Select a project <span class="hljs-built_in">type</span>:
+   &gt; Project: Sample Project/Template
+-&gt; Select a template project:
+   &gt; Other…
+-&gt; Repository URL:
+   &gt; https://github.com/viewar/viewar-boilerplate-joystick-react.git
+-&gt; Enter the App ID: // Pick a name you prefer
+   &gt; drone.controls.v01
+-&gt; Enter the App Version: // <span class="hljs-built_in">continue</span> by pressing enter or <span class="hljs-built_in">set</span> the version manually
+   &gt; 1.0
+
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="what-is-going-on-under-the-hood"></a><a href="#what-is-going-on-under-the-hood" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>What is going on under the hood?</h4>
+<p>A new JavaScript project has just got initialized, containing:</p>
+<ul>
+<li><code>src</code>directory with:
+<ul>
+<li><code>index.html</code>and <code>index.js</code> ( + some additional files imported from the <code>index.js</code>)</li>
+<li>additional resources you'll need later:
+<ul>
+<li><code>joysticks</code> component</li>
+<li><code>math</code></li>
+</ul></li>
+</ul></li>
+<li>config files:
+<ul>
+<li>common config files like <code>package.json</code>,</li>
+<li>viewAR-specific config files, e.g.:
+<ul>
+<li><code>.viewar-config</code> - containing the app-specific and deployment information (e.g. AppID, deployment token)</li>
+</ul></li>
+</ul></li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="see-the-app-running"></a><a href="#see-the-app-running" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>See the app running</h3>
+<h4><a class="anchor" aria-hidden="true" id="working-version"></a><a href="#working-version" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Working version</h4>
+<h5><a class="anchor" aria-hidden="true" id="web-version"></a><a href="#web-version" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Web version</h5>
+<p>You may now switch into the directory and start the development server in the mock mode:</p>
+<pre><code class="hljs css language-bash"><span class="hljs-built_in">cd</span> directoryName
+npm run start:mock
+</code></pre>
+<p>Since we are building an AR application, it is important for this example that you started the mocked server. Otherwise the web 3D engine would be started, which would collide with the 3D engine on a phone.</p>
+<h6><a class="anchor" aria-hidden="true" id="mobile-device"></a><a href="#mobile-device" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Mobile device</h6>
+<p>First, make sure that your phone and computer are in the same local network.</p>
+<p>Next start the ViewAR SDK app, switch to LAN Development Mode and fill the fields with:</p>
+<ol>
+<li>Your App ID</li>
+<li>App Version - may be empty</li>
+<li>IP and port of your mocked server</li>
+</ol>
+<p>#####Deployed version
+The last deployed version (in this case - the original boilerplate version, since you haven't made any improvements yet), should already be available online!
+Start the ViewAR SDK App on you mobile device, turn off the LAN mode and fill in the fileds with:</p>
+<ol>
+<li>Your App ID</li>
+<li>App Version (leaving this field empty will result in the app using the default setting: &lt;=100)</li>
+</ol>
+<p><img src="/documentation/portal/docs/assets/drone-phone-step0-v02-web.jpg" alt="">
+<em>Screenshot from the Drone Control Boilerplate App</em></p>
+<p>Try removing the &quot;Hello World.&quot; message and seeing the changes on your mobile device in the LAN mode before going further.</p>
+<pre><code class="hljs css language-js"><span class="hljs-comment">// Remove this whole part</span>
+<span class="hljs-keyword">const</span> Hello = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">{styles.Hint}</span>&gt;</span>Hello world.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
+</code></pre>
+<p>Remember to remove both the definition and the rendering.</p>
+<pre><code class="hljs css language-js">  <span class="hljs-comment">// Render jsx.</span>
+  <span class="hljs-keyword">return</span> (
+    &lt;Fragment&gt;
+      &lt;Hello /&gt; // Remove me!
+
+      &lt;div className={styles.LeftJoystick}&gt;
+        &lt;Joystick onChange={handleLeftJoystickInput} /&gt;
+      &lt;/div&gt;
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="camera-and-tracking"></a><a href="#camera-and-tracking" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Camera and Tracking</h2>
+<p>Open the app.js file and find the <em>useEffect</em> function.
+If you aren't familiar with <a href="https://reactjs.org/docs/hooks-intro.html" target="_blank" rel="nofollow noreferrer noopener">Hooks</a>, you may want to read up on the topic first.</p>
+<pre><code class="hljs css language-js">useEffect(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+  (<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-comment">// <span class="hljs-doctag">TODO:</span> Insert initialization code here:</span>
+  })();
+}, []);
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="activate-ar-camera"></a><a href="#activate-ar-camera" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Activate AR camera</h3>
+<p>Use the ViewAR API functionality to activate the AR camera. Notice the empty square brackets as the second argument of the <code>useEffect</code> function - it is due to the fact that the function is only called once at the app start.</p>
+<pre><code class="hljs css language-js">useEffect(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+  (<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-comment">// Activate AR camera</span>
+    <span class="hljs-keyword">await</span> viewarApi.cameras.arCamera.activate();
+  })();
+}, []);
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="activate-tracking-provider"></a><a href="#activate-tracking-provider" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Activate tracking provider</h3>
+<p>Use the ViewAR API functionality to activate the appropriate tracking provider.</p>
+<pre><code class="hljs css language-js">useEffect(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+  (<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-comment">// Activate ar camera</span>
+    viewarApi.cameras.arCamera.activate();
+
+    <span class="hljs-comment">// Activate tracking (if tracker available).</span>
+    <span class="hljs-keyword">if</span> (viewarApi.tracker) {
+      viewarApi.tracker.on(<span class="hljs-string">'trackingTargetStatusChanged'</span>, updateTracking);
+      <span class="hljs-keyword">await</span> viewarApi.tracker.activate();
+    } <span class="hljs-keyword">else</span> {
+      setTracking(<span class="hljs-literal">true</span>);
+    }
+  })();
+}, []);
+</code></pre>
+<p>and</p>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> () =&gt; {
+  <span class="hljs-keyword">const</span> [tracking, setTracking] = useState(<span class="hljs-literal">false</span>); <span class="hljs-comment">// make sure you are familiar with React Hooks</span>
+  <span class="hljs-keyword">const</span> [instance, setInstance] = useState(<span class="hljs-literal">false</span>);
+
+  <span class="hljs-keyword">const</span> updateTracking = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    setTracking(viewarApi.tracker.tracking);
+  };
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="test-it"></a><a href="#test-it" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Test it!</h4>
+<p>At this point, you should be able to run the app on you mobile device and see the image from its back camera.</p>
+<p><img src="/documentation/portal/docs/assets/drone-phone-step1-v03-web.jpg" alt="">
+<em>Screenshot from the Drone Control App</em></p>
+<h4><a class="anchor" aria-hidden="true" id="useful-reads"></a><a href="#useful-reads" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Useful reads</h4>
+<ul>
+<li><a href="/docs/quickstart/cameras">Working with the Cameras</a></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="model"></a><a href="#model" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Model</h2>
+<p>In this part you'll fetch a ready drone model (including animations) from the repository and make it hover in front of the user. If you aren't familiar with working with the <a href="/docs/quickstart/instances">instances</a>, it's a good idea to read up on it first.</p>
+<h3><a class="anchor" aria-hidden="true" id="fetch-model-from-repository"></a><a href="#fetch-model-from-repository" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Fetch model from repository</h3>
+<p>Still in the <em>useEffect</em> function, use the ViewAR API functionality to <a href="/docs/quickstart/model_manager">fetch the drone 3D model from the repository</a>.</p>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">const</span> droneModel = <span class="hljs-keyword">await</span> viewarApi.modelManager.fetchModelFromRepository(<span class="hljs-string">'74334'</span>);
+</code></pre>
+<p>Define the drone's initial position and set it to the instance in the scene. It's a good idea to get and use the pose in front of the camera in order to position the drone in the field of view of the user.</p>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">const</span> pose = <span class="hljs-keyword">await</span> viewarApi.cameras.arCamera.getPoseInViewingDirection(<span class="hljs-number">2000</span>, <span class="hljs-literal">true</span>);
+</code></pre>
+<p>Insert an instance of the model into the scene:</p>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">const</span> instance = <span class="hljs-keyword">await</span> viewarApi.sceneManager.insertModel(droneModel, { pose });
+setInstance(instance);
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="start-the-instances-animation-optional"></a><a href="#start-the-instances-animation-optional" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Start the instance's animation (optional)</h4>
+<p>Some models come with incorporated animations. In order to preview the animations available for the drone model, you may use the <a href="https://webversion.viewar.com/com.viewar.singleproductweb/100/#/modelId/74334" target="_blank" rel="nofollow noreferrer noopener">ViewAR Single Product App</a>.</p>
+<p>They may be accessed through the modelInstance object. In this case, let's stick to the <em>Hover</em> animation.</p>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">await</span> instance.animations.Hover.start({ <span class="hljs-attr">loop</span>: <span class="hljs-literal">true</span> });
+</code></pre>
+<p>At this point, your code should look similar to this:</p>
+<pre><code class="hljs css language-js">useEffect(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+  (<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-comment">// Activate AR camera</span>
+    <span class="hljs-keyword">await</span> viewarApi.cameras.arCamera.activate();
+
+    <span class="hljs-comment">// Activate tracking (if tracker available).</span>
+    <span class="hljs-keyword">if</span> (viewarApi.tracker) {
+      viewarApi.tracker.on(<span class="hljs-string">'trackingTargetStatusChanged'</span>, updateTracking);
+      <span class="hljs-keyword">await</span> viewarApi.tracker.activate();
+    } <span class="hljs-keyword">else</span> {
+      setTracking(<span class="hljs-literal">true</span>);
+    }
+
+    <span class="hljs-comment">// Get the drone model</span>
+    <span class="hljs-keyword">const</span> droneModel = <span class="hljs-keyword">await</span> viewarApi.modelManager.fetchModelFromRepository(<span class="hljs-string">'74419'</span>);
+
+    <span class="hljs-comment">// Get pose in front of camera (to position drone in front).</span>
+    <span class="hljs-keyword">const</span> pose = <span class="hljs-keyword">await</span> viewarApi.cameras.arCamera.getPoseInViewingDirection(<span class="hljs-number">2000</span>, <span class="hljs-literal">true</span>);
+
+    <span class="hljs-comment">// Insert the drone instance</span>
+    <span class="hljs-keyword">const</span> instance = <span class="hljs-keyword">await</span> viewarApi.sceneManager.insertModel(droneModel, { pose });
+    setInstance(instance);
+
+    <span class="hljs-comment">// Start drone hover animation.</span>
+    <span class="hljs-keyword">await</span> instance.animations.Hover.start({ <span class="hljs-attr">loop</span>: <span class="hljs-literal">true</span> });
+  })();
+}, []);
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="test-it-1"></a><a href="#test-it-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Test it!</h4>
+<p>At this point, you should be able to run the app on you mobile device and see the image from its back camera with the drone hovering in front of the device.</p>
+<p><img src="/documentation/portal/docs/assets/drone-phone-step2-v03-web.jpg" alt="">
+<em>Screenshot from the Drone Control App</em></p>
+<h5><a class="anchor" aria-hidden="true" id="useful-reads-1"></a><a href="#useful-reads-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Useful reads:</h5>
+<ul>
+<li><a href="/docs/quickstart/model_manager">Working with the Model Manager</a></li>
+<li><a href="/docs/quickstart/instances">Working with the Model Instance</a></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="joysticks"></a><a href="#joysticks" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Joysticks</h2>
+<p>Now, that we've got the drone hovering in front of the user, we'll use the information from the joysticks to influence it's behavior. Real-life drone movement is a complex topic, therefore, for the purpose of this tutorial, we'll stick to applying axial transitions.</p>
+<h3><a class="anchor" aria-hidden="true" id="right-joystick-vertical-position"></a><a href="#right-joystick-vertical-position" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Right joystick - vertical position</h3>
+<p>Let's use the right joystick to control our drone's position on the vertical axis. We want the model instance to move up or down every time an input from the joystick is received. It will be handled with a function called <code>handleRightJoystickInput</code>.</p>
+<p>######Hint
+<em>Because the joystick is 2D, the function will take two parameters (x,y), however, it will use just the vertical coordinate (y). We could skip the (x) value by creating a custom joystick component, however, in this excercise we're re-using the same component for both controls, so let's keep it this way.</em></p>
+<p>The joystick returns (x,y) values in the range of -1.00 to 1.00, depending on how far away from its center it's moved. We want these values to be converted to the scale of -10mm to 10mm, hence the multiplication.</p>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">const</span> handleRightJoystickInput = <span class="hljs-function">(<span class="hljs-params">{ x, y }</span>) =&gt;</span> {
+  <span class="hljs-keyword">const</span> pose = instance.pose;
+
+  <span class="hljs-comment">// Update height.</span>
+  pose.position.y += y * <span class="hljs-number">10</span>;
+  <span class="hljs-keyword">if</span> (pose.position.y &lt; <span class="hljs-number">0</span>) {
+    pose.position.y = <span class="hljs-number">0</span>;
+  }
+
+  instance.setPose(pose);
+};
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="left-joystick-orientation"></a><a href="#left-joystick-orientation" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Left joystick - orientation</h3>
+<p>Let's use the left joystick to control our drone's orientation. This step is slightly more tricky, but stick with us, it won't be long!</p>
+<p>What we need to do:</p>
+<ul>
+<li>Import the necessary math components (<code>Quaterion</code>, <code>Vector3</code>),</li>
+<li>Store our drone's <code>orientation</code> as a <a href="/docs/advanced_concepts/quaternion">Quaternion</a>,</li>
+<li>Convert the <code>orientation</code> values into <a href="/docs/advanced_concepts/euler_angles">Euler angles</a>,</li>
+<li>Convert the Quaternion values of <code>yaw</code> to <a href="/docs/advanced_concepts/radian">radians</a>,</li>
+<li>Calculate the rotation change to be applied to the drone instance (in radians, preferably setting a multiplication factor to make the change more distinct) and store it in a new constant value</li>
+<li>Apply the new orientation value to the model instance</li>
+</ul>
+<p>Import the neccessary math components:</p>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">import</span> { Quaternion, Vector3 } <span class="hljs-keyword">from</span> <span class="hljs-string">'./math'</span>;
+</code></pre>
+<p>Handle Left Joystick Input:</p>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">const</span> handleLeftJoystickInput = <span class="hljs-function">(<span class="hljs-params">{ x, y }</span>) =&gt;</span> {
+  <span class="hljs-keyword">const</span> pose = instance.pose;
+
+  <span class="hljs-comment">// Update orientation</span>
+  <span class="hljs-keyword">const</span> orientation = <span class="hljs-keyword">new</span> Quaternion(instance.pose.orientation);
+  <span class="hljs-keyword">const</span> { yaw, pitch, roll } = orientation.toEulerAngles(); <span class="hljs-comment">// convert the Quaterion values to Euler Angles</span>
+
+  <span class="hljs-keyword">const</span> rotationOffsetDegrees = x * <span class="hljs-number">4</span>; <span class="hljs-comment">// every joystick move in "x" will result in a change of the absolute value of 4deg</span>
+  <span class="hljs-keyword">const</span> rotationOffsetRad = (rotationOffsetDegrees * <span class="hljs-built_in">Math</span>.PI) / <span class="hljs-number">180</span>; <span class="hljs-comment">// convert the Euler Angles to Radians</span>
+
+  <span class="hljs-keyword">const</span> newOrientation = Quaternion.fromEulerAngles({
+    <span class="hljs-attr">yaw</span>: yaw + rotationOffsetRad,
+    pitch,
+    roll,
+  });
+
+  pose.orientation = newOrientation;
+
+  <span class="hljs-comment">// Apply pose changes to the model instance</span>
+  instance.setPose(pose);
+};
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="test-it-2"></a><a href="#test-it-2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Test it!</h4>
+<p>At this point, you should be able to manipulate the drone instance's position with the use of the joysticks.</p>
+<p><img src="/documentation/portal/docs/assets/drone-phone-step3-v02-web.jpg" alt="">
+<em>Screenshot from the Drone Control App</em></p>
+<p>Got everything working?
+Great, you're free to go play around with the App already!</p>
+<h4><a class="anchor" aria-hidden="true" id="useful-reads-2"></a><a href="#useful-reads-2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Useful reads:</h4>
+<ul>
+<li><a href="/docs/sdk/quickstart/instances">Working with a Model Instance</a>.</li>
+<li><a href="/docs/advanced_concepts/quaternion">Math - Quaternion</a></li>
+<li><a href="/docs/advanced_concepts/euler_angles">Math - Euler angles</a></li>
+<li><a href="/docs/advanced_concepts/radian">Math - Radians</a></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="advanced"></a><a href="#advanced" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Advanced</h2>
+<p>Wouldn't be so much more fun, if the drone was flying in its look direction? Let's make it happen!</p>
+<p>For that we need need to slightly edit the <code>handleRightJoystickInput</code> function.
+Start right before the pose of the model instance gets updated.</p>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">const</span> handleLeftJoystickInput = <span class="hljs-function">(<span class="hljs-params">{ x, y }</span>) =&gt;</span> {
+  <span class="hljs-keyword">const</span> pose = instance.pose;
+  {...}
+
+<span class="hljs-comment">// put your code right here!</span>
+
+instance.setPose(pose);
+</code></pre>
+<p>#####Get the forward vector
+First, we need to analyze the model instance to get its normal forward vector (Vector3.FORWARD).</p>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">const</span> position = <span class="hljs-keyword">new</span> Vector3(instance.pose.position);
+</code></pre>
+<p>#####Adjust the move direction
+Now, we need to and apply the instance's orientation vector to it and adjust it to the speed of the move.</p>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">const</span> forward = Vector3.FORWARD;
+forward.rotate(newOrientation);
+<span class="hljs-comment">// alternatively: const forward = Vector3.FORWARD.rotate(newOrientation);</span>
+forward.scale(y * <span class="hljs-number">20</span>); <span class="hljs-comment">// You may also use a different value</span>
+</code></pre>
+<p>#####Update the position
+Don't forget to apply your changes.</p>
+<pre><code class="hljs css language-js">pose.position = position.add(forward);
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="test-it-3"></a><a href="#test-it-3" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Test it!</h4>
+<p>At this point, you should be able to manipulate the drone instance's position with the use of the joysticks.</p>
+<p><img src="/documentation/portal/docs/assets/drone-phone-step3-v02-web.jpg" alt="">
+<em>Screenshot from the Drone Control App</em></p>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 12/16/2019</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/documentation/portal/docs/tutorials/sdk_tutorials/arvatar"><span class="arrow-prev">← </span><span>Arvatar</span></a><a class="docs-next button" href="/documentation/portal/docs/tutorials/sdk_tutorials/product_visualization"><span>Product Visualization</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#overview">Overview</a><ul class="toc-headings"><li><a href="#what-will-you-need">What will you need?</a></li></ul></li><li><a href="#getting-started">Getting Started</a><ul class="toc-headings"><li><a href="#login">Login</a></li><li><a href="#initialize-the-boilerplate-app">Initialize the boilerplate app</a></li><li><a href="#see-the-app-running">See the app running</a></li></ul></li><li><a href="#camera-and-tracking">Camera and Tracking</a><ul class="toc-headings"><li><a href="#activate-ar-camera">Activate AR camera</a></li><li><a href="#activate-tracking-provider">Activate tracking provider</a></li></ul></li><li><a href="#model">Model</a><ul class="toc-headings"><li><a href="#fetch-model-from-repository">Fetch model from repository</a></li></ul></li><li><a href="#joysticks">Joysticks</a><ul class="toc-headings"><li><a href="#right-joystick-vertical-position">Right joystick - vertical position</a></li><li><a href="#left-joystick-orientation">Left joystick - orientation</a></li></ul></li><li><a href="#advanced">Advanced</a></li></ul></nav></div></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: '5207094edcc772e8784736cd40203ef0',
+                indexName: 'viewar',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {}
+              });
+            </script></body></html>
