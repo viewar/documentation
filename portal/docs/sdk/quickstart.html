@@ -1,0 +1,408 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Quickstart · Documentation</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&gt; _have a look at the ViewAR&#x27;s [interactive live example](https://webversion.viewar.com/com.viewar.sandbox/100/)._"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Quickstart · Documentation"/><meta property="og:type" content="website"/><meta property="og:url" content="http://test2.3.viewar.com/documentation/portal/"/><meta property="og:description" content="&gt; _have a look at the ViewAR&#x27;s [interactive live example](https://webversion.viewar.com/com.viewar.sandbox/100/)._"/><meta property="og:image" content="http://test2.3.viewar.com/documentation/portal/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="http://test2.3.viewar.com/documentation/portal/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/documentation/portal/img/favicon.ico"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/documentation/portal/js/scrollSpy.js"></script><link rel="stylesheet" href="/documentation/portal/css/main.css"/><script src="/documentation/portal/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/documentation/portal/"><img class="logo" src="/documentation/portal/img/viewar_logo.svg" alt="Documentation"/><h2 class="headerTitleWithLogo">Documentation</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher singleRowMobileNav"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>SDK</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">ViewAR<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/introduction">Introduction</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/stack">Technology Stack</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/creating_apps">Creating Apps</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/faq">FAQs</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">SDK<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/sdk/introduction">Introduction</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/sdk/cli">CLI Usage</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/sdk/basic_concepts">Basic Concepts</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/documentation/portal/docs/sdk/quickstart">Quickstart</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/sdk/troubleshooting">Trouble Shooting</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/sdk/api">ViewAR API</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">3D Content<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/3d_content/sample_models">Sample Models</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/3d_content/custom_models">Custom Models</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/3d_content/troubleshooting">Troubleshooting</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/3d_content/request_models">Request Models</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Manuals<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/tutorials/manuals/furniture_live">Furniture Live</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/tutorials/manuals/guidebot_placenote">GuideBOT Placenote</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/tutorials/manuals/guidebot_qr">GuideBOT QR</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/tutorials/manuals/helpar_agent">Helpar Agent</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/tutorials/manuals/helpar_user">Helpar User</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/tutorials/manuals/wallart">Wallart</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Tutorials<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/tutorials/overview">Tutorials Overview</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Template Tutorials</h4><ul><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/tutorials/template_tutorials/furniture_live">Furniture live</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/tutorials/template_tutorials/guidebot">GuideBOT</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/tutorials/template_tutorials/helpar">helpar</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/tutorials/template_tutorials/wallart">Wall-ARt</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">SDK Tutorials</h4><ul><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/tutorials/sdk_tutorials/arvatar">Arvatar</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/tutorials/sdk_tutorials/drone">Drone Control</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/tutorials/sdk_tutorials/product_visualization">Product Visualization</a></li></ul></div></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Additional Information<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/additional_information/hardware">Supported Hardware</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/additional_information/reporting_errors">Reporting Errors</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/additional_information/publishing">Publishing</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/additional_information/euler_angles">Euler angles</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/additional_information/right-handed-coordinate-system">Right-handed Cartesian Coordinate System</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/additional_information/power_economy">Power Economy</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/additional_information/radian">Radian</a></li><li class="navListItem"><a class="navItem" href="/documentation/portal/docs/additional_information/quaternion">Quaternions</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">Quickstart</h1></header><article><div><span><blockquote>
+<p><em>have a look at the ViewAR's <a href="https://webversion.viewar.com/com.viewar.sandbox/100/" target="_blank" rel="nofollow noreferrer noopener">interactive live example</a>.</em></p>
+</blockquote>
+<p>The ViewAR JavaScript API lets you access the Scene, Models, Cameras and Tracking Systems functionalities offered by the ViewAR Core from the ViewAR Application. In other words - it serves as an abstraction layer between the HTML UI and the C++ ViewAR Core. It allows you to utilize functionalitites of different services (think - ARKit, ARCore, Placenote, ...) with a unified set of JS commands. What it means, is that no platform-specific or device-specific knowledge is neccessary and that you may seamlessly switch between different technolgies (e.g. tracking systems).</p>
+<p>It would be a good idea to get an overview of the ViewAR API logic before diving into this chapter.
+If you haven't done it yet, give our <a href="./basic_concepts">Basic Concepts</a> section a moment.</p>
+<h2><a class="anchor" aria-hidden="true" id="scene-manager"></a><a href="#scene-manager" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Scene Manager</h2>
+<p><a href="./basic_concepts#scene">Scene</a> is a collection of all virtual objects. Objects may be organised into Ungrouped and Grouped Containers. Scene Manipulation is possible through a Scene Manager.</p>
+<h3><a class="anchor" aria-hidden="true" id="insert-a-container-into-a-scene"></a><a href="#insert-a-container-into-a-scene" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Insert a Container into a Scene</h3>
+<p>A Container is able to contain multiple models or other containers. To insert a new Container use the statement bellow. The method <code>insertContainer</code> returns the inserted instance, so you can use it later on.</p>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">const</span> pose = {
+  <span class="hljs-attr">position</span>: { <span class="hljs-attr">x</span>: <span class="hljs-number">100</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">200</span>, <span class="hljs-attr">z</span>: <span class="hljs-number">300</span> },
+};
+
+<span class="hljs-keyword">const</span> container = <span class="hljs-keyword">await</span> sceneManager.insertContainer({ pose });
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="insert-a-model-into-a-scene"></a><a href="#insert-a-model-into-a-scene" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Insert a model into a scene</h3>
+<p>You can insert a model into a Scene by passing the model as the first argument into the <code>insertModel</code> method.
+The optional second argument is an object which holds configurations, for example the pose of the model. The method <code>insertModel</code> returns the inserted instance, so that you can use it later on.</p>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">const</span> pose = {
+  <span class="hljs-attr">position</span>: { <span class="hljs-attr">x</span>: <span class="hljs-number">100</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">200</span>, <span class="hljs-attr">z</span>: <span class="hljs-number">300</span> },
+  <span class="hljs-attr">scale</span>: { <span class="hljs-attr">x</span>: <span class="hljs-number">10</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">10</span>, <span class="hljs-attr">z</span>: <span class="hljs-number">10</span> },
+  <span class="hljs-attr">orientation</span>: { <span class="hljs-attr">x</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">z</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">w</span>: <span class="hljs-number">1</span> },
+};
+
+<span class="hljs-keyword">await</span> sceneManager.insertModel(model, { pose });
+</code></pre>
+<p>To insert a model into a container you can use the <code>insertModel</code> method and pass the container instance as a <code>parent</code> property into the configuration object.</p>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">const</span> pose = {
+  <span class="hljs-attr">position</span>: { <span class="hljs-attr">x</span>: <span class="hljs-number">100</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">200</span>, <span class="hljs-attr">z</span>: <span class="hljs-number">300</span> },
+  <span class="hljs-attr">scale</span>: { <span class="hljs-attr">x</span>: <span class="hljs-number">10</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">10</span>, <span class="hljs-attr">z</span>: <span class="hljs-number">10</span> },
+  <span class="hljs-attr">orientation</span>: { <span class="hljs-attr">x</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">z</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">w</span>: <span class="hljs-number">1</span> },
+};
+
+<span class="hljs-keyword">const</span> instance = <span class="hljs-keyword">await</span> sceneManager.insertModel(model, { <span class="hljs-attr">parent</span>: container });
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="remove-a-node-from-a-scene"></a><a href="#remove-a-node-from-a-scene" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Remove a node from a scene</h3>
+<p>A Node can be an <a href="./basic_concepts#model-instances">Instance</a> of a Model or <a href="./basic_concepts#containers">Container</a>. To remove a Node from a Scene, you need to pass the Instance into a <code>removeNode</code> method. You can access Scene Nodes by using the children property of the scene property.</p>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">const</span> instance = sceneManager.scene.children[<span class="hljs-number">0</span>];
+<span class="hljs-keyword">await</span> sceneManager.removeNode(instance);
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="scene-state"></a><a href="#scene-state" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Scene State</h2>
+<p>The Scene State holds all the information about the current setup of the Scene, such as inserted Nodes and their current state e.g. pose and visibility. At any point during the runtime, it is possible to serialise the current Scene State. Keep in mind that the Animation State and Tracking State do not get serialised, meaning that they cannot be saved (although their initial values may be defined for example at app start). The serialised State can than be stored and recovered later on, for example in order to provide Save/Load functionality. Furthermore, it is possible to synchronise Scene States between devices.</p>
+<h3><a class="anchor" aria-hidden="true" id="get-current-scene-state"></a><a href="#get-current-scene-state" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>get current Scene State</h3>
+<p>To retrieve and save the current Scene State to the local storage, use the following statement:</p>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">const</span> sceneState = sceneManager.getSceneState();
+localStorage.setItem(<span class="hljs-string">'sceneState'</span>, <span class="hljs-built_in">JSON</span>.stringify(sceneState));
+</code></pre>
+<p>Optionally, use the safe, asynchronous <code>getSceneStateSafe</code> method, which only gets the Scene State after other current scene manipualtions are finished:</p>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">const</span> sceneState = <span class="hljs-keyword">await</span> sceneManager.getSceneStateSafe();
+localStorage.setItem(<span class="hljs-string">'sceneState'</span>, <span class="hljs-built_in">JSON</span>.stringify(sceneState));
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="set-a-scene-state"></a><a href="#set-a-scene-state" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Set a Scene State</h3>
+<p>To set a Scene State, use the <code>setSceneState</code> method and pass the <code>sceneState</code> object as an argument. In this example we load the Scene State saved locally in from the example above.</p>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">const</span> sceneState = <span class="hljs-built_in">JSON</span>.parse(localStorage.getItem(<span class="hljs-string">'sceneState'</span>));
+<span class="hljs-keyword">await</span> sceneManager.setSceneState(sceneState);
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="model-manager"></a><a href="#model-manager" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Model Manager</h2>
+<h3><a class="anchor" aria-hidden="true" id="model"></a><a href="#model" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Model</h3>
+<p>A 3D Model is a collection of data, resources, and assets that describe a virtual object. In the ViewAR System, models are created externally by 3D designers and uploaded to ViewAR 3D CMS.</p>
+<p><strong>The Model Manager</strong> provides access to all loaded <a href="./basic_concepts#models">Models</a> and can fetch additional ones from repository.</p>
+<blockquote>
+<p><em>The Model Manager offers a convenient method <code>downloadAll\(\)</code> that downloads and caches all models and their assets used by an application. This way, the program may be fully usable offline.</em></p>
+</blockquote>
+<h3><a class="anchor" aria-hidden="true" id="fetch-a-model-from-the-catalogue"></a><a href="#fetch-a-model-from-the-catalogue" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Fetch a Model from the Catalogue</h3>
+<p>In order to be able to insert a Model into a Scene, you may retrieve it from the 3D Catalogue. The findModel method does not download the actual model files, but only the Model description. This means that, in order to actually insert it in your scene, you'll need an addditional command ([sceneManager.insertModel]). The Model download happens when inserting.</p>
+<p>To retrieve a Model from the Catalogue, use either its Model ID or Foreign Key.</p>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">const</span> model = modelManager.findModelById(<span class="hljs-number">20</span>); <span class="hljs-comment">// by Model ID</span>
+</code></pre>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">const</span> model = modelManager.findModelByForeignKey(<span class="hljs-string">'sheep'</span>); <span class="hljs-comment">// by Foreign Key</span>
+</code></pre>
+<blockquote>
+<p><em>Keep in mind that every Model ID is unique in the scale of the whole ViewAR CMS, whereas the same Foreign Key may be assigned to multiple Models. The Foreign Key may be defined in the Model Editor</em>  <br>
+under <em><a href="https://developer.viewar.com" target="_blank" rel="nofollow noreferrer noopener">ViewAR Developer Portal</a> &gt; My Content &gt; All Items &gt; Model Editor &gt; Foreign Key</em></p>
+</blockquote>
+<h3><a class="anchor" aria-hidden="true" id="accessing-categories"></a><a href="#accessing-categories" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Accessing Categories</h3>
+<p>Every Model visible in a ViewAR App must be assigned to a <a href="./basic_concepts#model-categories">Category</a>.<br>
+<em><a href="https://developer.viewar.com" target="_blank" rel="nofollow noreferrer noopener">ViewAR Developer Portal</a> &gt; My Content &gt; All Items &gt; Model Editor &gt; Category</em></p>
+<p>To access the Model's Root Category use:</p>
+<pre><code class="hljs css language-js">modelManager.rootCategory;
+</code></pre>
+<p>To access the Category's children (they can be models or other Categories), use:</p>
+<pre><code class="hljs css language-js"><span class="hljs-comment">// access categories children</span>
+modelManager.rootCategory.children;
+<span class="hljs-comment">// access deeper levels of the sceneTree</span>
+modelManager.rootCategory.children[<span class="hljs-number">0</span>].children;
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="download-all-app-models"></a><a href="#download-all-app-models" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Download all App Models</h3>
+<p>In order to fetch all Models (and their assets) used by the Application, so that the program would be fully usable offline, go for:</p>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">await</span> modelManager.downloadAll();
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="tracking"></a><a href="#tracking" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Tracking</h2>
+<p>Tracking Systems try to estimate the world pose (position and orientation) of a mobile device (e.g. phone, tablet, head mounted display) in real-time. ViewAR System integrates numerous technological solutions and offers them through a coherent JavaScript API, so that you wouldn't have to worry about details of a particular technology integration. Furthermore, if a more robust Tracking System appears on the market, you can switch to it with a minimal effort.</p>
+<h3><a class="anchor" aria-hidden="true" id="activate-deactivate-and-reset"></a><a href="#activate-deactivate-and-reset" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Activate, Deactivate and Reset</h3>
+<blockquote>
+<p><em>There can only be one tracking active at a time.</em>  <br>
+<em>If one tracker gets enabled, the previous active tracker gets deactivated automatically.</em></p>
+</blockquote>
+<p>A chosen Tracking System may be managed as follows:</p>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">await</span> viewarApi.trackers.ARKit.activate(); <span class="hljs-comment">// Enable tracking.</span>
+<span class="hljs-keyword">await</span> viewarApi.trackers.ARKit.reset(); <span class="hljs-comment">// Reset tracking.</span>
+<span class="hljs-keyword">await</span> viewarApi.trackers.ARKit.deactivate(); <span class="hljs-comment">// Disable tracking.</span>
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="trackers-list"></a><a href="#trackers-list" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Trackers list</h3>
+<p>The used trackers list may be accessed as follows:</p>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">let</span> trackers = <span class="hljs-built_in">Object</span>.values(viewarApi.trackers);
+</code></pre>
+<p>Some trackers need to be initialized and detect the ground plane before they can start working. In such a case, you can listen to the <code>trackingTargetStatusChanged</code> event for a tracker. After the ground is detected, its position needs to be confirmed (either automatically or with using a user's input). It applies for ARKit, ARCore, Placenote, Wikitude (manual), Structure.io (manual), 6D (manual).</p>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">let</span> tracker = <span class="hljs-built_in">Object</span>.values(viewarApi.trackers)[<span class="hljs-number">0</span>];
+
+<span class="hljs-keyword">const</span> onTrackingTargetStatusChanged = <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-comment">// Check if tracker is tracking and confirm ground.</span>
+  <span class="hljs-keyword">if</span> (tracker.tracking) {
+    tracker.off(<span class="hljs-string">'trackingTargetStatusChanged'</span>, onTrackingTargetStatusChanged); <span class="hljs-comment">// Ground plane needs to be confirmed only once.</span>
+    <span class="hljs-keyword">await</span> tracker.confirmGround(); <span class="hljs-comment">// Automatically confirm ground when ground plane is found.</span>
+  }
+};
+
+<span class="hljs-comment">// Listen for tracking changed status.</span>
+tracker.on(<span class="hljs-string">'trackingTargetStatusChanged'</span>, onTrackingTargetStatusChanged);
+</code></pre>
+<blockquote>
+<p><em>After deactivating or resetting a tracker, it needs to be calibrated again.</em>  <br>
+<em>This means that the detected and/or confirmed ground plane gets lost.</em></p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="cameras"></a><a href="#cameras" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Cameras</h2>
+<p><a href="./basic_concepts#cameras">Cameras</a> control how the current scene is viewed.<br>
+In ViewAR System, there are three types of Cameras, all held in and controlled by the Camera Object:</p>
+<ul>
+<li><strong>Perspective Camera</strong> (perspectiveCamera)</li>
+<li><strong>Virtual Reality Camera</strong> (vrCamera)</li>
+<li><strong>Augmented Reality Camera</strong> (arCamera)</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="activating-a-camera"></a><a href="#activating-a-camera" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Activating a Camera</h3>
+<p>To activate a Camera, call the corresponding asynchronous function.<br>
+The Camera's internal state will be automatically set to <em>active</em>.</p>
+<pre><code class="hljs css language-javascript"><span class="hljs-keyword">const</span> camera = cameras.arCamera; <span class="hljs-comment">// Activate the Augmented Reality Camera.</span>
+<span class="hljs-keyword">await</span> camera.activate();
+</code></pre>
+<pre><code class="hljs css language-javascript"><span class="hljs-keyword">let</span> camera = cameras.vrCamera; <span class="hljs-comment">// Activate the Virtual Reality Camera.</span>
+<span class="hljs-keyword">await</span> camera.activate();
+</code></pre>
+<pre><code class="hljs css language-javascript"><span class="hljs-keyword">let</span> camera = cameras.perspectiveCamera; <span class="hljs-comment">// Activate the Perspective Camera.</span>
+<span class="hljs-keyword">await</span> camera.activate();
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="check-the-camera-state"></a><a href="#check-the-camera-state" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Check the Camera state</h3>
+<p>One can easily check if a specific camera is active at the moment:</p>
+<pre><code class="hljs css language-javascript"><span class="hljs-comment">// Check if Augmented Reality Camera is active.</span>
+<span class="hljs-keyword">const</span> camera = cameras.arCamera;
+<span class="hljs-keyword">if</span> (camera.active) {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Augmented Reality Camera is active.'</span>);
+} <span class="hljs-keyword">else</span> {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Augmented Reality Camera is not active.'</span>);
+}
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="enable-disable-stereoscopic-rendering"></a><a href="#enable-disable-stereoscopic-rendering" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Enable/disable stereoscopic rendering</h3>
+<p>For Head-Mounted Displays (HMD), the stereoscopic rendering should be enabled. Then two pictures, horizontally next to each other, will be rendered to the display instead of one. This setting must be enabled/disabled for each camera individually.</p>
+<pre><code class="hljs css language-javascript"><span class="hljs-keyword">const</span> camera = cameras.perspectiveCamera;
+
+<span class="hljs-keyword">await</span> camera.enableHmdMode(); <span class="hljs-comment">// Enable stereoscopic rendering for head-mounted displays.</span>
+
+<span class="hljs-keyword">await</span> camera.disableHmdMode(); <span class="hljs-comment">// Disable stereoscopic rendering for head-mounted displays.</span>
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="camera-pose"></a><a href="#camera-pose" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Camera Pose</h3>
+<p>The Camera Pose defines the position and orientation of the camera in the 3D space (virtual or real world, respectively). It is defined differently for each Camera.</p>
+<h4><a class="anchor" aria-hidden="true" id="perspective-camera-perspectivecamera"></a><a href="#perspective-camera-perspectivecamera" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Perspective Camera (perspectiveCamera)</h4>
+<p>The Perspective Camera's Pose is defined with the use of:</p>
+<ul>
+<li>position (3d vector)</li>
+<li>lookAt (3d vector)</li>
+</ul>
+<pre><code class="hljs css language-javascript">{
+    <span class="hljs-attr">position</span>: { x, y, z },
+    <span class="hljs-attr">lookAt</span>: { x, y, z }
+}
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="virtual-reality-camera-vrcamera"></a><a href="#virtual-reality-camera-vrcamera" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Virtual Reality Camera (vrCamera)</h4>
+<p>The Virtual Reality Camera's Pose is defined with the use of:</p>
+<ul>
+<li>position (3d vector)</li>
+<li>orientation (<a href="/documentation/portal/docs/additional_information/quaternion">Quaternion</a>)</li>
+</ul>
+<pre><code class="hljs css language-javascript">{
+<span class="hljs-attr">position</span>: { x, y, z },
+<span class="hljs-attr">orientation</span>: { w, x, y, z }
+}
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="augmented-reality-camera-arcamera"></a><a href="#augmented-reality-camera-arcamera" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Augmented Reality Camera (arCamera)</h4>
+<p>The Augmented Reality Camera's Pose is defined with the use of:</p>
+<ul>
+<li>position (3d vector)</li>
+<li>orientation (<a href="/documentation/portal/docs/additional_information/quaternion">Quaternion</a>)</li>
+</ul>
+<pre><code class="hljs css language-javascript">{
+<span class="hljs-attr">position</span>: { x, y, z },
+<span class="hljs-attr">orientation</span>: { w, x, y, z }
+}
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="get-the-current-camera-pose"></a><a href="#get-the-current-camera-pose" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Get the current Camera Pose</h3>
+<p>For performance reasons, if a user moves around with the device or within the scene, the Pose is <em>not</em> updated automatically. Therefore, before working with the Camera Pose, it is necessary to retrieve and update it.</p>
+<pre><code class="hljs css language-javascript"><span class="hljs-keyword">const</span> camera = camera.vrCamera;
+
+<span class="hljs-comment">// Retrieve pose from last update (this will NOT return the current camera pose)</span>
+<span class="hljs-keyword">const</span> pose = camera.pose;
+
+<span class="hljs-comment">// Update and get the current camera pose</span>
+<span class="hljs-keyword">const</span> pose = <span class="hljs-keyword">await</span> camera.updatePose();
+</code></pre>
+<p>The Camera Pose may be updated with a fixed interval.</p>
+<pre><code class="hljs css language-javascript"><span class="hljs-keyword">const</span> camera = cameras.vrCamera;
+
+<span class="hljs-comment">// Start the continous pose update with updates every 100ms.</span>
+<span class="hljs-keyword">const</span> interval = <span class="hljs-number">100</span>;
+camera.startPoseUpdate(interval);
+
+<span class="hljs-comment">// Stop the previously started continous pose update.</span>
+camera.stopPoseUpdate();
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="get-pose-in-the-viewing-direction"></a><a href="#get-pose-in-the-viewing-direction" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Get Pose in the viewing direction</h3>
+<p>Sometimes it comes in handy to get the Pose at a certain distance in front of the Camera (e.g. to insert a Model Instance in front of the user). The asynchronous method <code>getPoseInViewingDirection</code> calculates a point in the 3D space in front of the Camera at a specified distance and returns its Pose assigning the Camera's orientation. Keep in mind that, no matter the Camera orientation, the distance is measured horizontally taking the Camera Origin as the start point. The function may be used for every Camera.</p>
+<p>It function takes two arguments:</p>
+<ul>
+<li>distance [mm]</li>
+<li>projectToFloor [Boolean] - if true, the resulting point will be projected to the ground XZ plane (in other words - it will have the vertical coordinate of a value &quot;0&quot;)</li>
+</ul>
+<p>See the example below:</p>
+<pre><code class="hljs css language-javascript"><span class="hljs-comment">// Retrieve the Pose 5 metres in front of the Augmented Reality Camera, projected to the floor</span>
+<span class="hljs-keyword">const</span> camera = cameras.arCamera;
+<span class="hljs-keyword">const</span> projectToFloor = <span class="hljs-literal">true</span>;
+<span class="hljs-keyword">const</span> distanceInMM = <span class="hljs-number">5000</span>;
+
+<span class="hljs-keyword">const</span> pose = <span class="hljs-keyword">await</span> camera.getPoseInViewingDirection(distanceInMM, projectToFloor);
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="freeze-frames"></a><a href="#freeze-frames" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Freeze Frames</h3>
+<p>At the current state of technology, it is extremely impractical to faithfully scan and store real-world environments. Therefore, capturing and restoring of an Augmented Reality experience is practically impossible. ViewAR SDK offers a compromise in the form of Freeze Frames.</p>
+<p>AR Camera supports freezing and unfreezing of the Camera View. While frozen, Camera feed and Pose do not get updated, so that the image may easily be saved. Freeze Frames may be switched between while preserving the spatial relations between scene objects as expected. They can also be uploaded to the cloud storage and shared between users of the app.</p>
+<p>A Freeze Frame is an Object consisting of:</p>
+<ul>
+<li>Camera Image</li>
+<li>Tracking information</li>
+</ul>
+<pre><code class="hljs css language-js">freezeFrame = {
+  <span class="hljs-attr">name</span>: <span class="hljs-string">'freezeFrame-1'</span>,
+  <span class="hljs-attr">thumbnailUrl</span>: <span class="hljs-string">'example.com/freezeFrame-1-thumb.jpg'</span>,
+  <span class="hljs-attr">imageUrl</span>: <span class="hljs-string">'example.com/freezeFrame-1-large.jpg'</span>,
+};
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="freeze-unfreeze-the-view"></a><a href="#freeze-unfreeze-the-view" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Freeze &amp; unfreeze the View</h4>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">const</span> camera = cameras.arCamera;
+<span class="hljs-keyword">await</span> camera.freeze(); <span class="hljs-comment">// Freeze the AR Camera</span>
+<span class="hljs-keyword">await</span> camera.unfreeze(); <span class="hljs-comment">// Unfreeze the AR Camera</span>
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="save-a-freeze-frame"></a><a href="#save-a-freeze-frame" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Save a Freeze Frame</h4>
+<p>The following method freezes the arCamera feed, then saves and returns a saved Freeze Frame, to finally unfreeze the Camera.</p>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">const</span> camera = cameras.arCamera;
+<span class="hljs-keyword">await</span> camera.saveFreezeFrame();
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="list-of-saved-freeze-frames"></a><a href="#list-of-saved-freeze-frames" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>List of saved Freeze Frames</h4>
+<p>All saved Freeze Frames are saved in a freezeFrames Array and may be accessed with:</p>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">const</span> camera = cameras.arCamera;
+<span class="hljs-keyword">await</span> camera.freezeFrames;
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="load-a-freeze-frame"></a><a href="#load-a-freeze-frame" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Load a Freeze Frame</h4>
+<p>A saved Freeze Frame may be loaded to the Scene in a form of a freezeFrame Object. In such a case the Scene Nodes (Containers and Model Instances) may still be moved and interacted with, however, the Camera Pose cannot be altered.</p>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">const</span> camera = cameras.arCamera;
+<span class="hljs-keyword">await</span> camera.downloadFreezeFrame(<span class="hljs-string">'freezeFrame-1'</span>);
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="touches"></a><a href="#touches" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Touches</h2>
+<p>Touches are one of the User Input types.
+Scene and Model Instances can be manipulated by touching the screen.</p>
+<p>The following touches of the Model Instance are recognised:</p>
+<ul>
+<li><strong>Single finger</strong> - select &amp; move</li>
+<li><strong>Two fingers</strong> - rotate</li>
+<li><strong>Three fingers</strong> - change the height</li>
+</ul>
+<p>The following interactions with the Camera are recognized by touching any space in the scene that is not occupied by the model:</p>
+<ul>
+<li><strong>Single finger</strong> - rotate</li>
+<li><strong>Two fingers</strong> - move</li>
+</ul>
+<p>The default behavior can also be changed manually by using our <a href="http://test2.3.viewar.com/docs/index.html" target="_blank" rel="nofollow noreferrer noopener">JavaScript API Reference</a>.</p>
+<h3><a class="anchor" aria-hidden="true" id="touches-ui-elements"></a><a href="#touches-ui-elements" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Touches &amp; UI Elements</h3>
+<p>Touches interpretation works top-down, menaing that - unless specified otherwise - they are caught by the first element on their way. In order to make an element &quot;invisible&quot; to the Touches, use a CSS class property <code>pointer-events</code>:</p>
+<pre><code class="hljs css language-css"><span class="hljs-selector-class">.exampleClass</span> {
+  <span class="hljs-attribute">pointer-events</span>: none;
+}
+</code></pre>
+<p>Keep in mind that the approach above will also affect all Children of the <code>exampleClass</code> UI element. In such a case events like <code>onclick</code> or <code>ontouchstart</code> will not fire. Therefore, for each HTML element that needs these events (e.g. a button) pointer events should be activated manually. The example below solves the problem on an HTML element level:</p>
+<pre><code class="hljs css language-css"><span class="hljs-selector-class">.exampleClass</span> {
+  <span class="hljs-attribute">pointer-events</span>: none;
+}
+
+<span class="hljs-selector-tag">button</span> {
+  <span class="hljs-attribute">pointer-events</span>: auto;
+}
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="instances"></a><a href="#instances" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>instances</h2>
+<p><a href="./basic_concepts#model-instances">Model Instance</a> is a unique occurence of a model inserted in a ViewAR App. It is basically a copy of a Model loaded from the Model Catalogue and assigned to a variable in the application. While the original Model remains unchanged, the Model Instance may be manipulated inside the program.</p>
+<h3><a class="anchor" aria-hidden="true" id="change-pose"></a><a href="#change-pose" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Change pose</h3>
+<p>Every Model Instance has a pose, describing its position, orientation and scale. It can be accessed through the <code>pose</code> property of an Instance.</p>
+<pre><code class="hljs css language-js">instance.pose = {
+  <span class="hljs-attr">position</span>: { <span class="hljs-attr">x</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">z</span>: <span class="hljs-number">0</span> },
+  <span class="hljs-attr">orientation</span>: { <span class="hljs-attr">w</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">x</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">z</span>: <span class="hljs-number">0</span> },
+  <span class="hljs-attr">scale</span>: { <span class="hljs-attr">x</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">z</span>: <span class="hljs-number">1</span> },
+};
+</code></pre>
+<p>To change the position of an instance you can pass a pose object into the <code>setPose</code> method. The new pose object is merged with the old one, so you do not need to provide every single pose property.</p>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">const</span> oldPosition = instance.pose.position;
+
+<span class="hljs-keyword">await</span> instance.setPose({
+  <span class="hljs-attr">position</span>: {
+    <span class="hljs-attr">x</span>: oldPosition.x + <span class="hljs-number">100</span>,
+    <span class="hljs-attr">y</span>: <span class="hljs-number">100</span>,
+    <span class="hljs-attr">z</span>: <span class="hljs-number">100</span>,
+  },
+});
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="change-visibility"></a><a href="#change-visibility" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Change visibility</h3>
+<p>Every Model Instance has a Boolean <code>visible</code> property which may be changed using the <code>setVisibility</code>:</p>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">await</span> instance.setVisibility(<span class="hljs-literal">true</span>);
+<span class="hljs-keyword">await</span> instance.setVisibility(<span class="hljs-literal">false</span>);
+</code></pre>
+<p>Conveniently, the Model Instance or Container visibility may be set at the moment of their insertion into the Scene, by passing the <code>visible</code> property into the configuration object:</p>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">const</span> model = <span class="hljs-keyword">await</span> modelManager.getModelFromRepository(<span class="hljs-number">20</span>);
+<span class="hljs-keyword">await</span> sceneManager.insertModel(model, { <span class="hljs-attr">visible</span>: <span class="hljs-literal">false</span> });
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="read-next"></a><a href="#read-next" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Read next</h3>
+<ul>
+<li><a href="https://webversion.viewar.com/com.viewar.sandbox/100/" target="_blank" rel="nofollow noreferrer noopener">ViewAR JavaScript API Playground</a></li>
+<li><a href="http://test2.3.viewar.com/docs/index.html" target="_blank" rel="nofollow noreferrer noopener">ViewAR API References</a></li>
+</ul>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 12/16/2019</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/documentation/portal/docs/sdk/basic_concepts"><span class="arrow-prev">← </span><span>Basic Concepts</span></a><a class="docs-next button" href="/documentation/portal/docs/sdk/troubleshooting"><span>Trouble Shooting</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#scene-manager">Scene Manager</a><ul class="toc-headings"><li><a href="#insert-a-container-into-a-scene">Insert a Container into a Scene</a></li><li><a href="#insert-a-model-into-a-scene">Insert a model into a scene</a></li><li><a href="#remove-a-node-from-a-scene">Remove a node from a scene</a></li></ul></li><li><a href="#scene-state">Scene State</a><ul class="toc-headings"><li><a href="#get-current-scene-state">get current Scene State</a></li><li><a href="#set-a-scene-state">Set a Scene State</a></li></ul></li><li><a href="#model-manager">Model Manager</a><ul class="toc-headings"><li><a href="#model">Model</a></li><li><a href="#fetch-a-model-from-the-catalogue">Fetch a Model from the Catalogue</a></li><li><a href="#accessing-categories">Accessing Categories</a></li><li><a href="#download-all-app-models">Download all App Models</a></li></ul></li><li><a href="#tracking">Tracking</a><ul class="toc-headings"><li><a href="#activate-deactivate-and-reset">Activate, Deactivate and Reset</a></li><li><a href="#trackers-list">Trackers list</a></li></ul></li><li><a href="#cameras">Cameras</a><ul class="toc-headings"><li><a href="#activating-a-camera">Activating a Camera</a></li><li><a href="#check-the-camera-state">Check the Camera state</a></li><li><a href="#enable-disable-stereoscopic-rendering">Enable/disable stereoscopic rendering</a></li><li><a href="#camera-pose">Camera Pose</a></li><li><a href="#get-the-current-camera-pose">Get the current Camera Pose</a></li><li><a href="#get-pose-in-the-viewing-direction">Get Pose in the viewing direction</a></li><li><a href="#freeze-frames">Freeze Frames</a></li></ul></li><li><a href="#touches">Touches</a><ul class="toc-headings"><li><a href="#touches-amp-ui-elements">Touches &amp; UI Elements</a></li></ul></li><li><a href="#instances">instances</a><ul class="toc-headings"><li><a href="#change-pose">Change pose</a></li><li><a href="#change-visibility">Change visibility</a></li><li><a href="#read-next">Read next</a></li></ul></li></ul></nav></div></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: '5207094edcc772e8784736cd40203ef0',
+                indexName: 'viewar',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {}
+              });
+            </script></body></html>
