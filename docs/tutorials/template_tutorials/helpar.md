@@ -111,15 +111,6 @@ To save your changes to the server, use this command:
 
 This will build your app in release mode and save the changes to the server. After this, your app will be updated and everyone starting it will get the changes.
 
-<<<<<<< HEAD
-### Testing release version
-
-There are two options for testing your application: you may either do it directly in the web browser (in the mock or full mode) or run it on a mobile device using the ViewAR SDK app.
-
-More info about testing [here](/docs/testing.md).
-
-=======
->>>>>>> develop
 ### Experiment!
 
 Now that you have your app all set and running, it's time to play around with it a bit. Feel free to alter the existing functionalities or extend the app with some of your own choosing!
