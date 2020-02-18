@@ -198,3 +198,10 @@ Choose an app category from the following:
 - Travel & Local
 - Video Players & Editors
 - Weather
+
+
+###### 8. Privacy Policy
+
+Adding a privacy policy to your app's store listing helps provide transparency about how you treat sensitive user and device data.
+
+According to information provided by Google Support, the privacy policy must, together with any in-app disclosures, comprehensively disclose how your app collects, uses and shares user data, including the types of parties with whom it’s shared.
