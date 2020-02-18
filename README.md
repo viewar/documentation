@@ -10,11 +10,18 @@ change directory to `./website` and exec `npm run start`
 
 ## Deployment
 
-`GIT_USER={USERNAME} CURRENT_BRANCH={BRANCH} USE_SSH=true npm run publish-gh-pages`
-
-_if you have no SSH key registered on Github, remove `USE_SSH=true` from command_
+Run `npm run build` on root level (not in /website anymore). This will automatically build two versions (standalone [folder "/website"] and portal [folder: "/portal"]), put them together into one directory and create a commit on branch gh-pages.
 
 ## Changelog
+
+### [1.8.1](https://github.com/viewar/viewar-documentation/compare/v1.8.0...v1.8.1) (2020-02-18)
+
+#### Features
+- **Publishing** add section 'Privacy Policy to Google Play Store Publishing.' ([#74](https://github.com/viewar/viewar-documentation/issues/74))
+- **README:** Update publishing instruction([#75](https://github.com/viewar/viewar-documentation/issues/75))
+
+#### Bug Fixes
+-  **Tutorials:** Fix merge leftovers in the helpar tutorial.
 
 ### [1.8.0](https://github.com/viewar/viewar-documentation/compare/v1.7.0...v1.8.0) (2019-12-02)
 
