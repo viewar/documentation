@@ -11,7 +11,7 @@
     "git:commit": "cd build && git add . && git commit -m 'Deploy new version' && git push",
     "build:portal": "cd ./portal && npm run build",
     "build:website": "cd ./website && npm run build",
-    "build:createbuildfolder": "cp -R website/build/documentation build && cp -R portal/build/portal build/portal",
+    "build:createbuildfolder": "cp -R website/build/documentation/* build && cp -R portal/build/portal build/",
     "build": "npm run clean && npm run build:portal && npm run build:website && npm run git:checkout && npm run build:createbuildfolder && npm run git:commit"
   },
   "lint-staged": {
