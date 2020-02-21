@@ -1,4 +1,4 @@
-# ViewAr Documentation
+# ViewAR Documentation
 
 > built with [Docusaurus](https://v2.docusaurus.io)
 
@@ -14,14 +14,22 @@ Run `npm run build` on root level (not in /website anymore). This will automatic
 
 ## Changelog
 
+### [1.9.0](https://github.com/viewar/viewar-documentation/compare/v1.8.0...v1.8.1) (2020-02-21)
+
+#### Features
+
+- **docs** Update urls to new ones.
+
 ### [1.8.1](https://github.com/viewar/viewar-documentation/compare/v1.8.0...v1.8.1) (2020-02-18)
 
 #### Features
+
 - **Publishing** add section 'Privacy Policy to Google Play Store Publishing.' ([#74](https://github.com/viewar/viewar-documentation/issues/74))
 - **README:** Update publishing instruction([#75](https://github.com/viewar/viewar-documentation/issues/75))
 
 #### Bug Fixes
--  **Tutorials:** Fix merge leftovers in the helpar tutorial.
+
+- **Tutorials:** Fix merge leftovers in the helpar tutorial.
 
 ### [1.8.0](https://github.com/viewar/viewar-documentation/compare/v1.7.0...v1.8.0) (2019-12-02)
 

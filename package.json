@@ -39,7 +39,7 @@
     "type": "git",
     "url": "git+https://github.com/viewar/viewar-documentation.git"
   },
-  "author": "ViewAr <office@viewar.com>",
+  "author": "ViewAR <office@viewar.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/viewar/viewar-documentation/issues"

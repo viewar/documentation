@@ -38,18 +38,10 @@ class Footer extends React.PureComponent {
           </a>
           <div>
             <h5>ViewAR</h5>
-            <a href={this.docUrl('introduction')}>
-              Introduction
-            </a>
-            <a href={this.docUrl('stack')}>
-              Technology Stack
-            </a>
-            <a href={this.docUrl('creating_apps')}>
-              How to create Apps
-            </a>
-            <a href={this.docUrl('faq')}>
-              FAQs
-            </a>
+            <a href={this.docUrl('introduction')}>Introduction</a>
+            <a href={this.docUrl('stack')}>Technology Stack</a>
+            <a href={this.docUrl('creating_apps')}>How to create Apps</a>
+            <a href={this.docUrl('faq')}>FAQs</a>
           </div>
           <div>
             <h5>SDK</h5>
@@ -134,7 +126,7 @@ class Footer extends React.PureComponent {
         >
           <img
             src={`${this.props.config.baseUrl}img/viewar_logo.svg`}
-            alt="ViewAr Website"
+            alt="ViewAR Website"
             width="170"
             height="45"
           />
