@@ -1,6 +1,6 @@
 {
   "name": "viewar-documentation",
-  "version": "1.8.1",
+  "version": "1.9.0",
   "description": "Documentation of ViewAR's SDK and API",
   "scripts": {
     "format": "prettier **/*.{css,scss,md,json} --write",
