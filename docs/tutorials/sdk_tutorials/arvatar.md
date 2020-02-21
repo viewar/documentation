@@ -9,7 +9,7 @@ This is a tutorial to create an app with the ViewAR system that will display an 
 
 - ViewAR SDK App
 - ViewAR CLI \(viewar-cli node package\)
-- developer.viewar.com account
+- portal.viewar.com account
 - React 16.8.0 or newer
 
 ### Checkout Sample App

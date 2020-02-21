@@ -21,7 +21,7 @@ Next, install the viewar-cli globally by entering the following command into you
 
 #### create account
 
-Create a free ViewAR [account](https://developer.viewar.com/user/register). You will need the credentials to be able to create new apps, upload and manage 3D content and much more. You may log in directly from the terminal:
+Create a free ViewAR [account](https://portal.viewar.com/register). You will need the credentials to be able to create new apps, upload and manage 3D content and much more. You may log in directly from the terminal:
 
 `viewar login`
 
@@ -109,7 +109,7 @@ Or have a look at the [Tutorials](../tutorials/overview)
 
 ## Deployment
 
-To deploy the app you first need to create an empty application at [http://developer.viewar.com](http://developer.viewar.com). Than open the application directory in the terminal and enter `viewar show-token`. Enter the first part of the displayed token \(until the dash\) into the application settings on the application website, to connect the boilerplate application with the system.
+To deploy the app you first need to create an empty application at [https://portal.viewar.com](https://portal.viewar.com). Than open the application directory in the terminal and enter `viewar show-token`. Enter the first part of the displayed token \(until the dash\) into the application settings on the application website, to connect the boilerplate application with the system.
 
 In order to activate your template to an app, you need to run:  
 `viewar deploy APP-ID APP-VERSION`

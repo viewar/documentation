@@ -3,7 +3,7 @@ id: introduction
 title: Introduction
 ---
 
-The ViewAR System provides a backend with a 3D CMS and [Developer Portal](https://developer.viewar.com/site/landing) for managing applications and content.
+The ViewAR System provides a backend with a 3D CMS and [Developer Portal](https://portal.viewar.com) for managing applications and content.
 
 ### Supported file formats
 

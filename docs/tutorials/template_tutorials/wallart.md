@@ -15,7 +15,7 @@ All you need is a web browser and a web connection. No programming knowledge req
 
 ### Create an account
 
-Create a free user account on the [ViewAR Developer Portal](https://developer.viewar.com)
+Create a free user account on the [ViewAR Developer Portal](https://portal.viewar.com)
 
 ### Choose a template
 

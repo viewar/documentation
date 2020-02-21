@@ -39,7 +39,7 @@ Following this tutorial you'll learn how to use a GuideBOT indoor navigation app
 
 - Go to the point in space which you'd like to be the start of your app. Theoretically the app may be initialised from whatever point you want, however, it will only detect in similar angles to what you have recorded.
 
-- Open the application, click on the padlock icon and type in your [Developer Portal](https://developer.viewar.com) credentials.
+- Open the application, click on the padlock icon and type in your [Developer Portal](https://portal.viewar.com) credentials.
 - Click on _New map_. Give it an easily recognisable name and save.
 
 ![](assets/GuideBOT%20-%20Tutorial%20-%201.jpg)

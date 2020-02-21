@@ -116,12 +116,12 @@ const model = modelManager.findModelByForeignKey('sheep'); // by Foreign Key
 ```
 
 > _Keep in mind that every Model ID is unique in the scale of the whole ViewAR CMS, whereas the same Foreign Key may be assigned to multiple Models. The Foreign Key may be defined in the Model Editor_  
-> under _[ViewAR Developer Portal](https://developer.viewar.com) > My Content > All Items > Model Editor > Foreign Key_
+> under _[ViewAR Developer Portal](https://portal.viewar.com) > My Content > All Items > Model Editor > Foreign Key_
 
 ### Accessing Categories
 
 Every Model visible in a ViewAR App must be assigned to a [Category](./basic_concepts#model-categories).  
-_[ViewAR Developer Portal](https://developer.viewar.com) > My Content > All Items > Model Editor > Category_
+_[ViewAR Developer Portal](https://portal.viewar.com) > My Content > All Items > Model Editor > Category_
 
 To access the Model's Root Category use:
 
@@ -409,7 +409,7 @@ The following interactions with the Camera are recognized by touching any space 
 - **Single finger** - rotate
 - **Two fingers** - move
 
-The default behavior can also be changed manually by using our [JavaScript API Reference](http://test2.3.viewar.com/docs/index.html).
+The default behavior can also be changed manually by using our [JavaScript API Reference](https://documentation-api.viewar.com).
 
 ### Touches & UI Elements
 
@@ -482,4 +482,4 @@ await sceneManager.insertModel(model, { visible: false });
 ### Read next
 
 - [ViewAR JavaScript API Playground](https://webversion.viewar.com/com.viewar.sandbox/100/)
-- [ViewAR API References](http://test2.3.viewar.com/docs/index.html)
+- [ViewAR API References](https://documentation-api.viewar.com)

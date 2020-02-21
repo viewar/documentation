@@ -7,7 +7,7 @@ To get you started, our Team has prepared a few Sample Models. Let's play around
 
 ## Download
 
-Go to Support/3D Sample Files \([link](http://developer.viewar.com/downloads)\) and download Mammoth Chair 3D model.
+Go to Support/3D Sample Files \([link](https://portal.viewar.com/downloads)\) and download Mammoth Chair 3D model.
 <br>The zip file contains:
 
 - _mammoth_armchair_model5.fbx_ - 3D model geometry

@@ -43,7 +43,7 @@ ViewAR API is an object-oriented JavaScript-based API, offering an interface for
 - [Tracking](/docs/sdk/basic_concepts/tracking)
 - App Utilities.
 
-For a full list of API calls, check our [API Documentation](http://test2.3.viewar.com/docs/index.html).
+For a full list of API calls, check our [API Documentation](https://documentation-api.viewar.com).
 
 ## ViewAR Backend
 

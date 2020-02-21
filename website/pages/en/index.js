@@ -53,7 +53,12 @@ class HomeSplash extends React.PureComponent {
 
     const Button = (props) => (
       <div className="pluginWrapper buttonWrapper">
-        <a className={`button${props.isPrimary ? ' isPrimary' : ''}`} href={props.href} target={props.target} style={props.style}>
+        <a
+          className={`button${props.isPrimary ? ' isPrimary' : ''}`}
+          href={props.href}
+          target={props.target}
+          style={props.style}
+        >
           {props.children}
         </a>
       </div>
@@ -65,9 +70,15 @@ class HomeSplash extends React.PureComponent {
         <div className="inner">
           <ProjectTitle siteConfig={siteConfig} />
           <PromoSection>
-            <Button href={docUrl('sdk/introduction')} isPrimary>SDK Documentation</Button>
-            <Button href="http://test2.3.viewar.com/docs/index.html" target="_blank" isPrimary>API Reference</Button>
-            <Button href="http://developer.viewar.com/" target="_blank" isPrimary>Developer Portal</Button>
+            <Button href={docUrl('sdk/introduction')} isPrimary>
+              SDK Documentation
+            </Button>
+            <Button href="https://documentation-api.viewar.com" target="_blank" isPrimary>
+              API Reference
+            </Button>
+            <Button href="https://portal.viewar.com/" target="_blank" isPrimary>
+              Developer Portal
+            </Button>
           </PromoSection>
         </div>
       </SplashContainer>
@@ -81,16 +92,8 @@ class Index extends React.PureComponent {
     const { baseUrl } = siteConfig;
 
     const Block = (props) => (
-      <Container
-        padding={[ 'bottom', 'top' ]}
-        id={props.id}
-        background={props.background}
-      >
-        <GridBlock
-          align="center"
-          contents={props.children}
-          layout={props.layout}
-        />
+      <Container padding={['bottom', 'top']} id={props.id} background={props.background}>
+        <GridBlock align="center" contents={props.children} layout={props.layout} />
       </Container>
     );
 
@@ -113,9 +116,9 @@ class Index extends React.PureComponent {
               '[**unDraw**](https://undraw.co/) which provides you with customizable ' +
               'illustrations which are free to use. ' +
               'The illustrations you see on this page are from unDraw.',
-            image:      `${baseUrl}img/undraw_code_review.svg`,
+            image: `${baseUrl}img/undraw_code_review.svg`,
             imageAlign: 'left',
-            title:      'Wonderful SVG Illustrations',
+            title: 'Wonderful SVG Illustrations',
           },
         ]}
       </Block>
@@ -125,11 +128,10 @@ class Index extends React.PureComponent {
       <Block background="dark">
         {[
           {
-            content:
-              'This is another description of how this project is useful',
-            image:      `${baseUrl}img/undraw_note_list.svg`,
+            content: 'This is another description of how this project is useful',
+            image: `${baseUrl}img/undraw_note_list.svg`,
             imageAlign: 'right',
-            title:      'Description',
+            title: 'Description',
           },
         ]}
       </Block>
@@ -141,9 +143,9 @@ class Index extends React.PureComponent {
           {
             content:
               'Each new Docusaurus project has **randomly-generated** theme colors.',
-            image:      `${baseUrl}img/undraw_youtube_tutorial.svg`,
+            image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
             imageAlign: 'right',
-            title:      'Randomly Generated Theme Colors',
+            title: 'Randomly Generated Theme Colors',
           },
         ]}
       </Block>
@@ -153,16 +155,16 @@ class Index extends React.PureComponent {
       <Block layout="fourColumn">
         {[
           {
-            content:    'This is the content of my feature',
-            image:      `${baseUrl}img/undraw_react.svg`,
+            content: 'This is the content of my feature',
+            image: `${baseUrl}img/undraw_react.svg`,
             imageAlign: 'top',
-            title:      'Feature One',
+            title: 'Feature One',
           },
           {
-            content:    'The content of my second feature',
-            image:      `${baseUrl}img/undraw_operating_system.svg`,
+            content: 'The content of my second feature',
+            image: `${baseUrl}img/undraw_operating_system.svg`,
             imageAlign: 'top',
-            title:      'Feature Two',
+            title: 'Feature Two',
           },
         ]}
       </Block>
@@ -201,8 +203,18 @@ class Index extends React.PureComponent {
       <div className="mainWrapper">
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="bgVideoWrapper">
-          <video id="welcome_header_video" playsInline muted autoPlay loop className="bgVideo">
-            <source src="https://www.viewar.com/wp-content/themes/vrt/img/videos/viewar_background.mp4" type="video/mp4" />
+          <video
+            id="welcome_header_video"
+            playsInline
+            muted
+            autoPlay
+            loop
+            className="bgVideo"
+          >
+            <source
+              src="https://www.viewar.com/wp-content/themes/vrt/img/videos/viewar_background.mp4"
+              type="video/mp4"
+            />
             Your browser does not support the video tag.
           </video>
         </div>

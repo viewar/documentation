@@ -24,7 +24,7 @@ Learn how to create a [GuideBOT](https://www.viewar.com/template/guidebot/) indo
 
 ### Create an account
 
-Create a free user account on the [ViewAR Developer portal](https://developer.viewar.com).
+Create a free user account on the [ViewAR Developer portal](https://portal.viewar.com).
 
 ### Choose a template
 
@@ -56,7 +56,7 @@ In an IDE of your choice (for example WebStorm) navigate to a suitable directory
 - Node.js (version 6.0.0 or higher)
 - npm package manager (version 3 or higher)
 
-Furthermore, make sure that you have a ViewAR account. It'll provide you storage for your 3D models and an overview of the apps created. Register at: https://developer.viewar.com/
+Furthermore, make sure that you have a ViewAR account. It'll provide you storage for your 3D models and an overview of the apps created. Register at: https://portal.viewar.com/
 
 #### Device requirements
 
@@ -131,7 +131,6 @@ To save your changes to the server, use this command:
 
 This will build your app in release mode and save the changes to the server. After this, your app will be updated and everyone starting it will get the changes.
 
-<<<<<<< HEAD
 ### Test the app
 
 There are two options for testing your application: you may either do it directly in the web browser (in the mock or full mode) or run it on a mobile device using the ViewAR SDK app.
@@ -141,8 +140,6 @@ Some resources to get you started:
 - More info about [testing](testing.md).
 - User Manuals: [GuideBOT QR](../manuals/guidebot_qr) and [GuideBOT Placenote](../manuals/guidebot_placenote).
 
-=======
->>>>>>> develop
 ### Experiment!
 
 Now that you have your app all set and running, it's time to play around with it a bit. Feel free to alter the existing functionalities or extend the app with some of your own choosing!
@@ -150,11 +147,7 @@ Now that you have your app all set and running, it's time to play around with it
 Browse our SDK Documentation for more information. Here are some topics to get you started:
 
 - [Basic Concepts](../../sdk/basic_concepts.md)
-<<<<<<< HEAD
-- [JavaScript API Quickstart](http://test2.3.viewar.com/docs/index.html)
-=======
 - [JavaScript API Quickstart](../../sdk/quickstart)
->>>>>>> develop
 
 ### UI Config
 

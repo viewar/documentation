@@ -71,7 +71,7 @@ For performance reasons, it's often recommended not to bundle the models with th
 
 #### Model Categories
 
-A Model may be assigned to a Category. This is done through [ViewAR CMS](https://developer.viewar.com/model/list). Go to _My Content > All Items,_ open a Model Editor and choose a desired Category from the drop-down list. If you wish to create a new Category, go to _My Content > Categories._
+A Model may be assigned to a Category. This is done through [ViewAR CMS](https://portal.viewar.com/model/list). Go to _My Content > All Items,_ open a Model Editor and choose a desired Category from the drop-down list. If you wish to create a new Category, go to _My Content > Categories._
 
 A useful feature is Category nesting. Imagine that you are building an App for a company producing snowboarding equipment. You would like your UI to offer the User products according to their function (e.g. boards, bindings, ...) and then, on the next level, due to their technical characteristics (e.g. freestyle boards, freeride boards, alpine). In such a case, it would be useful to create the following Categories structure:
 
@@ -111,13 +111,13 @@ It comes, however, with a minor drawback - one needs to make sure that 4 differe
 But worry not, here comes a cheat sheet:
 
 - The Model needs to be set to _Active_
-  [ViewAR Developer Portal](https://developer.viewar.com) > My Content > All Items > Model Editor > Active
+  [ViewAR Developer Portal](https://portal.viewar.com) > My Content > All Items > Model Editor > Active
 - The Model needs to be in a Category
-  [ViewAR Developer Portal](https://developer.viewar.com) > My Content > All Items > Model Editor > Category
+  [ViewAR Developer Portal](https://portal.viewar.com) > My Content > All Items > Model Editor > Category
 - The Category the Model is in, needs to be set to _Active_
-  [ViewAR Developer Portal](https://developer.viewar.com) > My Content > Categories > Category Editor > Active
+  [ViewAR Developer Portal](https://portal.viewar.com) > My Content > Categories > Category Editor > Active
 - The Category the Model is in, needs to be available in the Application
-  [ViewAR Developer Portal](https://developer.viewar.com) > My Apps > App Editor > Advanced > Content Category Settings
+  [ViewAR Developer Portal](https://portal.viewar.com) > My Apps > App Editor > Advanced > Content Category Settings
 
 ## Tracking
 
@@ -172,12 +172,12 @@ Displays the image from the device camera. Combined with state-of-the-art enviro
 <!---
 unsure about statement
 forerly end of sentence: to be used within headsets
-> _Every Camera has a Stereoscopic Mode, also called a HMD (Head-Mounted Display) Mode,_  
+> _Every Camera has a Stereoscopic Mode, also called a HMD (Head-Mounted Display) Mode,_
 > _that allows for the apps to be used within VR Hardware like Oculus Rift, HTC Vive or similar._
 --->
 
 ### Freeze Frames
 
 The ViewAR SDK offeres the ability to save and load so called freeze frames. An AR view consists of a camera image as a background plus a tracked position of the device & camera. Rendering the virtual items from exactly this perspective and putting it on top of the camera image background creates the illusion the item is real. And this is what we save a for a freeze frame: the camera background image and the tracked pose. Using a freeze frame you can still edit the scene in the frozen background image. You can change materials, move or add items.  
-You can save and load such freeze frames and even switch between multiple freeze frames for one scene setup, so you can view the same scene from multiple views. 
+You can save and load such freeze frames and even switch between multiple freeze frames for one scene setup, so you can view the same scene from multiple views.
 Freeze frames can be saved locally or to the cloud so you can even access them from another device.

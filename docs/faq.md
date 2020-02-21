@@ -18,7 +18,7 @@ title: FAQs
   However, should you want to put your template or 3D to work by offering it to other users and earning money from it, please _contact us_ and we will help you make it happen.
 
 - **Can I upload my own 3D data to be used in an application?**  
-  Yes, you may do it through our [Model Manager](http://developer.viewar.com/model/list).
+  Yes, you may do it through our [Model Manager](https://portal.viewar.com/model/list).
 
 * **Do I need to purchase a license?**  
   Any application may be tested through an SDK App, available both for iOS and Android. However, if you want to publish it, enable for commercial use or extend its functionality by editing the source code, then a license would be necessary.
@@ -26,13 +26,13 @@ title: FAQs
 ## User Account
 
 - **How do I change my password?**  
-  If you remember you password but **want to change it**, log in to our [Developer Portal](http://developer.viewar.com/),  
-  navigate to the [My Account section](http://developer.viewar.com/user/account/) and simply type in the new password.  
-  If, on the other hand, you **do not remember your password**, you can set a new one on the Developer Portal's [password recovery page](https://developer.viewar.com/user/recoveryPassword).
+  If you remember you password but **want to change it**, log in to our [Developer Portal](https://portal.viewar.com/),  
+  navigate to the [My Account section](https://portal.viewar.com/user/account/) and simply type in the new password.  
+  If, on the other hand, you **do not remember your password**, you can set a new one on the Developer Portal's [password recovery page](https://portal.viewar.com/user/recoveryPassword).
 
 * **What are _Advanced Settings_?**  
   _Advanced Settings_ is an advanced option which gives you access to additional properties functionalities of your models like defining a _foreign key_ or Template creation.  
-  It is deactivated by default and completely free of charge. You may turn it on in the [My Account section](http://developer.viewar.com/user/account).
+  It is deactivated by default and completely free of charge. You may turn it on in the [My Account section](https://portal.viewar.com/user/account).
 
 ## Application
 

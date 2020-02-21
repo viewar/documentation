@@ -7,4 +7,4 @@ The ViewAR JavaScript API lets you access the Scene, Models, Cameras and Trackin
 
 For an overview of the ViewAR API structure, go to the [Basic Concepts](./basic_concepts.md).
 
-For a full list of API calls, check our [API Documentation](http://test2.3.viewar.com/docs/index.html).
+For a full list of API calls, check our [API Documentation](https://documentation-api.viewar.com).

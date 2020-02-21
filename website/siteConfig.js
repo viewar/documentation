@@ -27,8 +27,8 @@ const siteConfig = {
   // url:     'https://your-docusaurus-test-site.com', // Your website URL
   // baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
-  url: 'https://viewar.github.io',
-  baseUrl: '/documentation/',
+  url: 'https://documentation.viewar.com',
+  baseUrl: '/',
 
   // Used for publishing and more
   projectName: 'documentation',
@@ -55,7 +55,7 @@ const siteConfig = {
       label: 'SDK Documentation',
     },
     {
-      href: 'http://test2.3.viewar.com/docs/index.html',
+      href: 'https://documentation-api.viewar.com',
       label: 'API Documentation',
     },
     {

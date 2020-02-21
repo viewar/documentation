@@ -3,7 +3,7 @@ id: request_models
 title: Request Models
 ---
 
-ViewAR has a network of cost-efficient 3D designers, experienced with the ViewAR System. We can offer reasonable rates for creating 3D models for your application with a guarantee of effects. You can request 3d models here: [My Content/Content Requests](https://developer.viewar.com/jobs/add).
+ViewAR has a network of cost-efficient 3D designers, experienced with the ViewAR System. We can offer reasonable rates for creating 3D models for your application with a guarantee of effects. You can request 3d models here: [My Content/Content Requests](https://portal.viewar.com/jobs/add).
 
 ## General
 

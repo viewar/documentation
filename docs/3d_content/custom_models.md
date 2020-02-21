@@ -9,7 +9,7 @@ The ViewAR System provides a web interface for model upload and management.
 
 ### Login
 
-Create a free account and login to the [ViewAR Delevoper Portal](http://developer.viewar.com/user/login).
+Create a free account and login to the [ViewAR Delevoper Portal](https://portal.viewar.com).
 
 ### Category
 
@@ -200,11 +200,11 @@ An portion of an example table:
 
 There is a way to manage information about model in a specific account through an Excel Sheet.
 
-To download the file, log into your account and go to the following URL: [https://developer.viewar.com/custom/universal/action:download](https://developer.viewar.com/custom/universal/action:download).
+To download the file, log into your account and go to the following URL: [https://portal.viewar.com/custom/universal/action:download](https://portal.viewar.com/custom/universal/action:download).
 
 You may now edit the file locally and upload it, when you're done. There is no need to keep all rows in your table - you may update only the ones which require a change. The models are recognised by the _*Model ID*_, therefore pay special attention _not to change it_!
 
-To upload an updated file, log into your account and go to the following URL: [https://developer.viewar.com/custom/universal/action:upload](https://developer.viewar.com/custom/universal/action:upload).
+To upload an updated file, log into your account and go to the following URL: [https://portal.viewar.com/custom/universal/action:upload](https://portal.viewar.com/custom/universal/action:upload).
 
 ## Guidelines for content creation
 
@@ -363,7 +363,7 @@ You can find the sample content here: [UVLayout.zip](https://www.dropbox.com/s/j
 8. Export your scene in the FBX file format (File > Export... > FBX... (\*.fbx))
 
 9. Rename the image file of the baked ambient occlusion map to "ambientocclusionmap.jpg" and ZIP it together with the FBX-file of your 3D scene.
-10. Login to the [ViewAR Delevoper Portal](http://developer.viewar.com/user/login). Go to the 3D model upload page (Content > 3D Models > +Upload new model).
+10. Login to the [ViewAR Delevoper Portal](https://portal.viewar.com/user/login). Go to the 3D model upload page (Content > 3D Models > +Upload new model).
     Fill out the form (Name, Foreign Key, etc.) and drag&drop the previously created ZIP-file onto the "Model bundle" input field and press "Upload".
 
 11. After pressing the "Upload" button the ViewAR Material Editor opens automatically.
@@ -496,7 +496,7 @@ Don't use any special characters (underscore "\_" is allowed) for mesh-, materia
 
 9\) Rename the image file of the baked ambient occlusion map to "ambientocclusionmap.jpg" and ZIP it together with the FBX-file of your 3D scene.
 
-10\) Login to the [ViewAR Delevoper Portal](http://developer.viewar.com/user/login). Go to the 3D model upload page \(Content &gt; 3D Models &gt; +Upload new model\).
+10\) Login to the [ViewAR Delevoper Portal](https://portal.viewar.com/user/login). Go to the 3D model upload page \(Content &gt; 3D Models &gt; +Upload new model\).
 
 Fill out the form \(Name, Foreign Key, etc.\) and drag&drop the previously created ZIP-file onto the "Model bundle" input field and press "Upload".
 
@@ -524,7 +524,7 @@ which is always reserved by ViewAR engine for the ambient occlusion map
 
 9\) Rename the image file of the baked ambient occlusion map to "ambientocclusionmap.jpg" and ZIP it together with the FBX-file of your 3D scene.
 
-10\) Login to the [ViewAR Delevoper Portal](http://developer.viewar.com/user/login). Go to the 3D model upload page \(Content &gt; 3D Models &gt; +Upload new model\).
+10\) Login to the [ViewAR Delevoper Portal](https://portal.viewar.com/user/login). Go to the 3D model upload page \(Content &gt; 3D Models &gt; +Upload new model\).
 
 Fill out the form \(Name, Foreign Key, etc.\) and drag&drop the previously created ZIP-file onto the "Model bundle" input field and press "Upload".
 
@@ -794,7 +794,7 @@ Texturing a Parametric Model requires understanding possible modifications of th
 
 A good example of the use of Parametric Models is the [Markilux App](https://www.viewar.com/showcase/markilux/).
 
-> Development and integration of parametric models is a complex issue, therefore we strongly encourage you to use our support on that matter. Custom 3D objects may be requested via the [Request 3D Model Form](http://developer.viewar.com/jobs/add).
+> Development and integration of parametric models is a complex issue, therefore we strongly encourage you to use our support on that matter. Custom 3D objects may be requested via the [Request 3D Model Form](https://portal.viewar.com/jobs/add).
 
 ### Configurations
 

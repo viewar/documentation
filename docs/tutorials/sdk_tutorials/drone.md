@@ -61,7 +61,7 @@ Make sure that you have the following installed and ready:
 
 ### Login
 
-Before we start, make sure you're logged in with your [ViewAR Account](http://developer.viewar.com) because this is where your app will be linked to. The registration is easy and free.
+Before we start, make sure you're logged in with your [ViewAR Account](https://portal.viewar.com) because this is where your app will be linked to. The registration is easy and free.
 
 As soon as you're registered, into your terminal/command prompt go for:
 

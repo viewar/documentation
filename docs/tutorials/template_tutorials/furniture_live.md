@@ -17,7 +17,7 @@ All you need is a web browser and a web connection. No programming knowledge req
 
 ### Create an account
 
-Create a free user account on the [ViewAR Developer portal](https://developer.viewar.com).
+Create a free user account on the [ViewAR Developer portal](https://portal.viewar.com).
 
 ### Choose a template
 
@@ -52,7 +52,7 @@ In an IDE of your choice (for example WebStorm) navigate to a suitable directory
 - Node.js (version 6.0.0 or higher)
 - npm package manager (version 3 or higher)
 
-Furthermore, make sure that you have a ViewAR account. It'll provide you storage for your 3D models and an overview of the apps created. Register at: https://developer.viewar.com/
+Furthermore, make sure that you have a ViewAR account. It'll provide you storage for your 3D models and an overview of the apps created. Register at: https://portal.viewar.com/
 
 #### Install the ViewAR CLI
 
