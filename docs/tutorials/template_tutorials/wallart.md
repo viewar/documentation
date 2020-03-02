@@ -3,11 +3,11 @@ id: wallart
 title: Wall-ARt
 ---
 
-[Wall Art Template](https://www.viewar.com/template/wall-art/) is a **product visualisation app** dedicated to 2D objects with of a vertical orientation. Following this tutorial you'll learn how to use the demo version and, optionally, create your own from the ViewAR Template.
+[Wall Art Template](https://www.viewar.com/solutions/ar-product-visualization/) is a **product visualisation app** dedicated to 2D objects with of a vertical orientation. Following this tutorial you'll learn how to create your own using the ViewAR App Builder.
 
 ## App Builder
 
-[ViewAR™ AppBuilder](https://www.viewar.com/app-builder/) is the easiest way to build your augmented reality apps. It allows developers to build augmented reality and virtual reality apps based on HTML templates. It is a modular structure, utilising our almost 10-years-long development experience and lessons learned from over 50 projects. Ready-to-use templates allow for the user focus to be shifted to styling and content. The System is suitable for professional programmers as well as for beginners.
+ViewAR™ AppBuilder is the easiest way to build your augmented reality apps. It allows developers to build augmented reality and virtual reality apps based on HTML templates. It is a modular structure, utilising our almost 10-years-long development experience and lessons learned from over 50 projects. Ready-to-use templates allow for the user focus to be shifted to styling and content. The System is suitable for professional programmers as well as for beginners.
 
 ### Prerequisites
 
@@ -23,17 +23,20 @@ Browse through a list of available templates to find the **Wall Art Template**.
 
 ### Add app information
 
-Choose a unique app ID that will be used to access your application.  
-It is a good idea to use a syntax like: _company.project_ or _project.topic_.
+Type in the Project Name and Company Name. See below for an automatically generated App-ID - it will be used to access your application. You may leave it as-is or customize it.
 
 ### Style your app
 
-Customise your application with a user-friendly Configurator view. It is an easy and intuitive way to change colours of backgrounds, buttons and text. If you are familiar with CSS, check out the second tab. Properties of each element may be accessed Left-Click while holding Shift.
+Customise your application with a user-friendly Style tab. It is an easy and intuitive way to change colours of backgrounds, buttons and text. On the left-hand side you see a Global Menu, giving you an overview of all app screens; on the right-hand side - a Contextual Menu, offering access to styling of particular elements. If you are familiar with CSS, check out the second tab of the Contextual Menu.
 
 ### Add content
 
-Add content with the Content Manager. Some Sample Content is provided to get you started. Should you want to add your Custom Content straight away, use the button below. Be aware that you may only use 2D models in this template. Use the Picture Uploader (more about [Model Assistants](/docs/sdk/model-assistants 'Model Assistants')).
+The Content tab offers various ways to fill your app with content. If you are uploading your own images, remember to carefully define their real-world dimensions!
 Don't worry, you will be able to manage your models at any time, even after App publishing!
+
+### Customize
+
+In the Customize tab particular functionalities of the application may be toggled on and off. "Projects" stands for projects saving and loading, while "Shopping Cart" offers a summary of all the models available in your scene. The Google Tracking ID may also be set here.
 
 ### Test app
 
@@ -45,7 +48,7 @@ TODO: add deployment info
 
 ## CLI
 
-Wall Art is a product visualisation app dedicated to 2D objects with of vertical orientation. We'll show you how to use it and, optionally, create your own from the ViewAR Template.
+[Wall Art Template](https://www.viewar.com/solutions/ar-product-visualization/) is a **product visualisation app** dedicated to 2D objects with of a vertical orientation. Following this tutorial you'll learn how to create your own fusing the ViewAR CLI.
 
 ### Prerequisites
 
@@ -70,18 +73,20 @@ Next we can initialise a project in a dedicated directory:
 ### Initialise a template project
 
 - _Select the user account for this app:_ navigate to your account.<br>
-- _Select a project type:_ Choose the _Sample Template_ to access the Template List.<br>
-- _Choose a sample template:_ <br>`wall-art`<br>
+- _Select a project type:_ Choose the _Sample Project/Template_ to access the Template List.<br>
+- _Choose a sample template:_ <br>`Base6`<br>
 - _Enter the app ID:_ Define the _App ID_ you will be using to access your application through the SDK App. We suggest using a syntax of _company.project_.<br>
 - _Enter the app version:_ Unless you have a really good reason, stick to 1.0 as default.<br>
-- _Select tracker(s)_: Choose the _ARKit_ (for iOS) and/or _ARCore_ (for Android).
 
 ### Run application in the browser
 
+Great, your app is ready! Let's run it.
 You have 2 modes to choose from:<br>
 
-- <b>mock mode</b> (no 3D content, mock buttons for AR tracking simulation): <br>`npm run start:mock` <br>
-- <b>full browser mode</b> (download 3D content, no mock buttons for AR tracking simulation): <br>`npm run start`
+- <b>mock mode</b> - no 3D content, mock buttons for AR tracking simulation. Enables testing of AR functionalitites in the browser.
+<br>`npm run start:mock` <br>
+- <b>full browser mode</b> - downloads 3D content, however, the AR functionalitites testing is not possible.
+<br>`npm run start`
 
 ### UI Config
 
