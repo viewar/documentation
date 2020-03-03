@@ -14,7 +14,14 @@ Run `npm run build` on root level (not in /website anymore). This will automatic
 
 ## Changelog
 
-### [1.9.0](https://github.com/viewar/viewar-documentation/compare/v1.8.0...v1.8.1) (2020-02-21)
+### [1.10.0](https://github.com/viewar/viewar-documentation/compare/v1.9.0...v1.10.0) (2020-02-21)
+
+#### Features
+
+- **Google Analytics** Ad Google Analytics Tracking ID.
+- **tutorials** Update WallArt tutorials.
+
+### [1.9.0](https://github.com/viewar/viewar-documentation/compare/v1.8.0...v1.9.0) (2020-02-21)
 
 #### Features
 
