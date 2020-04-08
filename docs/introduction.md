@@ -13,7 +13,6 @@ Within almost 10 years of development, we have created an AR framework which we 
 
 Want to have an idea of the System capabilities? Start here:
 
-- [ViewAR Features](https://www.viewar.com/features/) - an overview of our System capabilities.
-- [ViewAR Showcases](https://www.viewar.com/showcases/) - chosen custom applications prepared for our Clients
-- [ViewAR Templates](https://www.viewar.com/templates/) - available free of charge for testing purposes. Simply download the ViewAR SDK App and try!
+- [ViewAR Solutions](https://www.viewar.com/solutions/) - an overview of our System Solutions.
+- [ViewAR Success Stories](https://www.viewar.com/success-stories/) - chosen custom applications prepared for our Clients
 
