@@ -62,10 +62,14 @@ A URL with marketing information for your application. It will be displayed in t
 
 - 1024 x 1024 px, png
 
+No alpha channel allowed.
+
 ###### 11. App Icon
 
 - for iPhone: 120 x 120 px
 - for iPad: 152 x 152 px (iPad) and 167 x 167 px (iPad Pro)
+
+No alpha channel allowed.
 
 ###### 12. Splash screen
 
@@ -141,6 +145,7 @@ The following input is obligatory:
   - Recommended resolution: 512 x 512px
   - 32-Bit-PNG, with alpha.
   - Maximum file size: 1024KB.
+  - No alpha allowed.
 
 * _Feature graphic_ - To publish an app and have it be featured anywhere on Google Play, a feature graphic is required. Your feature graphic is a powerful tool to show off your creative assets and attract new users. Your feature graphic is displayed before your screenshots on your app’s store listing. If you’ve added a promo video, a Play button will overlay on your feature graphic so users can watch your promo video.
   Important: To display a feature graphic on your app’s store listing, you also need to add a promo video.

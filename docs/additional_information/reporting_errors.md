@@ -5,9 +5,8 @@ title: Reporting Errors
 
 ### Reporting Application Errors
 
-If you encounter an error in a ViewAR Application, please let us know!
-
-Below you'll find guidelines on how to prepare your feedback in order to let us quickly identify the problem:
+If you encounter an error in a ViewAR Application, please do let us know as soon as possible!
+Because errors may have various sources, in order to help us quickly identify the issue, please try to provide as much information as possible. In this case: the more the merrier. Below you'll find some guidelines to get you started.
 
 #### Application description
 
@@ -36,6 +35,11 @@ Precisely describe the steps neccessary to reproduce the error:
 #### Screenshots / Screen recording
 
 Take a series of screenshots / screenrecording documentating how to re-create the error. Make sure that all factors which may be influencing the performance of the application are visible (camera image, lighting conditions, actions triggered).
+
+For iOS devices, you may use an in-built Screen Recording functionality.
+Here is how to find it: https://support.apple.com/en-us/HT207935
+
+For Android, you will need a thrid-party application of your choosing.
 
 #### Situation description
 
