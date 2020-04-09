@@ -14,7 +14,7 @@ Run `npm run build` on root level (not in /website anymore). This will automatic
 
 ## Changelog
 
-### [1.10.0](https://github.com/viewar/viewar-documentation/compare/v1.9.0...v1.10.0) (2020-02-21)
+### [1.10.0](https://github.com/viewar/viewar-documentation/compare/v1.9.0...v1.10.0) (2020-03-03)
 
 #### Features
 
