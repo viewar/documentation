@@ -27,7 +27,8 @@ Following this tutorial you'll learn how to use the demo version and, optionally
 
 ##### Setup:
 
-Download the ViewAR SDK App from the App Store or Google Play Store.
+- For iOS (iPhone): Download the ViewAR SDK App from the App Store.
+- For Android: Download the ViewAR SDK App from the Google Play Store.
 
 ##### Using the app:
 
