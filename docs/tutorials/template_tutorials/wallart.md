@@ -15,7 +15,7 @@ All you need is a web browser and a web connection. No programming knowledge req
 
 ### Create an account
 
-Create a free user account on the [ViewAR Developer Portal](https://portal.viewar.com)
+Create a free user account on the [ViewAR Developer Portal](https://portal.viewar.com).
 
 ### Choose a template
 
@@ -54,8 +54,8 @@ TODO: add deployment info
 
 In an IDE of your choice (for example WebStorm) navigate to a suitable directory and make sure that you have the following installed:
 
-- Node.js (version 6.0.0 or higher)
-- npm package manager (version 3 or higher)
+- Node.js (version 11.0.0 or higher)
+- npm package manager (version 6 or higher)
 
 ### Install the ViewAR CLI
 
@@ -63,6 +63,12 @@ The easiest way to setup a new ViewAR application is to use the ViewAR CLI.
 In the terminal run:
 
 `npm install -g viewar-cli`.
+
+#### Login
+
+It's necessary to login with your ViewAR account. Run:
+
+`viewar login`
 
 ### Create your first Project
 
@@ -76,7 +82,7 @@ Next we can initialise a project in a dedicated directory:
 - _Select a project type:_ Choose the _Sample Project/Template_ to access the Template List.<br>
 - _Choose a sample template:_ <br>`Base6`<br>
 - _Enter the app ID:_ Define the _App ID_ you will be using to access your application through the SDK App. We suggest using a syntax of _company.project_.<br>
-- _Enter the app version:_ Unless you have a really good reason, stick to 1.0 as default.<br>
+- _Enter the app version:_ Unless you have a really good reason, stick to 1.0 as a default.<br>
 
 ### Run application in the browser
 
@@ -87,6 +93,22 @@ You have 2 modes to choose from:<br>
 <br>`npm run start:mock` <br>
 - <b>full browser mode</b> - downloads 3D content, however, the AR functionalitites testing is not possible.
 <br>`npm run start`
+
+### Test on your mobile device
+
+You can test your application while developing using the ViewAR SDK app from the Appstore or Google Play Store. Start the ViewAR SDK app, enter the App ID, enter version, enable LAN development mode and update your IP address in the input field.
+
+### Deploy/save your changes
+
+To save your changes to the server, use this command:
+
+`viewar deploy APP-ID VERSION`
+
+This will build your app in release mode and save the changes to the server. After this, your app will be updated and everyone starting it will get the changes.
+
+### Experiment!
+
+Now that you have your app all set and running, it's time to play around with it a bit. Feel free to alter the existing functionalities or extend the app with some of your own choosing!
 
 ### UI Config
 
