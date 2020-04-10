@@ -17,7 +17,7 @@ All you need is a web browser and a web connection. No programming knowledge req
 
 ### Create an account
 
-Create a free user account on the [ViewAR Developer portal](https://portal.viewar.com).
+Create a free user account on the [ViewAR Developer Portal](https://portal.viewar.com).
 
 ### Choose a template
 
@@ -25,15 +25,19 @@ Browse through a list of available templates to find the **Furniture Live**.
 
 ### Add app information
 
-Choose a unique app ID that will be used to access your application. It is a good idea to use a syntax like: _company.project_ or _project.topic_.
+Type in the Project Name and Company Name. See below for an automatically generated App-ID - it will be used to access your application. You may leave it as-is or customize it.
 
 ### Style your app
 
-Customise your application with a user-friendly Configurator view. It is an easy and intuitive way to change colours of backgrounds, buttons and text. If you are familiar with CSS, check out the second tab. Properties of each element may be accessed Left-Click while holding Shift.
+Customise your application with a user-friendly Style tab. It is an easy and intuitive way to change colours of backgrounds, buttons and text. On the left-hand side you see a Global Menu, giving you an overview of all app screens; on the right-hand side - a Contextual Menu, offering access to styling of particular elements. If you are familiar with CSS, check out the second tab of the Contextual Menu.
 
 ### Add content
 
-Add content with the Content Manager. Some Sample Content is provided to get you started. Should you want to add your Custom Content straight away, use the button below. Don't worry, you will be able to manage your models at any time, even after App publishing!
+The Content tab offers various ways to fill your app with content. Some Sample Content is provided to get you started. Don't worry, you will be able to manage your models at any time, even after App publishing!
+
+### Customize
+
+In the Customize tab particular functionalities of the application may be toggled on and off. "Projects" stands for projects saving and loading, while "Shopping Cart" offers a summary of all the models available in your scene. The Google Tracking ID may also be set here.
 
 ### Test the app
 
@@ -49,17 +53,17 @@ Following this tutorial you'll learn how to create your own version of the Furni
 
 In an IDE of your choice (for example WebStorm) navigate to a suitable directory and make sure that you have the following installed:
 
-- Node.js (version 6.0.0 or higher)
-- npm package manager (version 3 or higher)
+- Node.js (version 11.0.0 or higher)
+- npm package manager (version 6 or higher)
 
 Furthermore, make sure that you have a ViewAR account. It'll provide you storage for your 3D models and an overview of the apps created. Register at: https://portal.viewar.com/
 
-#### Install the ViewAR CLI
+### Install the ViewAR CLI
 
 The easiest way to setup a new ViewAR application is to use the ViewAR CLI.
 In the terminal run:
 
-`npm install -g viewar`.
+`npm install -g viewar-cli`.
 
 #### Login
 
@@ -67,17 +71,9 @@ It's necessary to login with your ViewAR account. Run:
 
 `viewar login`
 
-#### Create your first Project
+### Create your first Project
 
-Now, we need to create a JavaScript project with a copy of all Template files in a proper structure.
-
-There will be common files like `package.json`, a src directory containing an `index.html` as well as an `index.js`, and couple other JavaScript files imported from the `index.js`.
-
-In addition to those, there will be a `.viewar-config` file containing information used to deploy the project: _appId, appVersion, id, and a token_. The _id_ and the _token_ will be unique and are fetched during the new app creation process.
-
-### Initialise a new project
-
-Let's initialise a project in a dedicated directory:
+Next we can initialise a project in a dedicated directory:
 
 `viewar init PROJECTNAME`
 
@@ -85,22 +81,19 @@ Let's initialise a project in a dedicated directory:
 
 - _Select the user account for this app:_ navigate to your account.<br>
 - _Select a project type:_ Choose the _Sample Template_ to access the Template List.<br>
-- _Choose a sample template:_ <br>`base6`<br>
+- _Choose a sample template:_ <br>`Base6`<br>
 - _Enter the app ID:_ Define the _App ID_ you will be using to access your application through the SDK App. We suggest using a syntax of _company.project_.<br>
-- _Enter the app version:_ Unless you have a really good reason, stick to 1.0 as default.<br>
-- _Select tracker(s)_: Choose the _ARKit_ (for iOS) and/or _ARCore_ (for Android).
+- _Enter the app version:_ Unless you have a really good reason, stick to 1.0 as a default.<br>
 
-### Run your app (development mode)
+### Run application in the browser
 
-To develop your app you can run it in your local browser.
+Great, your app is ready! Let's run it.
+You have 2 modes to choose from:<br>
 
-`npm run start:mock`
-
-This will start the app without the 3D engine, letting you simulate AR emitters with the buttons in the right lower corner. You will also see a representation of the scene, letting you simulate selections. This mode is ideal for development since it loads very fast. You can also use this mode to connect your device(see further below).
-
-`npm run start`
-
-This will start the app with the 3D engine (WebGL). It takes a bit longer to load but allows you to load 3D scenes and use VR features. This mode is not recommended for development.
+- <b>mock mode</b> - no 3D content, mock buttons for AR tracking simulation. Enables testing of AR functionalitites in the browser.
+<br>`npm run start:mock` <br>
+- <b>full browser mode</b> - downloads 3D content, however, the AR functionalitites testing is not possible.
+<br>`npm run start`
 
 ### Test on your mobile device
 
@@ -117,13 +110,6 @@ This will build your app in release mode and save the changes to the server. Aft
 ### Experiment!
 
 Now that you have your app all set and running, it's time to play around with it a bit. Feel free to alter the existing functionalities or extend the app with some of your own choosing!
-
-Browse our SDK Documentation for more information.
-
-Here are some topics to get you started:
-
-- [Basic Concepts](../../sdk/basic_concepts.md)
-- [JavaScript API Quickstart](https://viewar.github.io/documentation/)
 
 ## UI Config
 
