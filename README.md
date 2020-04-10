@@ -14,6 +14,13 @@ Run `npm run build` on root level (not in /website anymore). This will automatic
 
 ## Changelog
 
+### [1.11.0](https://github.com/viewar/viewar-documentation/compare/v1.10.1...v1.11.) (2020-04-10)
+
+#### Features
+
+- **Tutorials** Updated Furniture Live and Wall Art Tutorials (new CLI version etc.).
+- **Manuals** Updated Furniture Live Manual.
+
 ### [1.10.1](https://github.com/viewar/viewar-documentation/compare/v1.10.0...v1.10.1) (2020-04-09)
 
 #### Features
