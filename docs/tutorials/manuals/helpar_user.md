@@ -30,13 +30,13 @@ Start the ViewAR SDK App. You can either use our sample demo (App ID: **helpar.d
 
 Click on _Call Support_ to initiate a remote assistance call.
 
-Film the object and move a bit (steps sideways to left and right) to initiate the call.
+Film the object and move a bit (steps sideways left and right) to initiate the call.
 
 ![helpar - User Manual - Screenshots - 1](assets/helpar%20-%20Tutorial%20-%201.jpg)
 
-When the call gets answered, the camera image will come back. Film the object from different sides in order to let the application create a decent number of feature points. _(Feature points are characteristic points in the camera image - clear changes of colour, object edges etc.. They are used to create a 3D representation of the object/scene used for the tracking to hold ion place.)_
+When the call gets answered, the camera image will come back. Film the object from different sides in order to let the application create a decent number of feature points. _(Feature points are characteristic points in the camera image - clear changes of colour, object edges etc. They are used to create a 3D representation of the object/scene used for the tracking to hold in place.)_
 
-In the meantime, you may start a conversation with the assistant who has answered your call. She/he can also see the camera image from your device.
+In the meantime, you may start a conversation with the assistant who has answered your call. S/he can also see the camera image from your device.
 
 ![helpar - User Manual - Screenshots - 2](assets/helpar%20-%20Tutorial%20-%202.jpg)
 
@@ -46,7 +46,7 @@ When the feature points are in place both of you may placing annotations on the 
 
 Due to the nature of tracking, at the moment the annotations may only be placed on and in between the feature points. Try thinking about the feature points as a tool to determine the depth of your touch in the 3D space. We are constantly working on improving the system, therefore don't get frustrated if you cannot get something right the first time ;)
 
-Due to the 3D tracking you may walk around it without loosing the notes.
+Due to the 3D tracking you may walk around it without losing the notes.
 
 After getting all the necessary information, you may end the call.
 
