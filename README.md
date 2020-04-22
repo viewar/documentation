@@ -14,7 +14,14 @@ Run `npm run build` on root level (not in /website anymore). This will automatic
 
 ## Changelog
 
-### [1.11.0](https://github.com/viewar/viewar-documentation/compare/v1.10.1...v1.11.) (2020-04-10)
+### [1.11.1](https://github.com/viewar/viewar-documentation/compare/v1.11.0...v1.11.1) (2020-04-10)
+
+#### Features
+
+- **Manuals** Updated helpar manuals (client and agent)
+- **3D Models - Sample Models** Updated Sample Models list and instructions.
+
+### [1.11.0](https://github.com/viewar/viewar-documentation/compare/v1.10.1...v1.11.0) (2020-04-10)
 
 #### Features
 
