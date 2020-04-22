@@ -5,9 +5,9 @@ title: Sample Models
 
 To get you started, our Team has prepared a few Sample Models. Let's play around with one of them, so that you get a grasp of how things work!
 
-## Download
+## Download a sample model
 
-Go to Support/3D Sample Files \([link](https://portal.viewar.com/downloads)\) and download Mammoth Chair 3D model.
+\([Download](https://www.viewar.com/downloads/46308_Mammoth_Chair_source.zip)\) a sample 3D model of a Mammoth Chair.
 <br>The zip file contains:
 
 - _mammoth_armchair_model5.fbx_ - 3D model geometry
@@ -18,7 +18,7 @@ Go to Support/3D Sample Files \([link](https://portal.viewar.com/downloads)\) an
 
 - _Shadow.png_- shadow casted by the chair on the floor plane
 
-Now, download **Mammoth Chair Sample Textures**.
+Now, \([download](https://www.viewar.com/downloads/MammothChairSampleTextures.zip)\) **Mammoth Chair Sample Textures**.
 <br>The zip file contains:
 
 - _123.jpg_ - light gray fabric texture
