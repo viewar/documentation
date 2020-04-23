@@ -14,11 +14,20 @@ The ViewAR System supports three distinct model types: floor, wall & ceiling. Th
 #### Floor models
 Models standing on the floor - chairs, tables, sofas, bikes, but also trees, buildings, people.
 
+![](../assets/ModelThumbnail-105554.png)
+_Example: Mammoth Chair_
+
 #### Wall models
 Models which can be hang/attached to a wall - lamps, paintings, clocks, TVs, loudspeakers, but also fireplaces and widows. 
 
+![](../assets/ModelThumbnail-96068.png)
+_Example: Wall Lamp_
+
 #### Ceiling models
 Models attached to the ceiling - lamps, ceiling windows.
+
+![](../assets/ModelThumbnail-105643.png)
+_Example: Darlana Ceiling Lamp_
 
 ## Edit
 
