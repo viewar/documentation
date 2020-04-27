@@ -3,171 +3,296 @@ id: custom_models
 title: Custom Models
 ---
 
+# Custom Models
 The ViewAR System provides a web interface for model upload and management.
 
-## Content upload
-
+## Upload Content
 ### Login
+Create a free account and login to the ViewAR Developer Portal.
 
-Create a free account and login to the [ViewAR Delevoper Portal](https://portal.viewar.com).
+![](../assets/3DContentDocumentation_1_SignUp.jpg)
 
-### Category
+![](../assets/3DContentDocumentation_2_LogIn.jpg)
 
-Go to the _Content_ tab, select _Categories_ and create a new _Category_.
+### Choose a Project
+First you need to create a project. Click on “Create Project”
 
-![](../assets/MenueCategories.jpg)
+![](../assets/3DContentDocumentation_3_CreateProject.jpg)
 
-Click on _+ Create new category:_
-![](../assets/EmptyCategories.jpg)
-![](../assets/CreateEditCategories.jpg)
+You’ll be offered with various templates to choose from. For this guide we are going to use Furniture Live as a template and use default settings for everything, you can learn more about template and app-creation here: https://documentation.viewar.com/docs/creating_apps
 
-Fill in following data:
+![](../assets/3DContentDocumentation_4_ChooseTemplate.jpg)
 
-- **Name**: Input your Category name here
+![](../assets/3DContentDocumentation_5_AppInformation.jpg)
 
-- **Thumbnail:** Upload your Category Thumbnail here \(.jpg or .png\)
+If you already created a project beforehand, click on “My Projects” to the left of your Profile Tab and click on the App-ID that you want to work with.
 
-- **Parent Category:** Select a parent category if you want to create a sub-category
+![](../assets/3DContentDocumentation_6_MyProjects.jpg)
 
-- **Active:** If you want the category to be visible in your app, check.
+### Upload Content
+Once the project you want to work with is selected, click on “Content”. You’ll find sample content in there that you can play around with.
 
-Save!
+![](../assets/3DContentDocumentation_7_Style.jpg)
 
-### 3D Model
+![](../assets/3DContentDocumentation_8_Content.jpg)
 
-To go to the model section, go to "Content" and then click on "3D Models"
-![](../assets/3DModelsMenue.jpg)
+#### +Add Content
+##### Upload:
+You can either drag and drop your files directly into the content overview, or click “+Add Content”, drag and drop in the “Upload Tab” or click into the marked area to browse your files in the explorer”. Important: In order to upload files there needs to be a 3D file included.
+Select the content you want to upload. Please make sure that your upload consists of one 3d-file only. We currently support -FBX and .OBJ file formats. You can either upload your 3D-file and textures separately or zipped in one file.
+You can also upload your textures after you’ve uploaded your 3D file and update your content in a later step.
 
-#### Uploading a model
+![](../assets/3DContentDocumentation_9_UploadDragDropZip.jpg)
 
-> The ViewAR System is using a [Left-handed Cartesian Coordinate System](../additional_information/left-hand-coordinate-system.md).
+![](../assets/3DContentDocumentation_10_UploadDragDropFiles.jpg)
 
-To upload a new Model, click on _Upload new model:_
+![](../assets/3DContentDocumentation_11_Upload.jpg)
 
-![](../assetsts/3DModelsEmpty.jpg)
+##### My Library
+Here you can select all models that you previously uploaded in your account. Select the ones that you want to import into this project as well. Either scroll down the list or use the search function and click in the check boxes for the models that you want to import. Once you selected you models, click on “Import”.
 
-![](../assets/UploadModelEmpty.jpg)
+![](../assets/3DContentDocumentation_12_MyLibrary.jpg)
 
-- **Name:** Choose a name: “Brand - Item Name”
+##### Public Library
+Here you can find a selection of models provided by us for usage in your project.
 
-- **Description:** Enter a description for your model.
+![](../assets/3DContentDocumentation_13_PublicLibrary.jpg)
 
-- **Foreign Key:** Enter the item ID, used by the other systems. The newest model with this Item ID can be referenced in a scene within the account.
+##### Import
+Coming Soon
 
-- **Units:** Select the unit size of your model. The default is "cm", also possible are "mm", "m", "inch", "feet".
+##### Request
+Coming Soon
 
-- **Auth:** Enter authentication passwords if needed and if models are supposed to be invisible without login. Authentication can be for example “Review”.
+### Manage Content
+After uploading the model is opened in our editor. If you want to edit models from the content overview, click on “Content”. Here you can set models to active/inactive (sets if the model is shown in your application) by clicking the slider of the model bottom right. Default is on (green, of is grey). The three small dots to the top right open a menu, where you can “Edit” (opens the model editor), “Move” your model to a different category, “Rename” your model or “Delete” the model.
+You can sort the order of your models via the drop down menu to the right of “+Add content” and “New category” or search for models in the search bar on the far right.
 
-- **Up-Axis:** Choose the up axis of your 3D model, either Y or Z. Default is Y.
+![](../assets/3DContentDocumentation_14_EditModel.jpg)
 
-- **Type:** Choose Type \(Model/Environment\). Use model for items and Environment for rooms/apartments/walls or other objects you should not move/select. Models will collide with Environment models.
+![](../assets/3DContentDocumentation_17_MoveFile.jpg)
 
-- **Scalable:** Define if the model should be scalable in-app. Usually you don't want to allow this.
+To create a new category click on “New category” and input a name. This will create a folder. You can rename, delete and move categories same as models. IMPORTANT: If you delete a category, all contained categories and models will be deleted as well.
 
-- **Orientation:** Choose Orientation \(Horizontal/Vertical\). Floor objects should be "Horizontal", "Vertical" is used for objects that should be moved vertically \(wall objects\).
+![](../assets/3DContentDocumentation_15_CreateCategory.jpg)
 
-- **Category:** Select the category for the model. Models in "No category" won't show up in-app and can only by added to the scene by ID. To create a new category, see above.
+![](../assets/3DContentDocumentation_16_EditCategory.jpg)
 
-- **Model Bundle:** Select your Model Bundle \(Archive with .fbx, textures and thumbnail.jpg\). <!--- TODO: Link or add a detailed description of what a bundle should contain! --->
+## Model Editor
+### Properties
+Here you define Model specific information.
 
-- **Lighting:** For models with baked lighting select "Baked Lighting". "Scene lights" will use the engine lights and the standard settings from the phong shader.
+![](../assets/3DContentDocumentation_18_ModelProperties1.jpg)
 
-- **Thumbnail:** You can also upload a thumbnail here or update the old one. However it’s better to include it within the model bundle zip.
+![](../assets/3DContentDocumentation_19_ModelProperties2.jpg)
 
-- **Active:** Default on. Non-active objects won’t be visible in the app.
+#### Name
+Input the Display Name, visible in the app and overview
 
-- **Accept Terms and Conditions**: Required for upload.
+#### 3D-Model Update
+Update your existing model files (.fbx, .obj, or .zip).
 
-![](../assets/UploadModel.jpg)
+#### Preview Image
+This image is used as a preview thumb within the app and in the portal content overview. You can upload the image by including it in the Model Upload (needs to be named thumbnail.jpg or thumbnail.png), drag and drop it in the box or clicking into the box and browsing for the file.
 
-- **Save/Upload:**
-  ![](../assets/MaterialEditorEmpty.jpg)![](../assets/3DModels.jpg)
-  Once the Upload is complete, you will end up in the Material Editor, for more information about the material editor, go to [ViewAR Material Editor](#ViewAR Material Editor)
+#### Description
+Add a model description
 
-## Model List
+#### Foreign Key
+This ID is used in various external services (e.g. Shopping Cart).
 
-Actions that are possible can be found in the _Actions_ Column: _Web 3D View, Material Editor, Edit Model, Delete Model_ \(left to right\)
+#### Scaling Units
+Set the same scaling unit as used in your 3D creation software. Available are mm, cm (default), m, inches, feet.
 
-### Preview a Model
+#### Scalable
+Allows the model to be scaled. Default off.
 
-Click on the icon and the Singleproductwebviewer will open in a new tab. When in the _Preview Mode_:
+#### External URL
+Entering an URL activates a button in the shopping list which links to the provided URL.
 
-- **Rotate:** Left Mouse
-- **Pan:** Right Mouse
-- **Zoom:** Scroll Mouse Wheel
+#### Edit Model Data
+Only use if you know what you are doing, changing anything can break the model.
 
-### Material Editor
+### Materials
+Here you can set up material properties and upload textures.
 
-For more information about the material editor, go to [ViewAR Material Editor](#ViewAR Material Editor)
+#### General Guidelines
+Only enable channels that you are actually using. Only upload texture maps if necessary. Instead of uploading uniform color/greyscale maps with just one color value, consider setting the colors or values accordingly instead. If you still want to use uniform color maps, use 16x16 resolution maps.
+Sliders only work within Default values (0-1), however you can set values freely, depending on the Channel, you might get broken results.
+Save your changes frequently in the top right corner. If you want to discard your changes, click on discard. IMPORTANT: This resets your model to your upload state. This change can not be undone!
 
-- **Edit Model:** Same as upload plus Data json editor. Only edit the Data json if you know what you are doing.
+#### Material selection
+Select the material that you want to edit. The available materials are defined in the 3D content creation and can only be changed in 3D software.
 
-- **Delete Model:** Removes the model from the list.
+![](../assets/3DContentDocumentation_20_Materials.jpg)
 
-## Model Upload Assistants
+#### Depth Write
+Sets whether or not this pass renders with depth-buffer writing on or not.
+If depth-buffer writing is on, whenever a pixel is written to the frame buffer the depth buffer is updated with the depth value of that new pixel, thus affecting future rendering operations if future pixels are behind this one. If depth writing is off, pixels are written without updating the depth buffer. Depth writing should normally be on but can be turned off when rendering static backgrounds or when rendering a collection of transparent objects at the end of a scene so that they overlap each other correctly.
 
-Uploading 3D Content may be confusing, doesn't it? That's why we've prepared Model Upload Assistants to make it easier for you.
+#### Depth Check
+Sets whether or not this pass renders with depth-buffer checking on or not.
+If depth-buffer checking is on, whenever a pixel is about to be written to the frame buffer the depth buffer is checked to see if the pixel is in front of all other pixels written at that point. If not, the pixel is not written. If depth checking is off, pixels are written no matter what has been rendered before. Also see depth_func for more advanced depth check configuration.
 
-### Picture-Uploader
+#### DS
+Double Sided rendering enabled or disabled. Default off, on affects performance, but is useful for geometry that is not modeled double sided.
 
-![](../assets/uploadAssistant-pictureUploader.png)
+#### Texture Transform
+Adjusting texture repetition/scaling as well as placement. If you want to go outside of the Slider Ranges, use numerical inputs. 
 
-Use it for uploading images to be used as pictures placed on the walls. Files uploaded with the use of this assistant will have a vertical orientation and be interpreted as a poster/painting. Using this assistant will require setting a real-world size of the graphics.
+![](../assets/3DContentDocumentation_23_TextureTransform.jpg)
 
-### Video-Uploader
+#### Base Color / Albedo
+Color Information of the material. You can assign a base color or base color map, as well as the uv set and blendmode of base color and base color map.
 
-![](../assets/uploadAssistant-videoUploader.png)
+![](../assets/3DContentDocumentation_24_BaseColor.jpg)
 
-Use it for uploading clips to be used as videos. Files uploaded with the use of this assistant will have a vertical orientation. Using this assistant will require setting a real-world size of the graphics.
+#### UV-Set:
+If you have multiple uvsets, select the one that should be used by this channel
 
-### Custom 3D-Uploader
+#### Apply Texture Transform
+Define if the texture transform settings affect this channel or not
 
-![](../assets/uploadAssistant-custom3DUploader.png)
+#### Base Color
+Set the Base color without using a map
 
-Use it for uploading custom 3D models. This mode is intended for experienced 3D designers and enables for definition of advanced settings.
+#### Base Color Map
+To Choose a Base Color Map click on the sphere. The Texture Window will open up.
 
-- **Name** - Give your model a name which will be displayed in the app.
+##### Model Textures
+Here you can find textures that you uploaded with the model itself (like shadow maps, thumbnails, ambient occlusion maps. We recommend uploading textures together with the model that can not be reused and are specific to a model.
+To select a texture, click on the thumbnail. To delete a texture click on three small dots in the top right of the thumbnail and select delete.
+Use the item sorting or search functions if you have a lot of textures.
 
-- **Foreign Key** - Assign your model a foreign key which will be used to access the model through the app.
+![](../assets/3DContentDocumentation_31_ModelTextures.jpg)
 
-- **Description** - Model description may be used e.g. for displaying product information in a sales application.
+##### Shared Textures
+Shared textures are shared within an account. To upload new textures drag and drop the files into the window or click on “+Upload files” to browse for it.
+To select a texture to be used in the channel, click on the thumbnail. To delete a texture click on three small dots in the top right of the thumbnail and select delete.
+Use the item sorting or search functions if you have a lot of textures.
 
-- **Categories** - Categories are used to group models. This way batches of models may be activated and deactivated at once. Moreover, categories may be used to group models in the app. An example use may be seen in the Furniture Live Template.
+![](../assets/3DContentDocumentation_32_SharedTextures.jpg)
 
-- **Preview Image** - This image will be used as a model thumbnail. The recommended size would be 512 x 512 px. It's a good practice position the model in the center of the picture with wide margins and to use a solid (preferably white) or transparent background, so that the image would blend seamlessly in the UI set up, no matter the device. Choose JPG/PNG format and Save for Web setting.
+#### Mix-Mode
+Defines how the Base Color and Base Color Map are mixed. Base Color Map (if used) will be on top of the Base Color. Default Mix-Mode is Replace.
 
-- **Scaling - Units** - Model units.
+#### Intensity
+Adjusts the intensity of the Blending of Base Color and Base Color Map
 
-- **Model Bundle** - Upload your 3D file here.
+#### Surface / Normals
+For detail surface height information using normal maps.
 
-- **Type** - Generally, there are 2 types of models to be used in the scene - the ones requiring 3D data and the ones _not_ requiring 3D data. For more details, please refer to the list below:
+#### UV-Set:
+If you have multiple uvsets, select the one that should be used by this channel
 
-  - **3D data**
+#### Apply Texture Transform
+Define if the texture transform settings affect this channel or not
 
-    - **Model** - standard 3D model. By default, the user will be able to interact with it.
-    - **Environment** - 3D model with a defined position, not interactive.
+#### Normal Map
+Select Normal Map
 
-  - **No 3D data**
-    - **Assembly** - A set of models with fixed positions. References to other models which are to be put in one scene container.
-    - **Configurable** - Configuration data.
-    - **References** - If you're working on an exceptionally heavy model (e.g. a building with a complex facade), it might be handy to split it into smaller pieces. In order to inform an application which parts should be loaded in the scene and in which order, a _reference_ model is created.
-    - **Data** - It may be used as additional information provided to the app.
+![](../assets/3DContentDocumentation_25_NormalMap.jpg)
 
-- **Source Download / USDZ** - Sharing and creating USDZ files requires this setting to be on. WARNING: If your models are sensitive data, disable this setting.
+#### Invert Red/X, Green/Y, Blue/Z
+Depending on how and what for Normal Maps are created, the normal orientation is different. If the Normal Map looks wrong, try inverting the channels. Usually you just need to invert the Green/Y channel.
 
-- **Data** - Input field to provide any additional data useful for handling the model. This data may also be accessed through the app in the following way:
+#### Intensity
+Adjusts the intensity of the Normal Map
 
-```
-const description = await model.downloadDescription()
-description.data
-```
+#### Metalness
+Defines whether or not the material is metallic. Either use a value or map. White is metallic (1), black is non-metallic' (0). If there are are no metallic values in your material, leave this channel disabled
 
-## Custom Model Info
+![](../assets/3DContentDocumentation_26_Metalness.jpg)
+
+#### UV-Set:
+If you have multiple uvsets, select the one that should be used by this channel
+
+##### Apply Texture Transform
+Define if the texture transform settings affect this channel or not
+
+#### Metalness Map
+Select Metalness Map
+
+##### Intensity
+Sets the Metallic value of the channel (metalness values usually are 0 OR 1 values and only in special cases something in between). If a Metalness Map is used adjusts the blending between Map and value.
+
+#### Roughness
+Defines how rough/reflective the material is. Either use a value or a map. White is rough (1), black is reflective (0).
+
+![](../assets/3DContentDocumentation_27_Roughness.jpg)
+
+#### UV-Set:
+If you have multiple uvsets, select the one that should be used by this channel
+
+##### Apply Texture Transform
+Define if the texture transform settings affect this channel or not
+
+#### Roughness Map
+Select Roughness Map
+
+##### Invert Roughness Map
+Roughness Maps are basically inverted Glossiness Maps, to reuse them, you can just invert them here.
+
+##### Intensity
+Sets the roughness value of the channel. If a Roughness Map is used adjusts the blending between Map and value. (Roughness values usually are between 0 and 1, but you can adjust the map further if you don’t get the expected result with your map).
+
+#### Occlusion
+Ambient Occlusion or Light-maps. Neutral lighting is recommended for AR usage. White is 1, Black is 0. If you don’t use an Occlusion Map, enable this channel only if you want to adjust the brightness of you Base Color Map.
+
+![](../assets/3DContentDocumentation_28_Occlusion.jpg)
+
+#### UV-Set:
+If you have multiple uvsets, select the one that should be used by this channel
+
+##### Apply Texture Transform
+Define if the texture transform settings affect this channel or not
+
+#### Occlusion Map
+Select Occlusion Map
+
+##### Intensity
+Sets the occlusion value of the channel. If an Occlusion Map is used adjusts the blending between Map and value. (Occlusion values usually are between 0 and 1, but you can adjust the map further if you don’t get the expected result with your map).
+
+#### Emissive
+"If the material glows, set the glow with emissive color, map and/or Intensity". You can define the emissive color and intensity as well as the emissive areas in an Emissive Map. You can define the emissive color and intensity in the Emissive Channel. You can also adjust the Emissive Map with Emissive Color and Intensity Values.
+
+![](../assets/3DContentDocumentation_29_Emissive.jpg)
+
+#### UV-Set:
+If you have multiple uvsets, select the one that should be used by this channel
+
+##### Apply Texture Transform
+Define if the texture transform settings affect this channel or not
+
+#### Emissive Map
+Select Emissive Map
+
+##### Emissive Color
+Sets the color of the emissive material
+
+##### Intensity
+Sets the intensity of the emissive material.
+
+#### Import Materials
+If you have already set up materials in other models that have the same material names as this model, you can import the materials. Click on “Import Materials” from the bottom. A window will open where you can select the model that you want to import the materials from. Importing materials that have a different naming scheme won’t work. Once you selected the model by clicking on the check box, click “Clone Materials”
+
+![](../assets/3DContentDocumentation_33_ImportMaterials.jpg)
+
+##### Save your changes
+Make sure to save your changes!
+
+![](../assets/3DContentDocumentation_30_SaveChanges.jpg)
+
+### Convert
+Coming soon.
+
+## Advanced
+
+### Custom Model Info
 
 In the ViewAR System 3D models come with additional information such as _ID, foreign key, name, description, dimensions_. They may be accessed and edited either for each model separately \(by clicking the _Edit_ icon in the _Model List_\) or uploaded as an Excel Sheet containing multiple models information.
 
-### Download
-
+#### Download
 An Excel Sheet containing information about models in a specific account may be downloaded using the following link: [https://develper.viewar.com/custom/universal/action:download](https://develper.viewar.com/custom/universal/action:download).
 
 > Keep in mind that for this functionality to work, you must be logged in!
@@ -196,7 +321,7 @@ An portion of an example table:
 
 > Make sure that you keep a backup copy of the sheet, so that you can restore your data if you make a mistake.
 
-### Upload / download
+#### Batch Upload/Download
 
 There is a way to manage information about model in a specific account through an Excel Sheet.
 
@@ -205,6 +330,315 @@ To download the file, log into your account and go to the following URL: [https:
 You may now edit the file locally and upload it, when you're done. There is no need to keep all rows in your table - you may update only the ones which require a change. The models are recognised by the _*Model ID*_, therefore pay special attention _not to change it_!
 
 To upload an updated file, log into your account and go to the following URL: [https://portal.viewar.com/custom/universal/action:upload](https://portal.viewar.com/custom/universal/action:upload).
+
+### Snapping
+
+When inserting a model in a scene, it may be useful to use another model as a reference for the new model position.
+
+#### Example use case
+
+To illustrate, imagine a product visualisation application, where a user is allowed to choose between different table tops. Every table top has not only different set of materials provided, but also a distinct shape and dimensions. Moreover, table legs on which those tops are to be placed also have their individual heights and shapes. Normally, in such a case, every time a switch of a table element was to be made, a set of information about the current properties of all elements would have to be retrieved and processed before a new element would be inserted. Even worse - what if the container with the table elements was moved? Or if we were to replace 20 table tops at once?
+
+It would be helpful to make the models pull to one another. Furthermore, it would be even better to have them pull one another just in one direction, so that the table remained on the ground with the table top laying peacefully on it, instead of floating in the thin air, if a shorter leg was introduced.
+
+#### Snappoints
+
+The snapping settings are handled by introducing a pair of matching **Snappoints** - one in each model (one model, however, may contain multiple Snappoints, as long as they don't overlap). They are generated automatically by the ViewAR System Converter on the basis of special cubes inserted by 3D Artists in the models. It may seem tricky at first, but let us guide you through the process and it should become clear quite soon.
+
+> The ViewAR System Converter replaces the cubes with Snappoints. It means that there is no need to worry about their visibility in the App.
+
+Here is a list of information the ViewAR System Converter extracts from the cubes.
+
+- **Point of Origin** \(translation\)
+- **Orientation** \(rotation\)
+- **Name**
+
+##### Point of Origin
+
+The cube's Point of Origin (stored in its _translation_ property) becomes a Point of Origin of a new Snappoint.
+
+##### Orientation
+
+The cube's Orientation value (stored in its rotation property) become the Orientation values of a new Snappoint.
+
+##### Name
+
+Here comes the tricky part, but stay with us :)
+
+Every Snappoint has properties called _plug_ (one or more) and _socket_ (always just one).
+
+- In order for 2 cubes to snap, one of them needs to have a plug and the other - a socket with the same name.
+- A socket may only accept one plug at a time.
+- Numbers of plugs and sockets don't have to match 1:1. One socket may serve multiple plugs \(e.g. table tops may be placed on one table leg\).
+
+The cube's Name is your way of communicating to the ViewAR System Converter the Snappoint properties. Here is how it works.
+
+A correct cube name follows the pattern below:
+
+```json
+SNAPPOINT__PLUG1_PLUG2_PLUG3__SOCKET1__SNAPPOINTNAME
+```
+
+```json
+Explanation: (1)__(2)__(3)__(4)
+```
+
+\(1\) _SNAPPOINT_ - a prefix informing the converter that the mesh is a _snappoint_  
+\(2\) _PLUGS_ - separated with a single underscore \("\_"\) names defining _snappoint's_ plugs. If a _snappoint_ has no plug, "dummyplug" should be inserted.  
+\(3\) _SOCKETS_ - separated with a single underscore \("\_"\) names defining _snappoint's_ sockets. If a _snappoint_ has no sockets, "dummysocket" should be inserted.  
+\(4\) _SNAPPOINTNAME_ - a suffix defining a _snappoint's_ name. It is not an active part of the name, just a note for 3D designers and developers.
+
+> There is no specific maximum of snappoints, plugs, sockets, however try to keep the naming short.
+
+**HowTo:**  
+In a 3D software, open your model and create a small cube \(the cube will not be removed from the scene, therefore keep it as small as possible e.g. 1x1x1 units\). Move it to the position where the _snappoint_ is supposed to be. Then, rotate it so that the front of the cube points in the direction where other object should be snapped. _Snappoints_ need to face each other and their tops need to point in the same direction. Scaling of the _snappoint_ does not affect it's functionality. Name the cube according to the above naming convention.
+
+IMPORTANT: DO NOT freeze the transformation or delete history of cubes. This information is needed for our converter and are essential!
+
+You can also download a prepared snappoint here: [Snappoint.fbx](http://it5.at/trac/viewar/raw-attachment/wiki/Converter/Snappoint.fbx)
+
+### Parametric Models
+
+Sometimes a fixed object geometry is not enough. For example, in order to create a product customisation application where not only material finishings but also product dimensions may be adjusted, so-called **Parametric Models** would be needed. These are 3D objects which geometric characteristics may be algorithmically adjusted. This may relate to overall attributes of the object \(e.g. it’s length and width\) or properties of its elements \(e.g. radius of corners curvature\).
+
+Let’s take an example of a plain cube with the following properties:
+
+- **point of origin:** \[0, 0, 0\]
+- **x-dimension:** \[int\], x∈ &lt;1, 20&gt;
+- **y-dimension:** \[int\], y∈ &lt;1, 20&gt;
+- **z-dimension:** \[int\], z∈ &lt;1, 20&gt;
+
+Additionally, we add a numerical property describing a radius of curvature of its corners (asssumption: the curvature is symmetrical, identical in all directions and same for all corners):
+
+- **cornerRadius**: \[int\], cornerRadius∈ &lt;0, 90&gt;
+
+In order to use such a model in the application, one needs the following components:
+
+- **3D Model** - created in a 3D modelling software \(e.g. Autodesk Maya\),
+- **Data file** - a JSON describing the 3D Model's properties. This file is also configured in the **My Content Tab**, however, its Category needs to be set to "Data" (otherwise, the System will be awaiting a 3D model). A portion of an example data file below:
+
+```json
+{
+    "dimensions": {
+        "x": 10,
+        "y": 10,
+        "z": 10
+    },
+    "parameters": [
+        {
+            "name": "Width",
+            "type": "manipulation",
+            "value": {
+                "default": 10,
+                "max": 20,
+                "min": 1,
+                "type": "number"
+            }
+        },
+        {
+        "name": "Length",
+            "type": "manipulation",
+            "value": {
+                "default": 10,
+                "max": 20,
+                "min": 1,
+                "type": "number"
+            }
+        },
+        {
+        "name": "Height",
+            "type": "manipulation",
+            "value": {
+                "default": 10,
+                "max": 20,
+                "min": 1,
+                "type": "number"
+            }
+        },
+        {
+        "name": "Radius",
+            "type": "manipulation",
+            "value": {
+                "default": 0,
+                "max": 90,
+                "min": 0,
+                "type": "number"
+            }
+        }
+    ],
+    (...)
+}
+```
+
+- **Way to access / manipulate the properties** - Values of the parameters may either be defined in the application code (e.g. one may create a parametric model of a bench being adjusted automatically to fit the length of the wall) or exposed to the user (e.g. allowing for awning width manipulation).
+
+#### Texturing
+
+Texturing a Parametric Model requires understanding possible modifications of the model. From the ViewAR Core side, there is a special real-time UV layout updating process implemented. Depending on which parts of the model would be stretched, the 3D object gets divided in sections with UV layouts applied accordingly. When parameters are changed, the UV layout of static parts remains untouched, while the layout of the altered elements gets regenerated in real-time. In this way, it is ensured that changes in geometry are followed by appropriate changes in the UV layout.
+
+#### Example
+
+A good example of the use of Parametric Models is the [Markilux App](https://www.viewar.com/showcase/markilux/).
+
+> Development and integration of parametric models is a complex issue, therefore we strongly encourage you to use our support on that matter. Custom 3D objects may be requested via the [Request 3D Model Form](https://portal.viewar.com/jobs/add).
+
+### Configurations
+
+In order to create complex scenes with model interdependencies encoded, we use **Configurations**. Technically speaking, a Configuration is a JSON file defining logical rules of model properties or possibilities of loading sets of models into the scene.
+
+Below an example of a portion of configuration defining geometry options for a table top:
+
+```js
+{
+    "configuration": {
+        "properties": [{
+            "name": "Table_top",
+            "type": "part",
+            "valueType": "enumerated",
+            "values": [{
+                    "name": "Table top - Round",
+                    "foreignKey": "table-top-round"
+                },
+                {
+                    "name": "Table top - Rectangular",
+                    "foreignKey": "table-top-rectangular"
+                },
+                {
+                    "name": "Table top - Square",
+                    "foreignKey": "table-top-square"
+                }
+
+            ]
+        }]
+    }
+}
+```
+
+and a portion of configuration defining material options for that table top:
+
+```js
+{
+    "configuration": {
+        "properties": [{
+            "name": "Table_top",
+            "type": "material",
+            "valueType": "enumerated",
+            "values": [{
+                    "name": "White Marble"
+                },
+                {
+                    "name": "Pink Marble"
+                },
+                {
+                    "name": "Decorative Concrete"
+                }
+            ]
+        }]
+    }
+}
+```
+
+### Reference Models
+
+When creating complex objects taking up a lot of memory, it is a good idea to split them into lighter portions and, instead of inserting them all in one model file, provide a list of references to the group of smaller models. Such an entity is called a **Reference Model.**
+
+Technically speaking, it is a JSON file, providing references to models which are to be downloaded. Each one is identified through a unique ID \(UID\).
+
+> The order of the list is used as an order of download. In case of less efficient internet connections, it may result in object appearing one by one. You may want to keep it in mind and, for example, build up a tall building from the bottom to the top.
+
+Below is a snippet of a Reference Model file.
+
+```json
+{
+    "converter": {...},
+    "meshes": {
+        "skyscraper-groundfloor": [],
+        "skyscraper-mainbody": [],
+        "skyscraper-spire": []
+},
+    "references": [
+        {
+            "UID": "1",
+            "name": "skyscraper-groundfloor",
+            "pose": {
+                "orientation": {
+                    "w": 1,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "position": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            },
+            "version": "1",
+            "type": "environment",
+            "foreign_key": ""
+        },
+        {
+            "UID": "2",
+            "name": "skyscraper-mainbody",
+            "pose": {
+                "orientation": {
+                    "w": 1,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "position": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 20
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            },
+            "version": "3",
+            "type": "environment",
+            "foreign_key": ""
+        },
+        {
+            "UID": "3",
+            "name": "skyscraper-groundfloor",
+            "pose": {
+                "orientation": {
+                    "w": 1,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "position": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 90
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            },
+            "version": "1",
+            "type": "environment",
+            "foreign_key": ""
+        }
+    ]
+}
+```
+
+### Animations
+
+Add animations to models or their parts. You will be able to access them through the JavaScript API, controlling their speed, number of iterations and triggering actions.
 
 ## Guidelines for content creation
 
@@ -532,426 +966,3 @@ Fill out the form \(Name, Foreign Key, etc.\) and drag&drop the previously creat
 
 which is always reserved by ViewAR engine for the ambient occlusion map
 
-## Material Editor
-
-The ViewAR System comes with a Material Editor, letting you define material options for models. We use the originally applied material names (coming from a 3D software) to split the model into so called _surfaces_. You can then define a single or multiple materials for each surface.
-
-![](../assets/MaterialEditorEmptyNumbered.jpg)  
-_1 - Model Preview  
-2 - Material / Texture / Environment  
-3 - Toolbox  
-4 - Surfaces / Material Options_
-
-Specific surfaces can be selected in two ways: by double-clicking the model in the _Model Preview_ or by selecting a surface name from the top-right menu. Active surfaces gets highlighted in pink.
-
-### Textures
-
-> Textures are graphic files in .jpg or .png format, which are used to create materials. For information on creating materials, scroll down.
-
-In order to add a new texture, click on the _Textures_ tab in the bottom left corner. You can select public or private textures (only visible for your account. Default setting is private).
-To upload a new texture, click on "New Texture".
-
-![](../assets/MaterialEditorTextureUploadEmpty.jpg)
-
-In the _Toolbox_ click to open the upload dialog or simply drag and drop you textures into the marked area. You can rename textures, set them to public and change the thumbnail of the texture that will be used in the app, useful if you want to highlight a specific part of the texture for example. Click upload when you are ready.
-
-![](../assets/MaterialEditorTextureUpload.jpg)
-
-### Environment Maps
-
-> Environment maps are graphic files in .jpg format, which are used to create materials. For information on creating materials, scroll down.
-
-If you want to use different environment cubemaps, you can either click on the _Environment Maps_ tab in the bottom left and then _New Environment Map_ or in the _Textures_ Toolbox on _Environment Map Uploader_. This will open the Cubemap Upload Dialog. You can name your Cubemap, set it to public or change the thumbnail. To upload the cubemaps simply drag and drop it to the according squares.
-
-![](../assets/MaterialEditorNewCubemap.jpg)
-
-### Create Material
-
-> Upload textures before you start working on your material.
-
-Select a surface, click on _New Material_ and the toolbox will display your options.
-
-![](../assets/MaterialEditorSurfaceSelection.jpg)![](../assets/MaterialEditorNewMaterialTexture.jpg)
-
-Fill in the following information:
-
-**Name:** Name your material
-
-**Description:** Describe your material
-
-**Shader:** Choose the shader to be used. We suggest using the "Cubemap Shader 250". At this time it has the most options and best visuals.
-
-**Cubemap Shader 250:** Click into the environment map window or click the _Environment Maps_ tab on the bottom left then drag and drop your previously uploaded cubemaps. Instead of uploading a new one you can use the default one or choose from the public ones. Click into the texture window or the _Textures_ tab on the bottom left and drag and drop your previously uploaded textures. You can scale the textures on the right.
-Be aware that you should save the material before uploading new textures, or you will have to setup the material again.
-
-> A quick way to create multiple materials/material is editing existing materials, then assign a new texture and adjust the settings and name and saving as a new material. That saves you a lot of clicks and setting up the material from scratch.
-
-_AO Map:_ The default name for automatic usage is "ambientocclusionmap.jpg", if you named it differently or need to use multiple AO maps in one object, input the name of your .jpg here so the map is found by the material editor. This map has to be in you model upload .zip archive.
-
-_Ambient Occlusion:_ The value is used to control the intensity of the ambientocclusionmap. If you include an "ambientocclusionmap.jpg" in the model-archive, it will be used automatically. If you don't have any ambientocclusionmap set the value to 0.
-
-_Reflection:_ Controls the reflection value of the material
-
-_Opacity:_ Controls the opacity of the material.
-
-_Mix Mode:_ Controls the blending mode of the material.
-
-### Material Options
-
-![](../assets/MaterialEditorAssignMaterials.jpg)
-
-To assign materials drag and drop them to the intended surface material from the bottom left, to the top right in the _surface material_ panel. In this example I want the fabric to have material options.
-
-<!---
-TODO: add screenshot that shows the process. do multiple screenshots and use transparency. First mouse positions are more transparent and then they become less transparent when moving to the surface.
---->
-
-![](../assets/MaterialEditorMaterialOptions.jpg)
-
-You can edit the display name of the surface and materials with a double-click. You can also change sorting of the materials by dragging the three dots icon. Delete options by clicking the icon: ![](../assets/Screen Shot 2018-08-31 at 14.27.07.png)
-
-<!---
-TODO: add delete icon.
---->
-
-### Group Surfaces
-
-If you want two surfaces to change at the same time, the display name of the two surface materials needs to be the same and the amount of options needs to be the same as well.
-Once you are done setting up your materials and material options, click on _Save Options_ in the top right.
-
-### View and Test
-
-To test you changes, open the _Single Product View_ in a new incognito window \(otherwise, the changes won't be visible\).
-
-![](../assets/MaterialOptionsSingleproductview.jpg)
-
-### Clone Material Setup
-
-If you have already set up a model with the same materials assigned to the same geometry names (derived from material names from a 3D software), you can input the model ID of the set up model in the top right panel and click on _Clone_, then _Save Options_.
-
-### Dos & Donts
-
-#### Dos
-
-- For solid materials use a JPG file format \(file extension should be _.jpg_, not _.jpeg_\).
-- For transparent one: PNGs.
-- Always use power-of-two resolutions \(16/32/64/128/256/512/1024/2048/4096\). A non-power-of-two resolution will be up-scaled to the next level and hurt performance without better quality. 4096 is the highest supported resolution.
-- Tiled textures should be no larger that 512x512 or 1024x1024, baked maps should be 1k or for more complex assets 2k. The resolution high enough for close up. A good default is a 512x512 tiled texture for 50cm², however, it largely depends on object use - an architectural building needs different pixel density than a chair.
-- Keep the data size of textures in mind. Uncompressed textures are much larger and rarely is the increased size worth the cost. The difference between a maximum quality _jpg_ and "10" quality _jpg_ is not visible, however, the difference in size is obvious. Especially, when multiplied by the number of used textures in the scene.
-
-#### Donts
-
-- No special characters, especially "ä,ö,ü, etc".
-
-## Advanced
-
-### Snapping
-
-When inserting a model in a scene, it may be useful to use another model as a reference for the new model position.
-
-#### Example use case
-
-To illustrate, imagine a product visualisation application, where a user is allowed to choose between different table tops. Every table top has not only different set of materials provided, but also a distinct shape and dimensions. Moreover, table legs on which those tops are to be placed also have their individual heights and shapes. Normally, in such a case, every time a switch of a table element was to be made, a set of information about the current properties of all elements would have to be retrieved and processed before a new element would be inserted. Even worse - what if the container with the table elements was moved? Or if we were to replace 20 table tops at once?
-
-It would be helpful to make the models pull to one another. Furthermore, it would be even better to have them pull one another just in one direction, so that the table remained on the ground with the table top laying peacefully on it, instead of floating in the thin air, if a shorter leg was introduced.
-
-#### Snappoints
-
-The snapping settings are handled by introducing a pair of matching **Snappoints** - one in each model (one model, however, may contain multiple Snappoints, as long as they don't overlap). They are generated automatically by the ViewAR System Converter on the basis of special cubes inserted by 3D Artists in the models. It may seem tricky at first, but let us guide you through the process and it should become clear quite soon.
-
-> The ViewAR System Converter replaces the cubes with Snappoints. It means that there is no need to worry about their visibility in the App.
-
-Here is a list of information the ViewAR System Converter extracts from the cubes.
-
-- **Point of Origin** \(translation\)
-- **Orientation** \(rotation\)
-- **Name**
-
-##### Point of Origin
-
-The cube's Point of Origin (stored in its _translation_ property) becomes a Point of Origin of a new Snappoint.
-
-##### Orientation
-
-The cube's Orientation value (stored in its rotation property) become the Orientation values of a new Snappoint.
-
-##### Name
-
-Here comes the tricky part, but stay with us :)
-
-Every Snappoint has properties called _plug_ (one or more) and _socket_ (always just one).
-
-- In order for 2 cubes to snap, one of them needs to have a plug and the other - a socket with the same name.
-- A socket may only accept one plug at a time.
-- Numbers of plugs and sockets don't have to match 1:1. One socket may serve multiple plugs \(e.g. table tops may be placed on one table leg\).
-
-The cube's Name is your way of communicating to the ViewAR System Converter the Snappoint properties. Here is how it works.
-
-A correct cube name follows the pattern below:
-
-```json
-SNAPPOINT__PLUG1_PLUG2_PLUG3__SOCKET1__SNAPPOINTNAME
-```
-
-```json
-Explanation: (1)__(2)__(3)__(4)
-```
-
-\(1\) _SNAPPOINT_ - a prefix informing the converter that the mesh is a _snappoint_  
-\(2\) _PLUGS_ - separated with a single underscore \("\_"\) names defining _snappoint's_ plugs. If a _snappoint_ has no plug, "dummyplug" should be inserted.  
-\(3\) _SOCKETS_ - separated with a single underscore \("\_"\) names defining _snappoint's_ sockets. If a _snappoint_ has no sockets, "dummysocket" should be inserted.  
-\(4\) _SNAPPOINTNAME_ - a suffix defining a _snappoint's_ name. It is not an active part of the name, just a note for 3D designers and developers.
-
-> There is no specific maximum of snappoints, plugs, sockets, however try to keep the naming short.
-
-**HowTo:**  
-In a 3D software, open your model and create a small cube \(the cube will not be removed from the scene, therefore keep it as small as possible e.g. 1x1x1 units\). Move it to the position where the _snappoint_ is supposed to be. Then, rotate it so that the front of the cube points in the direction where other object should be snapped. _Snappoints_ need to face each other and their tops need to point in the same direction. Scaling of the _snappoint_ does not affect it's functionality. Name the cube according to the above naming convention.
-
-IMPORTANT: DO NOT freeze the transformation or delete history of cubes. This information is needed for our converter and are essential!
-
-You can also download a prepared snappoint here: [Snappoint.fbx](http://it5.at/trac/viewar/raw-attachment/wiki/Converter/Snappoint.fbx)
-
-### Parametric Models
-
-Sometimes a fixed object geometry is not enough. For example, in order to create a product customisation application where not only material finishings but also product dimensions may be adjusted, so-called **Parametric Models** would be needed. These are 3D objects which geometric characteristics may be algorithmically adjusted. This may relate to overall attributes of the object \(e.g. it’s length and width\) or properties of its elements \(e.g. radius of corners curvature\).
-
-Let’s take an example of a plain cube with the following properties:
-
-- **point of origin:** \[0, 0, 0\]
-- **x-dimension:** \[int\], x∈ &lt;1, 20&gt;
-- **y-dimension:** \[int\], y∈ &lt;1, 20&gt;
-- **z-dimension:** \[int\], z∈ &lt;1, 20&gt;
-
-Additionally, we add a numerical property describing a radius of curvature of its corners (asssumption: the curvature is symmetrical, identical in all directions and same for all corners):
-
-- **cornerRadius**: \[int\], cornerRadius∈ &lt;0, 90&gt;
-
-In order to use such a model in the application, one needs the following components:
-
-- **3D Model** - created in a 3D modelling software \(e.g. Autodesk Maya\),
-- **Data file** - a JSON describing the 3D Model's properties. This file is also configured in the **My Content Tab**, however, its Category needs to be set to "Data" (otherwise, the System will be awaiting a 3D model). A portion of an example data file below:
-
-```json
-{
-    "dimensions": {
-        "x": 10,
-        "y": 10,
-        "z": 10
-    },
-    "parameters": [
-        {
-            "name": "Width",
-            "type": "manipulation",
-            "value": {
-                "default": 10,
-                "max": 20,
-                "min": 1,
-                "type": "number"
-            }
-        },
-        {
-        "name": "Length",
-            "type": "manipulation",
-            "value": {
-                "default": 10,
-                "max": 20,
-                "min": 1,
-                "type": "number"
-            }
-        },
-        {
-        "name": "Height",
-            "type": "manipulation",
-            "value": {
-                "default": 10,
-                "max": 20,
-                "min": 1,
-                "type": "number"
-            }
-        },
-        {
-        "name": "Radius",
-            "type": "manipulation",
-            "value": {
-                "default": 0,
-                "max": 90,
-                "min": 0,
-                "type": "number"
-            }
-        }
-    ],
-    (...)
-}
-```
-
-- **Way to access / manipulate the properties** - Values of the parameters may either be defined in the application code (e.g. one may create a parametric model of a bench being adjusted automatically to fit the length of the wall) or exposed to the user (e.g. allowing for awning width manipulation).
-
-#### Texturing
-
-Texturing a Parametric Model requires understanding possible modifications of the model. From the ViewAR Core side, there is a special real-time UV layout updating process implemented. Depending on which parts of the model would be stretched, the 3D object gets divided in sections with UV layouts applied accordingly. When parameters are changed, the UV layout of static parts remains untouched, while the layout of the altered elements gets regenerated in real-time. In this way, it is ensured that changes in geometry are followed by appropriate changes in the UV layout.
-
-#### Example
-
-A good example of the use of Parametric Models is the [Markilux App](https://www.viewar.com/showcase/markilux/).
-
-> Development and integration of parametric models is a complex issue, therefore we strongly encourage you to use our support on that matter. Custom 3D objects may be requested via the [Request 3D Model Form](https://portal.viewar.com/jobs/add).
-
-### Configurations
-
-In order to create complex scenes with model interdependencies encoded, we use **Configurations**. Technically speaking, a Configuration is a JSON file defining logical rules of model properties or possibilities of loading sets of models into the scene.
-
-Below an example of a portion of configuration defining geometry options for a table top:
-
-```js
-{
-    "configuration": {
-        "properties": [{
-            "name": "Table_top",
-            "type": "part",
-            "valueType": "enumerated",
-            "values": [{
-                    "name": "Table top - Round",
-                    "foreignKey": "table-top-round"
-                },
-                {
-                    "name": "Table top - Rectangular",
-                    "foreignKey": "table-top-rectangular"
-                },
-                {
-                    "name": "Table top - Square",
-                    "foreignKey": "table-top-square"
-                }
-
-            ]
-        }]
-    }
-}
-```
-
-and a portion of configuration defining material options for that table top:
-
-```js
-{
-    "configuration": {
-        "properties": [{
-            "name": "Table_top",
-            "type": "material",
-            "valueType": "enumerated",
-            "values": [{
-                    "name": "White Marble"
-                },
-                {
-                    "name": "Pink Marble"
-                },
-                {
-                    "name": "Decorative Concrete"
-                }
-            ]
-        }]
-    }
-}
-```
-
-### Reference Models
-
-When creating complex objects taking up a lot of memory, it is a good idea to split them into lighter portions and, instead of inserting them all in one model file, provide a list of references to the group of smaller models. Such an entity is called a **Reference Model.**
-
-Technically speaking, it is a JSON file, providing references to models which are to be downloaded. Each one is identified through a unique ID \(UID\).
-
-> The order of the list is used as an order of download. In case of less efficient internet connections, it may result in object appearing one by one. You may want to keep it in mind and, for example, build up a tall building from the bottom to the top.
-
-Below is a snippet of a Reference Model file.
-
-```json
-{
-    "converter": {...},
-    "meshes": {
-        "skyscraper-groundfloor": [],
-        "skyscraper-mainbody": [],
-        "skyscraper-spire": []
-},
-    "references": [
-        {
-            "UID": "1",
-            "name": "skyscraper-groundfloor",
-            "pose": {
-                "orientation": {
-                    "w": 1,
-                    "x": 0,
-                    "y": 0,
-                    "z": 0
-                },
-                "position": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 0
-                },
-                "scale": {
-                    "x": 1,
-                    "y": 1,
-                    "z": 1
-                }
-            },
-            "version": "1",
-            "type": "environment",
-            "foreign_key": ""
-        },
-        {
-            "UID": "2",
-            "name": "skyscraper-mainbody",
-            "pose": {
-                "orientation": {
-                    "w": 1,
-                    "x": 0,
-                    "y": 0,
-                    "z": 0
-                },
-                "position": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 20
-                },
-                "scale": {
-                    "x": 1,
-                    "y": 1,
-                    "z": 1
-                }
-            },
-            "version": "3",
-            "type": "environment",
-            "foreign_key": ""
-        },
-        {
-            "UID": "3",
-            "name": "skyscraper-groundfloor",
-            "pose": {
-                "orientation": {
-                    "w": 1,
-                    "x": 0,
-                    "y": 0,
-                    "z": 0
-                },
-                "position": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 90
-                },
-                "scale": {
-                    "x": 1,
-                    "y": 1,
-                    "z": 1
-                }
-            },
-            "version": "1",
-            "type": "environment",
-            "foreign_key": ""
-        }
-    ]
-}
-```
-
-### Animations
-
-Add animations to models or their parts. You will be able to access them through the JavaScript API, controlling their speed, number of iterations and triggering actions.
-
----
