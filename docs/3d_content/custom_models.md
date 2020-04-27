@@ -3,7 +3,6 @@ id: custom_models
 title: Custom Models
 ---
 
-# Custom Models
 The ViewAR System provides a web interface for model upload and management.
 
 ## Upload Content
