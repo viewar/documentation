@@ -71,3 +71,17 @@ If the toggle is ON - in AR the model will be inserted in the default scale, how
   How to upload a 3D model with textures?
 ViewAR System supports .mtl files.
 
+
+
+## CSS Styling
+
+- **My main menu buttons disappeared. How to fix it?**  
+  Main menu buttons represent features available within a template. They disappear when a feature gets deactivated. In order to change these settings, go to the Customize tab.
+
+- **What are the recommended dimensions of a backgroud?**  
+  It depends on your target devices' resolutions. For example, iPhone Xs Max uses 1242 x 2688 pixels and iPad Pro would work best with 2048 x 2732 pixels. However, you do not have to worry about exact dimensions - our system fits and crops the background file for you.
+  
+  A rule of thumb would be to prepare a file of side lengths between 1200 and 3000 px.
+
+- **What are the recommended dimensions of a logo?**  
+  In fact, logos work best if provided as svg files. If you do not have access to a vector file, try working with side lengths between 256 and 1024 pixels.
