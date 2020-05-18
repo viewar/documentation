@@ -5,6 +5,8 @@ title: GuideBOT
 
 Learn how to create a [GuideBOT](https://www.viewar.com/template/guidebot/) indoor navigation application. Two tracking versions available: using QR codes or the Placenote tracking.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CIsH3qFCidg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## App builder
 
 [ViewAR™ AppBuilder](https://www.viewar.com/app-builder/) is the easiest way to build your augmented reality apps. It allows developers to build augmented reality and virtual reality apps based on HTML templates. It is a modular structure, utilising our almost 10-years-long development experience and lessons learned from over 50 projects. Ready-to-use templates allow for the user focus to be shifted to styling and content. The System is suitable for professional programmers as well as for beginners.
