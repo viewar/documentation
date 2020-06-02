@@ -3,8 +3,9 @@ id: right-handed-coordinate-system
 title: Right-handed Cartesian Coordinate System
 ---
 
+> Long story short: **the Up-Axis is the Y-Axis!** (Right-handed Cartesian Coordinate System)
+
 ViewAR applications use the Right-handed Cartesian Coordinate System (see the graphic below).
-> Long story short: **the Up-Axis is the Y-Axis!**
 
 ![](../assets/CoordinateSystem-sketch-v03.jpg)
 
