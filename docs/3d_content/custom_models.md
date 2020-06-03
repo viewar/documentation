@@ -637,7 +637,7 @@ Below is a snippet of a Reference Model file.
 
 ### Animations
 
-Add animations to models or their parts. You will be able to access them through the JavaScript API, controlling their speed, number of iterations and triggering actions.
+Add animations to models or their parts. You will be able to access them through the JavaScript API, controlling their speed, number of iterations and triggering actions When exporting an animated model, make sure to select the bind pose frame first and then export. If you select any other frame the skinning will be distorted. The frame that you select when exporting will also define the frame that the model is loaded in without activated animations.
 
 ## Guidelines for content creation
 
