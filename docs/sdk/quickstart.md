@@ -485,7 +485,7 @@ The ViewAR JavaScript API provides built-in functionality to save and restore co
 
 ### Get a list of all previously saved projects
 
-Projects can either be saved locally on the user's device or in the cloud storage. To get more information about cloud projects check out the [Cloud Ppojects](#CloudProjects) section. To get a list of all saved projects, we can access three different project indices.
+Projects can either be saved locally on the user's device or in the cloud storage. To get more information about cloud projects check out the [Cloud projects](#CloudProjects) section. To get a list of all saved projects, we can access three different project indices.
 
 For detailed method and attribute descriptions visit our [Project API Reference](https://documentation-api.viewar.com/Project.html) and our [Project Manager API Reference](https://documentation-api.viewar.com/ProjectManager_.html).
 
@@ -509,7 +509,7 @@ const project = viewarApi.projectManager.createNewProject({
   info: {
     description: 'This is a sample project',
   },
-  name: 'Test Project',
+  name: 'Sample Project',
 });
 
 // Save the current scene state.
