@@ -142,6 +142,10 @@ input#search_input_react:active {
   color: #fff;
 }
 
+.fixedHeaderContainer .wrapper {
+  max-width: initial;
+}
+
 /***********************
 **    shared UI        *
 ***********************/

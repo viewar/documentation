@@ -126,6 +126,10 @@ header/nav colors:
   color: #fff;
 }
 
+.fixedHeaderContainer .wrapper {
+  max-width: initial;
+}
+
 /***********************
 **    shared UI        *
 ***********************/

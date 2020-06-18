@@ -62,11 +62,11 @@ const instance = sceneManager.scene.children[0];
 await sceneManager.removeNode(instance);
 ```
 
-## Scene State
+## <a name="SceneState"></a>Scene State
 
 The Scene State holds all the information about the current setup of the Scene, such as inserted Nodes and their current state e.g. pose and visibility. At any point during the runtime, it is possible to serialise the current Scene State. Keep in mind that the Animation State and Tracking State do not get serialised, meaning that they cannot be saved (although their initial values may be defined for example at app start). The serialised State can than be stored and recovered later on, for example in order to provide Save/Load functionality. Furthermore, it is possible to synchronise Scene States between devices.
 
-### get current Scene State
+### Get current Scene State
 
 To retrieve and save the current Scene State to the local storage, use the following statement:
 
@@ -433,7 +433,7 @@ button {
 }
 ```
 
-## instances
+## Instances
 
 [Model Instance](./basic_concepts#model-instances) is a unique occurence of a model inserted in a ViewAR App. It is basically a copy of a Model loaded from the Model Catalogue and assigned to a variable in the application. While the original Model remains unchanged, the Model Instance may be manipulated inside the program.
 
@@ -479,7 +479,119 @@ const model = await modelManager.getModelFromRepository(20);
 await sceneManager.insertModel(model, { visible: false });
 ```
 
-### Read next
+## Projects
+
+The ViewAR JavaScript API provides built-in functionality to save and restore complete Scene States, containing all the model instances (see [Scene State](#SceneState)). Everything is handled through viewarApi.projectManager.
+
+### Get a list of all previously saved projects
+
+Projects can either be saved locally on the user's device or in the cloud storage. To get more information about cloud projects check out the [Cloud Ppojects](#CloudProjects) section. To get a list of all saved projects, we can access three different project indices.
+
+For detailed method and attribute descriptions visit our [Project API Reference](https://documentation-api.viewar.com/Project.html) and our [Project Manager API Reference](https://documentation-api.viewar.com/ProjectManager_.html).
+
+```js
+// Get all projects (local and cloud).
+const allProjects = viewarApi.projectManager.projects.all;
+
+// Get all local projects.
+const localProjects = viewarApi.projectManager.projects.local;
+
+// Get all cloud projects.
+const cloudProjects = viewarApi.projectManager.projects.cloud;
+```
+
+### Create and save a new project
+
+```js
+// Create a new project.
+const project = viewarApi.projectManager.createNewProject({
+  data: {},
+  info: {
+    description: 'This is a sample project',
+  },
+  name: 'Test Project',
+});
+
+// Save the current scene state.
+project.saveState();
+
+// Save the project.
+await project.storeLocally();
+```
+
+The field _data_ is a JSON that can be used to store additional (app specific) logic.
+
+### Save a screenshot with a project
+
+Additionally we can save a screenshot with a project. The code is similar to the above one, except with small adjustements to the _saveState_ method.
+
+```js
+// Save a screenshot.
+await viewarApi.screenshotManager.takeScreenshot();
+const screenshotUrl = await viewarApi.screenshotManager.saveScreenshot('screenshots');
+project.saveState(screenshotUrl);
+
+// Access a saved screenshot.
+const url = project.screenshotUrl;
+```
+
+This applies both to local projects and cloud projects.
+
+### <a name="CloudProjects"></a>Cloud projects
+
+If we save a screenshot in the cloud storage, we are able to share the project between several devices. We can differentiate between public cloud storage and private cloud storage. Private cloud storage requires a login to prevent unauthorized access.
+
+```js
+// (optional) Per default the public cloud storage is used.
+// Use this line of code to enable private cloud storage.
+viewarApi.projectManager.usePublicCloudIndex = false;
+
+// (optional) Authenticate to use private cloud storage.
+const loggedIn = await viewarApi.authenticationManager.logIn(username, password);
+
+// Save project to cloud.
+await project.storeToCloud();
+```
+
+If we save a project to the cloud, the project index is updated automatically.
+
+The cloud storage has to be fetched from the server to gain access to previously saved cloud projects:
+
+```js
+// Make sure you are logged in if you are using private cloud storage.
+await viewarApi.projectManager.updateCloudIndex();
+const cloudProjects = viewarApi.projectManager.projects.cloud;
+```
+
+### Load a project
+
+Restoring a Scene State from a project is as simple as executing one line of code:
+
+```js
+const projectId = 'id1234';
+const project = viewarApi.projectManager.projects.all[projectId];
+
+// This will replace the current scene state with the project's scene state.
+await project.loadState();
+```
+
+The _loadState_ method works for both local and cloud projects.
+
+### Removing a saved project
+
+A project can both be saved locally and in the cloud at the same time. If you remove the project locally, the cloud version will still exist.
+
+```js
+// Remove locally.
+await project.removeLocally();
+
+// Remove from cloud.
+await project.removeFromCloud();
+```
+
+Removing a project will also automatically update the project index.
+
+## Read next
 
 - [ViewAR JavaScript API Playground](https://webversion.viewar.com/com.viewar.sandbox/100/)
 - [ViewAR API References](https://documentation-api.viewar.com)
