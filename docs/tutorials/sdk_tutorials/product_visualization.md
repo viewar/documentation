@@ -31,7 +31,7 @@ Make sure you have:
 The easiest way to setup a new ViewAR application is to use the CLI. In a terminal run:
 
 ```bash
-npm install -g viewar-cli
+npm install -g @viewar/cli
 ```
 
 #### Create your first Project
