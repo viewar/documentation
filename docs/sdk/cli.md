@@ -11,13 +11,13 @@ First, make sure that you have the following prerequisites installed:
 - [npm](https://www.npmjs.com/) (&gt;= v5.6.0)
 - [git](https://git-scm.com/)
 
-#### install viewar-cli
+#### install @viewar/cli
 
-Next, install the viewar-cli globally by entering the following command into your terminal:
+Next, install the @viewar/cli globally by entering the following command into your terminal:
 
-`npm install -g viewar-cli`
+`npm install -g @viewar/cli`
 
-> if you have problems, installing 'viewar-cli', have a look at the [troubleshooting](./troubleshooting) page.
+> if you have problems, installing '@viewar/cli', have a look at the [troubleshooting](./troubleshooting) page.
 
 #### create account
 
@@ -33,9 +33,9 @@ Initialize a new JavaScript application by opening the terminal in your project 
 
 If you want to start with one of our Templates, read more [here](https://www.viewar.com/templates/).
 
-## viewar-cli
+## @viewar/cli
 
-The viewar-cli is a command line tool, which allows you to initialize new boilerplate ViewAR applications based on pure JavaScript or React. Viewar-cli lets you also deploy your application so it can be accessed from an iOS/Android device. In this section we show you how to install the viewar-cli in order to create and deploy a viewar-application.
+The @viewar/cli is a command line tool, which allows you to initialize new boilerplate ViewAR applications based on pure JavaScript or React. @viewar/cli lets you also deploy your application so it can be accessed from an iOS/Android device. In this section we show you how to install the @viewar/cli in order to create and deploy a viewar-application.
 
 ### Installation
 
@@ -44,8 +44,8 @@ Before installing the developer tools, you'll need to make sure that you have tw
 - node.js version 6.0.0 or higher
 - the npm \(&gt;= v3.0.0\) package manager
 
-Next, install the viewar-cli globally by entering the following command into your terminal:  
-`npm install -g viewar-cli`
+Next, install the @viewar/cli globally by entering the following command into your terminal:  
+`npm install -g @viewar/cli`
 
 > run `viewar --version` to verify installation.
 

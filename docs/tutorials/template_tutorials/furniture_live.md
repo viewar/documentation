@@ -65,7 +65,7 @@ Furthermore, make sure that you have a ViewAR account. It'll provide you storage
 The easiest way to setup a new ViewAR application is to use the ViewAR CLI.
 In the terminal run:
 
-`npm install -g viewar-cli`.
+`npm install -g @viewar/cli`.
 
 #### Login
 

@@ -8,13 +8,13 @@ title: Arvatar
 This is a tutorial to create an app with the ViewAR system that will display an interactive AR avatar \(Arvatar\) at your current location. For this tutorial you'll need:
 
 - ViewAR SDK App
-- ViewAR CLI \(viewar-cli node package\)
+- ViewAR CLI \(@viewar/cli node package\)
 - portal.viewar.com account
 - React 16.8.0 or newer
 
 ### Checkout Sample App
 
-First of all, we need to initialize a bare react sample app via viewar-cli in our destination folder &lt;appFolder&gt;:
+First of all, we need to initialize a bare react sample app via @viewar/cli in our destination folder &lt;appFolder&gt;:
 
 ```bash
 viewar login <email>      # Login with your account.

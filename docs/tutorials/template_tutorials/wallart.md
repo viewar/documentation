@@ -64,7 +64,7 @@ In an IDE of your choice (for example WebStorm) navigate to a suitable directory
 The easiest way to setup a new ViewAR application is to use the ViewAR CLI.
 In the terminal run:
 
-`npm install -g viewar-cli`.
+`npm install -g @viewar/cli`.
 
 #### Login
 
